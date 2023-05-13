@@ -13,13 +13,12 @@ class DatabaseExporter:
         return table_names
 
 
+if __name__ == "__main__":
 
 #  values with my MySQL connection details
-username = 'root'
-password = '123qweasdzxcSq'
-hostname = 'localhost'
-database = 'cashflow'
+    username = 'root'
+    password = '123qweasdzxcSq'
+    hostname = 'localhost'
+    database = 'cashflow'
 
-exporter = DatabaseExporter(username, password, hostname, database)
-table_names = exporter.get_table_names()
-print(table_names)
+    exporter = DatabaseExporter(username, password, hostname, database)
