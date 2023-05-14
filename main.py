@@ -26,6 +26,7 @@ processor_clints_data =dprs(file_path_clints_data, expected_cols_clints_data)
 processor_clints_data.read_data()
 processor_clints_data.select_columns(wanted_cols_clints_data)
 processor_clints_data.filter_row_null(filter_column)
+processor_clints_data.rename_columns({'Text85':"tax",'نص93':"paymentMethod"})
 print(processor_clints_data.data)
 
 processor_goods_transection.save_tables('output.xlsx', [processor_goods_transection.data, processor_clints_data.data], ['Sheet1', 'Sheet2'])

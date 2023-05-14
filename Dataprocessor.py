@@ -52,6 +52,7 @@ if __name__ == "__main__":
     processor_goods_transection.read_data()
     processor_goods_transection.select_columns(wanted_cols_goods_transection)
     processor_goods_transection.filter_row(filter_column, filter_values)
+    processor_goods_transection.rename_columns({ 'Text103': 'Total_invoice'})
     print(processor_goods_transection.data)
 
     file_path_clints_data= r"D:\monymovment\Cashflows\Excel_files\SBAccMFDtlRpt.xls"
