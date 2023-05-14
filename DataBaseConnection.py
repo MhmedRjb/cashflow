@@ -4,8 +4,8 @@ class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
         self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
 
-    def export_data(self, data, table_name):
-        data.to_sql(table_name, self.engine, if_exists='replace', index=False)
+    def export_data(self, data, table_name, if_exists='append'):
+        data.to_sql(table_name, self.engine, if_exists=if_exists, index=False)
 
     def get_table_names(self):
         inspector = inspect(self.engine)

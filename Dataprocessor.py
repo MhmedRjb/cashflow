@@ -6,6 +6,7 @@ class DataProcessor:
     def __init__(self, file_path, expected_cols):
         self.file_path = file_path
         self.expected_cols = expected_cols
+        self.old_df_length = 0
 
     def read_data(self):
         try:
@@ -20,6 +21,18 @@ class DataProcessor:
             print(f'Error: {e}')          
     def select_columns(self,wanted_cols):
         self.data = self.data[wanted_cols]
+    def update_data(self):
+        # read the new data from the Excel file
+        data = pd.read_excel(self.file_path)
+
+        # filter the data to only include new rows
+        data = data.iloc[self.old_df_length:]
+
+        # update the old DataFrame with the new data
+        self.data = pd.concat([self.data, data], ignore_index=True)
+
+        # update the old DataFrame length
+        self.old_df_length = len(self.data)
 
     def filter_row_null(self, column):
         self.data = self.data[self.data[column].notnull()]

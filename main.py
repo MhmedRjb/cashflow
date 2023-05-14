@@ -24,12 +24,12 @@ wanted_cols_clints_data = ['acc_nm', 'Text85', 'نص93']
 filter_column = 'acc_nm'
 processor_clints_data =dprs(file_path_clints_data, expected_cols_clints_data)
 processor_clints_data.read_data()
+processor_clints_data.update_data()
 processor_clints_data.select_columns(wanted_cols_clints_data)
 processor_clints_data.filter_row_null(filter_column)
 processor_clints_data.rename_columns({'Text85':"tax",'نص93':"paymentMethod"})
 print(processor_clints_data.data)
 
-processor_goods_transection.save_tables('output.xlsx', [processor_goods_transection.data, processor_clints_data.data], ['Sheet1', 'Sheet2'])
 
 username = 'root'
 password = '123qweasdzxcSq'
@@ -41,7 +41,7 @@ exporter = dbcon(username, password, hostname, database)
 
 # export the data to the database
 exporter.export_data(processor_goods_transection.data, 'goods_transection')
-exporter.export_data(processor_clints_data.data, 'clints_data')
+exporter.export_data(processor_clints_data.data, 'clints_data', if_exists='replace')
  
 #Print the table names
 print(exporter.get_table_names())
