@@ -77,3 +77,43 @@ FROM your_new_view_name2;
 
 
 
+SELECT 
+    tr_dt as "تاريخ الفاتورة",
+    payment_date as "تاريخ الاستحقاق",
+    Acc_nm as acc_nm,
+    GROUP_CONCAT(DISTINCT TR_no_list) AS "رقم الفواتير",
+    SUM(total_money) AS "اجمالي المبلغ" ,
+    paymentmethod as payment_method,
+    CASE
+        WHEN acc_nm LIKE '%مكسب%' THEN 'مكسب'
+        WHEN acc_nm LIKE '%لولو%' THEN 'لولو'
+        WHEN acc_nm LIKE '%خزين%' THEN 'خزين'
+        WHEN acc_nm LIKE '%اليسر%' THEN 'اليسر'
+
+
+        -- add more conditions here
+    END AS acc_nm_group
+FROM oktheone
+GROUP BY tr_dt, payment_date, acc_nm_group, payment_method
+HAVING acc_nm_group IS NOT NULL;
+
+SELECT 
+ tr_dt as "تاريخ الفاتورة",
+ payment_date as "تاريخ الاستحقاق",
+ Acc_nm as acc_nm,
+ GROUP_CONCAT(DISTINCT TR_no_list) AS "رقم الفواتير",
+ SUM(total_money) AS "اجمالي المبلغ" ,
+ paymentmethod as payment_method,
+ CASE
+ WHEN acc_nm LIKE '%مكسب%' THEN 'مكسب'
+ WHEN acc_nm LIKE '%لولو%' THEN 'لولو'
+ WHEN acc_nm LIKE '%خزين%' THEN 'خزين'
+ WHEN acc_nm LIKE '%اليسر%' THEN 'اليسر'
+ ELSE 'Other'
+
+ -- add more conditions here
+ END AS acc_nm_group
+FROM oktheone
+GROUP BY tr_dt, payment_date, acc_nm_group, payment_method
+HAVING acc_nm_group IS NOT NULL;
+
