@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Flask App</h1>
+    <form method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {% for error in form.file.errors %}
+        <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+        {{ form.file.label }} {{ form.file() }}
+        {% for error in form.file2.errors %}
+            <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+
+        {{ form.file2.label }} {{ form.file2() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

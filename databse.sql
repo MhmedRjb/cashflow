@@ -193,3 +193,16 @@ BEGIN
 END//
 
 DELIMITER ;
+
+
+
+DELIMITER //
+CREATE TRIGGER set_real_date
+BEFORE INSERT ON goodstransectionte
+FOR EACH ROW
+BEGIN
+    DECLARE payment_method INT;
+    SELECT payment_method INTO payment_method FROM clints_data WHERE acc_nm = NEW.Acc_Nm;
+
+END//
+DELIMITER ;

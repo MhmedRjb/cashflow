@@ -1,5 +1,4 @@
 from sqlalchemy import create_engine, inspect,delete
-
 import pandas as pd
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
@@ -41,6 +40,10 @@ class DatabaseExporter:
     def get_table_data(self,table_name):
         data = pd.read_sql_table(table_name, self.engine)
         return data
+    #mysql dump backup the data base arcticker only not data --nodata
+    def backup_database(self,backup_name):
+        self.engine.execute(f'DUMP DATABASE ElfatehCashFlow TO {backup_name}.sql')
+
     
 
     
@@ -52,3 +55,4 @@ if __name__ == "__main__":
     database = 'ElfatehCashFlow'
 
     exporter = DatabaseExporter(username, password, hostname, database)
+    exporter.backup_database('backup')

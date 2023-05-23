@@ -1,0 +1,5 @@
+
+2023-05-23 02:41:47,887 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLdITMRPTTAX.xls'
+Exception type: FileNotFoundError
+Class name: DataProcessor
+Function name: read_data
