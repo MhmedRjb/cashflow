@@ -9,6 +9,8 @@
 <body>
     <h1>Flask App</h1>
     <form method="post" enctype="multipart/form-data">
+        {% if form is defined %}
+
         {{ form.hidden_tag() }}
         {% for error in form.file.errors %}
         <span style="color: red;">{{ error }}</span>
@@ -17,20 +19,21 @@
         {% for error in form.file2.errors %}
             <span style="color: red;">{{ error }}</span>
         {% endfor %}
-
         {{ form.file2.label }} {{ form.file2() }}
         {{ form.submit() }}
+        {% endif %}
+
     </form>
-    <form action="/export_goods_transection" method="post">
-        <input type="submit" value="Export Goods Transection Data">
-    </form>
-    
-    <form action="/delete_goods_transection" method="post">
-        <input type="submit" value="Delete Goods Transection Data">
+    <form action="/export_data" method="post">
+        <input type="submit" value="export_data Transection Data">
     </form>
     
-    <form action="/export_clints_data" method="post">
-        <input type="submit" value="Export Clints Data">
+    <form action="/delete_data" method="post">
+        <input type="submit" value="delete_data Transection Data">
+    </form>
+    
+    <form action="/export_data_frist" method="post">
+        <input type="submit" value="export_data_frist Clints Data">
     </form>
     
 </body>

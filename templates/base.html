@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask App</title>
+    </head>
+    <body>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+        <form action="/export_data" method="post">
+            <input type="submit" value="Export Data">
+        </form>
+        <form action="/delete_data" method="post">
+            <input type="submit" value="Delete Data">
+        </form>
+        <form action="/export_data_frist" method="post">
+            <input type="submit" value="Export Data First">
+        </form>
+    </body>
+</html>
