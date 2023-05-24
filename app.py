@@ -38,12 +38,6 @@ class UploadForm(FlaskForm):
     file = FileField('SBJRNLITMRPTTAX.xls', validators=[Optional(), file_handler.is_valid_file])
     file2 = FileField('file2', validators=[Optional(), file_handler.is_valid_file])
     submit = SubmitField('Upload file')
-    @app.route('/process_good_transection')
-    def index():
-        processor_goods_transection = process_good_transection()
-        data = processor_goods_transection.data
-        # do something with the processed data
-        return render_template('index.html', data=data)
 
     @app.route('/', methods=['GET', 'POST'])
     @app.route('/home', methods=['GET', 'POST'])
@@ -58,38 +52,41 @@ class UploadForm(FlaskForm):
 
         return render_template("home.html", form=form)
 
-@app.route('/process_good_transection')
-def process_good_transection_route():
-    processor_goods_transection = process_good_transection()
-    data = processor_goods_transection.data
-    # do something with the processed data
-    return render_template('home.html', data=data)
+    # 
+    @app.route('/export_data', methods=['POST'])
+    def export_data():
+        form = UploadForm()
+        processor_goods_transection = process_good_transection()
+        exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
+        return render_template('home.html',form=form, message='Data exported successfully!')
 
-@app.route('/process_clints')
-def process_clints_route():
-    processor_clints = processor_Clints()
-    data = processor_clints.data
-    # do something with the processed data
-    return render_template('home.html', data=data)
+    @app.route('/delete_data', methods=['POST'])
+    def delete_data():
+        form = UploadForm()
+        processor_goods_transection = process_good_transection()
+        exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
+        return render_template('home.html',form=form, message='Data deleted successfully!')
 
+    @app.route('/export_data_frist', methods=['POST'])
+    def export_data_frist():
+        form = UploadForm()
+        processor_clints_data = processor_Clints()
+        exporter.export_data_frist(processor_clints_data.data, 'clints_data')
+        return render_template('home.html',form=form, message='Data exported successfully!')
+# @app.route('/process_good_transection')
+# def process_good_transection_route():
+#     processor_goods_transection = process_good_transection()
+#     data = processor_goods_transection.data
+#     # do something with the processed data
+#     return render_template('home.html', data=data)
 
-@app.route('/export_data', methods=['POST'])
-def export_data():
-    processor_goods_transection = process_good_transection()
-    exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
-    return render_template('home.html', message='Data exported successfully!')
+# @app.route('/process_clints')
+# def process_clints_route():
+#     processor_clints = processor_Clints()
+#     data = processor_clints.data
+#     # do something with the processed data
+#     return render_template('home.html', data=data)
 
-@app.route('/delete_data', methods=['POST'])
-def delete_data():
-    processor_goods_transection = process_good_transection()
-    exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
-    return render_template('home.html', message='Data deleted successfully!')
-
-@app.route('/export_data_frist', methods=['POST'])
-def export_data_frist():
-    processor_clints_data = processor_Clints()
-    exporter.export_data_frist(processor_clints_data.data, 'clints_data')
-    return render_template('home.html', message='Data exported successfully!')
 
 if __name__ == '__main__':
     app.run(debug=True)

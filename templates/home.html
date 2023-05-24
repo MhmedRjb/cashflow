@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flask App</title>
-</head>
-<body>
-    <h1>Flask App</h1>
-    <form method="post" enctype="multipart/form-data">
-        {% if form is defined %}
-
+<form method="post" enctype="multipart/form-data">
+    {% if form is defined %}
         {{ form.hidden_tag() }}
         {% for error in form.file.errors %}
-        <span style="color: red;">{{ error }}</span>
-    {% endfor %}
+            <span style="color: red;">{{ error }}</span>
+        {% endfor %}
         {{ form.file.label }} {{ form.file() }}
         {% for error in form.file2.errors %}
             <span style="color: red;">{{ error }}</span>
         {% endfor %}
         {{ form.file2.label }} {{ form.file2() }}
         {{ form.submit() }}
-        {% endif %}
-
-    </form>
-    <form action="/export_data" method="post">
-        <input type="submit" value="export_data Transection Data">
-    </form>
-    
-    <form action="/delete_data" method="post">
-        <input type="submit" value="delete_data Transection Data">
-    </form>
-    
-    <form action="/export_data_frist" method="post">
-        <input type="submit" value="export_data_frist Clints Data">
-    </form>
-    
-</body>
-</html>
+    {% endif %}
+    <input type="submit" formaction="/export_data" value="export_data Transection Data">
+    <input type="submit" formaction="/delete_data" value="delete_data Transection Data">
+    <input type="submit" formaction="/export_data_frist" value="export_data_frist Clints Data">
+</form>
