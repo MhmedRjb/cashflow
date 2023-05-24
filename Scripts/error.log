@@ -1,0 +1,26 @@
+2023-05-24 02:31:56,717 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:31:56,717 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:31:56,718 INFO:  * Restarting with stat
+2023-05-24 02:31:57,848 WARNING:  * Debugger is active!
+2023-05-24 02:31:57,851 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:33:56,871 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:33:56,873 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:33:56,874 INFO:  * Restarting with stat
+2023-05-24 02:33:58,249 WARNING:  * Debugger is active!
+2023-05-24 02:33:58,252 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:34:05,962 INFO: 127.0.0.1 - - [24/May/2023 02:34:05] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 02:34:50,189 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:34:50,189 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:34:50,191 INFO:  * Restarting with stat
+2023-05-24 02:34:51,333 WARNING:  * Debugger is active!
+2023-05-24 02:34:51,336 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:34:57,184 INFO: 127.0.0.1 - - [24/May/2023 02:34:57] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 02:37:09,913 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:37:09,914 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:37:09,916 INFO:  * Restarting with stat
+2023-05-24 02:37:11,214 WARNING:  * Debugger is active!
+2023-05-24 02:37:11,219 INFO:  * Debugger PIN: 109-877-722

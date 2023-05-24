@@ -3,3 +3,207 @@
 Exception type: FileNotFoundError
 Class name: DataProcessor
 Function name: read_data
+2023-05-24 00:18:37,360 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 00:18:37,360 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 00:18:37,361 INFO:  * Restarting with stat
+2023-05-24 00:18:38,461 WARNING:  * Debugger is active!
+2023-05-24 00:18:38,467 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 00:18:43,531 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 00:18:43,711 INFO:  * Restarting with stat
+2023-05-24 00:18:44,962 WARNING:  * Debugger is active!
+2023-05-24 00:18:44,966 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 00:19:16,260 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 00:19:16,260 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 00:19:16,263 INFO:  * Restarting with stat
+2023-05-24 00:19:17,330 WARNING:  * Debugger is active!
+2023-05-24 00:19:17,333 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 00:19:39,714 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 00:19:39,716 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 00:19:39,717 INFO:  * Restarting with stat
+2023-05-24 00:19:40,811 WARNING:  * Debugger is active!
+2023-05-24 00:19:40,814 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 00:20:12,223 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 00:20:12,223 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 00:20:12,224 INFO:  * Restarting with stat
+2023-05-24 01:51:02,864 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:51:02,864 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:51:02,866 INFO:  * Restarting with stat
+2023-05-24 01:51:03,967 WARNING:  * Debugger is active!
+2023-05-24 01:51:03,971 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:51:13,736 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 01:51:13,937 INFO:  * Restarting with stat
+2023-05-24 01:51:17,111 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:51:17,111 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:51:17,113 INFO:  * Restarting with stat
+2023-05-24 01:51:39,540 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:51:39,541 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:51:39,543 INFO:  * Restarting with stat
+2023-05-24 01:51:40,612 WARNING:  * Debugger is active!
+2023-05-24 01:51:40,617 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:53:12,375 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:53:12,375 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:53:12,377 INFO:  * Restarting with stat
+2023-05-24 01:53:13,582 WARNING:  * Debugger is active!
+2023-05-24 01:53:13,585 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:54:03,616 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:54:03,616 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:54:03,619 INFO:  * Restarting with stat
+2023-05-24 01:54:04,698 WARNING:  * Debugger is active!
+2023-05-24 01:54:04,702 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:56:39,709 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:56:39,710 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:56:39,711 INFO:  * Restarting with stat
+2023-05-24 01:56:40,796 WARNING:  * Debugger is active!
+2023-05-24 01:56:40,801 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:56:50,002 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:56:50,002 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:56:50,004 INFO:  * Restarting with stat
+2023-05-24 01:56:51,084 WARNING:  * Debugger is active!
+2023-05-24 01:56:51,087 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:58:32,838 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 01:58:32,838 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 01:58:32,839 INFO:  * Restarting with stat
+2023-05-24 01:58:33,975 WARNING:  * Debugger is active!
+2023-05-24 01:58:33,978 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:58:42,630 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 01:58:42,833 INFO:  * Restarting with stat
+2023-05-24 01:58:44,023 WARNING:  * Debugger is active!
+2023-05-24 01:58:44,026 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 01:59:59,790 WARNING:  * Debugger is active!
+2023-05-24 01:59:59,794 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 01:59:59,800 WARNING:  * Debugger is active!
+2023-05-24 01:59:59,805 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:00:11,708 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:00:13,104 WARNING:  * Debugger is active!
+2023-05-24 02:00:13,107 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:00:13,525 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:00:13,525 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:00:13,526 INFO:  * Restarting with stat
+2023-05-24 02:00:14,652 WARNING:  * Debugger is active!
+2023-05-24 02:00:14,655 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:01:38,413 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:01:39,848 WARNING:  * Debugger is active!
+2023-05-24 02:01:39,853 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:01:40,072 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:01:40,072 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:01:40,074 INFO:  * Restarting with stat
+2023-05-24 02:01:43,759 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:01:43,759 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:01:43,762 INFO:  * Restarting with stat
+2023-05-24 02:01:44,962 WARNING:  * Debugger is active!
+2023-05-24 02:01:44,966 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:01:55,280 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:01:56,561 WARNING:  * Debugger is active!
+2023-05-24 02:01:56,564 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:02:01,523 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:02:32,520 WARNING:  * Debugger is active!
+2023-05-24 02:02:32,524 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:02:33,980 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:02:35,379 WARNING:  * Debugger is active!
+2023-05-24 02:02:35,384 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:02:35,548 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:02:35,548 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:02:35,549 INFO:  * Restarting with stat
+2023-05-24 02:02:36,550 WARNING:  * Debugger is active!
+2023-05-24 02:02:36,555 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:02:47,347 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:02:47,584 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:02:47,765 INFO:  * Restarting with stat
+2023-05-24 02:03:20,862 WARNING:  * Debugger is active!
+2023-05-24 02:03:20,865 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:03:23,392 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:03:23,392 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:03:23,394 INFO:  * Restarting with stat
+2023-05-24 02:03:24,503 WARNING:  * Debugger is active!
+2023-05-24 02:03:24,506 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:03:34,868 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:03:34,868 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:03:34,870 INFO:  * Restarting with stat
+2023-05-24 02:03:35,971 WARNING:  * Debugger is active!
+2023-05-24 02:03:35,975 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 02:06:43,220 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:06:44,341 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:06:44,471 INFO:  * Restarting with stat
+2023-05-24 02:06:58,007 INFO:  * Restarting with stat
+2023-05-24 02:06:59,246 WARNING:  * Debugger is active!
+2023-05-24 02:06:59,250 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:06:59,302 WARNING:  * Debugger is active!
+2023-05-24 02:06:59,311 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:07:09,611 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:07:10,487 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:07:12,321 INFO:  * Restarting with stat
+2023-05-24 02:07:20,869 WARNING:  * Debugger is active!
+2023-05-24 02:07:20,873 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:07:20,914 WARNING:  * Debugger is active!
+2023-05-24 02:07:20,918 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:07:32,854 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:07:32,983 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:07:34,411 WARNING:  * Debugger is active!
+2023-05-24 02:07:34,415 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:07:34,840 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:07:34,840 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:07:34,841 INFO:  * Restarting with stat
+2023-05-24 02:07:35,932 WARNING:  * Debugger is active!
+2023-05-24 02:07:35,935 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:10:16,699 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 02:10:18,122 WARNING:  * Debugger is active!
+2023-05-24 02:10:18,126 INFO:  * Debugger PIN: 508-145-431
+2023-05-24 02:10:18,316 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:10:18,317 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:10:18,318 INFO:  * Restarting with stat
+2023-05-24 02:10:19,442 WARNING:  * Debugger is active!
+2023-05-24 02:10:19,445 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:12:19,859 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 02:17:16,994 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:17:16,995 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:17:16,997 INFO:  * Restarting with stat
+2023-05-24 02:17:18,301 WARNING:  * Debugger is active!
+2023-05-24 02:17:18,306 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:18:08,130 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:18:08,130 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:18:08,131 INFO:  * Restarting with stat
+2023-05-24 02:18:09,261 WARNING:  * Debugger is active!
+2023-05-24 02:18:09,265 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:19:06,984 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:19:06,984 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:19:06,985 INFO:  * Restarting with stat
+2023-05-24 02:19:08,082 WARNING:  * Debugger is active!
+2023-05-24 02:19:08,085 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:21:01,880 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:21:01,880 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:21:01,881 INFO:  * Restarting with stat
+2023-05-24 02:21:03,037 WARNING:  * Debugger is active!
+2023-05-24 02:21:03,041 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:26:19,905 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 02:26:19,905 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 02:26:19,907 INFO:  * Restarting with stat
+2023-05-24 02:26:21,052 WARNING:  * Debugger is active!
+2023-05-24 02:26:21,054 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 02:26:30,569 INFO: 127.0.0.1 - - [24/May/2023 02:26:30] "GET / HTTP/1.1" 200 -
+2023-05-24 02:26:37,452 INFO: 127.0.0.1 - - [24/May/2023 02:26:37] "GET / HTTP/1.1" 200 -
+2023-05-24 02:26:51,208 INFO: 127.0.0.1 - - [24/May/2023 02:26:51] "POST / HTTP/1.1" 200 -

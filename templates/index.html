@@ -1,38 +1,23 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Flask App</title>
-</head>
-<body>
-    <h1>Flask App</h1>
-
-    <!-- File upload form -->
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
-
-    <form action="/process" method="post">
-        <input type="submit" value="Process">
-
-    <!-- Table displaying data from the goodstransectionte table -->
-    <table>
-        <tr>
-            <th>InvoiceID</th>
-            <th>Total_invoice</th>
-            <th>tr_dt</th>
-            <th>Acc_Nm</th>
-            <th>dueDate</th>
-            <th>realDate</th>
-            <th>Paid</th>
-        </tr>
-        {% for row in data %}
+    <head>
+        <title>Data Table</title>
+    </head>
+    <body>
+        <table>
             <tr>
-                {% for value in row %}
-                    <td>{{ value }}</td>
+                {% for column in data.columns %}
+                    <th>{{ column }}</th>
                 {% endfor %}
             </tr>
-        {% endfor %}
-    </table>
-</body>
+            {% for row in data.itertuples() %}
+                <tr>
+                    {% for value in row[1:] %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
 </html>
