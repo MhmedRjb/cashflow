@@ -1,14 +1,12 @@
 from Dataprocessor import DataProcessor as dprs
 from DataBaseConnection import DatabaseExporter as dbcon
-from flask import Flask, render_template , request ,flash ,session
+from main import process_good_transection, processor_Clints
+from flask import Flask, render_template , request ,flash ,session ,redirect ,url_for
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
 from wtforms.validators import input_required ,ValidationError,Optional
-from main import process_good_transection, processor_Clints
 from werkzeug.utils import secure_filename
 import os
-from flask import redirect
-from flask import url_for
 import pandas as pd
 
 app = Flask(__name__)
@@ -22,9 +20,6 @@ database = 'easytrick'
 
 exporter = dbcon(username, password, hostname, database)
 
-Processor_goods_transection = process_good_transection()
-
-processor_clints_data = processor_Clints()
 
 class FileHandler :
 
@@ -66,6 +61,7 @@ class UploadForm(FlaskForm):
     @app.route('/next_page', methods=['GET', 'POST'])
     def next_page():
         return render_template('next_page.html')
+    
 @app.route('/export_data', methods=['POST'])
 def export_data():
     processor_goods_transection = process_good_transection()
@@ -91,9 +87,7 @@ def display_data():
 
 
 @app.route('/display_goodstransectionte')
-def display_goodstransectionte():
-    # create an instance of the DatabaseExporter class
-    
+def display_goodstransectionte():    
     # retrieve the data from the goodstransectionte table
     data = exporter.get_table_data('goodstransectionte')
     
@@ -113,41 +107,6 @@ def update_paid():
 
     # redirect back to the display_goodstransectionte route
     return redirect(url_for('display_goodstransectionte'))
-
-# @app.route('/update_paid', methods=['POST','GET'])
-# def update_paid():
-#     # create a connection to the database
-#     conn = exporter.engine.connect()
-    
-#     # loop over the form data
-#     for key, value in request.form.items():
-#         if key.startswith('paid-'):
-#             # extract the InvoiceID from the key
-#             invoice_id = key.split('-')[1]
-            
-#             # check that the InvoiceID is not empty
-#             if invoice_id:
-#                 # update the Paid column for this InvoiceID
-#                 conn.execute(f"UPDATE goodstransectionte SET Paid='{value}' WHERE InvoiceID='{invoice_id}'")
-    
-#     # close the connection to the database
-#     conn.close()
-    
-#     # redirect back to the display_goodstransectionte route
-#     return redirect(url_for('display_goodstransectionte'))
-
-
-# @app.route('/goodstransectionte', methods=['GET', 'POST'])
-# def goodstransectionte():
-#     # Retrieve data from the goodstransectionte table
-#     data = exporter.get_table_data('goodstransectionte')
-
-#     # Render an HTML template to display the data
-#     return render_template('display_goodstransectionte_copy.html', data=data)
-
-
-
-
 
 
 if __name__ == '__main__':
