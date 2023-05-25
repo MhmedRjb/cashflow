@@ -1578,3 +1578,104 @@ Function name: read_data
 2023-05-25 08:20:04,201 INFO: 127.0.0.1 - - [25/May/2023 08:20:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
 2023-05-25 08:20:10,810 INFO: 127.0.0.1 - - [25/May/2023 08:20:10] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
 2023-05-25 08:20:11,132 INFO: 127.0.0.1 - - [25/May/2023 08:20:11] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:08,213 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 08:26:08,213 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 08:26:08,214 INFO:  * Restarting with stat
+2023-05-25 08:26:09,490 WARNING:  * Debugger is active!
+2023-05-25 08:26:09,493 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 08:26:11,299 INFO: 127.0.0.1 - - [25/May/2023 08:26:11] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:12,775 INFO: 127.0.0.1 - - [25/May/2023 08:26:12] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:12,794 INFO: 127.0.0.1 - - [25/May/2023 08:26:12] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:13,646 INFO: 127.0.0.1 - - [25/May/2023 08:26:13] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:13,665 INFO: 127.0.0.1 - - [25/May/2023 08:26:13] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:14,286 INFO: 127.0.0.1 - - [25/May/2023 08:26:14] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:14,611 INFO: 127.0.0.1 - - [25/May/2023 08:26:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:15,837 INFO: 127.0.0.1 - - [25/May/2023 08:26:15] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:15,867 INFO: 127.0.0.1 - - [25/May/2023 08:26:15] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:17,092 INFO: 127.0.0.1 - - [25/May/2023 08:26:17] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:17,418 INFO: 127.0.0.1 - - [25/May/2023 08:26:17] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:18,036 INFO: 127.0.0.1 - - [25/May/2023 08:26:18] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:18,057 INFO: 127.0.0.1 - - [25/May/2023 08:26:18] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:26:18,497 INFO: 127.0.0.1 - - [25/May/2023 08:26:18] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:18,812 INFO: 127.0.0.1 - - [25/May/2023 08:26:18] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:26:19,008 INFO: 127.0.0.1 - - [25/May/2023 08:26:19] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:27:21,356 INFO: 127.0.0.1 - - [25/May/2023 08:27:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:27:22,200 INFO: 127.0.0.1 - - [25/May/2023 08:27:22] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:27:22,219 INFO: 127.0.0.1 - - [25/May/2023 08:27:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:27:23,171 INFO: 127.0.0.1 - - [25/May/2023 08:27:23] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:27:23,189 INFO: 127.0.0.1 - - [25/May/2023 08:27:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:27:23,507 INFO: 127.0.0.1 - - [25/May/2023 08:27:23] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:27:23,525 INFO: 127.0.0.1 - - [25/May/2023 08:27:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:27:31,844 INFO: 127.0.0.1 - - [25/May/2023 08:27:31] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:16,420 INFO: 127.0.0.1 - - [25/May/2023 08:33:16] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:17,391 INFO: 127.0.0.1 - - [25/May/2023 08:33:17] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:17,411 INFO: 127.0.0.1 - - [25/May/2023 08:33:17] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:18,592 INFO: 127.0.0.1 - - [25/May/2023 08:33:18] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:18,612 INFO: 127.0.0.1 - - [25/May/2023 08:33:18] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:19,521 INFO: 127.0.0.1 - - [25/May/2023 08:33:19] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:19,850 INFO: 127.0.0.1 - - [25/May/2023 08:33:19] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:21,537 INFO: 127.0.0.1 - - [25/May/2023 08:33:21] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:21,561 INFO: 127.0.0.1 - - [25/May/2023 08:33:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:22,146 INFO: 127.0.0.1 - - [25/May/2023 08:33:22] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:22,480 INFO: 127.0.0.1 - - [25/May/2023 08:33:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:23,826 INFO: 127.0.0.1 - - [25/May/2023 08:33:23] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:23,845 INFO: 127.0.0.1 - - [25/May/2023 08:33:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:25,023 INFO: 127.0.0.1 - - [25/May/2023 08:33:25] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:25,349 INFO: 127.0.0.1 - - [25/May/2023 08:33:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:33:26,892 INFO: 127.0.0.1 - - [25/May/2023 08:33:26] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:33:26,924 INFO: 127.0.0.1 - - [25/May/2023 08:33:26] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:42,874 INFO: 127.0.0.1 - - [25/May/2023 08:35:42] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:44,043 INFO: 127.0.0.1 - - [25/May/2023 08:35:44] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:44,064 INFO: 127.0.0.1 - - [25/May/2023 08:35:44] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:46,308 INFO: 127.0.0.1 - - [25/May/2023 08:35:46] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:46,332 INFO: 127.0.0.1 - - [25/May/2023 08:35:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:46,758 INFO: 127.0.0.1 - - [25/May/2023 08:35:46] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:47,069 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:47,209 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:47,357 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:47,379 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:47,498 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:47,516 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:47,666 INFO: 127.0.0.1 - - [25/May/2023 08:35:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:48,435 INFO: 127.0.0.1 - - [25/May/2023 08:35:48] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:48,453 INFO: 127.0.0.1 - - [25/May/2023 08:35:48] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:48,695 INFO: 127.0.0.1 - - [25/May/2023 08:35:48] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:48,998 INFO: 127.0.0.1 - - [25/May/2023 08:35:48] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:49,189 INFO: 127.0.0.1 - - [25/May/2023 08:35:49] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:49,323 INFO: 127.0.0.1 - - [25/May/2023 08:35:49] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:50,186 INFO: 127.0.0.1 - - [25/May/2023 08:35:50] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:50,211 INFO: 127.0.0.1 - - [25/May/2023 08:35:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:51,034 INFO: 127.0.0.1 - - [25/May/2023 08:35:51] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:51,055 INFO: 127.0.0.1 - - [25/May/2023 08:35:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:35:51,362 INFO: 127.0.0.1 - - [25/May/2023 08:35:51] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:35:51,379 INFO: 127.0.0.1 - - [25/May/2023 08:35:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:37:01,602 INFO: 127.0.0.1 - - [25/May/2023 08:37:01] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:37:01,629 INFO: 127.0.0.1 - - [25/May/2023 08:37:01] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:37:02,518 INFO: 127.0.0.1 - - [25/May/2023 08:37:02] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:37:02,847 INFO: 127.0.0.1 - - [25/May/2023 08:37:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:37:04,141 INFO: 127.0.0.1 - - [25/May/2023 08:37:04] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:37:04,159 INFO: 127.0.0.1 - - [25/May/2023 08:37:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:39:58,744 INFO: 127.0.0.1 - - [25/May/2023 08:39:58] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:40:14,721 INFO: 127.0.0.1 - - [25/May/2023 08:40:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:40:29,541 INFO: 127.0.0.1 - - [25/May/2023 08:40:29] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:40:34,582 INFO: 127.0.0.1 - - [25/May/2023 08:40:34] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:40:46,888 INFO: 127.0.0.1 - - [25/May/2023 08:40:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:40:49,777 INFO: 127.0.0.1 - - [25/May/2023 08:40:49] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:40:50,103 INFO: 127.0.0.1 - - [25/May/2023 08:40:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:42:21,076 INFO: 127.0.0.1 - - [25/May/2023 08:42:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:42:46,333 INFO: 127.0.0.1 - - [25/May/2023 08:42:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:42:56,545 INFO: 127.0.0.1 - - [25/May/2023 08:42:56] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:43:04,209 INFO: 127.0.0.1 - - [25/May/2023 08:43:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:48:59,183 INFO: 127.0.0.1 - - [25/May/2023 08:48:59] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 08:56:27,534 INFO: 127.0.0.1 - - [25/May/2023 08:56:27] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 08:56:27,576 INFO: 127.0.0.1 - - [25/May/2023 08:56:27] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 09:11:04,569 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 09:11:04,569 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 09:11:04,570 INFO:  * Restarting with stat
+2023-05-25 09:11:05,799 WARNING:  * Debugger is active!
+2023-05-25 09:11:05,816 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 09:11:10,848 INFO: 127.0.0.1 - - [25/May/2023 09:11:10] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 09:11:41,945 INFO: 127.0.0.1 - - [25/May/2023 09:11:41] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 09:11:41,968 INFO: 127.0.0.1 - - [25/May/2023 09:11:41] "GET /display_goodstransectionte HTTP/1.1" 200 -
