@@ -1,8 +1,11 @@
-from sqlalchemy import create_engine, inspect,delete
+from sqlalchemy import create_engine, inspect,delete,update,Table,MetaData
 import pandas as pd
+import pymysql
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
         self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
+        self.metadata = MetaData()
+        self.metadata.reflect(bind=self.engine)
 
     def export_data_frist(self, data, table_name):
         data.to_sql(table_name, self.engine, if_exists='replace', index=False)
@@ -37,12 +40,34 @@ class DatabaseExporter:
         table_names = inspector.get_table_names()
         return table_names
     #print all table data
-    def get_table_data(self,table_name):
+    def get_table_data(self,table_name):        
         data = pd.read_sql_table(table_name, self.engine)
         return data
-    #mysql dump backup the data base arcticker only not data --nodata
-    def backup_database(self,backup_name):
-        self.engine.execute(f'DUMP DATABASE ElfatehCashFlow TO {backup_name}.sql')
+    #print table col names
+    def cols_names(self,table_name):
+        inspector = inspect(self.engine)
+        col_names = inspector.get_columns(table_name)
+        return col_names
+    #update data in col 
+
+    def update_data(self, table_name, set_values, where_condition):
+        # Create a connection to the database
+        conn = self.engine.raw_connection()
+        cur = conn.cursor()
+
+        # Construct the UPDATE statement
+        set_clause = ', '.join([f"{col} = {val}" for col, val in set_values.items()])
+        stmt = f"UPDATE {table_name} SET {set_clause} WHERE {where_condition}"
+
+        # Execute the statement
+        cur.execute(stmt)
+
+        # Commit the changes
+        conn.commit()
+
+        # Close the cursor and connection
+        cur.close()
+
 
     
 
@@ -52,7 +77,8 @@ if __name__ == "__main__":
     username = 'root'
     password = '123qweasdzxcSq'
     hostname = 'localhost'
-    database = 'ElfatehCashFlow'
-
+    database = 'easytrick'
     exporter = DatabaseExporter(username, password, hostname, database)
-    exporter.backup_database('backup')
+    print(exporter.cols_names('goodstransectionte'))
+    exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
+

@@ -39,3 +39,4 @@ exporter.export_data(Processor_goods_transection.data, 'goodstransectionte')
 exporter.delete_data(Processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
 exporter.export_data_frist(processor_clints_data.data, 'clints_data')
 
+#print goodstransectionte using get_table_data

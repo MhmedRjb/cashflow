@@ -235,3 +235,994 @@ Function name: read_data
 2023-05-24 06:18:03,721 INFO:  * Restarting with stat
 2023-05-24 06:18:05,168 WARNING:  * Debugger is active!
 2023-05-24 06:18:05,170 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 08:55:46,128 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 08:55:46,129 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 08:55:46,130 INFO:  * Restarting with stat
+2023-05-24 08:55:47,358 WARNING:  * Debugger is active!
+2023-05-24 08:55:47,362 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 08:55:50,460 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 08:55:50,614 INFO:  * Restarting with stat
+2023-05-24 08:55:51,859 WARNING:  * Debugger is active!
+2023-05-24 08:55:51,862 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:14:24,697 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:14:24,698 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:14:31,860 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:14:31,861 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:14:31,862 INFO:  * Restarting with stat
+2023-05-24 09:14:33,014 WARNING:  * Debugger is active!
+2023-05-24 09:14:33,021 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:14:56,166 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:14:56,282 INFO:  * Restarting with stat
+2023-05-24 09:14:57,557 WARNING:  * Debugger is active!
+2023-05-24 09:14:57,560 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:15:23,684 INFO: 127.0.0.1 - - [24/May/2023 09:15:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-05-24 09:15:23,726 INFO: 127.0.0.1 - - [24/May/2023 09:15:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:15:23,730 INFO: 127.0.0.1 - - [24/May/2023 09:15:23] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:15:23,984 INFO: 127.0.0.1 - - [24/May/2023 09:15:23] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:15:24,045 INFO: 127.0.0.1 - - [24/May/2023 09:15:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:15:30,519 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:15:30,653 INFO:  * Restarting with stat
+2023-05-24 09:15:31,956 WARNING:  * Debugger is active!
+2023-05-24 09:15:31,959 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:15:32,208 INFO: 127.0.0.1 - - [24/May/2023 09:15:32] "GET / HTTP/1.1" 200 -
+2023-05-24 09:15:51,040 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:15:51,040 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:15:51,042 INFO:  * Restarting with stat
+2023-05-24 09:15:52,250 WARNING:  * Debugger is active!
+2023-05-24 09:15:52,254 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:16:01,497 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:16:01,622 INFO:  * Restarting with stat
+2023-05-24 09:16:02,886 WARNING:  * Debugger is active!
+2023-05-24 09:16:02,891 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:16:05,789 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:16:05,789 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:16:05,790 INFO:  * Restarting with stat
+2023-05-24 09:16:06,946 WARNING:  * Debugger is active!
+2023-05-24 09:16:06,950 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:16:33,039 INFO: 127.0.0.1 - - [24/May/2023 09:16:33] "[35m[1mGET /display_data HTTP/1.1[0m" 500 -
+2023-05-24 09:16:33,062 INFO: 127.0.0.1 - - [24/May/2023 09:16:33] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:16:33,064 INFO: 127.0.0.1 - - [24/May/2023 09:16:33] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:16:33,143 INFO: 127.0.0.1 - - [24/May/2023 09:16:33] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:16:33,176 INFO: 127.0.0.1 - - [24/May/2023 09:16:33] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:16:42,401 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:16:42,567 INFO:  * Restarting with stat
+2023-05-24 09:16:43,834 WARNING:  * Debugger is active!
+2023-05-24 09:16:43,838 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:16:51,947 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:16:52,122 INFO:  * Restarting with stat
+2023-05-24 09:16:53,466 WARNING:  * Debugger is active!
+2023-05-24 09:16:53,468 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:16:53,767 INFO: 127.0.0.1 - - [24/May/2023 09:16:53] "[35m[1mGET /display_data HTTP/1.1[0m" 500 -
+2023-05-24 09:16:53,790 INFO: 127.0.0.1 - - [24/May/2023 09:16:53] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:16:53,792 INFO: 127.0.0.1 - - [24/May/2023 09:16:53] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:16:53,866 INFO: 127.0.0.1 - - [24/May/2023 09:16:53] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:16:53,917 INFO: 127.0.0.1 - - [24/May/2023 09:16:53] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:17:01,565 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:17:01,715 INFO:  * Restarting with stat
+2023-05-24 09:17:03,045 WARNING:  * Debugger is active!
+2023-05-24 09:17:03,049 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:17:03,345 INFO: 127.0.0.1 - - [24/May/2023 09:17:03] "[35m[1mGET /display_data HTTP/1.1[0m" 500 -
+2023-05-24 09:17:03,363 INFO: 127.0.0.1 - - [24/May/2023 09:17:03] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:17:03,366 INFO: 127.0.0.1 - - [24/May/2023 09:17:03] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:17:03,424 INFO: 127.0.0.1 - - [24/May/2023 09:17:03] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:17:03,464 INFO: 127.0.0.1 - - [24/May/2023 09:17:03] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:17:14,899 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:17:15,016 INFO:  * Restarting with stat
+2023-05-24 09:17:16,223 WARNING:  * Debugger is active!
+2023-05-24 09:17:16,226 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:17:24,192 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:17:24,192 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:17:24,193 INFO:  * Restarting with stat
+2023-05-24 09:17:25,367 WARNING:  * Debugger is active!
+2023-05-24 09:17:25,372 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:18:19,510 INFO: 127.0.0.1 - - [24/May/2023 09:18:19] "POST /next_page HTTP/1.1" 200 -
+2023-05-24 09:18:20,574 INFO: 127.0.0.1 - - [24/May/2023 09:18:20] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:18:20,594 INFO: 127.0.0.1 - - [24/May/2023 09:18:20] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:18:20,595 INFO: 127.0.0.1 - - [24/May/2023 09:18:20] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:18:20,673 INFO: 127.0.0.1 - - [24/May/2023 09:18:20] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:18:20,705 INFO: 127.0.0.1 - - [24/May/2023 09:18:20] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:18:23,376 INFO: 127.0.0.1 - - [24/May/2023 09:18:23] "[35m[1mPOST /delete_data HTTP/1.1[0m" 500 -
+2023-05-24 09:18:23,396 INFO: 127.0.0.1 - - [24/May/2023 09:18:23] "GET /delete_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-24 09:18:23,397 INFO: 127.0.0.1 - - [24/May/2023 09:18:23] "GET /delete_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-24 09:18:23,464 INFO: 127.0.0.1 - - [24/May/2023 09:18:23] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:18:23,494 INFO: 127.0.0.1 - - [24/May/2023 09:18:23] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:18:24,834 INFO: 127.0.0.1 - - [24/May/2023 09:18:24] "POST /export_data_frist HTTP/1.1" 200 -
+2023-05-24 09:18:26,512 INFO: 127.0.0.1 - - [24/May/2023 09:18:26] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:18:26,533 INFO: 127.0.0.1 - - [24/May/2023 09:18:26] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:18:26,535 INFO: 127.0.0.1 - - [24/May/2023 09:18:26] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:18:26,608 INFO: 127.0.0.1 - - [24/May/2023 09:18:26] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:19:00,951 INFO: 127.0.0.1 - - [24/May/2023 09:19:00] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:19:00,973 INFO: 127.0.0.1 - - [24/May/2023 09:19:00] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:19:00,974 INFO: 127.0.0.1 - - [24/May/2023 09:19:00] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:19:01,048 INFO: 127.0.0.1 - - [24/May/2023 09:19:01] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:19:02,623 INFO: 127.0.0.1 - - [24/May/2023 09:19:02] "POST /export_data_frist HTTP/1.1" 200 -
+2023-05-24 09:19:04,491 INFO: 127.0.0.1 - - [24/May/2023 09:19:04] "[35m[1mPOST /delete_data HTTP/1.1[0m" 500 -
+2023-05-24 09:19:04,508 INFO: 127.0.0.1 - - [24/May/2023 09:19:04] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:19:04,510 INFO: 127.0.0.1 - - [24/May/2023 09:19:04] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:19:04,577 INFO: 127.0.0.1 - - [24/May/2023 09:19:04] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:21:59,909 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:21:59,909 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:21:59,911 INFO:  * Restarting with stat
+2023-05-24 09:22:01,250 WARNING:  * Debugger is active!
+2023-05-24 09:22:01,254 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:22:06,244 INFO: 127.0.0.1 - - [24/May/2023 09:22:06] "POST /export_data_frist HTTP/1.1" 200 -
+2023-05-24 09:22:07,220 INFO: 127.0.0.1 - - [24/May/2023 09:22:07] "[35m[1mPOST /delete_data HTTP/1.1[0m" 500 -
+2023-05-24 09:22:07,241 INFO: 127.0.0.1 - - [24/May/2023 09:22:07] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:22:07,242 INFO: 127.0.0.1 - - [24/May/2023 09:22:07] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:22:07,315 INFO: 127.0.0.1 - - [24/May/2023 09:22:07] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:22:16,200 INFO: 127.0.0.1 - - [24/May/2023 09:22:16] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:22:16,220 INFO: 127.0.0.1 - - [24/May/2023 09:22:16] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:22:16,222 INFO: 127.0.0.1 - - [24/May/2023 09:22:16] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:22:16,303 INFO: 127.0.0.1 - - [24/May/2023 09:22:16] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:22:26,631 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:22:26,806 INFO:  * Restarting with stat
+2023-05-24 09:22:28,189 WARNING:  * Debugger is active!
+2023-05-24 09:22:28,192 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:22:30,550 INFO: 127.0.0.1 - - [24/May/2023 09:22:30] "POST /export_data_frist HTTP/1.1" 200 -
+2023-05-24 09:22:31,634 INFO: 127.0.0.1 - - [24/May/2023 09:22:31] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:22:31,652 INFO: 127.0.0.1 - - [24/May/2023 09:22:31] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:22:31,655 INFO: 127.0.0.1 - - [24/May/2023 09:22:31] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:22:31,721 INFO: 127.0.0.1 - - [24/May/2023 09:22:31] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:22:43,731 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:22:43,898 INFO:  * Restarting with stat
+2023-05-24 09:22:45,200 WARNING:  * Debugger is active!
+2023-05-24 09:22:45,204 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:22:47,049 INFO: 127.0.0.1 - - [24/May/2023 09:22:47] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:22:47,069 INFO: 127.0.0.1 - - [24/May/2023 09:22:47] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:22:47,071 INFO: 127.0.0.1 - - [24/May/2023 09:22:47] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:22:47,144 INFO: 127.0.0.1 - - [24/May/2023 09:22:47] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:22:54,081 INFO: 127.0.0.1 - - [24/May/2023 09:22:54] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 09:22:54,105 INFO: 127.0.0.1 - - [24/May/2023 09:22:54] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:22:54,108 INFO: 127.0.0.1 - - [24/May/2023 09:22:54] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:22:54,159 INFO: 127.0.0.1 - - [24/May/2023 09:22:54] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:23:33,146 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:23:33,296 INFO:  * Restarting with stat
+2023-05-24 09:23:34,559 WARNING:  * Debugger is active!
+2023-05-24 09:23:34,563 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:26:42,933 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:26:42,934 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:26:42,935 INFO:  * Restarting with stat
+2023-05-24 09:26:44,084 WARNING:  * Debugger is active!
+2023-05-24 09:26:44,088 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:27:44,365 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:27:44,514 INFO:  * Restarting with stat
+2023-05-24 09:28:28,124 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:28:28,124 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:28:28,126 INFO:  * Restarting with stat
+2023-05-24 09:28:29,410 WARNING:  * Debugger is active!
+2023-05-24 09:28:29,414 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:28:30,995 INFO: 127.0.0.1 - - [24/May/2023 09:28:30] "[35m[1mGET /display_data HTTP/1.1[0m" 500 -
+2023-05-24 09:28:31,027 INFO: 127.0.0.1 - - [24/May/2023 09:28:31] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:28:31,027 INFO: 127.0.0.1 - - [24/May/2023 09:28:31] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:28:31,319 INFO: 127.0.0.1 - - [24/May/2023 09:28:31] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:28:31,382 INFO: 127.0.0.1 - - [24/May/2023 09:28:31] "[36mGET /display_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:28:53,421 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:28:53,421 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:28:53,423 INFO:  * Restarting with stat
+2023-05-24 09:28:54,552 WARNING:  * Debugger is active!
+2023-05-24 09:28:54,556 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:30:21,143 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:30:21,264 INFO:  * Restarting with stat
+2023-05-24 09:30:22,535 WARNING:  * Debugger is active!
+2023-05-24 09:30:22,539 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:30:29,316 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:30:29,493 INFO:  * Restarting with stat
+2023-05-24 09:30:30,939 WARNING:  * Debugger is active!
+2023-05-24 09:30:30,942 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:30:36,087 INFO: 127.0.0.1 - - [24/May/2023 09:30:36] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:32:31,453 INFO: 127.0.0.1 - - [24/May/2023 09:32:31] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:32:32,168 INFO: 127.0.0.1 - - [24/May/2023 09:32:32] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:32:57,208 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:32:57,330 INFO:  * Restarting with stat
+2023-05-24 09:32:58,531 WARNING:  * Debugger is active!
+2023-05-24 09:32:58,535 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:33:00,893 INFO: 127.0.0.1 - - [24/May/2023 09:33:00] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:33:00,913 INFO: 127.0.0.1 - - [24/May/2023 09:33:00] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-24 09:33:00,915 INFO: 127.0.0.1 - - [24/May/2023 09:33:00] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-24 09:33:01,015 INFO: 127.0.0.1 - - [24/May/2023 09:33:01] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-24 09:33:01,045 INFO: 127.0.0.1 - - [24/May/2023 09:33:01] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:33:51,836 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:33:51,979 INFO:  * Restarting with stat
+2023-05-24 09:33:53,280 WARNING:  * Debugger is active!
+2023-05-24 09:33:53,284 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:34:20,081 INFO: 127.0.0.1 - - [24/May/2023 09:34:20] "GET / HTTP/1.1" 200 -
+2023-05-24 09:34:20,475 INFO: 127.0.0.1 - - [24/May/2023 09:34:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-24 09:34:33,456 INFO: 127.0.0.1 - - [24/May/2023 09:34:33] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:35:24,367 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:35:24,503 INFO:  * Restarting with stat
+2023-05-24 09:35:25,804 WARNING:  * Debugger is active!
+2023-05-24 09:35:25,809 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:35:41,926 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:35:41,927 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:35:41,928 INFO:  * Restarting with stat
+2023-05-24 09:35:43,124 WARNING:  * Debugger is active!
+2023-05-24 09:35:43,131 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:35:46,321 INFO: 127.0.0.1 - - [24/May/2023 09:35:46] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:35:47,226 INFO: 127.0.0.1 - - [24/May/2023 09:35:47] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:36:18,608 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:36:18,744 INFO:  * Restarting with stat
+2023-05-24 09:36:24,860 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:36:24,860 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:36:24,861 INFO:  * Restarting with stat
+2023-05-24 09:36:26,146 WARNING:  * Debugger is active!
+2023-05-24 09:36:26,150 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:37:04,902 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:37:04,902 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:37:04,903 INFO:  * Restarting with stat
+2023-05-24 09:37:06,048 WARNING:  * Debugger is active!
+2023-05-24 09:37:06,053 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:37:16,744 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:37:16,744 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:37:16,745 INFO:  * Restarting with stat
+2023-05-24 09:37:17,981 WARNING:  * Debugger is active!
+2023-05-24 09:37:17,985 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:38:35,543 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:38:35,673 INFO:  * Restarting with stat
+2023-05-24 09:38:36,896 WARNING:  * Debugger is active!
+2023-05-24 09:38:36,900 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:38:39,472 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:38:39,472 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:38:39,473 INFO:  * Restarting with stat
+2023-05-24 09:38:40,599 WARNING:  * Debugger is active!
+2023-05-24 09:38:40,602 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:39:03,392 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:39:03,392 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:39:03,394 INFO:  * Restarting with stat
+2023-05-24 09:39:04,610 WARNING:  * Debugger is active!
+2023-05-24 09:39:04,613 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:39:09,355 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:39:09,355 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:39:09,357 INFO:  * Restarting with stat
+2023-05-24 09:39:10,537 WARNING:  * Debugger is active!
+2023-05-24 09:39:10,540 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:39:36,136 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:39:36,137 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:39:36,139 INFO:  * Restarting with stat
+2023-05-24 09:39:37,496 WARNING:  * Debugger is active!
+2023-05-24 09:39:37,500 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:40:07,748 INFO: 127.0.0.1 - - [24/May/2023 09:40:07] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:40:45,337 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:40:45,539 INFO:  * Restarting with stat
+2023-05-24 09:40:59,605 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:40:59,605 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:40:59,606 INFO:  * Restarting with stat
+2023-05-24 09:41:00,902 WARNING:  * Debugger is active!
+2023-05-24 09:41:00,907 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:41:01,269 INFO: 127.0.0.1 - - [24/May/2023 09:41:01] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:43:48,005 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:43:48,124 INFO:  * Restarting with stat
+2023-05-24 09:43:49,337 WARNING:  * Debugger is active!
+2023-05-24 09:43:49,341 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:43:52,253 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:43:52,378 INFO:  * Restarting with stat
+2023-05-24 09:43:53,582 WARNING:  * Debugger is active!
+2023-05-24 09:43:53,586 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:44:22,553 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:44:22,690 INFO:  * Restarting with stat
+2023-05-24 09:44:23,854 WARNING:  * Debugger is active!
+2023-05-24 09:44:23,859 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:44:26,720 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:44:26,834 INFO:  * Restarting with stat
+2023-05-24 09:44:28,013 WARNING:  * Debugger is active!
+2023-05-24 09:44:28,018 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:44:31,670 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:44:31,670 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:44:31,673 INFO:  * Restarting with stat
+2023-05-24 09:44:32,867 WARNING:  * Debugger is active!
+2023-05-24 09:44:32,873 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:44:34,660 INFO: 127.0.0.1 - - [24/May/2023 09:44:34] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:44:55,409 INFO: 127.0.0.1 - - [24/May/2023 09:44:55] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:44:56,308 INFO: 127.0.0.1 - - [24/May/2023 09:44:56] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:44:56,687 INFO: 127.0.0.1 - - [24/May/2023 09:44:56] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:02,915 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:46:03,049 INFO:  * Restarting with stat
+2023-05-24 09:46:04,322 WARNING:  * Debugger is active!
+2023-05-24 09:46:04,326 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:46:04,964 INFO: 127.0.0.1 - - [24/May/2023 09:46:04] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:06,162 INFO: 127.0.0.1 - - [24/May/2023 09:46:06] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:06,322 INFO: 127.0.0.1 - - [24/May/2023 09:46:06] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:13,987 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:46:13,987 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:46:13,990 INFO:  * Restarting with stat
+2023-05-24 09:46:15,367 WARNING:  * Debugger is active!
+2023-05-24 09:46:15,371 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:46:15,913 INFO: 127.0.0.1 - - [24/May/2023 09:46:15] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:26,895 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:46:27,030 INFO:  * Restarting with stat
+2023-05-24 09:46:28,290 WARNING:  * Debugger is active!
+2023-05-24 09:46:28,295 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:46:34,994 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:46:35,153 INFO:  * Restarting with stat
+2023-05-24 09:46:36,394 WARNING:  * Debugger is active!
+2023-05-24 09:46:36,397 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:46:38,293 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:46:38,293 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:46:38,295 INFO:  * Restarting with stat
+2023-05-24 09:46:39,281 WARNING:  * Debugger is active!
+2023-05-24 09:46:39,284 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:46:41,643 INFO: 127.0.0.1 - - [24/May/2023 09:46:41] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:48,193 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:46:48,325 INFO:  * Restarting with stat
+2023-05-24 09:46:49,024 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:46:49,224 INFO:  * Restarting with stat
+2023-05-24 09:46:49,734 WARNING:  * Debugger is active!
+2023-05-24 09:46:49,739 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:46:50,032 INFO: 127.0.0.1 - - [24/May/2023 09:46:50] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:46:50,386 WARNING:  * Debugger is active!
+2023-05-24 09:46:50,390 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:47:15,223 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:47:15,336 INFO:  * Restarting with stat
+2023-05-24 09:47:15,353 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:47:15,546 INFO:  * Restarting with stat
+2023-05-24 09:47:16,573 WARNING:  * Debugger is active!
+2023-05-24 09:47:16,578 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:47:18,591 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:47:18,591 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:47:18,593 INFO:  * Restarting with stat
+2023-05-24 09:47:22,385 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:47:22,385 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:47:22,386 INFO:  * Restarting with stat
+2023-05-24 09:47:23,528 WARNING:  * Debugger is active!
+2023-05-24 09:47:23,531 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:47:25,977 INFO: 127.0.0.1 - - [24/May/2023 09:47:25] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:47:26,016 INFO: 127.0.0.1 - - [24/May/2023 09:47:26] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-24 09:47:26,179 INFO: 127.0.0.1 - - [24/May/2023 09:47:26] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-24 09:47:26,518 INFO: 127.0.0.1 - - [24/May/2023 09:47:26] "GET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-24 09:47:26,785 INFO: 127.0.0.1 - - [24/May/2023 09:47:26] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:47:58,901 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:47:59,042 INFO:  * Restarting with stat
+2023-05-24 09:47:59,074 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-24 09:47:59,206 INFO:  * Restarting with stat
+2023-05-24 09:48:00,316 WARNING:  * Debugger is active!
+2023-05-24 09:48:00,319 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:00,472 WARNING:  * Debugger is active!
+2023-05-24 09:48:00,475 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:30,624 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:30,756 INFO:  * Restarting with stat
+2023-05-24 09:48:30,782 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:30,924 INFO:  * Restarting with stat
+2023-05-24 09:48:32,146 WARNING:  * Debugger is active!
+2023-05-24 09:48:32,150 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:32,283 WARNING:  * Debugger is active!
+2023-05-24 09:48:32,287 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:32,542 INFO: 127.0.0.1 - - [24/May/2023 09:48:32] "[31m[1mGET /process_good_transection HTTP/1.1[0m" 405 -
+2023-05-24 09:48:37,677 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:37,846 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:37,913 INFO:  * Restarting with stat
+2023-05-24 09:48:38,052 INFO:  * Restarting with stat
+2023-05-24 09:48:39,166 WARNING:  * Debugger is active!
+2023-05-24 09:48:39,169 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:39,273 WARNING:  * Debugger is active!
+2023-05-24 09:48:39,277 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:39,584 INFO: 127.0.0.1 - - [24/May/2023 09:48:39] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:48:39,613 INFO: 127.0.0.1 - - [24/May/2023 09:48:39] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:48:39,925 INFO: 127.0.0.1 - - [24/May/2023 09:48:39] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:48:40,251 INFO: 127.0.0.1 - - [24/May/2023 09:48:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:48:40,517 INFO: 127.0.0.1 - - [24/May/2023 09:48:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:48:43,418 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:43,530 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:48:43,531 INFO:  * Restarting with stat
+2023-05-24 09:48:43,653 INFO:  * Restarting with stat
+2023-05-24 09:48:44,762 WARNING:  * Debugger is active!
+2023-05-24 09:48:44,766 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:48:44,865 WARNING:  * Debugger is active!
+2023-05-24 09:48:44,870 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:51:14,433 INFO: 127.0.0.1 - - [24/May/2023 09:51:14] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:51:14,475 INFO: 127.0.0.1 - - [24/May/2023 09:51:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:51:14,630 INFO: 127.0.0.1 - - [24/May/2023 09:51:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:51:14,952 INFO: 127.0.0.1 - - [24/May/2023 09:51:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:15,215 INFO: 127.0.0.1 - - [24/May/2023 09:51:15] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:29,548 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:51:29,666 INFO:  * Restarting with stat
+2023-05-24 09:51:30,915 WARNING:  * Debugger is active!
+2023-05-24 09:51:30,918 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:51:38,922 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:51:39,029 INFO:  * Restarting with stat
+2023-05-24 09:51:40,266 WARNING:  * Debugger is active!
+2023-05-24 09:51:40,269 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:51:40,856 INFO: 127.0.0.1 - - [24/May/2023 09:51:40] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:51:40,882 INFO: 127.0.0.1 - - [24/May/2023 09:51:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:51:41,071 INFO: 127.0.0.1 - - [24/May/2023 09:51:41] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:51:41,390 INFO: 127.0.0.1 - - [24/May/2023 09:51:41] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:41,659 INFO: 127.0.0.1 - - [24/May/2023 09:51:41] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:42,518 INFO: 127.0.0.1 - - [24/May/2023 09:51:42] "GET / HTTP/1.1" 200 -
+2023-05-24 09:51:44,854 INFO: 127.0.0.1 - - [24/May/2023 09:51:44] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:51:44,893 INFO: 127.0.0.1 - - [24/May/2023 09:51:44] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:51:45,202 INFO: 127.0.0.1 - - [24/May/2023 09:51:45] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:51:45,519 INFO: 127.0.0.1 - - [24/May/2023 09:51:45] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:45,785 INFO: 127.0.0.1 - - [24/May/2023 09:51:45] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:49,588 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:51:49,588 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:51:49,590 INFO:  * Restarting with stat
+2023-05-24 09:51:50,792 WARNING:  * Debugger is active!
+2023-05-24 09:51:50,796 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 09:51:51,513 INFO: 127.0.0.1 - - [24/May/2023 09:51:51] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:51:51,795 INFO: 127.0.0.1 - - [24/May/2023 09:51:51] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:51:51,853 INFO: 127.0.0.1 - - [24/May/2023 09:51:51] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:51:52,180 INFO: 127.0.0.1 - - [24/May/2023 09:51:52] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:51:52,427 INFO: 127.0.0.1 - - [24/May/2023 09:51:52] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:53:05,875 INFO: 127.0.0.1 - - [24/May/2023 09:53:05] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:53:05,903 INFO: 127.0.0.1 - - [24/May/2023 09:53:05] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:53:06,113 INFO: 127.0.0.1 - - [24/May/2023 09:53:06] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:53:06,438 INFO: 127.0.0.1 - - [24/May/2023 09:53:06] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:53:06,700 INFO: 127.0.0.1 - - [24/May/2023 09:53:06] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:53:23,288 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 09:53:23,288 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 09:53:23,290 INFO:  * Restarting with stat
+2023-05-24 09:53:24,344 WARNING:  * Debugger is active!
+2023-05-24 09:53:24,347 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:53:27,883 INFO: 127.0.0.1 - - [24/May/2023 09:53:27] "POST /next_page HTTP/1.1" 200 -
+2023-05-24 09:53:30,143 INFO: 127.0.0.1 - - [24/May/2023 09:53:30] "POST /export_data HTTP/1.1" 200 -
+2023-05-24 09:53:40,589 INFO: 127.0.0.1 - - [24/May/2023 09:53:40] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:53:40,851 INFO: 127.0.0.1 - - [24/May/2023 09:53:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:53:40,931 INFO: 127.0.0.1 - - [24/May/2023 09:53:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:53:41,250 INFO: 127.0.0.1 - - [24/May/2023 09:53:41] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:55:36,574 INFO: 127.0.0.1 - - [24/May/2023 09:55:36] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 09:55:36,619 INFO: 127.0.0.1 - - [24/May/2023 09:55:36] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 09:55:36,755 INFO: 127.0.0.1 - - [24/May/2023 09:55:36] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 09:55:37,128 INFO: 127.0.0.1 - - [24/May/2023 09:55:37] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:55:37,393 INFO: 127.0.0.1 - - [24/May/2023 09:55:37] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 09:55:54,837 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:55:55,007 INFO:  * Restarting with stat
+2023-05-24 09:55:56,170 WARNING:  * Debugger is active!
+2023-05-24 09:55:56,174 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:55:56,763 INFO: 127.0.0.1 - - [24/May/2023 09:55:56] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:55:58,230 INFO: 127.0.0.1 - - [24/May/2023 09:55:58] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:55:59,607 INFO: 127.0.0.1 - - [24/May/2023 09:55:59] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:56:08,355 INFO: 127.0.0.1 - - [24/May/2023 09:56:08] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:56:29,984 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 09:56:30,130 INFO:  * Restarting with stat
+2023-05-24 09:56:31,183 WARNING:  * Debugger is active!
+2023-05-24 09:56:31,186 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 09:56:39,864 INFO: 127.0.0.1 - - [24/May/2023 09:56:39] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:58:11,793 INFO: 127.0.0.1 - - [24/May/2023 09:58:11] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 09:58:41,654 INFO: 127.0.0.1 - - [24/May/2023 09:58:41] "GET /process_good_transection HTTP/1.1" 200 -
+2023-05-24 10:02:44,488 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 10:02:44,488 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 10:02:44,490 INFO:  * Restarting with stat
+2023-05-24 10:02:45,662 WARNING:  * Debugger is active!
+2023-05-24 10:02:45,666 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 10:02:47,730 INFO: 127.0.0.1 - - [24/May/2023 10:02:47] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 10:02:47,755 INFO: 127.0.0.1 - - [24/May/2023 10:02:47] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 10:02:47,948 INFO: 127.0.0.1 - - [24/May/2023 10:02:47] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 10:02:48,277 INFO: 127.0.0.1 - - [24/May/2023 10:02:48] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 10:02:48,525 INFO: 127.0.0.1 - - [24/May/2023 10:02:48] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:52:07,324 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 11:52:07,324 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 11:52:07,326 INFO:  * Restarting with stat
+2023-05-24 11:52:08,496 WARNING:  * Debugger is active!
+2023-05-24 11:52:08,501 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 11:52:12,276 INFO: 127.0.0.1 - - [24/May/2023 11:52:12] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:52:12,276 INFO: 127.0.0.1 - - [24/May/2023 11:52:12] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:52:12,524 INFO: 127.0.0.1 - - [24/May/2023 11:52:12] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:52:14,215 INFO: 127.0.0.1 - - [24/May/2023 11:52:14] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 11:52:14,471 INFO: 127.0.0.1 - - [24/May/2023 11:52:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:52:14,555 INFO: 127.0.0.1 - - [24/May/2023 11:52:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:52:14,877 INFO: 127.0.0.1 - - [24/May/2023 11:52:14] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:52:15,136 INFO: 127.0.0.1 - - [24/May/2023 11:52:15] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:52:17,103 INFO: 127.0.0.1 - - [24/May/2023 11:52:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-24 11:52:35,307 INFO: 127.0.0.1 - - [24/May/2023 11:52:35] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 11:52:35,333 INFO: 127.0.0.1 - - [24/May/2023 11:52:35] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:52:35,636 INFO: 127.0.0.1 - - [24/May/2023 11:52:35] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:52:35,893 INFO: 127.0.0.1 - - [24/May/2023 11:52:35] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:52:35,956 INFO: 127.0.0.1 - - [24/May/2023 11:52:35] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:04,579 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 11:53:04,579 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 11:53:04,580 INFO:  * Restarting with stat
+2023-05-24 11:53:05,818 WARNING:  * Debugger is active!
+2023-05-24 11:53:05,822 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 11:53:06,881 INFO: 127.0.0.1 - - [24/May/2023 11:53:06] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 11:53:06,907 INFO: 127.0.0.1 - - [24/May/2023 11:53:06] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:53:07,098 INFO: 127.0.0.1 - - [24/May/2023 11:53:07] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:53:07,420 INFO: 127.0.0.1 - - [24/May/2023 11:53:07] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:07,684 INFO: 127.0.0.1 - - [24/May/2023 11:53:07] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:17,529 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 11:53:17,643 INFO:  * Restarting with stat
+2023-05-24 11:53:18,829 WARNING:  * Debugger is active!
+2023-05-24 11:53:18,832 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 11:53:25,723 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 11:53:25,723 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 11:53:25,724 INFO:  * Restarting with stat
+2023-05-24 11:53:26,862 WARNING:  * Debugger is active!
+2023-05-24 11:53:26,868 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 11:53:28,601 INFO: 127.0.0.1 - - [24/May/2023 11:53:28] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 11:53:28,632 INFO: 127.0.0.1 - - [24/May/2023 11:53:28] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:53:28,815 INFO: 127.0.0.1 - - [24/May/2023 11:53:28] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:53:29,142 INFO: 127.0.0.1 - - [24/May/2023 11:53:29] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:29,395 INFO: 127.0.0.1 - - [24/May/2023 11:53:29] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:32,362 INFO: 127.0.0.1 - - [24/May/2023 11:53:32] "[35m[1mPOST /delete_data HTTP/1.1[0m" 500 -
+2023-05-24 11:53:32,390 INFO: 127.0.0.1 - - [24/May/2023 11:53:32] "GET /delete_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-24 11:53:32,698 INFO: 127.0.0.1 - - [24/May/2023 11:53:32] "GET /delete_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-24 11:53:32,949 INFO: 127.0.0.1 - - [24/May/2023 11:53:32] "GET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-24 11:53:33,028 INFO: 127.0.0.1 - - [24/May/2023 11:53:33] "[36mGET /delete_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:35,268 INFO: 127.0.0.1 - - [24/May/2023 11:53:35] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 11:53:35,291 INFO: 127.0.0.1 - - [24/May/2023 11:53:35] "GET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-24 11:53:35,598 INFO: 127.0.0.1 - - [24/May/2023 11:53:35] "GET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-24 11:53:35,848 INFO: 127.0.0.1 - - [24/May/2023 11:53:35] "GET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-24 11:53:35,926 INFO: 127.0.0.1 - - [24/May/2023 11:53:35] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:47,684 INFO: 127.0.0.1 - - [24/May/2023 11:53:47] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 11:53:47,957 INFO: 127.0.0.1 - - [24/May/2023 11:53:47] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:53:48,013 INFO: 127.0.0.1 - - [24/May/2023 11:53:48] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:53:48,331 INFO: 127.0.0.1 - - [24/May/2023 11:53:48] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:48,605 INFO: 127.0.0.1 - - [24/May/2023 11:53:48] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:51,029 INFO: 127.0.0.1 - - [24/May/2023 11:53:51] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-24 11:53:51,051 INFO: 127.0.0.1 - - [24/May/2023 11:53:51] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 11:53:51,363 INFO: 127.0.0.1 - - [24/May/2023 11:53:51] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 11:53:51,626 INFO: 127.0.0.1 - - [24/May/2023 11:53:51] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:51,689 INFO: 127.0.0.1 - - [24/May/2023 11:53:51] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 11:53:53,239 INFO: 127.0.0.1 - - [24/May/2023 11:53:53] "[36mGET /export_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 12:04:26,292 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 12:04:26,292 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 12:04:26,292 INFO:  * Restarting with stat
+2023-05-24 12:04:27,277 WARNING:  * Debugger is active!
+2023-05-24 12:04:27,293 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 12:04:35,843 INFO: 127.0.0.1 - - [24/May/2023 12:04:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-24 12:04:58,404 INFO: 127.0.0.1 - - [24/May/2023 12:04:58] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 12:04:58,633 INFO: 127.0.0.1 - - [24/May/2023 12:04:58] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 12:04:58,759 INFO: 127.0.0.1 - - [24/May/2023 12:04:58] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 12:04:59,092 INFO: 127.0.0.1 - - [24/May/2023 12:04:59] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 18:51:13,556 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 18:51:13,557 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 18:51:13,561 INFO:  * Restarting with stat
+2023-05-24 18:51:16,360 WARNING:  * Debugger is active!
+2023-05-24 18:51:16,370 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:51:21,191 INFO: 127.0.0.1 - - [24/May/2023 18:51:21] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 18:51:21,202 INFO: 127.0.0.1 - - [24/May/2023 18:51:21] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 18:51:22,126 INFO: 127.0.0.1 - - [24/May/2023 18:51:22] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 18:51:23,847 INFO: 127.0.0.1 - - [24/May/2023 18:51:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-24 18:51:39,909 INFO: 127.0.0.1 - - [24/May/2023 18:51:39] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 18:51:40,017 INFO: 127.0.0.1 - - [24/May/2023 18:51:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 18:51:40,344 INFO: 127.0.0.1 - - [24/May/2023 18:51:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 18:51:40,683 INFO: 127.0.0.1 - - [24/May/2023 18:51:40] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 18:53:45,774 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 18:53:45,811 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 18:53:45,816 INFO:  * Restarting with stat
+2023-05-24 18:53:49,038 WARNING:  * Debugger is active!
+2023-05-24 18:53:49,046 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:53:53,228 INFO: 127.0.0.1 - - [24/May/2023 18:53:53] "[35m[1mGET /process_good_transection HTTP/1.1[0m" 500 -
+2023-05-24 18:53:53,287 INFO: 127.0.0.1 - - [24/May/2023 18:53:53] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-24 18:53:53,360 INFO: 127.0.0.1 - - [24/May/2023 18:53:53] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-24 18:53:53,778 INFO: 127.0.0.1 - - [24/May/2023 18:53:53] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 18:53:54,042 INFO: 127.0.0.1 - - [24/May/2023 18:53:54] "[36mGET /process_good_transection?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-24 18:55:51,857 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 18:55:52,083 INFO:  * Restarting with stat
+2023-05-24 18:55:55,562 WARNING:  * Debugger is active!
+2023-05-24 18:55:55,573 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:56:37,591 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:56:37,784 INFO:  * Restarting with stat
+2023-05-24 18:56:41,060 WARNING:  * Debugger is active!
+2023-05-24 18:56:41,069 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:58:09,442 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:58:09,633 INFO:  * Restarting with stat
+2023-05-24 18:58:12,813 WARNING:  * Debugger is active!
+2023-05-24 18:58:12,822 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:58:20,994 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:58:21,216 INFO:  * Restarting with stat
+2023-05-24 18:58:24,350 WARNING:  * Debugger is active!
+2023-05-24 18:58:24,359 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:58:26,636 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:58:26,849 INFO:  * Restarting with stat
+2023-05-24 18:58:30,065 WARNING:  * Debugger is active!
+2023-05-24 18:58:30,075 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:58:32,263 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:58:32,496 INFO:  * Restarting with stat
+2023-05-24 18:58:35,563 WARNING:  * Debugger is active!
+2023-05-24 18:58:35,570 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:58:42,309 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:58:42,559 INFO:  * Restarting with stat
+2023-05-24 18:58:45,581 WARNING:  * Debugger is active!
+2023-05-24 18:58:45,591 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 18:59:05,263 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 18:59:05,451 INFO:  * Restarting with stat
+2023-05-24 18:59:08,552 WARNING:  * Debugger is active!
+2023-05-24 18:59:08,562 INFO:  * Debugger PIN: 164-751-097
+2023-05-24 19:03:52,871 INFO:  * Detected change in 'D:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 19:03:53,075 INFO:  * Restarting with stat
+2023-05-24 19:03:59,447 INFO:  * Restarting with stat
+2023-05-24 19:04:29,533 INFO:  * Restarting with stat
+2023-05-24 19:09:20,076 INFO:  * Restarting with stat
+2023-05-24 19:15:54,423 INFO:  * Restarting with stat
+2023-05-24 20:52:03,239 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:52:03,240 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:52:05,617 INFO: 127.0.0.1 - - [24/May/2023 20:52:05] "GET / HTTP/1.1" 200 -
+2023-05-24 20:52:08,587 INFO: 127.0.0.1 - - [24/May/2023 20:52:08] "[31m[1mGET /display_data HTTP/1.1[0m" 405 -
+2023-05-24 20:52:12,133 INFO: 127.0.0.1 - - [24/May/2023 20:52:12] "[31m[1mGET /display_data HTTP/1.1[0m" 405 -
+2023-05-24 20:52:12,451 INFO: 127.0.0.1 - - [24/May/2023 20:52:12] "[31m[1mGET /display_data HTTP/1.1[0m" 405 -
+2023-05-24 20:52:28,983 INFO: 127.0.0.1 - - [24/May/2023 20:52:28] "[31m[1mGET /display_data HTTP/1.1[0m" 405 -
+2023-05-24 20:52:29,791 INFO: 127.0.0.1 - - [24/May/2023 20:52:29] "[31m[1mGET /display_data HTTP/1.1[0m" 405 -
+2023-05-24 20:52:36,674 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:52:36,674 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:52:40,378 INFO: 127.0.0.1 - - [24/May/2023 20:52:40] "GET / HTTP/1.1" 200 -
+2023-05-24 20:52:43,377 INFO: 127.0.0.1 - - [24/May/2023 20:52:43] "GET /display_data HTTP/1.1" 200 -
+2023-05-24 20:53:16,431 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:53:16,431 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:53:20,247 INFO: 127.0.0.1 - - [24/May/2023 20:53:20] "GET / HTTP/1.1" 200 -
+2023-05-24 20:53:24,765 INFO: 127.0.0.1 - - [24/May/2023 20:53:24] "GET /display_data HTTP/1.1" 200 -
+2023-05-24 20:53:29,882 INFO: 127.0.0.1 - - [24/May/2023 20:53:29] "GET / HTTP/1.1" 200 -
+2023-05-24 20:53:34,658 INFO: 127.0.0.1 - - [24/May/2023 20:53:34] "POST /next_page HTTP/1.1" 200 -
+2023-05-24 20:54:05,245 INFO: 127.0.0.1 - - [24/May/2023 20:54:05] "POST /export_data_frist HTTP/1.1" 200 -
+2023-05-24 20:54:17,328 INFO: 127.0.0.1 - - [24/May/2023 20:54:17] "GET /display_data HTTP/1.1" 200 -
+2023-05-24 20:54:55,954 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:54:55,954 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:55:07,519 INFO: 127.0.0.1 - - [24/May/2023 20:55:07] "[33mGET /goodstransectionte HTTP/1.1[0m" 404 -
+2023-05-24 20:55:17,921 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:55:17,921 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:55:19,776 INFO: 127.0.0.1 - - [24/May/2023 20:55:19] "[33mGET /goodstransectionte HTTP/1.1[0m" 404 -
+2023-05-24 20:55:20,476 INFO: 127.0.0.1 - - [24/May/2023 20:55:20] "[33mGET /goodstransectionte HTTP/1.1[0m" 404 -
+2023-05-24 20:56:18,389 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 20:56:18,390 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 20:56:19,940 INFO: 127.0.0.1 - - [24/May/2023 20:56:19] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 20:56:34,899 INFO: 127.0.0.1 - - [24/May/2023 20:56:34] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:29:37,487 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 21:29:37,488 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 21:29:46,223 INFO: 127.0.0.1 - - [24/May/2023 21:29:46] "GET / HTTP/1.1" 200 -
+2023-05-24 21:29:52,288 INFO: 127.0.0.1 - - [24/May/2023 21:29:52] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:30:07,038 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 21:30:07,038 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 21:30:07,039 INFO:  * Restarting with stat
+2023-05-24 21:30:08,070 WARNING:  * Debugger is active!
+2023-05-24 21:30:08,077 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 21:30:08,631 INFO: 127.0.0.1 - - [24/May/2023 21:30:08] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:30:09,981 INFO: 127.0.0.1 - - [24/May/2023 21:30:09] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:30:10,819 INFO: 127.0.0.1 - - [24/May/2023 21:30:10] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:30:11,191 INFO: 127.0.0.1 - - [24/May/2023 21:30:11] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 21:30:15,757 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-24 21:30:15,971 INFO:  * Restarting with stat
+2023-05-24 21:30:17,078 WARNING:  * Debugger is active!
+2023-05-24 21:30:17,082 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 21:30:17,301 INFO: 127.0.0.1 - - [24/May/2023 21:30:17] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 22:38:43,407 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-24 22:38:43,407 INFO: [33mPress CTRL+C to quit[0m
+2023-05-24 22:38:43,409 INFO:  * Restarting with stat
+2023-05-24 22:38:44,570 WARNING:  * Debugger is active!
+2023-05-24 22:38:44,575 INFO:  * Debugger PIN: 109-877-722
+2023-05-24 22:38:47,251 INFO: 127.0.0.1 - - [24/May/2023 22:38:47] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 22:38:48,170 INFO: 127.0.0.1 - - [24/May/2023 22:38:48] "GET /display_datagoodstransectionte HTTP/1.1" 200 -
+2023-05-24 22:38:52,083 INFO: 127.0.0.1 - - [24/May/2023 22:38:52] "[33mGET /display_data HTTP/1.1[0m" 404 -
+2023-05-24 22:38:54,333 INFO: 127.0.0.1 - - [24/May/2023 22:38:54] "[33mGET /display_data HTTP/1.1[0m" 404 -
+2023-05-24 22:39:02,138 INFO: 127.0.0.1 - - [24/May/2023 22:39:02] "GET / HTTP/1.1" 200 -
+2023-05-24 23:56:57,371 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-24 23:56:57,809 INFO:  * Restarting with stat
+2023-05-24 23:56:59,452 WARNING:  * Debugger is active!
+2023-05-24 23:56:59,457 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:00:47,912 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:00:47,912 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:00:47,913 INFO:  * Restarting with stat
+2023-05-25 00:00:48,997 WARNING:  * Debugger is active!
+2023-05-25 00:00:49,000 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:00:59,161 INFO: 127.0.0.1 - - [25/May/2023 00:00:59] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:02:11,489 INFO: 127.0.0.1 - - [25/May/2023 00:02:11] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:02:12,120 INFO: 127.0.0.1 - - [25/May/2023 00:02:12] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:02:14,016 INFO: 127.0.0.1 - - [25/May/2023 00:02:14] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:02:57,427 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:02:57,554 INFO:  * Restarting with stat
+2023-05-25 00:02:58,670 WARNING:  * Debugger is active!
+2023-05-25 00:02:58,673 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:03:01,329 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:03:01,470 INFO:  * Restarting with stat
+2023-05-25 00:03:02,604 WARNING:  * Debugger is active!
+2023-05-25 00:03:02,607 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:03:13,726 INFO: 127.0.0.1 - - [25/May/2023 00:03:13] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:03:15,949 INFO: 127.0.0.1 - - [25/May/2023 00:03:15] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:04:56,593 INFO: 127.0.0.1 - - [25/May/2023 00:04:56] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:04:56,634 INFO: 127.0.0.1 - - [25/May/2023 00:04:56] "GET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-25 00:04:56,639 INFO: 127.0.0.1 - - [25/May/2023 00:04:56] "GET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-25 00:04:56,759 INFO: 127.0.0.1 - - [25/May/2023 00:04:56] "GET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-25 00:04:56,803 INFO: 127.0.0.1 - - [25/May/2023 00:04:56] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:05:09,290 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:05:09,290 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:05:09,292 INFO:  * Restarting with stat
+2023-05-25 00:05:10,421 WARNING:  * Debugger is active!
+2023-05-25 00:05:10,424 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:05:15,408 INFO: 127.0.0.1 - - [25/May/2023 00:05:15] "GET / HTTP/1.1" 200 -
+2023-05-25 00:05:28,804 INFO: 127.0.0.1 - - [25/May/2023 00:05:28] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:05:35,339 INFO: 127.0.0.1 - - [25/May/2023 00:05:35] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 00:06:03,098 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:06:03,291 INFO:  * Restarting with stat
+2023-05-25 00:06:07,499 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:06:07,499 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:06:07,501 INFO:  * Restarting with stat
+2023-05-25 00:06:08,710 WARNING:  * Debugger is active!
+2023-05-25 00:06:08,714 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:06:11,092 INFO: 127.0.0.1 - - [25/May/2023 00:06:11] "[35m[1mGET /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:06:11,115 INFO: 127.0.0.1 - - [25/May/2023 00:06:11] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:06:11,116 INFO: 127.0.0.1 - - [25/May/2023 00:06:11] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:06:11,250 INFO: 127.0.0.1 - - [25/May/2023 00:06:11] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:06:11,297 INFO: 127.0.0.1 - - [25/May/2023 00:06:11] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:06:31,543 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:06:31,721 INFO:  * Restarting with stat
+2023-05-25 00:06:37,491 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:06:37,492 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:06:37,494 INFO:  * Restarting with stat
+2023-05-25 00:06:38,982 WARNING:  * Debugger is active!
+2023-05-25 00:06:38,991 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:06:42,126 INFO: 127.0.0.1 - - [25/May/2023 00:06:42] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:13:08,278 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:13:08,425 INFO:  * Restarting with stat
+2023-05-25 00:13:12,252 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:13:12,252 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:13:12,253 INFO:  * Restarting with stat
+2023-05-25 00:13:15,652 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:13:15,652 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:13:15,653 INFO:  * Restarting with stat
+2023-05-25 00:13:16,807 WARNING:  * Debugger is active!
+2023-05-25 00:13:16,811 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:13:19,631 INFO: 127.0.0.1 - - [25/May/2023 00:13:19] "[35m[1mGET /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:13:19,656 INFO: 127.0.0.1 - - [25/May/2023 00:13:19] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:13:19,658 INFO: 127.0.0.1 - - [25/May/2023 00:13:19] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:13:19,879 INFO: 127.0.0.1 - - [25/May/2023 00:13:19] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:13:19,947 INFO: 127.0.0.1 - - [25/May/2023 00:13:19] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:13:56,346 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:13:56,505 INFO:  * Restarting with stat
+2023-05-25 00:13:57,619 WARNING:  * Debugger is active!
+2023-05-25 00:13:57,623 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:13:57,803 INFO: 127.0.0.1 - - [25/May/2023 00:13:57] "[32mGET /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:13:57,825 INFO: 127.0.0.1 - - [25/May/2023 00:13:57] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:14:13,457 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:14:13,590 INFO:  * Restarting with stat
+2023-05-25 00:14:14,775 WARNING:  * Debugger is active!
+2023-05-25 00:14:14,777 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:14:16,215 INFO: 127.0.0.1 - - [25/May/2023 00:14:16] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:14:25,240 INFO: 127.0.0.1 - - [25/May/2023 00:14:25] "[32mGET /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:14:25,261 INFO: 127.0.0.1 - - [25/May/2023 00:14:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:14:30,957 INFO: 127.0.0.1 - - [25/May/2023 00:14:30] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:14:30,980 INFO: 127.0.0.1 - - [25/May/2023 00:14:30] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:14:30,983 INFO: 127.0.0.1 - - [25/May/2023 00:14:30] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:14:31,053 INFO: 127.0.0.1 - - [25/May/2023 00:14:31] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:14:31,088 INFO: 127.0.0.1 - - [25/May/2023 00:14:31] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:14:41,924 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:14:41,924 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:14:41,926 INFO:  * Restarting with stat
+2023-05-25 00:14:43,118 WARNING:  * Debugger is active!
+2023-05-25 00:14:43,122 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:14:45,761 INFO: 127.0.0.1 - - [25/May/2023 00:14:45] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:14:45,787 INFO: 127.0.0.1 - - [25/May/2023 00:14:45] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:14:45,791 INFO: 127.0.0.1 - - [25/May/2023 00:14:45] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:14:45,868 INFO: 127.0.0.1 - - [25/May/2023 00:14:45] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:14:45,926 INFO: 127.0.0.1 - - [25/May/2023 00:14:45] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:14:47,221 INFO: 127.0.0.1 - - [25/May/2023 00:14:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:14:49,656 INFO: 127.0.0.1 - - [25/May/2023 00:14:49] "[32mGET /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:14:49,685 INFO: 127.0.0.1 - - [25/May/2023 00:14:49] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:14:53,082 INFO: 127.0.0.1 - - [25/May/2023 00:14:53] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:14:53,110 INFO: 127.0.0.1 - - [25/May/2023 00:14:53] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:14:53,110 INFO: 127.0.0.1 - - [25/May/2023 00:14:53] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:14:53,170 INFO: 127.0.0.1 - - [25/May/2023 00:14:53] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:15:54,892 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:15:55,025 INFO:  * Restarting with stat
+2023-05-25 00:15:56,170 WARNING:  * Debugger is active!
+2023-05-25 00:15:56,175 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:16:15,641 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:16:15,780 INFO:  * Restarting with stat
+2023-05-25 00:16:16,926 WARNING:  * Debugger is active!
+2023-05-25 00:16:16,930 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:16:22,169 INFO: 127.0.0.1 - - [25/May/2023 00:16:22] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:16:22,200 INFO: 127.0.0.1 - - [25/May/2023 00:16:22] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:16:22,205 INFO: 127.0.0.1 - - [25/May/2023 00:16:22] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:16:22,308 INFO: 127.0.0.1 - - [25/May/2023 00:16:22] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:17:39,951 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 00:17:40,079 INFO:  * Restarting with stat
+2023-05-25 00:17:41,238 WARNING:  * Debugger is active!
+2023-05-25 00:17:41,241 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:17:43,986 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:17:43,986 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:17:43,987 INFO:  * Restarting with stat
+2023-05-25 00:17:45,080 WARNING:  * Debugger is active!
+2023-05-25 00:17:45,083 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:17:49,786 INFO: 127.0.0.1 - - [25/May/2023 00:17:49] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:17:49,808 INFO: 127.0.0.1 - - [25/May/2023 00:17:49] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:18:14,401 INFO: 127.0.0.1 - - [25/May/2023 00:18:14] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:18:14,420 INFO: 127.0.0.1 - - [25/May/2023 00:18:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:18:20,953 INFO: 127.0.0.1 - - [25/May/2023 00:18:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:20:35,751 INFO: 127.0.0.1 - - [25/May/2023 00:20:35] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:21:17,162 INFO: 127.0.0.1 - - [25/May/2023 00:21:17] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 00:21:17,184 INFO: 127.0.0.1 - - [25/May/2023 00:21:17] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-25 00:21:17,185 INFO: 127.0.0.1 - - [25/May/2023 00:21:17] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-25 00:21:17,278 INFO: 127.0.0.1 - - [25/May/2023 00:21:17] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-25 00:21:17,314 INFO: 127.0.0.1 - - [25/May/2023 00:21:17] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:24:31,509 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:24:31,509 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:24:31,511 INFO:  * Restarting with stat
+2023-05-25 00:24:37,743 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 00:24:37,743 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 00:24:37,745 INFO:  * Restarting with stat
+2023-05-25 00:24:39,183 WARNING:  * Debugger is active!
+2023-05-25 00:24:39,188 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:24:40,750 INFO: 127.0.0.1 - - [25/May/2023 00:24:40] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:25:00,869 INFO: 127.0.0.1 - - [25/May/2023 00:25:00] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:25:13,913 INFO: 127.0.0.1 - - [25/May/2023 00:25:13] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:25:13,937 INFO: 127.0.0.1 - - [25/May/2023 00:25:13] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:25:13,939 INFO: 127.0.0.1 - - [25/May/2023 00:25:13] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:25:14,006 INFO: 127.0.0.1 - - [25/May/2023 00:25:14] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:25:21,050 INFO: 127.0.0.1 - - [25/May/2023 00:25:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:25:27,075 INFO: 127.0.0.1 - - [25/May/2023 00:25:27] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:25:27,100 INFO: 127.0.0.1 - - [25/May/2023 00:25:27] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:25:27,102 INFO: 127.0.0.1 - - [25/May/2023 00:25:27] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:25:27,151 INFO: 127.0.0.1 - - [25/May/2023 00:25:27] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:25:48,400 INFO: 127.0.0.1 - - [25/May/2023 00:25:48] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:25:54,218 INFO: 127.0.0.1 - - [25/May/2023 00:25:54] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:25:54,239 INFO: 127.0.0.1 - - [25/May/2023 00:25:54] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:25:54,241 INFO: 127.0.0.1 - - [25/May/2023 00:25:54] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:25:54,305 INFO: 127.0.0.1 - - [25/May/2023 00:25:54] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:26:54,051 INFO: 127.0.0.1 - - [25/May/2023 00:26:54] "[32mGET /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 00:26:54,068 INFO: 127.0.0.1 - - [25/May/2023 00:26:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 00:27:48,136 INFO: 127.0.0.1 - - [25/May/2023 00:27:48] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 00:27:48,161 INFO: 127.0.0.1 - - [25/May/2023 00:27:48] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 00:27:48,163 INFO: 127.0.0.1 - - [25/May/2023 00:27:48] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 00:27:48,247 INFO: 127.0.0.1 - - [25/May/2023 00:27:48] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 00:30:32,394 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-25 00:30:32,528 INFO:  * Restarting with stat
+2023-05-25 00:30:33,642 WARNING:  * Debugger is active!
+2023-05-25 00:30:33,644 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 00:30:36,273 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-25 00:30:36,439 INFO:  * Restarting with stat
+2023-05-25 04:35:31,279 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 04:35:31,280 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 04:35:31,281 INFO:  * Restarting with stat
+2023-05-25 04:35:32,473 WARNING:  * Debugger is active!
+2023-05-25 04:35:32,484 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:35:46,288 INFO: 127.0.0.1 - - [25/May/2023 04:35:46] "GET / HTTP/1.1" 200 -
+2023-05-25 04:35:46,636 INFO: 127.0.0.1 - - [25/May/2023 04:35:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-25 04:35:50,396 INFO: 127.0.0.1 - - [25/May/2023 04:35:50] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:35:50,682 INFO: 127.0.0.1 - - [25/May/2023 04:35:50] "GET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-25 04:35:50,739 INFO: 127.0.0.1 - - [25/May/2023 04:35:50] "GET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-25 04:35:51,081 INFO: 127.0.0.1 - - [25/May/2023 04:35:51] "GET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-25 04:35:51,342 INFO: 127.0.0.1 - - [25/May/2023 04:35:51] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:36:03,711 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:36:03,928 INFO:  * Restarting with stat
+2023-05-25 04:36:05,154 WARNING:  * Debugger is active!
+2023-05-25 04:36:05,158 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:36:06,284 INFO: 127.0.0.1 - - [25/May/2023 04:36:06] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:36:06,316 INFO: 127.0.0.1 - - [25/May/2023 04:36:06] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:36:06,474 INFO: 127.0.0.1 - - [25/May/2023 04:36:06] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:36:06,795 INFO: 127.0.0.1 - - [25/May/2023 04:36:06] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:36:07,066 INFO: 127.0.0.1 - - [25/May/2023 04:36:07] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:36:19,894 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:36:20,029 INFO:  * Restarting with stat
+2023-05-25 04:36:21,184 WARNING:  * Debugger is active!
+2023-05-25 04:36:21,188 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:36:33,641 INFO: 127.0.0.1 - - [25/May/2023 04:36:33] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:36:33,665 INFO: 127.0.0.1 - - [25/May/2023 04:36:33] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:36:33,884 INFO: 127.0.0.1 - - [25/May/2023 04:36:33] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:36:34,207 INFO: 127.0.0.1 - - [25/May/2023 04:36:34] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:36:34,473 INFO: 127.0.0.1 - - [25/May/2023 04:36:34] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:15,911 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:37:16,057 INFO:  * Restarting with stat
+2023-05-25 04:37:17,321 WARNING:  * Debugger is active!
+2023-05-25 04:37:17,324 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:37:19,403 INFO: 127.0.0.1 - - [25/May/2023 04:37:19] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:37:19,428 INFO: 127.0.0.1 - - [25/May/2023 04:37:19] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:37:19,636 INFO: 127.0.0.1 - - [25/May/2023 04:37:19] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:37:19,962 INFO: 127.0.0.1 - - [25/May/2023 04:37:19] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:20,216 INFO: 127.0.0.1 - - [25/May/2023 04:37:20] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:28,168 INFO: 127.0.0.1 - - [25/May/2023 04:37:28] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:37:28,453 INFO: 127.0.0.1 - - [25/May/2023 04:37:28] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:37:28,506 INFO: 127.0.0.1 - - [25/May/2023 04:37:28] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:37:28,839 INFO: 127.0.0.1 - - [25/May/2023 04:37:28] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:29,103 INFO: 127.0.0.1 - - [25/May/2023 04:37:29] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:53,137 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 04:37:53,137 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 04:37:53,138 INFO:  * Restarting with stat
+2023-05-25 04:37:54,245 WARNING:  * Debugger is active!
+2023-05-25 04:37:54,248 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:37:55,223 INFO: 127.0.0.1 - - [25/May/2023 04:37:55] "[35m[1mGET /goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:37:55,247 INFO: 127.0.0.1 - - [25/May/2023 04:37:55] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:37:55,468 INFO: 127.0.0.1 - - [25/May/2023 04:37:55] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:37:55,794 INFO: 127.0.0.1 - - [25/May/2023 04:37:55] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:37:56,056 INFO: 127.0.0.1 - - [25/May/2023 04:37:56] "[36mGET /goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:38:12,506 INFO: 127.0.0.1 - - [25/May/2023 04:38:12] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:38:12,798 INFO: 127.0.0.1 - - [25/May/2023 04:38:12] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-25 04:38:12,844 INFO: 127.0.0.1 - - [25/May/2023 04:38:12] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-25 04:38:13,163 INFO: 127.0.0.1 - - [25/May/2023 04:38:13] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-25 04:38:13,428 INFO: 127.0.0.1 - - [25/May/2023 04:38:13] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:38:21,859 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:38:21,992 INFO:  * Restarting with stat
+2023-05-25 04:38:23,195 WARNING:  * Debugger is active!
+2023-05-25 04:38:23,200 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:38:28,196 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:38:28,384 INFO:  * Restarting with stat
+2023-05-25 04:38:29,497 WARNING:  * Debugger is active!
+2023-05-25 04:38:29,500 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:38:29,706 INFO: 127.0.0.1 - - [25/May/2023 04:38:29] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:38:29,733 INFO: 127.0.0.1 - - [25/May/2023 04:38:29] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:38:29,736 INFO: 127.0.0.1 - - [25/May/2023 04:38:29] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:38:30,092 INFO: 127.0.0.1 - - [25/May/2023 04:38:30] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:38:30,356 INFO: 127.0.0.1 - - [25/May/2023 04:38:30] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:38:36,341 INFO: 127.0.0.1 - - [25/May/2023 04:38:36] "[33mGET /goodstransectionte HTTP/1.1[0m" 404 -
+2023-05-25 04:38:43,853 INFO: 127.0.0.1 - - [25/May/2023 04:38:43] "[33mGET /process_good_transection HTTP/1.1[0m" 404 -
+2023-05-25 04:38:47,633 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:38:47,806 INFO:  * Restarting with stat
+2023-05-25 04:38:48,916 WARNING:  * Debugger is active!
+2023-05-25 04:38:48,918 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:38:55,113 INFO: 127.0.0.1 - - [25/May/2023 04:38:55] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-25 04:38:55,154 INFO: 127.0.0.1 - - [25/May/2023 04:38:55] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:38:55,316 INFO: 127.0.0.1 - - [25/May/2023 04:38:55] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:38:55,642 INFO: 127.0.0.1 - - [25/May/2023 04:38:55] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:39:28,359 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:39:28,532 INFO:  * Restarting with stat
+2023-05-25 04:39:29,754 WARNING:  * Debugger is active!
+2023-05-25 04:39:29,759 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:39:29,977 INFO: 127.0.0.1 - - [25/May/2023 04:39:29] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 04:42:59,818 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-25 04:43:00,010 INFO:  * Restarting with stat
+2023-05-25 04:43:01,241 WARNING:  * Debugger is active!
+2023-05-25 04:43:01,245 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:49:20,810 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-25 04:49:20,810 INFO: [33mPress CTRL+C to quit[0m
+2023-05-25 04:49:20,813 INFO:  * Restarting with stat
+2023-05-25 04:49:21,956 WARNING:  * Debugger is active!
+2023-05-25 04:49:21,960 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:49:41,263 INFO: 127.0.0.1 - - [25/May/2023 04:49:41] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 04:49:44,523 INFO: 127.0.0.1 - - [25/May/2023 04:49:44] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-25 04:49:50,737 INFO: 127.0.0.1 - - [25/May/2023 04:49:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 04:50:06,184 INFO: 127.0.0.1 - - [25/May/2023 04:50:06] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 04:50:06,455 INFO: 127.0.0.1 - - [25/May/2023 04:50:06] "GET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-25 04:50:06,516 INFO: 127.0.0.1 - - [25/May/2023 04:50:06] "GET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-25 04:50:06,840 INFO: 127.0.0.1 - - [25/May/2023 04:50:06] "GET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-25 04:50:07,105 INFO: 127.0.0.1 - - [25/May/2023 04:50:07] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:50:20,663 INFO: 127.0.0.1 - - [25/May/2023 04:50:20] "[35m[1mPOST /update_paid HTTP/1.1[0m" 500 -
+2023-05-25 04:50:20,695 INFO: 127.0.0.1 - - [25/May/2023 04:50:20] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-25 04:50:21,002 INFO: 127.0.0.1 - - [25/May/2023 04:50:21] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-25 04:50:21,329 INFO: 127.0.0.1 - - [25/May/2023 04:50:21] "[36mGET /update_paid?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-25 04:51:29,956 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-25 04:51:30,094 INFO:  * Restarting with stat
+2023-05-25 04:51:31,283 WARNING:  * Debugger is active!
+2023-05-25 04:51:31,286 INFO:  * Debugger PIN: 109-877-722
+2023-05-25 04:51:40,981 INFO: 127.0.0.1 - - [25/May/2023 04:51:40] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 04:51:41,006 INFO: 127.0.0.1 - - [25/May/2023 04:51:41] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-25 04:51:52,627 INFO: 127.0.0.1 - - [25/May/2023 04:51:52] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-25 04:51:52,646 INFO: 127.0.0.1 - - [25/May/2023 04:51:52] "GET /display_goodstransectionte HTTP/1.1" 200 -

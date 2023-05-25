@@ -1,17 +1,16 @@
 <form method="post" enctype="multipart/form-data">
     {% if form is defined %}
-        {{ form.hidden_tag() }}
-        {% for error in form.file.errors %}
-            <span style="color: red;">{{ error }}</span>
-        {% endfor %}
-        {{ form.file.label }} {{ form.file() }}
-        {% for error in form.file2.errors %}
-            <span style="color: red;">{{ error }}</span>
-        {% endfor %}
-        {{ form.file2.label }} {{ form.file2() }}
-        {{ form.submit() }}
+    {{ form.hidden_tag() }}
+    {% for error in form.file.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    {{ form.file.label }} {{ form.file() }}
+    {% for error in form.file2.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    {{ form.file2.label }} {{ form.file2() }}
+    {{ form.submit() }}
+    <input type="submit" formaction="/next_page" value="Next">
     {% endif %}
-    <input type="submit" formaction="/export_data" value="export_data Transection Data">
-    <input type="submit" formaction="/delete_data" value="delete_data Transection Data">
-    <input type="submit" formaction="/export_data_frist" value="export_data_frist Clints Data">
-</form>
+   </form>
+   

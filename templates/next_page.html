@@ -1,0 +1,9 @@
+<form method="post" enctype="multipart/form-data">
+    {% if message is defined %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <input type="submit" formaction="/export_data" value="export_data Transection Data">
+    <input type="submit" formaction="/delete_data" value="delete_data Transection Data">
+    <input type="submit" formaction="/export_data_frist" value="export_data_frist Clints Data">
+   </form>
+   
