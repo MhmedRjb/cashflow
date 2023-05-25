@@ -4,30 +4,28 @@
         <title>Table Data</title>
     </head>
     <body>
-        <form action="{{ url_for('update_paid') }}" method="post">
-            <label for="invoice_id">Invoice ID:</label>
-            <input type="text" id="invoice_id" name="invoice_id">
-            <br>
-            <label for="paid">Paid:</label>
-            <select id="paid" name="paid">
-                <option value="0">No</option>
-                <option value="1">Yes</option>
-            </select>
-            <br>
-            <input type="submit" value="Update">
-        </form>
-
         <table>
             <tr>
                 {% for col_name in data.columns %}
                     <th>{{ col_name }}</th>
                 {% endfor %}
+                <th>Update Paid</th>
             </tr>
             {% for row in data.itertuples() %}
                 <tr>
                     {% for value in row[1:] %}
                         <td>{{ value }}</td>
                     {% endfor %}
+                    <td>
+                        <form action="{{ url_for('update_paid') }}" method="post">
+                            <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
+                            <select name="paid">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                            <input type="submit" value="Update">
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         </table>
