@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Table Data</title>
-    </head>
-    <body>
-        <table>
-            <tr>
-                {% for col_name in data.columns %}
-                    <th>{{ col_name }}</th>
-                {% endfor %}
-                <th>Update Paid</th>
-            </tr>
-            {% for row in data.itertuples() %}
-                <tr>
-                    {% for value in row[1:] %}
-                        <td>{{ value }}</td>
-                    {% endfor %}
-                    <td>
-                        <form action="{{ url_for('update_paid') }}" method="post">
-                            <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
-                            <select name="paid">
-                                <option value="0">No</option>
-                                <option value="1">Yes</option>
-                            </select>
-                            <input type="submit" value="Update">
-                        </form>
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
-    </body>
+ <head>
+ <title>Table Data</title>
+ </head>
+ <body>
+ <form action="{{ url_for('update_paid') }}" method="post">
+ <table>
+ <tr>
+ {% for col_name in data.columns %}
+ <th>{{ col_name }}</th>
+ {% endfor %}
+ <th>Update Paid</th>
+ </tr>
+ {% for row in data.itertuples() %}
+ <tr>
+ {% for value in row[1:] %}
+ <td>{{ value }}</td>
+ {% endfor %}
+ <td>
+    <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
+    <select name="paid">
+    <option value="">Select...</option>
+    <option value="0">No</option>
+    <option value="1">Yes</option>
+    </select>
+    </td>
+    </tr>
+ {% endfor %}
+ </table>
+ <input type="submit" value="Update">
+ </form>
+ </body>
 </html>

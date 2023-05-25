@@ -101,15 +101,16 @@ def display_goodstransectionte():
 @app.route('/update_paid', methods=['POST'])
 def update_paid():
     # get the InvoiceID and Paid values from the form
-    invoice_id = request.form['invoice_id']
-    paid = request.form['paid']
+    invoice_ids = request.form.getlist('invoice_id')
+    paid_values = request.form.getlist('paid')
 
-    # update the Paid value for the specified InvoiceID
-    exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
+    # update the Paid value for each specified InvoiceID where the value is not empty
+    for invoice_id, paid in zip(invoice_ids, paid_values):
+        if paid:
+            exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
 
     # redirect back to the display_goodstransectionte route
     return redirect(url_for('display_goodstransectionte'))
-
 
 # @app.route('/update_paid', methods=['POST','GET'])
 # def update_paid():
