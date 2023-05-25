@@ -12,7 +12,7 @@ import pandas as pd
 app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
 app.secret_key = '123456789'
-app.config['UPLOAD_FOLDER'] = r'D:\monymovment\Cashflows\static\files'
+app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), r'Excel_files')
 username = 'root'
 password = '123qweasdzxcSq'
 hostname = 'localhost'
@@ -30,6 +30,7 @@ class FileHandler :
         if file:
             filename = file.filename
             ext = os.path.splitext(filename)[1]
+            print(f'File extension: {ext}')
             return ext in self.ALLOWED_EXTENSIONS
         return False
 
@@ -37,7 +38,8 @@ class FileHandler :
         if self.is_valid_file(file):
             file.save(os.path.join(self.upload_folder, secure_filename(file.filename)))
         else:
-            raise ValidationError('Invalid file type. Only .xls and .xlsx files are allowed.')
+            
+            raise ValidationError('Invalid file ssssssssssssstype. Only .xls and .xlsx files are allowed.')
 
 file_handler = FileHandler(app.config['UPLOAD_FOLDER'], ALLOWED_EXTENSIONS=['.xls', '.xlsx'])
 class UploadForm(FlaskForm):
@@ -51,13 +53,14 @@ class UploadForm(FlaskForm):
         form = UploadForm()
         if request.method == 'POST':
             try:
-                file_handler.save_file(form.file.data)
-                file_handler.save_file(form.file2.data)
+                if form.file.data:
+                    file_handler.save_file(form.file.data)
+                if form.file2.data:
+                    file_handler.save_file(form.file2.data)
             except ValidationError as e:
-                flash(str(e))
+                flash(str(e), 'error')
 
         return render_template("home.html", form=form)
-
     @app.route('/next_page', methods=['GET', 'POST'])
     def next_page():
         return render_template('next_page.html')
