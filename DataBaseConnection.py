@@ -68,6 +68,22 @@ class DatabaseExporter:
         # Close the cursor and connection
         cur.close()
 
+    def get_column_data(self, table_name, column_name, condition=None):
+    # construct the SELECT statement
+        stmt = f'SELECT {column_name} FROM {table_name}'
+        if condition:
+            stmt += f' WHERE {condition}'
+
+        # execute the SELECT statement and fetch the results
+        conn = self.engine.connect()
+        results = conn.execute(stmt).fetchall()
+
+        # extract the column values from the results
+        column_data = [row[0] for row in results]
+
+        # return the column data
+        return column_data
+
 
     
 

@@ -1,6 +1,6 @@
 from Dataprocessor import DataProcessor as dprs
 from DataBaseConnection import DatabaseExporter as dbcon
-from flask import Flask, render_template , request ,flash
+from flask import Flask, render_template , request ,flash ,session
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
 from wtforms.validators import input_required ,ValidationError,Optional
@@ -13,6 +13,7 @@ import pandas as pd
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
+app.secret_key = '123456789'
 app.config['UPLOAD_FOLDER'] = r'D:\monymovment\Cashflows\static\files'
 username = 'root'
 password = '123qweasdzxcSq'
@@ -98,6 +99,7 @@ def display_goodstransectionte():
     
     # pass the data to the template
     return render_template('audra.html', data=data)
+
 @app.route('/update_paid', methods=['POST'])
 def update_paid():
     # get the InvoiceID and Paid values from the form
