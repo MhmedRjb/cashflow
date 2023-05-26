@@ -3,12 +3,38 @@
   <head>
     <title>File Upload Form</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
       form {
   max-width: 70%;
-  max-height: 50%;
+  max-height: 70%;
   margin:  auto;
   display: flex;
   flex-direction: row;
@@ -20,23 +46,27 @@
   flex-basis: calc(50% - .5rem);
   margin-bottom: 1rem;
   margin-inline: 2px ;
+  
 }
 .form-control-label {
   display: block;
   margin-bottom: .5rem;
-  font-size: large;
-  margin-top: 20%;
+  font-size: x-large;
+  margin-top: 15%;
+  text-align: center;
 }
 .drop-zone {
-  height: 200px;
-  border: 2px dashed #2f353b;
+  height: auto;
+  width: auto;
+  border: 4px dashed #2f353b;
   border-radius: .25rem;
-  padding: 30%;
+  padding: 25%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#f5f5f5
+  background: color #f5f5f5;
+  transition: background 0.3s ease;
 }
 .drop-zone:hover{
     background-color:#dddbdb
@@ -46,11 +76,12 @@
 
 
       .drop-zone__prompt {
-        margin: 100;
+        margin: auto;
         color: #45535f;
         font-size: xx-large;
       }
       .drop-zone__input {
+        margin: auto;
         display: none;
       }
       .drop-zone--over {
@@ -67,7 +98,9 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        margin-left: 12%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
       }
       .btn-primary:hover,
       .btn-secondary:hover {
@@ -76,11 +109,16 @@
       .next {
         background-color: #ff0000;
         color: white;
-        padding: 12px 20px;
+        padding: 12px 30px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        position:bottom;}
+        position:bottom;
+        margin-left: auto;
+        margin-right: auto; 
+                font-size: 18px;
+
+      }
       .next:hover {
         background-color: #f13838;
       }
@@ -100,28 +138,24 @@
 
       footer {
   text-align: center;
-  background-color: #4CAF50;
+  background-color: #333;
   color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
 
       }
-      header {
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
-  position: absolute;
-  top: 0;
-  width: 100%;
 
-      }
     </style>
   </head>
   <body>
+    <div class="topnav">
+      <a class="active" href="/"> initail </a>
+      <a  href="/next_page"> excute </a>
+      <a  href="/update_paid"> update_paid </a>
+      <a  href="/display_goodstransectionte"> display_goodstransectionte </a>
+    </div>
     <header>
-        <!-- place your header content here -->
-        <h1>My File Upload Form</h1>
       </header>
   
     <form method="post" enctype="multipart/form-data">
@@ -140,7 +174,7 @@
         <div class="form-group">
           {{ form.file.label(class="form-control-label") }}
           <div class="drop-zone">
-            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <span class="drop-zone__prompt">Drop SBJRNLITMRPTTAX.xls here or click to upload</span>
             <input type="file" name="{{ form.file.name }}" id="{{ form.file.id }}" class="drop-zone__input">
           </div>
           {% for error in form.file.errors %}
@@ -150,7 +184,7 @@
         <div class="form-group">
           {{ form.file2.label(class="form-control-label") }}
           <div class="drop-zone">
-            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <span class="drop-zone__prompt">Drop SBAccMFDtlRpt.xls here or click to upload</span>
             <input type="file" name="{{ form.file2.name }}" id="{{ form.file2.id }}" class="drop-zone__input">
           </div>
           {% for error in form.file2.errors %}
