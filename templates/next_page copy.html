@@ -63,8 +63,6 @@ footer {
  bottom:0; 
  width:100%;
 }
-
-
 </style>
 </head>
 <body>
@@ -77,30 +75,17 @@ footer {
 </div>
 
 <form method="post" enctype="multipart/form-data">
-{% if message %}
-  <p>{{ message }}</p>
-{% endif %}
+ {% if message is defined %}
+ <p>{{ message }}</p>
+ {% endif %}
  <input type="submit" formaction="/export_data" value="Export Transaction Data">
  <input type="submit" formaction="/delete_data" value="Delete Transaction Data">
  <input type="submit" formaction="/export_data_frist" value="Export Clients Data">
- <input type="submit" formaction="/delete_data_last" value="delete_data_last">
  </form>
 
 <footer>
  <p>My Footer</p>
 </footer>
-<script>
-  // Get all the buttons
-  const buttons = document.querySelectorAll('input[type="submit"]');
-
-  // Add a click event listener to each button
-  buttons.forEach(button => {
-    button.addEventListener('click', event => {
-      // Change the background color of the clicked button to red
-      event.target.style.backgroundColor = 'red';
-    });
-  });
-</script>
 
 </body>
 </html>

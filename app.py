@@ -8,6 +8,7 @@ from wtforms.validators import input_required ,ValidationError,Optional
 from werkzeug.utils import secure_filename
 import os
 import pandas as pd
+from flask import jsonify
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
@@ -62,54 +63,61 @@ class UploadForm(FlaskForm):
 
         return render_template("home.html", form=form)
     @app.route('/next_page', methods=['GET', 'POST'])
-    def next_page():
-        return render_template('next_page.html')
+    def next_page(message=None):
+        return render_template('next_page.html',message=message)
     
-@app.route('/export_data', methods=['POST'])
-def export_data():
-    processor_goods_transection = process_good_transection()
-    exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
-    return render_template('next_page.html', message='Data exported successfully!')
+class button(FlaskForm):
+    @app.route('/export_data', methods=['POST','GET'])
+    def export_data():
+        processor_goods_transection = process_good_transection()
+        exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
+        return redirect(url_for('next_page', message='Data exported successfully!'))
 
-@app.route('/delete_data', methods=['POST'])
-def delete_data():
-    processor_goods_transection = process_good_transection()
-    exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
-    return render_template('next_page.html', message='Data deleted successfully!')
+    @app.route('/delete_data', methods=['POST','GET'])
+    def delete_data():
+        processor_goods_transection = process_good_transection()
+        exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
+        return redirect(url_for('next_page', message='Data deleted successfully!'))
 
-@app.route('/export_data_frist', methods=['POST'])
-def export_data_frist():
-    processor_clints_data = processor_Clints()
-    exporter.export_data_frist(processor_clints_data.data, 'clints_data')
-    return render_template('next_page.html', message='Data exported successfully!')
+    @app.route('/export_data_frist', methods=['POST','GET'])
+    def export_data_frist():
+        processor_clints_data = processor_Clints()
+        exporter.export_data_frist(processor_clints_data.data, 'clints_data')
+        return redirect(url_for('next_page', message='Data exported successfully!'))
+    @app.route('/delete_data_last', methods=['POST','GET'])
+    def delete_data_last():
+        exporter.call_stored_procedure('deleteRemovedRows')
+        return redirect(url_for('next_page', message='Data exported successfully!'))
+class displaytables():
+    @app.route('/display_dataclints_data')
+    def display_data():
+        data = exporter.get_table_data('clints_data')
+        return render_template('audra.html', data=data)
 
-@app.route('/display_dataclints_data')
-def display_data():
-    data = exporter.get_table_data('clints_data')
-    return render_template('audra.html', data=data)
+
+    @app.route('/display_goodstransectionte')
+    def display_goodstransectionte():    
+        # retrieve the data from the goodstransectionte table
+        data = exporter.get_table_data('goodstransectionte')
+        
+        # pass the data to the template
+        return render_template('audra.html', data=data)
 
 
-@app.route('/display_goodstransectionte')
-def display_goodstransectionte():    
-    # retrieve the data from the goodstransectionte table
-    data = exporter.get_table_data('goodstransectionte')
-    
-    # pass the data to the template
-    return render_template('audra.html', data=data)
+class func ():
+    @app.route('/update_paid', methods=['POST'])
+    def update_paid():
+        # get the InvoiceID and Paid values from the form
+        invoice_ids = request.form.getlist('invoice_id')
+        paid_values = request.form.getlist('paid')
 
-@app.route('/update_paid', methods=['POST'])
-def update_paid():
-    # get the InvoiceID and Paid values from the form
-    invoice_ids = request.form.getlist('invoice_id')
-    paid_values = request.form.getlist('paid')
+        # update the Paid value for each specified InvoiceID where the value is not empty
+        for invoice_id, paid in zip(invoice_ids, paid_values):
+            if paid:
+                exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
 
-    # update the Paid value for each specified InvoiceID where the value is not empty
-    for invoice_id, paid in zip(invoice_ids, paid_values):
-        if paid:
-            exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
-
-    # redirect back to the display_goodstransectionte route
-    return redirect(url_for('display_goodstransectionte'))
+        # redirect back to the display_goodstransectionte route
+        return redirect(url_for('display_goodstransectionte'))
 
 
 if __name__ == '__main__':

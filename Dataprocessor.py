@@ -24,6 +24,7 @@ class DataProcessor:
         except (FileNotFoundError, ImportError) as e:
             self.error_handler.handle_error(e, classname, funcname)
 
+
     def ApplyDICtToCol(self, column:str,replacements:dict)->None:
         data = self.data.copy()
         data[column] = data[column].replace(replacements)

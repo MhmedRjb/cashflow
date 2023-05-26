@@ -5,7 +5,7 @@ class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
         self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
         self.metadata = MetaData()
-        self.metadata.reflect(bind=self.engine)
+        self.metadata.reflect(bind=self.engine,views=True)
 
     def export_data_frist(self, data, table_name):
         data.to_sql(table_name, self.engine, if_exists='replace', index=False)
@@ -51,6 +51,7 @@ class DatabaseExporter:
     #update data in col 
 
     def update_data(self, table_name, set_values, where_condition):
+
         # Create a connection to the database
         conn = self.engine.raw_connection()
         cur = conn.cursor()
@@ -61,13 +62,30 @@ class DatabaseExporter:
 
         # Execute the statement
         cur.execute(stmt)
-
-        # Commit the changes
         conn.commit()
-
-        # Close the cursor and connection
         cur.close()
+    
+    #show the last N row in table ORDER BY col
+    def show_rows(self, table_name, n, order_by, first=True):
+        """
+        Display the first or last n rows of a table when ordered by a specified column.
 
+        Args:
+            table_name (str): The name of the table to query.
+            n (int): The number of rows to display.
+            order_by (str): The column name to use for ordering.
+            first (bool): Whether to display the first(True) or last(False) N rows. Defaults to True.
+
+        Returns:
+            pd.DataFrame: A DataFrame containing the query results.
+        """
+        if first:
+            data = pd.read_sql(f'SELECT * FROM {table_name} ORDER BY {order_by} ASC LIMIT {n}', self.engine)
+        else:
+            data = pd.read_sql(f'SELECT * FROM (SELECT * FROM {table_name} ORDER BY {order_by} DESC LIMIT {n}) sub ORDER BY {order_by} ASC', self.engine)
+        return data
+
+    
     def get_column_data(self, table_name, column_name, condition=None):
     # construct the SELECT statement
         stmt = f'SELECT {column_name} FROM {table_name}'
@@ -83,6 +101,19 @@ class DatabaseExporter:
 
         # return the column data
         return column_data
+    
+    #call a stored procedure 
+    def call_stored_procedure(self, procedure_name):
+        conn = self.engine.raw_connection()
+        cur = conn.cursor()
+
+        # construct the CALL statement
+        stmt = f'CALL {procedure_name}()'
+        print(stmt)
+        # execute the CALL statement
+        cur.execute(stmt)
+        conn.commit()
+        cur.close()
 
 
     
@@ -95,6 +126,7 @@ if __name__ == "__main__":
     hostname = 'localhost'
     database = 'easytrick'
     exporter = DatabaseExporter(username, password, hostname, database)
-    print(exporter.cols_names('goodstransectionte'))
-    exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
-
+    # print(exporter.cols_names('goodstransectionte'))
+    # exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
+    #show the last 10 row in table ORDER BY Any col
+    exporter.call_stored_procedure('deleteRemovedRows')
