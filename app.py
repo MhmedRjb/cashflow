@@ -108,7 +108,7 @@ class displaytables():
     def display_goodstransectionte():    
         # retrieve the data from the goodstransectionte table
         # data = exporter.get_table_data('goodstransectionte')
-        data = exporter.readsql('SELECT * FROM goodstransectionte WHERE  Paid =0 or Paid IS NULL OR realDate = CURDATE()OR realDate	 = DATE_SUB(CURDATE(), INTERVAL 1 DAY)order by  realDate	 ')
+        data = exporter.readsql( 'SELECT * FROM goodstransectionte WHERE realDate IS NULL OR realDate > DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) ORDER BY dueDate ASC, Acc_Nm ASC;')
         # pass the data to the template
         return render_template('audra.html', data=data)
     

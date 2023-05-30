@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>El fateh Company</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styleshome.css">
 </head>
 <body>
   <header id="mainHeader">
@@ -34,56 +34,32 @@
     </div>
   </nav>
 
+  <section id="jumbo">
+    <div class="container">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sapiente?</h1>
+    </div>
+  </section>
+  
+  <div class="container">
+    <aside id="sidebar">
+      <p>Lorem ipsum dolor sidddt amet consectetur adipisicing elit. Vel architecto odio molestias quasi consequuntur quaerat!</p>
+    </aside>
+    <section id="main">
+      <h2>Section Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam labore voluptates fugiat eaque! Totam aliquid voluptas amet debitis, nulla sequi impedit corporis? Excepturi, perferendis distinctio odio ad optio numquam!</p>
+    </section>
+    <div class="clearFix"></div>
+    <div id="pExample">
+      <span>Span 1</span>
+      <span>Span 2</span>
+    </div>
+  </div>
 
-
-
+  <div id="fixed">Fixed Element</div>
 
   <footer id="mainFooter">
     <p>Copyright &copy; 2019 CSS Beginners Website</p>
   </footer>
-
-  <script>
-    // Drop zone functionality
-    const dropZones = document.querySelectorAll('.drop-zone');
-
-    dropZones.forEach(dropZone => {
-      const input = dropZone.querySelector('.drop-zone__input');
-      const prompt = dropZone.querySelector('.drop-zone__prompt');
-
-      dropZone.addEventListener('click', () => {
-        input.click();
-      });
-
-      input.addEventListener('change', () => {
-        const file = input.files[0];
-        if (file) {
-          prompt.textContent = file.name;
-        }
-      });
-
-      dropZone.addEventListener('dragover', e => {
-        e.preventDefault();
-        dropZone.classList.add('drop-zone--over');
-      });
-
-      ['dragleave', 'dragend'].forEach(type => {
-        dropZone.addEventListener(type, () => {
-          dropZone.classList.remove('drop-zone--over');
-        });
-      });
-
-     dropZone.addEventListener('drop', e => {
-       e.preventDefault();
-
-       if (e.dataTransfer.files.length) {
-         input.files = e.dataTransfer.files;
-         prompt.textContent = e.dataTransfer.files[0].name;
-       }
-
-       dropZone.classList.remove('drop-zone--over');
-     });
-   });
- </script>
-
+  <script></script>
 </body>
 </html>
