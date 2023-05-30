@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Data</title>
+    </head>
+    <body>
+        <form action="{{ url_for('update_paid') }}" method="post">
+            <table>
+                <tr>
+                    {% for col_name in data.columns %}
+                    <th>{{ col_name }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in data.itertuples() %}
+                <tr>
+                    {% for value in row[1:] %}
+                    <td>{{ value }}</td>
+                    {% endfor %}
+                    <td><input type="text" name="paid-{{ row.InvoiceID }}" value="{{ row.Paid }}"></td>
+                </tr>
+                {% endfor %}
+            </table>
+            <input type="submit" value="Update Paid">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload Form</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+      form {
+  max-width: 70%;
+  max-height: 70%;
+  margin:  auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  flex-basis: calc(50% - .5rem);
+  margin-bottom: 1rem;
+  margin-inline: 2px ;
+  
+}
+.form-control-label {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: x-large;
+  margin-top: 15%;
+  text-align: center;
+}
+.drop-zone {
+  height: auto;
+  width: auto;
+  border: 4px dashed #2f353b;
+  border-radius: .25rem;
+  padding: 25%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color #f5f5f5;
+  transition: background 0.3s ease;
+}
+.drop-zone:hover{
+    background-color:#dddbdb
+
+}
+
+
+
+      .drop-zone__prompt {
+        margin: auto;
+        color: #45535f;
+        font-size: xx-large;
+      }
+      .drop-zone__input {
+        margin: auto;
+        display: none;
+      }
+      .drop-zone--over {
+        border-color: #3b4550;
+      }
+      .invalid-feedback {
+        color: #dc3545;
+      }
+      .btn-primary,
+      .btn-secondary {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+      }
+      .btn-primary:hover,
+      .btn-secondary:hover {
+        background-color: #45a049;
+      }
+      .next {
+        background-color: #ff0000;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position:bottom;
+        margin-left: auto;
+        margin-right: auto; 
+                font-size: 18px;
+
+      }
+      .next:hover {
+        background-color: #f13838;
+      }
+
+
+      /* Additional styles */
+      form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      input[type="submit"] {
+        margin-right: 25%;
+        align-items: center;
+        
+      }
+
+      footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="topnav" style="font-weight: bolder;">
+      <a class="active" href="/"> رفع الملفات </a>
+      <a  href="/next_page"> التنفيذ </a>
+      <a  href="/display_goodstransectionte"> التدفقات النقدية </a>
+    </div>
+    <header>
+      </header>
+  
+    <form method="post" enctype="multipart/form-data">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
+      {% if form is defined %}
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+          {{ form.file.label(class="form-control-label") }}
+          <div class="drop-zone">
+            <span class="drop-zone__prompt"> برجاء رفع SBJRNLITMRPTTAX.xls</span>
+            <input type="file" name="{{ form.file.name }}" id="{{ form.file.id }}" class="drop-zone__input">
+          </div>
+          {% for error in form.file.errors %}
+            <div class="invalid-feedback">{{ error }}</div>
+          {% endfor %}
+        </div>
+        <div class="form-group">
+          {{ form.file2.label(class="form-control-label") }}
+          <div class="drop-zone">
+            <span class="drop-zone__prompt">برحاء رفع SBAccMFDtlRpt.xls </span>
+            <input type="file" name="{{ form.file2.name }}" id="{{ form.file2.id }}" class="drop-zone__input">
+          </div>
+          {% for error in form.file2.errors %}
+            <div class="invalid-feedback">{{ error }}</div>
+          {% endfor %}
+        </div>
+        {{ form.submit(class="btn btn-primary") }}
+        <input type="submit" formaction="/next_page" value="Next" class="next"           >
+      {% endif %}
+    </form>
+
+    <script>
+      // Drop zone functionality
+      const dropZones = document.querySelectorAll('.drop-zone');
+
+      dropZones.forEach(dropZone => {
+        const input = dropZone.querySelector('.drop-zone__input');
+        const prompt = dropZone.querySelector('.drop-zone__prompt');
+
+        dropZone.addEventListener('click', () => {
+          input.click();
+        });
+
+        input.addEventListener('change', () => {
+          const file = input.files[0];
+          if (file) {
+            prompt.textContent = file.name;
+          }
+        });
+
+        dropZone.addEventListener('dragover', e => {
+          e.preventDefault();
+          dropZone.classList.add('drop-zone--over');
+        });
+
+        ['dragleave', 'dragend'].forEach(type => {
+          dropZone.addEventListener(type, () => {
+            dropZone.classList.remove('drop-zone--over');
+          });
+        });
+
+       dropZone.addEventListener('drop', e => {
+         e.preventDefault();
+
+         if (e.dataTransfer.files.length) {
+           input.files = e.dataTransfer.files;
+           prompt.textContent = e.dataTransfer.files[0].name;
+         }
+
+         dropZone.classList.remove('drop-zone--over');
+       });
+     });
+   </script>
+       <footer>
+        <!-- place your footer content here -->
+        <p>Copyright © 2022 My Website</p>
+      </footer>
+  
+ </body>
+</html>

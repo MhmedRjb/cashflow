@@ -9,3 +9,1908 @@
  * Running on http://127.0.0.1:5000
 2023-05-27 04:22:51,779 INFO: [33mPress CTRL+C to quit[0m
 2023-05-27 04:22:57,586 INFO: 127.0.0.1 - - [27/May/2023 04:22:57] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:47:46,273 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 11:47:46,273 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 11:47:56,236 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 103, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:47:56,245 INFO: 127.0.0.1 - - [27/May/2023 11:47:56] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:47:57,121 INFO: 127.0.0.1 - - [27/May/2023 11:47:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 11:48:12,586 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 11:48:12,586 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 11:48:15,183 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 103, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:48:15,191 INFO: 127.0.0.1 - - [27/May/2023 11:48:15] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:48:22,942 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 103, in display_goodstransectionte
+    # pass the data to the template
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:48:22,960 INFO: 127.0.0.1 - - [27/May/2023 11:48:22] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:48:32,289 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 103, in display_goodstransectionte
+    # pass the data to the template
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:48:32,307 INFO: 127.0.0.1 - - [27/May/2023 11:48:32] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:48:59,251 INFO: 127.0.0.1 - - [27/May/2023 11:48:59] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 11:49:07,332 INFO: 127.0.0.1 - - [27/May/2023 11:49:07] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 11:49:20,650 INFO: 127.0.0.1 - - [27/May/2023 11:49:20] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 11:49:28,807 INFO: 127.0.0.1 - - [27/May/2023 11:49:28] "GET / HTTP/1.1" 200 -
+2023-05-27 11:49:30,078 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 103, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:49:30,104 INFO: 127.0.0.1 - - [27/May/2023 11:49:30] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:50:12,544 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 11:50:12,544 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 11:50:16,580 INFO: 127.0.0.1 - - [27/May/2023 11:50:16] "GET / HTTP/1.1" 200 -
+2023-05-27 11:50:17,789 INFO: 127.0.0.1 - - [27/May/2023 11:50:17] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:50:47,728 INFO: 127.0.0.1 - - [27/May/2023 11:50:47] "GET / HTTP/1.1" 200 -
+2023-05-27 11:50:48,813 INFO: 127.0.0.1 - - [27/May/2023 11:50:48] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:50:55,621 INFO: 127.0.0.1 - - [27/May/2023 11:50:55] "GET / HTTP/1.1" 200 -
+2023-05-27 11:50:56,652 INFO: 127.0.0.1 - - [27/May/2023 11:50:56] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:51:27,165 INFO: 127.0.0.1 - - [27/May/2023 11:51:27] "GET / HTTP/1.1" 200 -
+2023-05-27 11:51:28,335 INFO: 127.0.0.1 - - [27/May/2023 11:51:28] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:51:43,047 INFO: 127.0.0.1 - - [27/May/2023 11:51:43] "GET / HTTP/1.1" 200 -
+2023-05-27 11:51:44,263 INFO: 127.0.0.1 - - [27/May/2023 11:51:44] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:52:54,777 INFO: 127.0.0.1 - - [27/May/2023 11:52:54] "GET / HTTP/1.1" 200 -
+2023-05-27 11:52:55,837 INFO: 127.0.0.1 - - [27/May/2023 11:52:55] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:53:54,339 INFO: 127.0.0.1 - - [27/May/2023 11:53:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 11:54:10,961 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 11:54:10,961 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 11:54:13,231 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 104, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:54:13,238 INFO: 127.0.0.1 - - [27/May/2023 11:54:13] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:54:17,756 INFO: 127.0.0.1 - - [27/May/2023 11:54:17] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 11:54:19,506 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 104, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:54:19,508 INFO: 127.0.0.1 - - [27/May/2023 11:54:19] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 11:54:32,033 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 104, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\monymovment\Cashflows\templates\audra.html", line 106, in top-level template code
+    {% for row in data.itertuples() %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'itertuples'
+2023-05-27 11:54:32,037 INFO: 127.0.0.1 - - [27/May/2023 11:54:32] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 12:09:19,272 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:09:19,272 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:09:25,322 INFO: 127.0.0.1 - - [27/May/2023 12:09:25] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 12:09:33,665 INFO: 127.0.0.1 - - [27/May/2023 12:09:33] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 12:09:44,135 INFO: 127.0.0.1 - - [27/May/2023 12:09:44] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 12:09:46,682 INFO: 127.0.0.1 - - [27/May/2023 12:09:46] "GET / HTTP/1.1" 200 -
+2023-05-27 12:09:47,840 INFO: 127.0.0.1 - - [27/May/2023 12:09:47] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 12:09:50,028 ERROR: Exception on /display_goodstransectionte [GET]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 104, in display_goodstransectionte
+    return render_template('audra.html', data=data)
+                                              ^^^^
+NameError: name 'data' is not defined
+2023-05-27 12:09:50,046 INFO: 127.0.0.1 - - [27/May/2023 12:09:50] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 12:10:20,271 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:10:20,272 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:10:23,078 INFO: 127.0.0.1 - - [27/May/2023 12:10:23] "[31m[1mGET /update_paid HTTP/1.1[0m" 405 -
+2023-05-27 12:10:25,369 INFO: 127.0.0.1 - - [27/May/2023 12:10:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:10:34,856 INFO: 127.0.0.1 - - [27/May/2023 12:10:34] "GET / HTTP/1.1" 200 -
+2023-05-27 12:10:38,433 INFO: 127.0.0.1 - - [27/May/2023 12:10:38] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:10:40,295 INFO: 127.0.0.1 - - [27/May/2023 12:10:40] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:11:08,410 INFO: 127.0.0.1 - - [27/May/2023 12:11:08] "GET / HTTP/1.1" 200 -
+2023-05-27 12:11:29,681 INFO: 127.0.0.1 - - [27/May/2023 12:11:29] "GET / HTTP/1.1" 200 -
+2023-05-27 12:12:07,193 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:12:07,194 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:12:09,122 INFO: 127.0.0.1 - - [27/May/2023 12:12:09] "GET / HTTP/1.1" 200 -
+2023-05-27 12:41:24,122 INFO: 127.0.0.1 - - [27/May/2023 12:41:24] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:42:38,882 INFO: 127.0.0.1 - - [27/May/2023 12:42:38] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 12:42:38,891 INFO: 127.0.0.1 - - [27/May/2023 12:42:38] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:44:53,125 INFO: 127.0.0.1 - - [27/May/2023 12:44:53] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 12:44:53,134 INFO: 127.0.0.1 - - [27/May/2023 12:44:53] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:47:49,659 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:47:49,659 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:47:51,478 INFO: 127.0.0.1 - - [27/May/2023 12:47:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:47:54,765 INFO: 127.0.0.1 - - [27/May/2023 12:47:54] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:47:55,442 INFO: 127.0.0.1 - - [27/May/2023 12:47:55] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:48:08,357 INFO: 127.0.0.1 - - [27/May/2023 12:48:08] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:48:20,966 INFO: 127.0.0.1 - - [27/May/2023 12:48:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:48:22,213 INFO: 127.0.0.1 - - [27/May/2023 12:48:22] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:48:22,809 INFO: 127.0.0.1 - - [27/May/2023 12:48:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:48:30,309 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:48:30,309 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:48:30,313 INFO:  * Restarting with stat
+2023-05-27 12:48:33,431 WARNING:  * Debugger is active!
+2023-05-27 12:48:33,440 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 12:48:34,318 INFO: 127.0.0.1 - - [27/May/2023 12:48:34] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:48:34,337 INFO: 127.0.0.1 - - [27/May/2023 12:48:34] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:48:35,084 INFO: 127.0.0.1 - - [27/May/2023 12:48:35] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:50:32,205 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 12:50:32,542 INFO:  * Restarting with stat
+2023-05-27 12:50:34,364 WARNING:  * Debugger is active!
+2023-05-27 12:50:34,368 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 12:55:32,667 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 12:55:32,896 INFO:  * Restarting with stat
+2023-05-27 12:58:49,308 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:58:49,308 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:58:57,378 INFO: 127.0.0.1 - - [27/May/2023 12:58:57] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:58:58,588 INFO: 127.0.0.1 - - [27/May/2023 12:58:58] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:59:09,873 INFO: 127.0.0.1 - - [27/May/2023 12:59:09] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:59:11,405 INFO: 127.0.0.1 - - [27/May/2023 12:59:11] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 12:59:12,096 INFO: 127.0.0.1 - - [27/May/2023 12:59:12] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:59:29,403 INFO: 127.0.0.1 - - [27/May/2023 12:59:29] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:59:36,403 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 12:59:36,404 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 12:59:36,407 INFO:  * Restarting with stat
+2023-05-27 12:59:39,341 WARNING:  * Debugger is active!
+2023-05-27 12:59:39,349 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 12:59:39,890 INFO: 127.0.0.1 - - [27/May/2023 12:59:39] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 12:59:39,894 INFO: 127.0.0.1 - - [27/May/2023 12:59:39] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:00:42,224 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:00:42,425 INFO:  * Restarting with stat
+2023-05-27 13:00:45,140 WARNING:  * Debugger is active!
+2023-05-27 13:00:45,150 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:01:42,527 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:01:42,787 INFO:  * Restarting with stat
+2023-05-27 13:01:45,553 WARNING:  * Debugger is active!
+2023-05-27 13:01:45,561 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:01:49,212 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:01:49,489 INFO:  * Restarting with stat
+2023-05-27 13:01:52,312 WARNING:  * Debugger is active!
+2023-05-27 13:01:52,316 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:01:54,911 INFO: 127.0.0.1 - - [27/May/2023 13:01:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:02:11,734 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:02:15,805 INFO:  * Restarting with stat
+2023-05-27 13:02:23,058 WARNING:  * Debugger is active!
+2023-05-27 13:02:23,068 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:02:23,742 INFO: 127.0.0.1 - - [27/May/2023 13:02:23] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 13:02:23,754 INFO: 127.0.0.1 - - [27/May/2023 13:02:23] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 13:02:23,761 INFO: 127.0.0.1 - - [27/May/2023 13:02:23] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 13:02:23,881 INFO: 127.0.0.1 - - [27/May/2023 13:02:23] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-27 13:02:24,171 INFO: 127.0.0.1 - - [27/May/2023 13:02:24] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-27 13:02:24,384 INFO: 127.0.0.1 - - [27/May/2023 13:02:24] "GET / HTTP/1.1" 200 -
+2023-05-27 13:02:25,471 INFO: 127.0.0.1 - - [27/May/2023 13:02:25] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-27 13:02:25,748 INFO: 127.0.0.1 - - [27/May/2023 13:02:25] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-27 13:02:25,874 INFO: 127.0.0.1 - - [27/May/2023 13:02:25] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-27 13:02:26,311 INFO: 127.0.0.1 - - [27/May/2023 13:02:26] "GET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-27 13:02:26,564 INFO: 127.0.0.1 - - [27/May/2023 13:02:26] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-27 13:02:42,947 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:02:43,164 INFO:  * Restarting with stat
+2023-05-27 13:02:45,934 WARNING:  * Debugger is active!
+2023-05-27 13:02:45,945 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:02:48,627 INFO: 127.0.0.1 - - [27/May/2023 13:02:48] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:02:58,739 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:02:59,017 INFO:  * Restarting with stat
+2023-05-27 13:03:01,630 WARNING:  * Debugger is active!
+2023-05-27 13:03:01,637 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:03:02,631 INFO: 127.0.0.1 - - [27/May/2023 13:03:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:04:03,659 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:04:03,954 INFO:  * Restarting with stat
+2023-05-27 13:04:09,090 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 13:04:09,090 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 13:04:09,093 INFO:  * Restarting with stat
+2023-05-27 13:04:12,295 WARNING:  * Debugger is active!
+2023-05-27 13:04:12,304 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:04:13,393 INFO: 127.0.0.1 - - [27/May/2023 13:04:13] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:04:22,199 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:04:22,501 INFO:  * Restarting with stat
+2023-05-27 13:04:25,299 WARNING:  * Debugger is active!
+2023-05-27 13:04:25,307 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:04:25,822 INFO: 127.0.0.1 - - [27/May/2023 13:04:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:04:45,604 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 13:04:45,834 INFO:  * Restarting with stat
+2023-05-27 13:04:48,704 WARNING:  * Debugger is active!
+2023-05-27 13:04:48,713 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:08:18,985 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 13:08:18,986 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 13:08:18,989 INFO:  * Restarting with stat
+2023-05-27 13:08:21,978 WARNING:  * Debugger is active!
+2023-05-27 13:08:21,985 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 13:08:22,428 INFO: 127.0.0.1 - - [27/May/2023 13:08:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:08:59,032 INFO: 127.0.0.1 - - [27/May/2023 13:08:59] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:09:12,244 INFO: 127.0.0.1 - - [27/May/2023 13:09:12] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:09:15,564 INFO: 127.0.0.1 - - [27/May/2023 13:09:15] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:09:44,505 INFO: 127.0.0.1 - - [27/May/2023 13:09:44] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:10:02,779 INFO: 127.0.0.1 - - [27/May/2023 13:10:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 13:10:08,276 INFO: 127.0.0.1 - - [27/May/2023 13:10:08] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 13:10:17,215 INFO: 127.0.0.1 - - [27/May/2023 13:10:17] "GET / HTTP/1.1" 200 -
+2023-05-27 13:10:30,814 INFO: 127.0.0.1 - - [27/May/2023 13:10:30] "POST / HTTP/1.1" 200 -
+2023-05-27 13:25:26,941 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 13:25:26,941 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 13:26:56,671 INFO: 127.0.0.1 - - [27/May/2023 13:26:56] "GET / HTTP/1.1" 200 -
+2023-05-27 13:27:17,376 INFO: 127.0.0.1 - - [27/May/2023 13:27:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 13:43:59,462 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 13:43:59,462 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 13:53:35,259 INFO: 127.0.0.1 - - [27/May/2023 13:53:35] "GET / HTTP/1.1" 200 -
+2023-05-27 14:09:32,724 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 14:09:32,725 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 14:52:11,956 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-27 14:52:11,956 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 14:52:16,359 INFO: 127.0.0.1 - - [27/May/2023 14:52:16] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 14:52:16,787 INFO: 127.0.0.1 - - [27/May/2023 14:52:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 14:52:20,952 INFO: 127.0.0.1 - - [27/May/2023 14:52:20] "GET / HTTP/1.1" 200 -
+2023-05-27 14:52:25,995 INFO: 127.0.0.1 - - [27/May/2023 14:52:25] "GET / HTTP/1.1" 200 -
+2023-05-27 14:52:26,459 INFO: 127.0.0.1 - - [27/May/2023 14:52:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 14:58:18,935 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 14:58:18,935 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 14:58:30,313 INFO: 127.0.0.1 - - [27/May/2023 14:58:30] "GET / HTTP/1.1" 200 -
+2023-05-27 14:59:20,660 INFO: 192.168.1.8 - - [27/May/2023 14:59:20] "GET / HTTP/1.1" 200 -
+2023-05-27 14:59:21,274 INFO: 192.168.1.8 - - [27/May/2023 14:59:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 14:59:24,136 INFO: 192.168.1.8 - - [27/May/2023 14:59:24] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 14:59:25,026 INFO: 192.168.1.8 - - [27/May/2023 14:59:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 14:59:26,476 INFO: 192.168.1.8 - - [27/May/2023 14:59:26] "GET / HTTP/1.1" 200 -
+2023-05-27 15:00:54,297 INFO: 192.168.1.8 - - [27/May/2023 15:00:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:00:55,844 INFO: 192.168.1.8 - - [27/May/2023 15:00:55] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:00:58,831 INFO: 192.168.1.8 - - [27/May/2023 15:00:58] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-27 15:00:58,847 INFO: 192.168.1.8 - - [27/May/2023 15:00:58] "GET /next_page?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-27 15:01:03,924 INFO: 192.168.1.8 - - [27/May/2023 15:01:03] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-27 15:01:03,962 INFO: 192.168.1.8 - - [27/May/2023 15:01:03] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-27 15:01:05,243 INFO: 192.168.1.8 - - [27/May/2023 15:01:05] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:01:08,286 INFO: 192.168.1.8 - - [27/May/2023 15:01:08] "GET / HTTP/1.1" 200 -
+2023-05-27 15:02:32,320 INFO: 192.168.1.8 - - [27/May/2023 15:02:32] "POST / HTTP/1.1" 200 -
+2023-05-27 15:02:34,615 INFO: 192.168.1.8 - - [27/May/2023 15:02:34] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:02:41,224 ERROR: Exception on /export_data [POST]
+Traceback (most recent call last):
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\app.py", line 75, in export_data
+    processor_goods_transection = process_good_transection()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\monymovment\Cashflows\main.py", line 14, in process_good_transection
+    processor_goods_transection.read_data()
+  File "d:\monymovment\Cashflows\Dataprocessor.py", line 21, in read_data
+    self.data = pd.read_excel(self.file_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\pandas\io\excel\_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\pandas\io\excel\_xlrd.py", line 35, in __init__
+    super().__init__(filepath_or_buffer, storage_options=storage_options)
+  File "D:\monymovment\Cashflows\Lib\site-packages\pandas\io\excel\_base.py", line 540, in __init__
+    self.book = self.load_workbook(self.handles.handle)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\pandas\io\excel\_xlrd.py", line 48, in load_workbook
+    return open_workbook(file_contents=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\xlrd\__init__.py", line 172, in open_workbook
+    bk = open_workbook_xls(
+         ^^^^^^^^^^^^^^^^^^
+  File "D:\monymovment\Cashflows\Lib\site-packages\xlrd\book.py", line 68, in open_workbook_xls
+    bk.biff2_8_load(
+  File "D:\monymovment\Cashflows\Lib\site-packages\xlrd\book.py", line 645, in biff2_8_load
+    raise XLRDError("Can't find workbook in OLE2 compound document")
+xlrd.biffh.XLRDError: Can't find workbook in OLE2 compound document
+2023-05-27 15:02:41,276 INFO: 192.168.1.8 - - [27/May/2023 15:02:41] "[35m[1mPOST /export_data HTTP/1.1[0m" 500 -
+2023-05-27 15:02:50,994 INFO: 192.168.1.8 - - [27/May/2023 15:02:50] "GET / HTTP/1.1" 200 -
+2023-05-27 15:03:07,474 INFO: 192.168.1.8 - - [27/May/2023 15:03:07] "POST / HTTP/1.1" 200 -
+2023-05-27 15:03:26,326 INFO: 192.168.1.8 - - [27/May/2023 15:03:26] "POST / HTTP/1.1" 200 -
+2023-05-27 15:03:28,268 INFO: 192.168.1.8 - - [27/May/2023 15:03:28] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:03:31,130 INFO: 192.168.1.8 - - [27/May/2023 15:03:31] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-27 15:03:31,185 INFO: 192.168.1.8 - - [27/May/2023 15:03:31] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-27 15:03:33,627 INFO: 192.168.1.8 - - [27/May/2023 15:03:33] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:04:50,761 INFO: 192.168.1.8 - - [27/May/2023 15:04:50] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:04:50,817 INFO: 192.168.1.8 - - [27/May/2023 15:04:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:04:54,288 INFO: 192.168.1.8 - - [27/May/2023 15:04:54] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:04:54,347 INFO: 192.168.1.8 - - [27/May/2023 15:04:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:04:58,857 INFO: 192.168.1.8 - - [27/May/2023 15:04:58] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:04:59,696 INFO: 192.168.1.8 - - [27/May/2023 15:04:59] "GET / HTTP/1.1" 200 -
+2023-05-27 15:05:00,606 INFO: 192.168.1.8 - - [27/May/2023 15:05:00] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:05:01,222 INFO: 192.168.1.8 - - [27/May/2023 15:05:01] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:11:46,702 INFO: 192.168.1.8 - - [27/May/2023 15:11:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:12:18,522 INFO: 192.168.1.13 - - [27/May/2023 15:12:18] "GET / HTTP/1.1" 200 -
+2023-05-27 15:12:18,615 INFO: 192.168.1.13 - - [27/May/2023 15:12:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 15:12:20,302 INFO: 192.168.1.13 - - [27/May/2023 15:12:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:31:44,023 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:31:44,023 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:31:44,850 INFO: 127.0.0.1 - - [27/May/2023 15:31:44] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:31:45,692 INFO: 127.0.0.1 - - [27/May/2023 15:31:45] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:31:54,219 INFO: 127.0.0.1 - - [27/May/2023 15:31:54] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:31:54,504 INFO: 127.0.0.1 - - [27/May/2023 15:31:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:08,463 INFO: 127.0.0.1 - - [27/May/2023 15:32:08] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:20,020 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:32:20,021 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:32:20,219 INFO: 127.0.0.1 - - [27/May/2023 15:32:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:26,016 INFO: 127.0.0.1 - - [27/May/2023 15:32:26] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:38,061 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:32:38,061 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:32:38,256 INFO: 127.0.0.1 - - [27/May/2023 15:32:38] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:51,848 INFO: 127.0.0.1 - - [27/May/2023 15:32:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:32:53,024 INFO: 127.0.0.1 - - [27/May/2023 15:32:53] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:33:02,111 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:33:02,112 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:33:02,352 INFO: 127.0.0.1 - - [27/May/2023 15:33:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:33:23,033 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:33:23,034 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:33:23,191 INFO: 127.0.0.1 - - [27/May/2023 15:33:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:33:24,229 INFO: 127.0.0.1 - - [27/May/2023 15:33:24] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:33:25,543 INFO: 127.0.0.1 - - [27/May/2023 15:33:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:33:39,061 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:33:39,061 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:33:39,190 INFO: 127.0.0.1 - - [27/May/2023 15:33:39] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:34:59,033 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:34:59,033 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:34:59,116 INFO: 127.0.0.1 - - [27/May/2023 15:34:59] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:35:00,767 INFO: 127.0.0.1 - - [27/May/2023 15:35:00] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:35:33,029 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:35:33,030 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:35:33,156 INFO: 127.0.0.1 - - [27/May/2023 15:35:33] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:35:45,031 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:35:45,031 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:35:45,074 INFO: 127.0.0.1 - - [27/May/2023 15:35:45] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:02,913 INFO: 127.0.0.1 - - [27/May/2023 15:36:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:14,275 INFO: 127.0.0.1 - - [27/May/2023 15:36:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:22,080 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:36:22,080 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:36:22,082 INFO:  * Restarting with stat
+2023-05-27 15:36:23,809 WARNING:  * Debugger is active!
+2023-05-27 15:36:23,816 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:36:24,254 INFO: 127.0.0.1 - - [27/May/2023 15:36:24] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:38,963 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:36:39,155 INFO:  * Restarting with stat
+2023-05-27 15:36:40,945 WARNING:  * Debugger is active!
+2023-05-27 15:36:40,949 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:36:41,204 INFO: 127.0.0.1 - - [27/May/2023 15:36:41] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:44,400 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:36:44,633 INFO:  * Restarting with stat
+2023-05-27 15:36:46,628 WARNING:  * Debugger is active!
+2023-05-27 15:36:46,632 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:36:46,882 INFO: 127.0.0.1 - - [27/May/2023 15:36:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:51,339 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:36:51,554 INFO:  * Restarting with stat
+2023-05-27 15:36:53,341 WARNING:  * Debugger is active!
+2023-05-27 15:36:53,345 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:36:53,593 INFO: 127.0.0.1 - - [27/May/2023 15:36:53] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:36:56,566 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:36:56,803 INFO:  * Restarting with stat
+2023-05-27 15:36:58,536 WARNING:  * Debugger is active!
+2023-05-27 15:36:58,540 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:36:58,794 INFO: 127.0.0.1 - - [27/May/2023 15:36:58] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:37:09,405 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:37:09,615 INFO:  * Restarting with stat
+2023-05-27 15:37:11,338 WARNING:  * Debugger is active!
+2023-05-27 15:37:11,342 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:37:11,619 INFO: 127.0.0.1 - - [27/May/2023 15:37:11] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:38:02,896 INFO: 127.0.0.1 - - [27/May/2023 15:38:02] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:38:20,715 INFO: 127.0.0.1 - - [27/May/2023 15:38:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:39:20,207 INFO: 127.0.0.1 - - [27/May/2023 15:39:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:39:22,047 INFO: 127.0.0.1 - - [27/May/2023 15:39:22] "GET / HTTP/1.1" 200 -
+2023-05-27 15:39:23,809 INFO: 127.0.0.1 - - [27/May/2023 15:39:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:39:38,512 INFO: 127.0.0.1 - - [27/May/2023 15:39:38] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:39:54,854 INFO: 127.0.0.1 - - [27/May/2023 15:39:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:39:59,313 INFO: 127.0.0.1 - - [27/May/2023 15:39:59] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:04,143 INFO: 127.0.0.1 - - [27/May/2023 15:40:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:14,237 INFO: 127.0.0.1 - - [27/May/2023 15:40:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:19,559 INFO: 127.0.0.1 - - [27/May/2023 15:40:19] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:25,397 INFO: 127.0.0.1 - - [27/May/2023 15:40:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:32,147 INFO: 127.0.0.1 - - [27/May/2023 15:40:32] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:37,610 INFO: 127.0.0.1 - - [27/May/2023 15:40:37] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:40:47,704 INFO: 127.0.0.1 - - [27/May/2023 15:40:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:06,045 INFO: 127.0.0.1 - - [27/May/2023 15:41:06] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:15,960 INFO: 127.0.0.1 - - [27/May/2023 15:41:15] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:21,983 INFO: 127.0.0.1 - - [27/May/2023 15:41:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:25,328 INFO: 127.0.0.1 - - [27/May/2023 15:41:25] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:31,735 INFO: 127.0.0.1 - - [27/May/2023 15:41:31] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:41:47,433 INFO: 127.0.0.1 - - [27/May/2023 15:41:47] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:42:26,722 INFO: 127.0.0.1 - - [27/May/2023 15:42:26] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:42:46,203 INFO: 127.0.0.1 - - [27/May/2023 15:42:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:42:55,607 INFO: 127.0.0.1 - - [27/May/2023 15:42:55] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:42:59,772 INFO: 127.0.0.1 - - [27/May/2023 15:42:59] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:43:05,375 INFO: 127.0.0.1 - - [27/May/2023 15:43:05] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:43:14,199 INFO: 127.0.0.1 - - [27/May/2023 15:43:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:43:51,909 INFO: 127.0.0.1 - - [27/May/2023 15:43:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:44:21,935 INFO: 127.0.0.1 - - [27/May/2023 15:44:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:44:41,455 INFO: 127.0.0.1 - - [27/May/2023 15:44:41] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:44:48,445 INFO: 127.0.0.1 - - [27/May/2023 15:44:48] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:44:58,876 INFO: 127.0.0.1 - - [27/May/2023 15:44:58] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:45:09,017 INFO: 127.0.0.1 - - [27/May/2023 15:45:09] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:45:14,711 INFO: 127.0.0.1 - - [27/May/2023 15:45:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:45:19,664 INFO: 127.0.0.1 - - [27/May/2023 15:45:19] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:45:27,886 INFO: 127.0.0.1 - - [27/May/2023 15:45:27] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:45:28,202 INFO: 127.0.0.1 - - [27/May/2023 15:45:28] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:46:02,116 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-27 15:46:02,312 INFO:  * Restarting with stat
+2023-05-27 15:46:04,050 INFO: 127.0.0.1 - - [27/May/2023 15:46:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:46:08,668 INFO: 127.0.0.1 - - [27/May/2023 15:46:08] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:46:08,699 INFO: 127.0.0.1 - - [27/May/2023 15:46:08] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:47:50,483 INFO: 127.0.0.1 - - [27/May/2023 15:47:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:48:30,980 INFO: 127.0.0.1 - - [27/May/2023 15:48:30] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:48:43,925 INFO: 127.0.0.1 - - [27/May/2023 15:48:43] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:48:49,390 INFO: 127.0.0.1 - - [27/May/2023 15:48:49] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:49:55,172 INFO: 127.0.0.1 - - [27/May/2023 15:49:55] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:50:19,072 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 15:50:19,072 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 15:50:19,074 INFO:  * Restarting with stat
+2023-05-27 15:50:20,272 WARNING:  * Debugger is active!
+2023-05-27 15:50:20,277 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 15:50:21,498 INFO: 127.0.0.1 - - [27/May/2023 15:50:21] "GET / HTTP/1.1" 200 -
+2023-05-27 15:50:21,654 INFO: 127.0.0.1 - - [27/May/2023 15:50:21] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:50:22,646 INFO: 127.0.0.1 - - [27/May/2023 15:50:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:51:14,892 INFO: 127.0.0.1 - - [27/May/2023 15:51:14] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:51:28,721 INFO: 127.0.0.1 - - [27/May/2023 15:51:28] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:52:21,834 INFO: 127.0.0.1 - - [27/May/2023 15:52:21] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 15:52:22,145 INFO: 127.0.0.1 - - [27/May/2023 15:52:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:52:57,615 INFO: 127.0.0.1 - - [27/May/2023 15:52:57] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:01,867 INFO: 127.0.0.1 - - [27/May/2023 15:53:01] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:06,262 INFO: 127.0.0.1 - - [27/May/2023 15:53:06] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:13,201 INFO: 127.0.0.1 - - [27/May/2023 15:53:13] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:20,317 INFO: 127.0.0.1 - - [27/May/2023 15:53:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:31,660 INFO: 127.0.0.1 - - [27/May/2023 15:53:31] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:38,514 INFO: 127.0.0.1 - - [27/May/2023 15:53:38] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:53:45,119 INFO: 127.0.0.1 - - [27/May/2023 15:53:45] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:54:11,945 INFO: 127.0.0.1 - - [27/May/2023 15:54:11] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:54:55,162 INFO: 127.0.0.1 - - [27/May/2023 15:54:55] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:55:36,540 INFO: 127.0.0.1 - - [27/May/2023 15:55:36] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:55:42,549 INFO: 127.0.0.1 - - [27/May/2023 15:55:42] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:55:52,517 INFO: 127.0.0.1 - - [27/May/2023 15:55:52] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:56:03,182 INFO: 127.0.0.1 - - [27/May/2023 15:56:03] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:56:23,330 INFO: 127.0.0.1 - - [27/May/2023 15:56:23] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 15:56:35,509 INFO: 127.0.0.1 - - [27/May/2023 15:56:35] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:57:10,118 INFO: 127.0.0.1 - - [27/May/2023 15:57:10] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:57:11,228 INFO: 127.0.0.1 - - [27/May/2023 15:57:11] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:57:14,292 INFO: 127.0.0.1 - - [27/May/2023 15:57:14] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:57:38,618 INFO: 127.0.0.1 - - [27/May/2023 15:57:38] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:57:57,530 INFO: 127.0.0.1 - - [27/May/2023 15:57:57] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:58:03,905 INFO: 127.0.0.1 - - [27/May/2023 15:58:03] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:58:19,467 INFO: 127.0.0.1 - - [27/May/2023 15:58:19] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:58:34,489 INFO: 127.0.0.1 - - [27/May/2023 15:58:34] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 15:59:52,596 INFO: 127.0.0.1 - - [27/May/2023 15:59:52] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:00:17,892 INFO: 127.0.0.1 - - [27/May/2023 16:00:17] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:00:43,765 INFO: 127.0.0.1 - - [27/May/2023 16:00:43] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:00:49,447 INFO: 127.0.0.1 - - [27/May/2023 16:00:49] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:00:52,078 INFO: 127.0.0.1 - - [27/May/2023 16:00:52] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:01:21,773 INFO: 127.0.0.1 - - [27/May/2023 16:01:21] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:01:26,413 INFO: 127.0.0.1 - - [27/May/2023 16:01:26] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:01:38,752 INFO: 127.0.0.1 - - [27/May/2023 16:01:38] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:01:47,261 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.21:5000
+2023-05-27 16:01:47,261 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 16:01:47,263 INFO:  * Restarting with stat
+2023-05-27 16:01:48,556 WARNING:  * Debugger is active!
+2023-05-27 16:01:48,561 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 16:01:48,733 INFO: 127.0.0.1 - - [27/May/2023 16:01:48] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:02:22,410 INFO: 127.0.0.1 - - [27/May/2023 16:02:22] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:03:12,646 INFO: 127.0.0.1 - - [27/May/2023 16:03:12] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:03:20,948 INFO: 127.0.0.1 - - [27/May/2023 16:03:20] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:03:37,143 INFO: 127.0.0.1 - - [27/May/2023 16:03:37] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:03:57,226 INFO: 127.0.0.1 - - [27/May/2023 16:03:57] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:04:04,174 INFO: 127.0.0.1 - - [27/May/2023 16:04:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:04:05,510 INFO: 127.0.0.1 - - [27/May/2023 16:04:05] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:04:06,480 INFO: 127.0.0.1 - - [27/May/2023 16:04:06] "GET / HTTP/1.1" 200 -
+2023-05-27 16:04:11,196 INFO: 127.0.0.1 - - [27/May/2023 16:04:11] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:04:12,604 INFO: 127.0.0.1 - - [27/May/2023 16:04:12] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:04:13,377 INFO: 127.0.0.1 - - [27/May/2023 16:04:13] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:04:38,588 INFO: 127.0.0.1 - - [27/May/2023 16:04:38] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:04:41,800 INFO: 127.0.0.1 - - [27/May/2023 16:04:41] "GET / HTTP/1.1" 200 -
+2023-05-27 16:04:43,090 INFO: 127.0.0.1 - - [27/May/2023 16:04:43] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:04:43,828 INFO: 127.0.0.1 - - [27/May/2023 16:04:43] "GET / HTTP/1.1" 200 -
+2023-05-27 16:05:06,621 INFO: 127.0.0.1 - - [27/May/2023 16:05:06] "GET / HTTP/1.1" 200 -
+2023-05-27 16:05:14,888 INFO: 127.0.0.1 - - [27/May/2023 16:05:14] "GET / HTTP/1.1" 200 -
+2023-05-27 16:05:36,495 INFO: 127.0.0.1 - - [27/May/2023 16:05:36] "GET / HTTP/1.1" 200 -
+2023-05-27 16:05:54,421 INFO: 127.0.0.1 - - [27/May/2023 16:05:54] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 16:05:54,924 INFO: 127.0.0.1 - - [27/May/2023 16:05:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:06:04,682 INFO: 127.0.0.1 - - [27/May/2023 16:06:04] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 16:07:47,336 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\Dataprocessor.py', reloading
+2023-05-27 16:07:47,500 INFO:  * Restarting with stat
+2023-05-27 16:07:48,728 WARNING:  * Debugger is active!
+2023-05-27 16:07:48,731 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 23:36:03,646 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-27 23:36:03,646 INFO: [33mPress CTRL+C to quit[0m
+2023-05-27 23:36:03,646 INFO:  * Restarting with stat
+2023-05-27 23:36:05,135 WARNING:  * Debugger is active!
+2023-05-27 23:36:05,143 INFO:  * Debugger PIN: 109-877-722
+2023-05-27 23:36:06,757 INFO: 127.0.0.1 - - [27/May/2023 23:36:06] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 23:36:07,086 INFO: 127.0.0.1 - - [27/May/2023 23:36:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-27 23:36:16,769 INFO: 127.0.0.1 - - [27/May/2023 23:36:16] "GET / HTTP/1.1" 200 -
+2023-05-27 23:36:17,812 INFO: 127.0.0.1 - - [27/May/2023 23:36:17] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 23:36:18,403 INFO: 127.0.0.1 - - [27/May/2023 23:36:18] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 23:36:19,207 INFO: 127.0.0.1 - - [27/May/2023 23:36:19] "GET / HTTP/1.1" 200 -
+2023-05-27 23:36:19,809 INFO: 127.0.0.1 - - [27/May/2023 23:36:19] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 23:36:20,330 INFO: 127.0.0.1 - - [27/May/2023 23:36:20] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 23:36:21,125 INFO: 127.0.0.1 - - [27/May/2023 23:36:21] "GET / HTTP/1.1" 200 -
+2023-05-27 23:36:22,036 INFO: 127.0.0.1 - - [27/May/2023 23:36:22] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 23:36:22,603 INFO: 127.0.0.1 - - [27/May/2023 23:36:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 23:36:24,076 INFO: 127.0.0.1 - - [27/May/2023 23:36:24] "GET / HTTP/1.1" 200 -
+2023-05-27 23:36:24,817 INFO: 127.0.0.1 - - [27/May/2023 23:36:24] "GET /next_page HTTP/1.1" 200 -
+2023-05-27 23:36:26,079 INFO: 127.0.0.1 - - [27/May/2023 23:36:26] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-27 23:36:43,662 INFO: 127.0.0.1 - - [27/May/2023 23:36:43] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-27 23:36:43,975 INFO: 127.0.0.1 - - [27/May/2023 23:36:43] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 00:46:46,785 INFO: 127.0.0.1 - - [28/May/2023 00:46:46] "[32mPOST /update_paid HTTP/1.1[0m" 302 -
+2023-05-28 00:46:46,809 INFO: 127.0.0.1 - - [28/May/2023 00:46:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:21:57,978 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-28 10:21:57,978 INFO: [33mPress CTRL+C to quit[0m
+2023-05-28 10:21:57,978 INFO:  * Restarting with stat
+2023-05-28 10:21:59,287 WARNING:  * Debugger is active!
+2023-05-28 10:21:59,300 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:22:02,133 INFO: 127.0.0.1 - - [28/May/2023 10:22:02] "GET / HTTP/1.1" 200 -
+2023-05-28 10:22:02,575 INFO: 127.0.0.1 - - [28/May/2023 10:22:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-28 10:22:07,915 INFO: 127.0.0.1 - - [28/May/2023 10:22:07] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:22:12,053 INFO: 127.0.0.1 - - [28/May/2023 10:22:12] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:22:16,313 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:22:16,487 INFO:  * Restarting with stat
+2023-05-28 10:22:17,697 WARNING:  * Debugger is active!
+2023-05-28 10:22:17,700 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:22:17,879 INFO: 127.0.0.1 - - [28/May/2023 10:22:17] "GET / HTTP/1.1" 200 -
+2023-05-28 10:22:18,877 INFO: 127.0.0.1 - - [28/May/2023 10:22:18] "GET / HTTP/1.1" 200 -
+2023-05-28 10:22:19,254 INFO: 127.0.0.1 - - [28/May/2023 10:22:19] "GET /next_page HTTP/1.1" 200 -
+2023-05-28 10:22:35,527 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-28 10:22:35,701 INFO:  * Restarting with stat
+2023-05-28 10:22:36,839 WARNING:  * Debugger is active!
+2023-05-28 10:22:36,843 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:22:51,258 INFO: 127.0.0.1 - - [28/May/2023 10:22:51] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-28 10:22:51,267 INFO: 127.0.0.1 - - [28/May/2023 10:22:51] "GET /next_page?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-28 10:22:51,767 INFO: 127.0.0.1 - - [28/May/2023 10:22:51] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-28 10:22:52,023 INFO: 127.0.0.1 - - [28/May/2023 10:22:52] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:22:53,682 INFO: 127.0.0.1 - - [28/May/2023 10:22:53] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:23:43,933 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\Dataprocessor.py', reloading
+2023-05-28 10:23:44,071 INFO:  * Restarting with stat
+2023-05-28 10:23:45,327 WARNING:  * Debugger is active!
+2023-05-28 10:23:45,331 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:23:51,452 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:23:51,638 INFO:  * Restarting with stat
+2023-05-28 10:23:52,817 WARNING:  * Debugger is active!
+2023-05-28 10:23:52,819 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:28:22,007 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:28:22,149 INFO:  * Restarting with stat
+2023-05-28 10:28:23,307 WARNING:  * Debugger is active!
+2023-05-28 10:28:23,308 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:28:30,698 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:28:30,846 INFO:  * Restarting with stat
+2023-05-28 10:28:32,123 WARNING:  * Debugger is active!
+2023-05-28 10:28:32,127 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:28:34,296 INFO: 127.0.0.1 - - [28/May/2023 10:28:34] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-28 10:28:34,349 INFO: 127.0.0.1 - - [28/May/2023 10:28:34] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-28 10:28:34,505 INFO: 127.0.0.1 - - [28/May/2023 10:28:34] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-28 10:28:34,907 INFO: 127.0.0.1 - - [28/May/2023 10:28:34] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:28:35,142 INFO: 127.0.0.1 - - [28/May/2023 10:28:35] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:28:46,588 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:28:46,766 INFO:  * Restarting with stat
+2023-05-28 10:28:48,001 WARNING:  * Debugger is active!
+2023-05-28 10:28:48,005 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:28:51,027 INFO: 127.0.0.1 - - [28/May/2023 10:28:51] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:29:10,719 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:29:10,892 INFO:  * Restarting with stat
+2023-05-28 10:29:12,159 WARNING:  * Debugger is active!
+2023-05-28 10:29:12,162 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:29:12,684 INFO: 127.0.0.1 - - [28/May/2023 10:29:12] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:29:18,386 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:29:18,554 INFO:  * Restarting with stat
+2023-05-28 10:29:19,795 WARNING:  * Debugger is active!
+2023-05-28 10:29:19,798 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:29:19,981 INFO: 127.0.0.1 - - [28/May/2023 10:29:19] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:29:35,317 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:29:35,486 INFO:  * Restarting with stat
+2023-05-28 10:29:36,784 WARNING:  * Debugger is active!
+2023-05-28 10:29:36,787 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:29:36,969 INFO: 127.0.0.1 - - [28/May/2023 10:29:36] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:30:43,655 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:30:43,810 INFO:  * Restarting with stat
+2023-05-28 10:30:45,020 WARNING:  * Debugger is active!
+2023-05-28 10:30:45,023 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:30:45,200 INFO: 127.0.0.1 - - [28/May/2023 10:30:45] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:32:44,699 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:32:44,823 INFO:  * Restarting with stat
+2023-05-28 10:32:46,067 WARNING:  * Debugger is active!
+2023-05-28 10:32:46,071 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:32:46,343 INFO: 127.0.0.1 - - [28/May/2023 10:32:46] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:32:52,246 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:32:52,412 INFO:  * Restarting with stat
+2023-05-28 10:32:53,624 WARNING:  * Debugger is active!
+2023-05-28 10:32:53,628 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:32:53,854 INFO: 127.0.0.1 - - [28/May/2023 10:32:53] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:33:05,631 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:33:05,796 INFO:  * Restarting with stat
+2023-05-28 10:33:07,020 WARNING:  * Debugger is active!
+2023-05-28 10:33:07,028 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:33:07,212 INFO: 127.0.0.1 - - [28/May/2023 10:33:07] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:33:09,941 INFO: 127.0.0.1 - - [28/May/2023 10:33:09] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:33:12,038 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:33:12,216 INFO:  * Restarting with stat
+2023-05-28 10:33:13,379 WARNING:  * Debugger is active!
+2023-05-28 10:33:13,379 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:33:13,559 INFO: 127.0.0.1 - - [28/May/2023 10:33:13] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:33:20,759 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:33:20,937 INFO:  * Restarting with stat
+2023-05-28 10:33:22,151 WARNING:  * Debugger is active!
+2023-05-28 10:33:22,151 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:33:22,358 INFO: 127.0.0.1 - - [28/May/2023 10:33:22] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-28 10:33:22,395 INFO: 127.0.0.1 - - [28/May/2023 10:33:22] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-28 10:33:22,397 INFO: 127.0.0.1 - - [28/May/2023 10:33:22] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-28 10:33:22,797 INFO: 127.0.0.1 - - [28/May/2023 10:33:22] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:33:23,036 INFO: 127.0.0.1 - - [28/May/2023 10:33:23] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:33:24,884 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:33:25,017 INFO:  * Restarting with stat
+2023-05-28 10:33:26,239 WARNING:  * Debugger is active!
+2023-05-28 10:33:26,243 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:33:27,391 INFO: 127.0.0.1 - - [28/May/2023 10:33:27] "[35m[1mGET /display_goodstransectionte HTTP/1.1[0m" 500 -
+2023-05-28 10:33:27,417 INFO: 127.0.0.1 - - [28/May/2023 10:33:27] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-28 10:33:27,638 INFO: 127.0.0.1 - - [28/May/2023 10:33:27] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-28 10:33:27,969 INFO: 127.0.0.1 - - [28/May/2023 10:33:27] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:33:28,224 INFO: 127.0.0.1 - - [28/May/2023 10:33:28] "[36mGET /display_goodstransectionte?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-28 10:33:32,449 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:33:32,663 INFO:  * Restarting with stat
+2023-05-28 10:33:33,847 WARNING:  * Debugger is active!
+2023-05-28 10:33:33,848 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:33:36,829 INFO: 127.0.0.1 - - [28/May/2023 10:33:36] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:34:38,439 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:34:38,596 INFO:  * Restarting with stat
+2023-05-28 10:34:39,780 WARNING:  * Debugger is active!
+2023-05-28 10:34:39,783 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:34:39,951 INFO: 127.0.0.1 - - [28/May/2023 10:34:39] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:34:43,571 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:34:43,672 INFO:  * Restarting with stat
+2023-05-28 10:34:44,852 WARNING:  * Debugger is active!
+2023-05-28 10:34:44,855 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:35:25,912 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:35:26,072 INFO:  * Restarting with stat
+2023-05-28 10:35:27,309 WARNING:  * Debugger is active!
+2023-05-28 10:35:27,312 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:35:32,208 INFO: 127.0.0.1 - - [28/May/2023 10:35:32] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:36:36,593 INFO: 127.0.0.1 - - [28/May/2023 10:36:36] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:37:47,384 INFO: 127.0.0.1 - - [28/May/2023 10:37:47] "GET / HTTP/1.1" 200 -
+2023-05-28 10:37:48,062 INFO: 127.0.0.1 - - [28/May/2023 10:37:48] "GET /next_page HTTP/1.1" 200 -
+2023-05-28 10:37:53,869 INFO: 127.0.0.1 - - [28/May/2023 10:37:53] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:37:54,138 INFO: 127.0.0.1 - - [28/May/2023 10:37:54] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:37:55,552 INFO: 127.0.0.1 - - [28/May/2023 10:37:55] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-28 10:37:55,557 INFO: 127.0.0.1 - - [28/May/2023 10:37:55] "GET /next_page?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-28 10:37:56,308 INFO: 127.0.0.1 - - [28/May/2023 10:37:56] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-28 10:37:56,584 INFO: 127.0.0.1 - - [28/May/2023 10:37:56] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:38:17,395 INFO: 127.0.0.1 - - [28/May/2023 10:38:17] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:38:17,400 INFO: 127.0.0.1 - - [28/May/2023 10:38:17] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:39:01,191 INFO: 127.0.0.1 - - [28/May/2023 10:39:01] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-28 10:39:41,131 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-28 10:39:41,279 INFO:  * Restarting with stat
+2023-05-28 10:39:42,578 WARNING:  * Debugger is active!
+2023-05-28 10:39:42,582 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:41:06,038 INFO: 127.0.0.1 - - [28/May/2023 10:41:06] "GET / HTTP/1.1" 200 -
+2023-05-28 10:41:06,654 INFO: 127.0.0.1 - - [28/May/2023 10:41:06] "GET /next_page HTTP/1.1" 200 -
+2023-05-28 10:41:07,688 INFO: 127.0.0.1 - - [28/May/2023 10:41:07] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:41:07,965 INFO: 127.0.0.1 - - [28/May/2023 10:41:07] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:41:09,209 INFO: 127.0.0.1 - - [28/May/2023 10:41:09] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-28 10:41:09,214 INFO: 127.0.0.1 - - [28/May/2023 10:41:09] "GET /next_page?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-28 10:41:09,646 INFO: 127.0.0.1 - - [28/May/2023 10:41:09] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-28 10:41:09,918 INFO: 127.0.0.1 - - [28/May/2023 10:41:09] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:41:34,727 INFO: 127.0.0.1 - - [28/May/2023 10:41:34] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:41:34,731 INFO: 127.0.0.1 - - [28/May/2023 10:41:34] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:42:27,490 INFO: 127.0.0.1 - - [28/May/2023 10:42:27] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:42:27,677 INFO: 127.0.0.1 - - [28/May/2023 10:42:27] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:45:01,933 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-28 10:45:02,138 INFO:  * Restarting with stat
+2023-05-28 10:45:03,456 WARNING:  * Debugger is active!
+2023-05-28 10:45:03,459 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:45:06,109 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-28 10:45:06,264 INFO:  * Restarting with stat
+2023-05-28 10:45:07,581 WARNING:  * Debugger is active!
+2023-05-28 10:45:07,585 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:45:10,247 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-28 10:45:10,414 INFO:  * Restarting with stat
+2023-05-28 10:45:11,707 WARNING:  * Debugger is active!
+2023-05-28 10:45:11,709 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:45:47,608 INFO: 127.0.0.1 - - [28/May/2023 10:45:47] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 10:45:47,615 INFO: 127.0.0.1 - - [28/May/2023 10:45:47] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:45:48,723 INFO: 127.0.0.1 - - [28/May/2023 10:45:48] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-28 10:45:48,979 INFO: 127.0.0.1 - - [28/May/2023 10:45:48] "GET /next_page?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-28 10:45:50,511 INFO: 127.0.0.1 - - [28/May/2023 10:45:50] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-28 10:45:50,519 INFO: 127.0.0.1 - - [28/May/2023 10:45:50] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 10:46:22,441 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\DataBaseConnection.py', reloading
+2023-05-28 10:46:22,611 INFO:  * Restarting with stat
+2023-05-28 10:46:23,833 WARNING:  * Debugger is active!
+2023-05-28 10:46:23,837 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 10:46:26,514 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-28 10:46:26,653 INFO:  * Restarting with stat
+2023-05-28 10:46:27,842 WARNING:  * Debugger is active!
+2023-05-28 10:46:27,845 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 12:56:11,682 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-28 12:56:11,682 INFO: [33mPress CTRL+C to quit[0m
+2023-05-28 12:56:11,684 INFO:  * Restarting with stat
+2023-05-28 12:56:15,091 WARNING:  * Debugger is active!
+2023-05-28 12:56:15,110 INFO:  * Debugger PIN: 109-877-722
+2023-05-28 12:56:24,782 INFO: 127.0.0.1 - - [28/May/2023 12:56:24] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-28 12:56:24,806 INFO: 127.0.0.1 - - [28/May/2023 12:56:24] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-28 12:56:26,218 INFO: 127.0.0.1 - - [28/May/2023 12:56:26] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-29 08:22:06,907 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-29 08:22:06,907 INFO: [33mPress CTRL+C to quit[0m
+2023-05-29 08:22:06,909 INFO:  * Restarting with stat
+2023-05-29 08:22:20,520 WARNING:  * Debugger is active!
+2023-05-29 08:22:20,524 INFO:  * Debugger PIN: 109-877-722
+2023-05-29 08:22:20,847 INFO: 127.0.0.1 - - [29/May/2023 08:22:20] "GET /next_page HTTP/1.1" 200 -
+2023-05-29 08:22:21,223 INFO: 127.0.0.1 - - [29/May/2023 08:22:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-29 08:22:25,127 INFO: 127.0.0.1 - - [29/May/2023 08:22:25] "GET / HTTP/1.1" 200 -
+2023-05-29 08:34:34,057 INFO: 127.0.0.1 - - [29/May/2023 08:34:34] "GET / HTTP/1.1" 200 -
+2023-05-29 08:34:34,153 INFO: 127.0.0.1 - - [29/May/2023 08:34:34] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:34:40,946 INFO: 127.0.0.1 - - [29/May/2023 08:34:40] "GET / HTTP/1.1" 200 -
+2023-05-29 08:34:41,228 INFO: 127.0.0.1 - - [29/May/2023 08:34:41] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:35:02,881 INFO: 127.0.0.1 - - [29/May/2023 08:35:02] "GET / HTTP/1.1" 200 -
+2023-05-29 08:35:02,894 INFO: 127.0.0.1 - - [29/May/2023 08:35:02] "[33mGET /templates/styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:35:25,964 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-29 08:35:25,964 INFO: [33mPress CTRL+C to quit[0m
+2023-05-29 08:35:25,965 INFO:  * Restarting with stat
+2023-05-29 08:35:27,080 WARNING:  * Debugger is active!
+2023-05-29 08:35:27,083 INFO:  * Debugger PIN: 109-877-722
+2023-05-29 08:35:42,458 INFO: 127.0.0.1 - - [29/May/2023 08:35:42] "GET / HTTP/1.1" 200 -
+2023-05-29 08:35:42,475 INFO: 127.0.0.1 - - [29/May/2023 08:35:42] "[33mGET /templates/styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:35:55,545 INFO: 127.0.0.1 - - [29/May/2023 08:35:55] "GET / HTTP/1.1" 200 -
+2023-05-29 08:35:55,831 INFO: 127.0.0.1 - - [29/May/2023 08:35:55] "[33mGET /templates/styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:37:24,445 INFO: 127.0.0.1 - - [29/May/2023 08:37:24] "GET /next_page HTTP/1.1" 200 -
+2023-05-29 08:37:26,288 INFO: 127.0.0.1 - - [29/May/2023 08:37:26] "GET / HTTP/1.1" 200 -
+2023-05-29 08:37:32,057 INFO: 127.0.0.1 - - [29/May/2023 08:37:32] "GET / HTTP/1.1" 200 -
+2023-05-29 08:37:40,338 INFO: 127.0.0.1 - - [29/May/2023 08:37:40] "GET / HTTP/1.1" 200 -
+2023-05-29 08:37:48,299 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-29 08:37:48,299 INFO: [33mPress CTRL+C to quit[0m
+2023-05-29 08:37:48,299 INFO:  * Restarting with stat
+2023-05-29 08:37:49,520 WARNING:  * Debugger is active!
+2023-05-29 08:37:49,524 INFO:  * Debugger PIN: 109-877-722
+2023-05-29 08:37:50,126 INFO: 127.0.0.1 - - [29/May/2023 08:37:50] "GET / HTTP/1.1" 200 -
+2023-05-29 08:37:57,112 INFO: 127.0.0.1 - - [29/May/2023 08:37:57] "GET / HTTP/1.1" 200 -
+2023-05-29 08:37:58,792 INFO: 127.0.0.1 - - [29/May/2023 08:37:58] "GET /next_page HTTP/1.1" 200 -
+2023-05-29 08:37:59,910 INFO: 127.0.0.1 - - [29/May/2023 08:37:59] "GET / HTTP/1.1" 200 -
+2023-05-29 08:38:42,519 INFO: 127.0.0.1 - - [29/May/2023 08:38:42] "GET / HTTP/1.1" 200 -
+2023-05-29 08:38:42,533 INFO: 127.0.0.1 - - [29/May/2023 08:38:42] "[33mGET /.templates/styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:38:58,399 INFO: 127.0.0.1 - - [29/May/2023 08:38:58] "GET / HTTP/1.1" 200 -
+2023-05-29 08:38:58,697 INFO: 127.0.0.1 - - [29/May/2023 08:38:58] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:39:12,743 INFO: 127.0.0.1 - - [29/May/2023 08:39:12] "GET / HTTP/1.1" 200 -
+2023-05-29 08:39:12,756 INFO: 127.0.0.1 - - [29/May/2023 08:39:12] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:39:22,053 INFO: 127.0.0.1 - - [29/May/2023 08:39:22] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-29 08:39:23,497 INFO: 127.0.0.1 - - [29/May/2023 08:39:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-29 08:46:37,437 INFO: 127.0.0.1 - - [29/May/2023 08:46:37] "GET / HTTP/1.1" 200 -
+2023-05-29 08:46:37,558 INFO: 127.0.0.1 - - [29/May/2023 08:46:37] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:46:38,730 INFO: 127.0.0.1 - - [29/May/2023 08:46:38] "GET / HTTP/1.1" 200 -
+2023-05-29 08:46:39,039 INFO: 127.0.0.1 - - [29/May/2023 08:46:39] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 08:46:55,753 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-29 08:46:55,943 INFO:  * Restarting with stat
+2023-05-29 08:46:57,398 WARNING:  * Debugger is active!
+2023-05-29 08:46:57,407 INFO:  * Debugger PIN: 109-877-722
+2023-05-29 08:47:28,404 INFO: 127.0.0.1 - - [29/May/2023 08:47:28] "GET / HTTP/1.1" 200 -
+2023-05-29 09:27:24,758 INFO: 127.0.0.1 - - [29/May/2023 09:27:24] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-29 12:24:21,919 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 03:34:04,962 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.28:5000
+2023-05-30 03:34:04,963 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 03:34:04,963 INFO:  * Restarting with stat
+2023-05-30 03:34:06,075 WARNING:  * Debugger is active!
+2023-05-30 03:34:06,081 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 03:34:10,628 INFO: 127.0.0.1 - - [30/May/2023 03:34:10] "GET /next_page HTTP/1.1" 200 -
+2023-05-30 03:34:10,973 INFO: 127.0.0.1 - - [30/May/2023 03:34:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-30 03:34:14,168 INFO: 127.0.0.1 - - [30/May/2023 03:34:14] "GET / HTTP/1.1" 200 -
+2023-05-30 03:37:00,077 INFO: 127.0.0.1 - - [30/May/2023 03:37:00] "GET / HTTP/1.1" 200 -
+2023-05-30 03:38:03,791 INFO: 127.0.0.1 - - [30/May/2023 03:38:03] "GET / HTTP/1.1" 200 -
+2023-05-30 03:38:27,307 INFO: 127.0.0.1 - - [30/May/2023 03:38:27] "GET / HTTP/1.1" 200 -
+2023-05-30 03:38:39,205 INFO: 127.0.0.1 - - [30/May/2023 03:38:39] "GET / HTTP/1.1" 200 -
+2023-05-30 03:38:43,503 INFO: 127.0.0.1 - - [30/May/2023 03:38:43] "GET / HTTP/1.1" 200 -
+2023-05-30 03:38:50,204 INFO: 127.0.0.1 - - [30/May/2023 03:38:50] "GET / HTTP/1.1" 200 -
+2023-05-30 03:39:14,027 INFO: 127.0.0.1 - - [30/May/2023 03:39:14] "GET / HTTP/1.1" 200 -
+2023-05-30 03:39:20,943 INFO: 127.0.0.1 - - [30/May/2023 03:39:20] "GET / HTTP/1.1" 200 -
+2023-05-30 03:39:36,998 INFO: 127.0.0.1 - - [30/May/2023 03:39:36] "GET / HTTP/1.1" 200 -
+2023-05-30 03:40:17,772 INFO: 127.0.0.1 - - [30/May/2023 03:40:17] "GET / HTTP/1.1" 200 -
+2023-05-30 03:40:25,680 INFO: 127.0.0.1 - - [30/May/2023 03:40:25] "GET / HTTP/1.1" 200 -
+2023-05-30 03:41:18,567 INFO: 127.0.0.1 - - [30/May/2023 03:41:18] "GET / HTTP/1.1" 200 -
+2023-05-30 03:41:35,386 INFO: 127.0.0.1 - - [30/May/2023 03:41:35] "GET / HTTP/1.1" 200 -
+2023-05-30 03:41:45,216 INFO: 127.0.0.1 - - [30/May/2023 03:41:45] "GET / HTTP/1.1" 200 -
+2023-05-30 03:41:52,646 INFO: 127.0.0.1 - - [30/May/2023 03:41:52] "GET / HTTP/1.1" 200 -
+2023-05-30 03:41:58,979 INFO: 127.0.0.1 - - [30/May/2023 03:41:58] "GET / HTTP/1.1" 200 -
+2023-05-30 03:42:19,225 INFO: 127.0.0.1 - - [30/May/2023 03:42:19] "GET / HTTP/1.1" 200 -
+2023-05-30 03:42:27,904 INFO: 127.0.0.1 - - [30/May/2023 03:42:27] "GET / HTTP/1.1" 200 -
+2023-05-30 03:42:40,889 INFO: 127.0.0.1 - - [30/May/2023 03:42:40] "GET / HTTP/1.1" 200 -
+2023-05-30 03:44:21,871 INFO: 127.0.0.1 - - [30/May/2023 03:44:21] "GET / HTTP/1.1" 200 -
+2023-05-30 03:49:16,651 INFO: 127.0.0.1 - - [30/May/2023 03:49:16] "GET / HTTP/1.1" 200 -
+2023-05-30 03:49:53,484 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 03:49:53,644 INFO:  * Restarting with stat
+2023-05-30 03:49:55,058 WARNING:  * Debugger is active!
+2023-05-30 03:49:55,063 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 03:49:55,235 INFO: 127.0.0.1 - - [30/May/2023 03:49:55] "GET / HTTP/1.1" 200 -
+2023-05-30 03:49:56,579 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 03:49:56,696 INFO:  * Restarting with stat
+2023-05-30 03:49:57,911 WARNING:  * Debugger is active!
+2023-05-30 03:49:57,914 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:19:40,567 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 04:19:40,800 INFO:  * Restarting with stat
+2023-05-30 04:19:42,044 WARNING:  * Debugger is active!
+2023-05-30 04:19:42,048 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:19:50,589 INFO: 127.0.0.1 - - [30/May/2023 04:19:50] "GET / HTTP/1.1" 200 -
+2023-05-30 04:19:51,019 INFO: 127.0.0.1 - - [30/May/2023 04:19:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-30 04:20:52,846 INFO: 127.0.0.1 - - [30/May/2023 04:20:52] "GET /next_page HTTP/1.1" 200 -
+2023-05-30 04:20:54,082 INFO: 127.0.0.1 - - [30/May/2023 04:20:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-30 04:42:02,364 INFO: 127.0.0.1 - - [30/May/2023 04:42:02] "GET / HTTP/1.1" 200 -
+2023-05-30 04:43:02,358 INFO: 127.0.0.1 - - [30/May/2023 04:43:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-05-30 04:43:02,647 INFO: 127.0.0.1 - - [30/May/2023 04:43:02] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-30 04:43:02,711 INFO: 127.0.0.1 - - [30/May/2023 04:43:02] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-30 04:43:03,056 INFO: 127.0.0.1 - - [30/May/2023 04:43:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-30 04:43:03,301 INFO: 127.0.0.1 - - [30/May/2023 04:43:03] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 04:43:11,805 INFO: 127.0.0.1 - - [30/May/2023 04:43:11] "GET / HTTP/1.1" 200 -
+2023-05-30 04:44:20,295 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 04:44:20,450 INFO:  * Restarting with stat
+2023-05-30 04:44:22,063 WARNING:  * Debugger is active!
+2023-05-30 04:44:22,068 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:44:23,567 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 04:44:23,728 INFO:  * Restarting with stat
+2023-05-30 04:44:24,914 WARNING:  * Debugger is active!
+2023-05-30 04:44:24,918 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:44:25,095 INFO: 127.0.0.1 - - [30/May/2023 04:44:25] "GET / HTTP/1.1" 200 -
+2023-05-30 04:44:32,587 INFO: 127.0.0.1 - - [30/May/2023 04:44:32] "POST / HTTP/1.1" 200 -
+2023-05-30 04:48:30,799 INFO: 127.0.0.1 - - [30/May/2023 04:48:30] "GET / HTTP/1.1" 200 -
+2023-05-30 04:48:32,102 INFO: 127.0.0.1 - - [30/May/2023 04:48:32] "GET / HTTP/1.1" 200 -
+2023-05-30 04:49:17,113 INFO: 127.0.0.1 - - [30/May/2023 04:49:17] "GET / HTTP/1.1" 200 -
+2023-05-30 04:49:18,558 INFO: 127.0.0.1 - - [30/May/2023 04:49:18] "GET / HTTP/1.1" 200 -
+2023-05-30 04:49:25,575 INFO: 127.0.0.1 - - [30/May/2023 04:49:25] "GET / HTTP/1.1" 200 -
+2023-05-30 04:49:45,039 INFO: 127.0.0.1 - - [30/May/2023 04:49:45] "GET / HTTP/1.1" 200 -
+2023-05-30 04:50:20,328 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 04:50:20,329 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 04:50:20,330 INFO:  * Restarting with stat
+2023-05-30 04:50:21,663 WARNING:  * Debugger is active!
+2023-05-30 04:50:21,668 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:50:22,053 INFO: 127.0.0.1 - - [30/May/2023 04:50:22] "GET / HTTP/1.1" 200 -
+2023-05-30 04:50:33,782 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 04:50:33,915 INFO:  * Restarting with stat
+2023-05-30 04:50:35,072 WARNING:  * Debugger is active!
+2023-05-30 04:50:35,076 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:50:38,243 INFO: 127.0.0.1 - - [30/May/2023 04:50:38] "GET / HTTP/1.1" 200 -
+2023-05-30 04:51:24,386 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 04:51:24,386 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 04:51:24,387 INFO:  * Restarting with stat
+2023-05-30 04:51:25,546 WARNING:  * Debugger is active!
+2023-05-30 04:51:25,549 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:51:26,008 INFO: 127.0.0.1 - - [30/May/2023 04:51:26] "GET / HTTP/1.1" 200 -
+2023-05-30 04:51:26,030 INFO: 127.0.0.1 - - [30/May/2023 04:51:26] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:51:26,466 INFO: 127.0.0.1 - - [30/May/2023 04:51:26] "GET / HTTP/1.1" 200 -
+2023-05-30 04:51:26,773 INFO: 127.0.0.1 - - [30/May/2023 04:51:26] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:51:27,925 INFO: 127.0.0.1 - - [30/May/2023 04:51:27] "GET / HTTP/1.1" 200 -
+2023-05-30 04:51:27,950 INFO: 127.0.0.1 - - [30/May/2023 04:51:27] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:52:01,374 INFO: 127.0.0.1 - - [30/May/2023 04:52:01] "GET / HTTP/1.1" 200 -
+2023-05-30 04:52:01,668 INFO: 127.0.0.1 - - [30/May/2023 04:52:01] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:52:11,310 INFO: 127.0.0.1 - - [30/May/2023 04:52:11] "GET / HTTP/1.1" 200 -
+2023-05-30 04:52:11,333 INFO: 127.0.0.1 - - [30/May/2023 04:52:11] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:52:49,797 INFO: 127.0.0.1 - - [30/May/2023 04:52:49] "GET / HTTP/1.1" 200 -
+2023-05-30 04:52:50,092 INFO: 127.0.0.1 - - [30/May/2023 04:52:50] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:53:46,096 INFO: 127.0.0.1 - - [30/May/2023 04:53:46] "GET / HTTP/1.1" 200 -
+2023-05-30 04:53:46,119 INFO: 127.0.0.1 - - [30/May/2023 04:53:46] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:53:52,907 INFO: 127.0.0.1 - - [30/May/2023 04:53:52] "GET / HTTP/1.1" 200 -
+2023-05-30 04:53:53,206 INFO: 127.0.0.1 - - [30/May/2023 04:53:53] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:54:04,081 INFO: 127.0.0.1 - - [30/May/2023 04:54:04] "GET / HTTP/1.1" 200 -
+2023-05-30 04:54:08,146 INFO: 127.0.0.1 - - [30/May/2023 04:54:08] "GET / HTTP/1.1" 200 -
+2023-05-30 04:54:08,171 INFO: 127.0.0.1 - - [30/May/2023 04:54:08] "[33mGET /r"D:/monymovment/Cashflows/templates/styles.css" HTTP/1.1[0m" 404 -
+2023-05-30 04:54:15,257 INFO: 127.0.0.1 - - [30/May/2023 04:54:15] "GET / HTTP/1.1" 200 -
+2023-05-30 04:54:15,280 INFO: 127.0.0.1 - - [30/May/2023 04:54:15] "[33mGET /r'D:/monymovment/Cashflows/templates/styles.css' HTTP/1.1[0m" 404 -
+2023-05-30 04:54:35,939 INFO: 127.0.0.1 - - [30/May/2023 04:54:35] "GET / HTTP/1.1" 200 -
+2023-05-30 04:54:36,233 INFO: 127.0.0.1 - - [30/May/2023 04:54:36] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:56:38,150 INFO: 127.0.0.1 - - [30/May/2023 04:56:38] "GET /next_page HTTP/1.1" 200 -
+2023-05-30 04:56:44,355 INFO: 127.0.0.1 - - [30/May/2023 04:56:44] "GET / HTTP/1.1" 200 -
+2023-05-30 04:56:44,395 INFO: 127.0.0.1 - - [30/May/2023 04:56:44] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:56:48,022 INFO: 127.0.0.1 - - [30/May/2023 04:56:48] "GET / HTTP/1.1" 200 -
+2023-05-30 04:56:48,319 INFO: 127.0.0.1 - - [30/May/2023 04:56:48] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:57:15,440 INFO: 127.0.0.1 - - [30/May/2023 04:57:15] "GET / HTTP/1.1" 200 -
+2023-05-30 04:57:15,453 INFO: 127.0.0.1 - - [30/May/2023 04:57:15] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:57:16,325 INFO: 127.0.0.1 - - [30/May/2023 04:57:16] "GET / HTTP/1.1" 200 -
+2023-05-30 04:57:16,629 INFO: 127.0.0.1 - - [30/May/2023 04:57:16] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:57:56,266 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 04:57:56,266 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 04:57:56,266 INFO:  * Restarting with stat
+2023-05-30 04:57:57,381 WARNING:  * Debugger is active!
+2023-05-30 04:57:57,385 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 04:57:57,578 INFO: 127.0.0.1 - - [30/May/2023 04:57:57] "GET / HTTP/1.1" 200 -
+2023-05-30 04:57:57,604 INFO: 127.0.0.1 - - [30/May/2023 04:57:57] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:57:58,809 INFO: 127.0.0.1 - - [30/May/2023 04:57:58] "GET / HTTP/1.1" 200 -
+2023-05-30 04:57:59,116 INFO: 127.0.0.1 - - [30/May/2023 04:57:59] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 04:58:00,319 INFO: 127.0.0.1 - - [30/May/2023 04:58:00] "GET / HTTP/1.1" 200 -
+2023-05-30 04:58:00,334 INFO: 127.0.0.1 - - [30/May/2023 04:58:00] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 05:00:21,641 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 05:00:21,826 INFO:  * Restarting with stat
+2023-05-30 05:00:23,063 WARNING:  * Debugger is active!
+2023-05-30 05:00:23,066 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 05:00:23,240 INFO: 127.0.0.1 - - [30/May/2023 05:00:23] "GET / HTTP/1.1" 200 -
+2023-05-30 05:00:23,255 INFO: 127.0.0.1 - - [30/May/2023 05:00:23] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 05:00:24,123 INFO: 127.0.0.1 - - [30/May/2023 05:00:24] "GET / HTTP/1.1" 200 -
+2023-05-30 05:00:24,426 INFO: 127.0.0.1 - - [30/May/2023 05:00:24] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 05:00:25,629 INFO: 127.0.0.1 - - [30/May/2023 05:00:25] "GET / HTTP/1.1" 200 -
+2023-05-30 05:00:25,641 INFO: 127.0.0.1 - - [30/May/2023 05:00:25] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+2023-05-30 05:00:30,432 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 05:00:30,597 INFO:  * Restarting with stat
+2023-05-30 05:00:31,892 WARNING:  * Debugger is active!
+2023-05-30 05:00:31,896 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 05:01:50,879 INFO: 127.0.0.1 - - [30/May/2023 05:01:50] "GET / HTTP/1.1" 200 -
+2023-05-30 05:04:07,887 INFO: 127.0.0.1 - - [30/May/2023 05:04:07] "GET / HTTP/1.1" 200 -
+2023-05-30 05:04:39,046 INFO: 127.0.0.1 - - [30/May/2023 05:04:39] "GET / HTTP/1.1" 200 -
+2023-05-30 05:04:56,104 INFO: 127.0.0.1 - - [30/May/2023 05:04:56] "GET / HTTP/1.1" 200 -
+2023-05-30 05:05:29,777 INFO: 127.0.0.1 - - [30/May/2023 05:05:29] "GET / HTTP/1.1" 200 -
+2023-05-30 05:07:15,799 INFO: 127.0.0.1 - - [30/May/2023 05:07:15] "GET / HTTP/1.1" 200 -
+2023-05-30 05:08:24,093 INFO: 127.0.0.1 - - [30/May/2023 05:08:24] "GET / HTTP/1.1" 200 -
+2023-05-30 05:09:14,821 INFO: 127.0.0.1 - - [30/May/2023 05:09:14] "GET / HTTP/1.1" 200 -
+2023-05-30 05:09:16,327 INFO: 127.0.0.1 - - [30/May/2023 05:09:16] "POST / HTTP/1.1" 200 -
+2023-05-30 05:09:17,464 INFO: 127.0.0.1 - - [30/May/2023 05:09:17] "POST / HTTP/1.1" 200 -
+2023-05-30 05:09:21,722 INFO: 127.0.0.1 - - [30/May/2023 05:09:21] "POST / HTTP/1.1" 200 -
+2023-05-30 05:10:11,580 INFO: 127.0.0.1 - - [30/May/2023 05:10:11] "GET / HTTP/1.1" 200 -
+2023-05-30 05:10:40,249 INFO: 127.0.0.1 - - [30/May/2023 05:10:40] "GET / HTTP/1.1" 200 -
+2023-05-30 05:10:56,323 INFO: 127.0.0.1 - - [30/May/2023 05:10:56] "GET / HTTP/1.1" 200 -
+2023-05-30 05:33:24,913 INFO: 127.0.0.1 - - [30/May/2023 05:33:24] "GET / HTTP/1.1" 200 -
+2023-05-30 05:35:09,070 INFO: 127.0.0.1 - - [30/May/2023 05:35:09] "GET / HTTP/1.1" 200 -
+2023-05-30 05:35:28,190 INFO: 127.0.0.1 - - [30/May/2023 05:35:28] "GET / HTTP/1.1" 200 -
+2023-05-30 05:35:42,574 INFO: 127.0.0.1 - - [30/May/2023 05:35:42] "GET / HTTP/1.1" 200 -
+2023-05-30 05:36:05,189 INFO: 127.0.0.1 - - [30/May/2023 05:36:05] "GET / HTTP/1.1" 200 -
+2023-05-30 05:36:10,020 INFO: 127.0.0.1 - - [30/May/2023 05:36:10] "GET / HTTP/1.1" 200 -
+2023-05-30 05:36:13,391 INFO: 127.0.0.1 - - [30/May/2023 05:36:13] "GET / HTTP/1.1" 200 -
+2023-05-30 05:36:46,713 INFO: 127.0.0.1 - - [30/May/2023 05:36:46] "GET / HTTP/1.1" 200 -
+2023-05-30 05:36:52,403 INFO: 127.0.0.1 - - [30/May/2023 05:36:52] "GET / HTTP/1.1" 200 -
+2023-05-30 05:37:16,219 INFO: 127.0.0.1 - - [30/May/2023 05:37:16] "GET / HTTP/1.1" 200 -
+2023-05-30 05:37:29,197 INFO: 127.0.0.1 - - [30/May/2023 05:37:29] "GET / HTTP/1.1" 200 -
+2023-05-30 05:38:52,480 INFO: 127.0.0.1 - - [30/May/2023 05:38:52] "GET / HTTP/1.1" 200 -
+2023-05-30 05:39:48,405 INFO: 127.0.0.1 - - [30/May/2023 05:39:48] "GET / HTTP/1.1" 200 -
+2023-05-30 05:40:16,098 INFO: 127.0.0.1 - - [30/May/2023 05:40:16] "GET / HTTP/1.1" 200 -
+2023-05-30 05:40:21,752 INFO: 127.0.0.1 - - [30/May/2023 05:40:21] "GET / HTTP/1.1" 200 -
+2023-05-30 05:40:53,222 INFO: 127.0.0.1 - - [30/May/2023 05:40:53] "GET / HTTP/1.1" 200 -
+2023-05-30 05:41:01,893 INFO: 127.0.0.1 - - [30/May/2023 05:41:01] "GET / HTTP/1.1" 200 -
+2023-05-30 05:42:41,276 INFO: 127.0.0.1 - - [30/May/2023 05:42:41] "GET / HTTP/1.1" 200 -
+2023-05-30 05:42:51,506 INFO: 127.0.0.1 - - [30/May/2023 05:42:51] "GET / HTTP/1.1" 200 -
+2023-05-30 05:43:01,239 INFO: 127.0.0.1 - - [30/May/2023 05:43:01] "GET / HTTP/1.1" 200 -
+2023-05-30 05:43:08,372 INFO: 127.0.0.1 - - [30/May/2023 05:43:08] "GET / HTTP/1.1" 200 -
+2023-05-30 05:43:25,944 INFO: 127.0.0.1 - - [30/May/2023 05:43:25] "GET / HTTP/1.1" 200 -
+2023-05-30 05:43:27,396 INFO: 127.0.0.1 - - [30/May/2023 05:43:27] "GET / HTTP/1.1" 200 -
+2023-05-30 05:44:03,877 INFO: 127.0.0.1 - - [30/May/2023 05:44:03] "GET / HTTP/1.1" 200 -
+2023-05-30 05:44:14,463 INFO: 127.0.0.1 - - [30/May/2023 05:44:14] "GET / HTTP/1.1" 200 -
+2023-05-30 05:44:35,211 INFO: 127.0.0.1 - - [30/May/2023 05:44:35] "GET / HTTP/1.1" 200 -
+2023-05-30 05:44:40,628 INFO: 127.0.0.1 - - [30/May/2023 05:44:40] "GET / HTTP/1.1" 200 -
+2023-05-30 05:45:19,538 INFO: 127.0.0.1 - - [30/May/2023 05:45:19] "GET / HTTP/1.1" 200 -
+2023-05-30 05:45:33,590 INFO: 127.0.0.1 - - [30/May/2023 05:45:33] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:01,632 INFO: 127.0.0.1 - - [30/May/2023 05:46:01] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:11,286 INFO: 127.0.0.1 - - [30/May/2023 05:46:11] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:17,216 INFO: 127.0.0.1 - - [30/May/2023 05:46:17] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:41,839 INFO: 127.0.0.1 - - [30/May/2023 05:46:41] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:48,764 INFO: 127.0.0.1 - - [30/May/2023 05:46:48] "GET / HTTP/1.1" 200 -
+2023-05-30 05:46:56,166 INFO: 127.0.0.1 - - [30/May/2023 05:46:56] "GET / HTTP/1.1" 200 -
+2023-05-30 05:47:18,835 INFO: 127.0.0.1 - - [30/May/2023 05:47:18] "GET / HTTP/1.1" 200 -
+2023-05-30 05:47:24,687 INFO: 127.0.0.1 - - [30/May/2023 05:47:24] "GET / HTTP/1.1" 200 -
+2023-05-30 05:47:41,478 INFO: 127.0.0.1 - - [30/May/2023 05:47:41] "GET / HTTP/1.1" 200 -
+2023-05-30 05:47:59,576 INFO: 127.0.0.1 - - [30/May/2023 05:47:59] "GET / HTTP/1.1" 200 -
+2023-05-30 05:48:11,064 INFO: 127.0.0.1 - - [30/May/2023 05:48:11] "GET / HTTP/1.1" 200 -
+2023-05-30 05:48:34,978 INFO: 127.0.0.1 - - [30/May/2023 05:48:34] "GET / HTTP/1.1" 200 -
+2023-05-30 05:48:42,670 INFO: 127.0.0.1 - - [30/May/2023 05:48:42] "GET / HTTP/1.1" 200 -
+2023-05-30 05:48:46,128 INFO: 127.0.0.1 - - [30/May/2023 05:48:46] "GET / HTTP/1.1" 200 -
+2023-05-30 05:48:56,447 INFO: 127.0.0.1 - - [30/May/2023 05:48:56] "GET / HTTP/1.1" 200 -
+2023-05-30 05:49:00,287 INFO: 127.0.0.1 - - [30/May/2023 05:49:00] "GET / HTTP/1.1" 200 -
+2023-05-30 05:49:26,114 INFO: 127.0.0.1 - - [30/May/2023 05:49:26] "GET / HTTP/1.1" 200 -
+2023-05-30 05:50:03,166 INFO: 127.0.0.1 - - [30/May/2023 05:50:03] "GET / HTTP/1.1" 200 -
+2023-05-30 05:51:55,528 INFO: 127.0.0.1 - - [30/May/2023 05:51:55] "GET / HTTP/1.1" 200 -
+2023-05-30 05:52:26,235 INFO: 127.0.0.1 - - [30/May/2023 05:52:26] "GET / HTTP/1.1" 200 -
+2023-05-30 05:54:05,297 INFO: 127.0.0.1 - - [30/May/2023 05:54:05] "GET / HTTP/1.1" 200 -
+2023-05-30 05:58:05,495 INFO: 127.0.0.1 - - [30/May/2023 05:58:05] "GET / HTTP/1.1" 200 -
+2023-05-30 05:58:14,009 INFO: 127.0.0.1 - - [30/May/2023 05:58:14] "GET / HTTP/1.1" 200 -
+2023-05-30 05:58:29,726 INFO: 127.0.0.1 - - [30/May/2023 05:58:29] "GET / HTTP/1.1" 200 -
+2023-05-30 05:58:43,362 INFO: 127.0.0.1 - - [30/May/2023 05:58:43] "GET / HTTP/1.1" 200 -
+2023-05-30 05:58:46,969 INFO: 127.0.0.1 - - [30/May/2023 05:58:46] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:06,758 INFO: 127.0.0.1 - - [30/May/2023 05:59:06] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:13,720 INFO: 127.0.0.1 - - [30/May/2023 05:59:13] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:19,621 INFO: 127.0.0.1 - - [30/May/2023 05:59:19] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:25,113 INFO: 127.0.0.1 - - [30/May/2023 05:59:25] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:35,873 INFO: 127.0.0.1 - - [30/May/2023 05:59:35] "GET / HTTP/1.1" 200 -
+2023-05-30 05:59:45,252 INFO: 127.0.0.1 - - [30/May/2023 05:59:45] "GET / HTTP/1.1" 200 -
+2023-05-30 06:00:04,005 INFO: 127.0.0.1 - - [30/May/2023 06:00:04] "GET / HTTP/1.1" 200 -
+2023-05-30 06:00:09,673 INFO: 127.0.0.1 - - [30/May/2023 06:00:09] "GET / HTTP/1.1" 200 -
+2023-05-30 06:00:16,220 INFO: 127.0.0.1 - - [30/May/2023 06:00:16] "GET / HTTP/1.1" 200 -
+2023-05-30 06:00:30,352 INFO: 127.0.0.1 - - [30/May/2023 06:00:30] "GET / HTTP/1.1" 200 -
+2023-05-30 06:00:51,347 INFO: 127.0.0.1 - - [30/May/2023 06:00:51] "GET / HTTP/1.1" 200 -
+2023-05-30 06:01:13,249 INFO: 127.0.0.1 - - [30/May/2023 06:01:13] "GET / HTTP/1.1" 200 -
+2023-05-30 06:01:21,449 INFO: 127.0.0.1 - - [30/May/2023 06:01:21] "GET / HTTP/1.1" 200 -
+2023-05-30 06:01:34,659 INFO: 127.0.0.1 - - [30/May/2023 06:01:34] "GET / HTTP/1.1" 200 -
+2023-05-30 06:02:09,401 INFO: 127.0.0.1 - - [30/May/2023 06:02:09] "GET / HTTP/1.1" 200 -
+2023-05-30 06:05:06,868 INFO: 127.0.0.1 - - [30/May/2023 06:05:06] "GET / HTTP/1.1" 200 -
+2023-05-30 06:05:31,243 INFO: 127.0.0.1 - - [30/May/2023 06:05:31] "GET / HTTP/1.1" 200 -
+2023-05-30 06:07:16,085 INFO: 127.0.0.1 - - [30/May/2023 06:07:16] "GET / HTTP/1.1" 200 -
+2023-05-30 06:07:23,658 INFO: 127.0.0.1 - - [30/May/2023 06:07:23] "GET / HTTP/1.1" 200 -
+2023-05-30 06:07:42,053 INFO: 127.0.0.1 - - [30/May/2023 06:07:42] "GET / HTTP/1.1" 200 -
+2023-05-30 06:08:59,642 INFO: 127.0.0.1 - - [30/May/2023 06:08:59] "GET / HTTP/1.1" 200 -
+2023-05-30 06:09:22,659 INFO: 127.0.0.1 - - [30/May/2023 06:09:22] "GET / HTTP/1.1" 200 -
+2023-05-30 06:10:30,634 INFO: 127.0.0.1 - - [30/May/2023 06:10:30] "GET / HTTP/1.1" 200 -
+2023-05-30 06:10:58,172 INFO: 127.0.0.1 - - [30/May/2023 06:10:58] "GET / HTTP/1.1" 200 -
+2023-05-30 06:11:08,865 INFO: 127.0.0.1 - - [30/May/2023 06:11:08] "GET / HTTP/1.1" 200 -
+2023-05-30 06:11:45,723 INFO: 127.0.0.1 - - [30/May/2023 06:11:45] "GET / HTTP/1.1" 200 -
+2023-05-30 06:11:56,381 INFO: 127.0.0.1 - - [30/May/2023 06:11:56] "GET / HTTP/1.1" 200 -
+2023-05-30 06:12:10,163 INFO: 127.0.0.1 - - [30/May/2023 06:12:10] "GET / HTTP/1.1" 200 -
+2023-05-30 06:13:05,559 INFO: 127.0.0.1 - - [30/May/2023 06:13:05] "GET / HTTP/1.1" 200 -
+2023-05-30 06:13:38,652 INFO: 127.0.0.1 - - [30/May/2023 06:13:38] "GET / HTTP/1.1" 200 -
+2023-05-30 06:13:41,113 INFO: 127.0.0.1 - - [30/May/2023 06:13:41] "GET / HTTP/1.1" 200 -
+2023-05-30 06:13:53,922 INFO: 127.0.0.1 - - [30/May/2023 06:13:53] "GET / HTTP/1.1" 200 -
+2023-05-30 06:14:45,509 INFO: 127.0.0.1 - - [30/May/2023 06:14:45] "GET / HTTP/1.1" 200 -
+2023-05-30 06:16:55,896 INFO: 127.0.0.1 - - [30/May/2023 06:16:55] "GET / HTTP/1.1" 200 -
+2023-05-30 06:17:11,196 INFO: 127.0.0.1 - - [30/May/2023 06:17:11] "GET / HTTP/1.1" 200 -
+2023-05-30 06:17:37,631 INFO: 127.0.0.1 - - [30/May/2023 06:17:37] "GET / HTTP/1.1" 200 -
+2023-05-30 06:17:57,550 INFO: 127.0.0.1 - - [30/May/2023 06:17:57] "GET / HTTP/1.1" 200 -
+2023-05-30 06:18:18,128 INFO: 127.0.0.1 - - [30/May/2023 06:18:18] "GET / HTTP/1.1" 200 -
+2023-05-30 06:18:25,824 INFO: 127.0.0.1 - - [30/May/2023 06:18:25] "GET / HTTP/1.1" 200 -
+2023-05-30 06:18:39,263 INFO: 127.0.0.1 - - [30/May/2023 06:18:39] "GET / HTTP/1.1" 200 -
+2023-05-30 06:18:46,312 INFO: 127.0.0.1 - - [30/May/2023 06:18:46] "GET / HTTP/1.1" 200 -
+2023-05-30 06:18:53,443 INFO: 127.0.0.1 - - [30/May/2023 06:18:53] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:03,988 INFO: 127.0.0.1 - - [30/May/2023 06:19:03] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:08,914 INFO: 127.0.0.1 - - [30/May/2023 06:19:08] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:14,753 INFO: 127.0.0.1 - - [30/May/2023 06:19:14] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:26,762 INFO: 127.0.0.1 - - [30/May/2023 06:19:26] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:31,390 INFO: 127.0.0.1 - - [30/May/2023 06:19:31] "GET / HTTP/1.1" 200 -
+2023-05-30 06:19:39,628 INFO: 127.0.0.1 - - [30/May/2023 06:19:39] "GET / HTTP/1.1" 200 -
+2023-05-30 06:20:43,086 INFO: 127.0.0.1 - - [30/May/2023 06:20:43] "GET / HTTP/1.1" 200 -
+2023-05-30 06:20:53,642 INFO: 127.0.0.1 - - [30/May/2023 06:20:53] "GET / HTTP/1.1" 200 -
+2023-05-30 06:21:07,596 INFO: 127.0.0.1 - - [30/May/2023 06:21:07] "GET / HTTP/1.1" 200 -
+2023-05-30 06:21:23,889 INFO: 127.0.0.1 - - [30/May/2023 06:21:23] "GET / HTTP/1.1" 200 -
+2023-05-30 06:21:29,675 INFO: 127.0.0.1 - - [30/May/2023 06:21:29] "GET / HTTP/1.1" 200 -
+2023-05-30 06:22:13,140 INFO: 127.0.0.1 - - [30/May/2023 06:22:13] "POST / HTTP/1.1" 200 -
+2023-05-30 06:23:10,118 INFO: 127.0.0.1 - - [30/May/2023 06:23:10] "GET / HTTP/1.1" 200 -
+2023-05-30 06:23:25,619 INFO: 127.0.0.1 - - [30/May/2023 06:23:25] "GET / HTTP/1.1" 200 -
+2023-05-30 06:28:47,388 INFO: 127.0.0.1 - - [30/May/2023 06:28:47] "GET / HTTP/1.1" 200 -
+2023-05-30 06:33:11,595 INFO: 127.0.0.1 - - [30/May/2023 06:33:11] "GET / HTTP/1.1" 200 -
+2023-05-30 06:34:43,788 INFO: 127.0.0.1 - - [30/May/2023 06:34:43] "GET / HTTP/1.1" 200 -
+2023-05-30 06:35:17,816 INFO: 127.0.0.1 - - [30/May/2023 06:35:17] "GET / HTTP/1.1" 200 -
+2023-05-30 06:35:26,915 INFO: 127.0.0.1 - - [30/May/2023 06:35:26] "GET / HTTP/1.1" 200 -
+2023-05-30 06:35:40,043 INFO: 127.0.0.1 - - [30/May/2023 06:35:40] "GET / HTTP/1.1" 200 -
+2023-05-30 06:35:52,417 INFO: 127.0.0.1 - - [30/May/2023 06:35:52] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:03,990 INFO: 127.0.0.1 - - [30/May/2023 06:36:03] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:39,234 INFO: 127.0.0.1 - - [30/May/2023 06:36:39] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:43,054 INFO: 127.0.0.1 - - [30/May/2023 06:36:43] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:46,573 INFO: 127.0.0.1 - - [30/May/2023 06:36:46] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:49,858 INFO: 127.0.0.1 - - [30/May/2023 06:36:49] "GET / HTTP/1.1" 200 -
+2023-05-30 06:36:57,347 INFO: 127.0.0.1 - - [30/May/2023 06:36:57] "GET / HTTP/1.1" 200 -
+2023-05-30 06:37:00,421 INFO: 127.0.0.1 - - [30/May/2023 06:37:00] "GET / HTTP/1.1" 200 -
+2023-05-30 06:37:36,233 INFO: 127.0.0.1 - - [30/May/2023 06:37:36] "GET / HTTP/1.1" 200 -
+2023-05-30 06:37:41,436 INFO: 127.0.0.1 - - [30/May/2023 06:37:41] "GET / HTTP/1.1" 200 -
+2023-05-30 06:38:31,167 INFO: 127.0.0.1 - - [30/May/2023 06:38:31] "GET / HTTP/1.1" 200 -
+2023-05-30 06:38:35,889 INFO: 127.0.0.1 - - [30/May/2023 06:38:35] "GET / HTTP/1.1" 200 -
+2023-05-30 06:39:09,741 INFO: 127.0.0.1 - - [30/May/2023 06:39:09] "GET / HTTP/1.1" 200 -
+2023-05-30 06:40:49,252 INFO: 127.0.0.1 - - [30/May/2023 06:40:49] "GET / HTTP/1.1" 200 -
+2023-05-30 06:40:52,865 INFO: 127.0.0.1 - - [30/May/2023 06:40:52] "GET / HTTP/1.1" 200 -
+2023-05-30 06:40:57,406 INFO: 127.0.0.1 - - [30/May/2023 06:40:57] "GET / HTTP/1.1" 200 -
+2023-05-30 06:41:54,357 INFO: 127.0.0.1 - - [30/May/2023 06:41:54] "GET / HTTP/1.1" 200 -
+2023-05-30 06:41:58,787 INFO: 127.0.0.1 - - [30/May/2023 06:41:58] "GET / HTTP/1.1" 200 -
+2023-05-30 06:42:03,132 INFO: 127.0.0.1 - - [30/May/2023 06:42:03] "GET / HTTP/1.1" 200 -
+2023-05-30 06:42:07,574 INFO: 127.0.0.1 - - [30/May/2023 06:42:07] "GET / HTTP/1.1" 200 -
+2023-05-30 06:44:16,335 INFO: 127.0.0.1 - - [30/May/2023 06:44:16] "GET / HTTP/1.1" 200 -
+2023-05-30 06:44:31,071 INFO: 127.0.0.1 - - [30/May/2023 06:44:31] "GET / HTTP/1.1" 200 -
+2023-05-30 06:44:34,352 INFO: 127.0.0.1 - - [30/May/2023 06:44:34] "GET / HTTP/1.1" 200 -
+2023-05-30 06:44:39,953 INFO: 127.0.0.1 - - [30/May/2023 06:44:39] "GET / HTTP/1.1" 200 -
+2023-05-30 06:48:37,306 INFO: 127.0.0.1 - - [30/May/2023 06:48:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-30 07:08:03,200 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 07:08:03,200 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 07:08:03,202 INFO:  * Restarting with stat
+2023-05-30 07:08:04,364 WARNING:  * Debugger is active!
+2023-05-30 07:08:04,368 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 07:08:05,190 INFO: 127.0.0.1 - - [30/May/2023 07:08:05] "GET / HTTP/1.1" 200 -
+2023-05-30 07:08:32,399 INFO: 127.0.0.1 - - [30/May/2023 07:08:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-05-30 07:08:32,434 INFO: 127.0.0.1 - - [30/May/2023 07:08:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-30 07:08:32,745 INFO: 127.0.0.1 - - [30/May/2023 07:08:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-30 07:08:33,092 INFO: 127.0.0.1 - - [30/May/2023 07:08:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 07:08:33,356 INFO: 127.0.0.1 - - [30/May/2023 07:08:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 07:08:39,426 INFO: 127.0.0.1 - - [30/May/2023 07:08:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 07:08:40,544 INFO: 127.0.0.1 - - [30/May/2023 07:08:40] "GET / HTTP/1.1" 200 -
+2023-05-30 07:09:24,309 INFO: 127.0.0.1 - - [30/May/2023 07:09:24] "GET / HTTP/1.1" 200 -
+2023-05-30 07:09:27,283 INFO: 127.0.0.1 - - [30/May/2023 07:09:27] "GET / HTTP/1.1" 200 -
+2023-05-30 07:09:47,760 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 07:09:47,760 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 07:09:47,762 INFO:  * Restarting with stat
+2023-05-30 07:09:48,982 WARNING:  * Debugger is active!
+2023-05-30 07:09:48,985 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 07:09:49,815 INFO: 127.0.0.1 - - [30/May/2023 07:09:49] "GET / HTTP/1.1" 200 -
+2023-05-30 07:09:50,823 INFO: 127.0.0.1 - - [30/May/2023 07:09:50] "GET / HTTP/1.1" 200 -
+2023-05-30 07:12:39,345 INFO: 127.0.0.1 - - [30/May/2023 07:12:39] "GET / HTTP/1.1" 200 -
+2023-05-30 07:13:07,381 INFO: 127.0.0.1 - - [30/May/2023 07:13:07] "GET / HTTP/1.1" 200 -
+2023-05-30 07:13:38,267 INFO: 127.0.0.1 - - [30/May/2023 07:13:38] "GET / HTTP/1.1" 200 -
+2023-05-30 07:14:48,525 INFO: 127.0.0.1 - - [30/May/2023 07:14:48] "POST / HTTP/1.1" 200 -
+2023-05-30 07:14:49,523 INFO: 127.0.0.1 - - [30/May/2023 07:14:49] "POST / HTTP/1.1" 200 -
+2023-05-30 07:15:34,335 INFO: 127.0.0.1 - - [30/May/2023 07:15:34] "GET / HTTP/1.1" 200 -
+2023-05-30 07:15:46,437 INFO: 127.0.0.1 - - [30/May/2023 07:15:46] "GET / HTTP/1.1" 200 -
+2023-05-30 07:16:13,976 INFO: 127.0.0.1 - - [30/May/2023 07:16:13] "GET / HTTP/1.1" 200 -
+2023-05-30 07:16:37,101 INFO: 127.0.0.1 - - [30/May/2023 07:16:37] "GET / HTTP/1.1" 200 -
+2023-05-30 07:16:41,707 INFO: 127.0.0.1 - - [30/May/2023 07:16:41] "GET / HTTP/1.1" 200 -
+2023-05-30 07:16:50,527 INFO: 127.0.0.1 - - [30/May/2023 07:16:50] "GET / HTTP/1.1" 200 -
+2023-05-30 07:18:21,517 INFO: 127.0.0.1 - - [30/May/2023 07:18:21] "GET / HTTP/1.1" 200 -
+2023-05-30 07:18:31,678 INFO: 127.0.0.1 - - [30/May/2023 07:18:31] "GET / HTTP/1.1" 200 -
+2023-05-30 07:18:34,940 INFO: 127.0.0.1 - - [30/May/2023 07:18:34] "GET / HTTP/1.1" 200 -
+2023-05-30 07:18:45,656 INFO: 127.0.0.1 - - [30/May/2023 07:18:45] "GET / HTTP/1.1" 200 -
+2023-05-30 07:19:53,202 INFO: 127.0.0.1 - - [30/May/2023 07:19:53] "GET / HTTP/1.1" 200 -
+2023-05-30 07:20:14,421 INFO: 127.0.0.1 - - [30/May/2023 07:20:14] "GET / HTTP/1.1" 200 -
+2023-05-30 07:20:17,183 INFO: 127.0.0.1 - - [30/May/2023 07:20:17] "GET / HTTP/1.1" 200 -
+2023-05-30 07:21:23,145 INFO: 127.0.0.1 - - [30/May/2023 07:21:23] "GET / HTTP/1.1" 200 -
+2023-05-30 07:21:41,995 INFO: 127.0.0.1 - - [30/May/2023 07:21:41] "GET / HTTP/1.1" 200 -
+2023-05-30 07:22:10,406 INFO: 127.0.0.1 - - [30/May/2023 07:22:10] "GET / HTTP/1.1" 200 -
+2023-05-30 07:22:13,978 INFO: 127.0.0.1 - - [30/May/2023 07:22:13] "GET / HTTP/1.1" 200 -
+2023-05-30 07:22:21,564 INFO: 127.0.0.1 - - [30/May/2023 07:22:21] "GET / HTTP/1.1" 200 -
+2023-05-30 07:22:49,986 INFO: 127.0.0.1 - - [30/May/2023 07:22:49] "GET / HTTP/1.1" 200 -
+2023-05-30 07:22:52,061 INFO: 127.0.0.1 - - [30/May/2023 07:22:52] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:08,707 INFO: 127.0.0.1 - - [30/May/2023 07:23:08] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:20,772 INFO: 127.0.0.1 - - [30/May/2023 07:23:20] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:23,508 INFO: 127.0.0.1 - - [30/May/2023 07:23:23] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:30,936 INFO: 127.0.0.1 - - [30/May/2023 07:23:30] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:42,942 INFO: 127.0.0.1 - - [30/May/2023 07:23:42] "GET / HTTP/1.1" 200 -
+2023-05-30 07:23:48,039 INFO: 127.0.0.1 - - [30/May/2023 07:23:48] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:07,681 INFO: 127.0.0.1 - - [30/May/2023 07:24:07] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:09,093 INFO: 127.0.0.1 - - [30/May/2023 07:24:09] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:17,352 INFO: 127.0.0.1 - - [30/May/2023 07:24:17] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:23,798 INFO: 127.0.0.1 - - [30/May/2023 07:24:23] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:27,471 INFO: 127.0.0.1 - - [30/May/2023 07:24:27] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:31,319 INFO: 127.0.0.1 - - [30/May/2023 07:24:31] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:38,356 INFO: 127.0.0.1 - - [30/May/2023 07:24:38] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:46,715 INFO: 127.0.0.1 - - [30/May/2023 07:24:46] "GET / HTTP/1.1" 200 -
+2023-05-30 07:24:55,866 INFO: 127.0.0.1 - - [30/May/2023 07:24:55] "GET / HTTP/1.1" 200 -
+2023-05-30 07:25:00,230 INFO: 127.0.0.1 - - [30/May/2023 07:25:00] "GET / HTTP/1.1" 200 -
+2023-05-30 07:26:45,801 INFO: 127.0.0.1 - - [30/May/2023 07:26:45] "GET / HTTP/1.1" 200 -
+2023-05-30 07:27:25,096 INFO: 127.0.0.1 - - [30/May/2023 07:27:25] "GET / HTTP/1.1" 200 -
+2023-05-30 07:27:29,447 INFO: 127.0.0.1 - - [30/May/2023 07:27:29] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 07:27:29,731 INFO: 127.0.0.1 - - [30/May/2023 07:27:29] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:27:31,708 INFO: 127.0.0.1 - - [30/May/2023 07:27:31] "GET / HTTP/1.1" 200 -
+2023-05-30 07:28:51,885 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 07:28:52,022 INFO:  * Restarting with stat
+2023-05-30 07:28:53,311 WARNING:  * Debugger is active!
+2023-05-30 07:28:53,315 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 07:28:53,604 INFO: 127.0.0.1 - - [30/May/2023 07:28:53] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 07:28:53,646 INFO: 127.0.0.1 - - [30/May/2023 07:28:53] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:28:58,414 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 07:28:58,593 INFO:  * Restarting with stat
+2023-05-30 07:28:59,790 WARNING:  * Debugger is active!
+2023-05-30 07:28:59,790 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 07:29:06,561 INFO: 127.0.0.1 - - [30/May/2023 07:29:06] "GET / HTTP/1.1" 200 -
+2023-05-30 07:29:07,527 INFO: 127.0.0.1 - - [30/May/2023 07:29:07] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 07:29:07,533 INFO: 127.0.0.1 - - [30/May/2023 07:29:07] "GET /next_page?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:29:11,041 INFO: 127.0.0.1 - - [30/May/2023 07:29:11] "GET / HTTP/1.1" 200 -
+2023-05-30 07:29:21,444 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 07:29:21,604 INFO:  * Restarting with stat
+2023-05-30 07:29:22,811 WARNING:  * Debugger is active!
+2023-05-30 07:29:22,814 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 07:29:23,093 INFO: 127.0.0.1 - - [30/May/2023 07:29:23] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 07:29:23,104 INFO: 127.0.0.1 - - [30/May/2023 07:29:23] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:29:23,497 INFO: 127.0.0.1 - - [30/May/2023 07:29:23] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-05-30 07:29:23,765 INFO: 127.0.0.1 - - [30/May/2023 07:29:23] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:29:24,786 INFO: 127.0.0.1 - - [30/May/2023 07:29:24] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 07:29:24,792 INFO: 127.0.0.1 - - [30/May/2023 07:29:24] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 07:29:25,936 INFO: 127.0.0.1 - - [30/May/2023 07:29:25] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 07:29:26,249 INFO: 127.0.0.1 - - [30/May/2023 07:29:26] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:30:29,717 INFO: 127.0.0.1 - - [30/May/2023 07:30:29] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:31:36,659 INFO: 127.0.0.1 - - [30/May/2023 07:31:36] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:32:39,943 INFO: 127.0.0.1 - - [30/May/2023 07:32:39] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:33:17,072 INFO: 127.0.0.1 - - [30/May/2023 07:33:17] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:33:18,142 INFO: 127.0.0.1 - - [30/May/2023 07:33:18] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 07:33:18,351 INFO: 127.0.0.1 - - [30/May/2023 07:33:18] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:33:19,556 INFO: 127.0.0.1 - - [30/May/2023 07:33:19] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-05-30 07:33:19,562 INFO: 127.0.0.1 - - [30/May/2023 07:33:19] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:33:20,452 INFO: 127.0.0.1 - - [30/May/2023 07:33:20] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 07:33:20,645 INFO: 127.0.0.1 - - [30/May/2023 07:33:20] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 07:33:22,414 INFO: 127.0.0.1 - - [30/May/2023 07:33:22] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 07:33:22,420 INFO: 127.0.0.1 - - [30/May/2023 07:33:22] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:34:42,613 INFO: 127.0.0.1 - - [30/May/2023 07:34:42] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 07:51:04,578 INFO: 127.0.0.1 - - [30/May/2023 07:51:04] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:01:26,840 INFO: 127.0.0.1 - - [30/May/2023 08:01:26] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:02:53,685 INFO: 127.0.0.1 - - [30/May/2023 08:02:53] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:03:52,438 INFO: 127.0.0.1 - - [30/May/2023 08:03:52] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:03:59,067 INFO: 127.0.0.1 - - [30/May/2023 08:03:59] "POST /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:04:02,480 INFO: 127.0.0.1 - - [30/May/2023 08:04:02] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 08:04:02,484 INFO: 127.0.0.1 - - [30/May/2023 08:04:02] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:04:04,337 INFO: 127.0.0.1 - - [30/May/2023 08:04:04] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-05-30 08:04:04,343 INFO: 127.0.0.1 - - [30/May/2023 08:04:04] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:04:06,076 INFO: 127.0.0.1 - - [30/May/2023 08:04:06] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 08:04:06,209 INFO: 127.0.0.1 - - [30/May/2023 08:04:06] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:04:08,559 INFO: 127.0.0.1 - - [30/May/2023 08:04:08] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 08:04:08,565 INFO: 127.0.0.1 - - [30/May/2023 08:04:08] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:04:11,094 INFO: 127.0.0.1 - - [30/May/2023 08:04:11] "POST /next_page HTTP/1.1" 200 -
+2023-05-30 08:05:36,851 INFO: 127.0.0.1 - - [30/May/2023 08:05:36] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:06:47,523 INFO: 127.0.0.1 - - [30/May/2023 08:06:47] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:06:51,174 INFO: 127.0.0.1 - - [30/May/2023 08:06:51] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:06:54,442 INFO: 127.0.0.1 - - [30/May/2023 08:06:54] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:09:18,572 INFO: 127.0.0.1 - - [30/May/2023 08:09:18] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:09:23,495 INFO: 127.0.0.1 - - [30/May/2023 08:09:23] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:09:55,961 INFO: 127.0.0.1 - - [30/May/2023 08:09:55] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:10:14,870 INFO: 127.0.0.1 - - [30/May/2023 08:10:14] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:10:24,673 INFO: 127.0.0.1 - - [30/May/2023 08:10:24] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:10:30,774 INFO: 127.0.0.1 - - [30/May/2023 08:10:30] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:11:05,279 INFO: 127.0.0.1 - - [30/May/2023 08:11:05] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:12:18,051 INFO: 127.0.0.1 - - [30/May/2023 08:12:18] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:13:18,642 INFO: 127.0.0.1 - - [30/May/2023 08:13:18] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:13:19,548 INFO: 127.0.0.1 - - [30/May/2023 08:13:19] "POST /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:13:21,219 INFO: 127.0.0.1 - - [30/May/2023 08:13:21] "POST /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:13:27,494 INFO: 127.0.0.1 - - [30/May/2023 08:13:27] "POST /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:13:49,306 INFO: 127.0.0.1 - - [30/May/2023 08:13:49] "POST /next_page HTTP/1.1" 200 -
+2023-05-30 08:13:58,292 INFO: 127.0.0.1 - - [30/May/2023 08:13:58] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:14:08,302 INFO: 127.0.0.1 - - [30/May/2023 08:14:08] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:14:30,578 INFO: 127.0.0.1 - - [30/May/2023 08:14:30] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:14:54,038 INFO: 127.0.0.1 - - [30/May/2023 08:14:54] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:00,293 INFO: 127.0.0.1 - - [30/May/2023 08:15:00] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:11,489 INFO: 127.0.0.1 - - [30/May/2023 08:15:11] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:35,139 INFO: 127.0.0.1 - - [30/May/2023 08:15:35] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:41,949 INFO: 127.0.0.1 - - [30/May/2023 08:15:41] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:53,067 INFO: 127.0.0.1 - - [30/May/2023 08:15:53] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:15:55,214 INFO: 127.0.0.1 - - [30/May/2023 08:15:55] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:16:12,999 INFO: 127.0.0.1 - - [30/May/2023 08:16:12] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:16:21,905 INFO: 127.0.0.1 - - [30/May/2023 08:16:21] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:16:33,752 INFO: 127.0.0.1 - - [30/May/2023 08:16:33] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:33,274 INFO: 127.0.0.1 - - [30/May/2023 08:17:33] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:34,272 INFO: 127.0.0.1 - - [30/May/2023 08:17:34] "POST /next_page HTTP/1.1" 200 -
+2023-05-30 08:17:37,006 INFO: 127.0.0.1 - - [30/May/2023 08:17:37] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-05-30 08:17:37,012 INFO: 127.0.0.1 - - [30/May/2023 08:17:37] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:38,243 INFO: 127.0.0.1 - - [30/May/2023 08:17:38] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 08:17:38,250 INFO: 127.0.0.1 - - [30/May/2023 08:17:38] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:38,829 INFO: 127.0.0.1 - - [30/May/2023 08:17:38] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 08:17:39,133 INFO: 127.0.0.1 - - [30/May/2023 08:17:39] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:42,060 INFO: 127.0.0.1 - - [30/May/2023 08:17:42] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 08:17:42,067 INFO: 127.0.0.1 - - [30/May/2023 08:17:42] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:17:42,745 INFO: 127.0.0.1 - - [30/May/2023 08:17:42] "POST /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 08:24:17,248 INFO: 127.0.0.1 - - [30/May/2023 08:24:17] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:24:18,568 INFO: 127.0.0.1 - - [30/May/2023 08:24:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:24:22,748 INFO: 127.0.0.1 - - [30/May/2023 08:24:22] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:24:34,475 INFO: 127.0.0.1 - - [30/May/2023 08:24:34] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:24:36,402 INFO: 127.0.0.1 - - [30/May/2023 08:24:36] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:24:45,022 INFO: 127.0.0.1 - - [30/May/2023 08:24:45] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:30:05,276 INFO: 127.0.0.1 - - [30/May/2023 08:30:05] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:30:16,076 INFO: 127.0.0.1 - - [30/May/2023 08:30:16] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:30:23,424 INFO: 127.0.0.1 - - [30/May/2023 08:30:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:31:13,176 INFO: 127.0.0.1 - - [30/May/2023 08:31:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:31:37,805 INFO: 127.0.0.1 - - [30/May/2023 08:31:37] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:31:47,187 INFO: 127.0.0.1 - - [30/May/2023 08:31:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:31:51,896 INFO: 127.0.0.1 - - [30/May/2023 08:31:51] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:31:55,574 INFO: 127.0.0.1 - - [30/May/2023 08:31:55] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:32:13,484 INFO: 127.0.0.1 - - [30/May/2023 08:32:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:32:24,671 INFO: 127.0.0.1 - - [30/May/2023 08:32:24] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:32:42,600 INFO: 127.0.0.1 - - [30/May/2023 08:32:42] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:32:44,369 INFO: 127.0.0.1 - - [30/May/2023 08:32:44] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:32:46,551 INFO: 127.0.0.1 - - [30/May/2023 08:32:46] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:36:00,473 INFO: 127.0.0.1 - - [30/May/2023 08:36:00] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:36:01,660 INFO: 127.0.0.1 - - [30/May/2023 08:36:01] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:36:12,081 INFO: 127.0.0.1 - - [30/May/2023 08:36:12] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:36:41,974 INFO: 127.0.0.1 - - [30/May/2023 08:36:41] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:36:58,478 INFO: 127.0.0.1 - - [30/May/2023 08:36:58] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:37:48,139 INFO: 127.0.0.1 - - [30/May/2023 08:37:48] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:37:55,392 INFO: 127.0.0.1 - - [30/May/2023 08:37:55] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:37:58,675 INFO: 127.0.0.1 - - [30/May/2023 08:37:58] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:38:11,880 INFO: 127.0.0.1 - - [30/May/2023 08:38:11] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:39:29,464 INFO: 127.0.0.1 - - [30/May/2023 08:39:29] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:39:31,958 INFO: 127.0.0.1 - - [30/May/2023 08:39:31] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:39:46,671 INFO: 127.0.0.1 - - [30/May/2023 08:39:46] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:01,233 INFO: 127.0.0.1 - - [30/May/2023 08:40:01] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:08,100 INFO: 127.0.0.1 - - [30/May/2023 08:40:08] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:22,873 INFO: 127.0.0.1 - - [30/May/2023 08:40:22] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:27,629 INFO: 127.0.0.1 - - [30/May/2023 08:40:27] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:33,902 INFO: 127.0.0.1 - - [30/May/2023 08:40:33] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:38,753 INFO: 127.0.0.1 - - [30/May/2023 08:40:38] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:40:47,381 INFO: 127.0.0.1 - - [30/May/2023 08:40:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:41:00,155 INFO: 127.0.0.1 - - [30/May/2023 08:41:00] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:41:10,968 INFO: 127.0.0.1 - - [30/May/2023 08:41:10] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:41:15,696 INFO: 127.0.0.1 - - [30/May/2023 08:41:15] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:41:33,397 INFO: 127.0.0.1 - - [30/May/2023 08:41:33] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:43:48,995 INFO: 127.0.0.1 - - [30/May/2023 08:43:48] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:43:50,000 INFO: 127.0.0.1 - - [30/May/2023 08:43:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:43:53,552 INFO: 127.0.0.1 - - [30/May/2023 08:43:53] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:43:57,797 INFO: 127.0.0.1 - - [30/May/2023 08:43:57] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:44:04,477 INFO: 127.0.0.1 - - [30/May/2023 08:44:04] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:44:07,183 INFO: 127.0.0.1 - - [30/May/2023 08:44:07] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:44:18,146 INFO: 127.0.0.1 - - [30/May/2023 08:44:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:44:23,940 INFO: 127.0.0.1 - - [30/May/2023 08:44:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:45:23,837 INFO: 127.0.0.1 - - [30/May/2023 08:45:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:45:49,091 INFO: 127.0.0.1 - - [30/May/2023 08:45:49] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:46:04,962 INFO: 127.0.0.1 - - [30/May/2023 08:46:04] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:46:21,055 INFO: 127.0.0.1 - - [30/May/2023 08:46:21] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:46:24,941 INFO: 127.0.0.1 - - [30/May/2023 08:46:24] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:46:33,148 INFO: 127.0.0.1 - - [30/May/2023 08:46:33] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:46:53,541 INFO: 127.0.0.1 - - [30/May/2023 08:46:53] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:47:01,554 INFO: 127.0.0.1 - - [30/May/2023 08:47:01] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:48:59,963 INFO: 127.0.0.1 - - [30/May/2023 08:48:59] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:49:55,400 INFO: 127.0.0.1 - - [30/May/2023 08:49:55] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:50:08,919 INFO: 127.0.0.1 - - [30/May/2023 08:50:08] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:50:10,514 INFO: 127.0.0.1 - - [30/May/2023 08:50:10] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:50:12,685 INFO: 127.0.0.1 - - [30/May/2023 08:50:12] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:54:21,427 INFO: 127.0.0.1 - - [30/May/2023 08:54:21] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:54:28,908 INFO: 127.0.0.1 - - [30/May/2023 08:54:28] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:54:33,574 INFO: 127.0.0.1 - - [30/May/2023 08:54:33] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:54:48,938 INFO: 127.0.0.1 - - [30/May/2023 08:54:48] "GET /home HTTP/1.1" 200 -
+2023-05-30 08:55:01,485 INFO: 127.0.0.1 - - [30/May/2023 08:55:01] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:15:34,981 INFO: 127.0.0.1 - - [30/May/2023 09:15:34] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:15:43,957 INFO: 127.0.0.1 - - [30/May/2023 09:15:43] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:15:48,784 INFO: 127.0.0.1 - - [30/May/2023 09:15:48] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:16:08,181 INFO: 127.0.0.1 - - [30/May/2023 09:16:08] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:16:09,850 INFO: 127.0.0.1 - - [30/May/2023 09:16:09] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:16:12,180 INFO: 127.0.0.1 - - [30/May/2023 09:16:12] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:16:17,097 INFO: 127.0.0.1 - - [30/May/2023 09:16:17] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:16:23,702 INFO: 127.0.0.1 - - [30/May/2023 09:16:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:04,692 INFO: 127.0.0.1 - - [30/May/2023 09:17:04] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:09,645 INFO: 127.0.0.1 - - [30/May/2023 09:17:09] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:14,713 INFO: 127.0.0.1 - - [30/May/2023 09:17:14] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:23,403 INFO: 127.0.0.1 - - [30/May/2023 09:17:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:29,971 INFO: 127.0.0.1 - - [30/May/2023 09:17:29] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:37,257 INFO: 127.0.0.1 - - [30/May/2023 09:17:37] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:17:44,327 INFO: 127.0.0.1 - - [30/May/2023 09:17:44] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:20:01,602 INFO: 127.0.0.1 - - [30/May/2023 09:20:01] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:20:44,106 INFO: 127.0.0.1 - - [30/May/2023 09:20:44] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:20:46,662 INFO: 127.0.0.1 - - [30/May/2023 09:20:46] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:20:52,409 INFO: 127.0.0.1 - - [30/May/2023 09:20:52] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:21:00,903 INFO: 127.0.0.1 - - [30/May/2023 09:21:00] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:21:10,830 INFO: 127.0.0.1 - - [30/May/2023 09:21:10] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:23:58,297 INFO: 127.0.0.1 - - [30/May/2023 09:23:58] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:24:41,527 INFO: 127.0.0.1 - - [30/May/2023 09:24:41] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:24:53,712 INFO: 127.0.0.1 - - [30/May/2023 09:24:53] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:25:00,613 INFO: 127.0.0.1 - - [30/May/2023 09:25:00] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:26:13,033 INFO: 127.0.0.1 - - [30/May/2023 09:26:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:26:29,207 INFO: 127.0.0.1 - - [30/May/2023 09:26:29] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:26:41,298 INFO: 127.0.0.1 - - [30/May/2023 09:26:41] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:26:47,384 INFO: 127.0.0.1 - - [30/May/2023 09:26:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:27:39,986 INFO: 127.0.0.1 - - [30/May/2023 09:27:39] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:28:02,776 INFO: 127.0.0.1 - - [30/May/2023 09:28:02] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:28:29,975 INFO: 127.0.0.1 - - [30/May/2023 09:28:29] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:28:32,539 INFO: 127.0.0.1 - - [30/May/2023 09:28:32] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:28:35,730 INFO: 127.0.0.1 - - [30/May/2023 09:28:35] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:28:54,856 INFO: 127.0.0.1 - - [30/May/2023 09:28:54] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:32:13,127 INFO: 127.0.0.1 - - [30/May/2023 09:32:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:32:18,145 INFO: 127.0.0.1 - - [30/May/2023 09:32:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:32:21,351 INFO: 127.0.0.1 - - [30/May/2023 09:32:21] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:32:40,256 INFO: 127.0.0.1 - - [30/May/2023 09:32:40] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:32:47,989 INFO: 127.0.0.1 - - [30/May/2023 09:32:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:33:18,966 INFO: 127.0.0.1 - - [30/May/2023 09:33:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:33:23,040 INFO: 127.0.0.1 - - [30/May/2023 09:33:23] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:33:26,516 INFO: 127.0.0.1 - - [30/May/2023 09:33:26] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:33:31,701 INFO: 127.0.0.1 - - [30/May/2023 09:33:31] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:33:50,059 INFO: 127.0.0.1 - - [30/May/2023 09:33:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:34:28,144 INFO: 127.0.0.1 - - [30/May/2023 09:34:28] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:36:47,745 INFO: 127.0.0.1 - - [30/May/2023 09:36:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:36:49,831 INFO: 127.0.0.1 - - [30/May/2023 09:36:49] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:36:54,023 INFO: 127.0.0.1 - - [30/May/2023 09:36:54] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:03,396 INFO: 127.0.0.1 - - [30/May/2023 09:37:03] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:08,234 INFO: 127.0.0.1 - - [30/May/2023 09:37:08] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:13,473 INFO: 127.0.0.1 - - [30/May/2023 09:37:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:20,320 INFO: 127.0.0.1 - - [30/May/2023 09:37:20] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:24,377 INFO: 127.0.0.1 - - [30/May/2023 09:37:24] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:37:58,568 INFO: 127.0.0.1 - - [30/May/2023 09:37:58] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:45:50,167 INFO: 127.0.0.1 - - [30/May/2023 09:45:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:45:51,428 INFO: 127.0.0.1 - - [30/May/2023 09:45:51] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:46:42,624 INFO: 127.0.0.1 - - [30/May/2023 09:46:42] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:46:50,545 INFO: 127.0.0.1 - - [30/May/2023 09:46:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:47:54,808 INFO: 127.0.0.1 - - [30/May/2023 09:47:54] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:48:55,452 INFO: 127.0.0.1 - - [30/May/2023 09:48:55] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:49:14,228 INFO: 127.0.0.1 - - [30/May/2023 09:49:14] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:49:40,827 INFO: 127.0.0.1 - - [30/May/2023 09:49:40] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:49:50,699 INFO: 127.0.0.1 - - [30/May/2023 09:49:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:50:02,443 INFO: 127.0.0.1 - - [30/May/2023 09:50:02] "GET /home HTTP/1.1" 200 -
+2023-05-30 09:50:28,845 INFO: 127.0.0.1 - - [30/May/2023 09:50:28] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:15,815 INFO: 127.0.0.1 - - [30/May/2023 10:11:15] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:22,984 INFO: 127.0.0.1 - - [30/May/2023 10:11:22] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:29,906 INFO: 127.0.0.1 - - [30/May/2023 10:11:29] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:36,365 INFO: 127.0.0.1 - - [30/May/2023 10:11:36] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:46,367 INFO: 127.0.0.1 - - [30/May/2023 10:11:46] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:11:56,316 INFO: 127.0.0.1 - - [30/May/2023 10:11:56] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:13:05,704 INFO: 127.0.0.1 - - [30/May/2023 10:13:05] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:13:26,332 INFO: 127.0.0.1 - - [30/May/2023 10:13:26] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:13:44,259 INFO: 127.0.0.1 - - [30/May/2023 10:13:44] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:14:16,100 INFO: 127.0.0.1 - - [30/May/2023 10:14:16] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:14:17,517 INFO: 127.0.0.1 - - [30/May/2023 10:14:17] "POST /home HTTP/1.1" 200 -
+2023-05-30 10:14:34,806 INFO: 127.0.0.1 - - [30/May/2023 10:14:34] "POST /home HTTP/1.1" 200 -
+2023-05-30 10:14:44,695 INFO: 127.0.0.1 - - [30/May/2023 10:14:44] "POST /home HTTP/1.1" 200 -
+2023-05-30 10:15:55,541 INFO: 127.0.0.1 - - [30/May/2023 10:15:55] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:16:18,205 INFO: 127.0.0.1 - - [30/May/2023 10:16:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:16:21,256 INFO: 127.0.0.1 - - [30/May/2023 10:16:21] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:16:56,421 INFO: 127.0.0.1 - - [30/May/2023 10:16:56] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:17:02,874 INFO: 127.0.0.1 - - [30/May/2023 10:17:02] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:17:43,144 INFO: 127.0.0.1 - - [30/May/2023 10:17:43] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:17:46,522 INFO: 127.0.0.1 - - [30/May/2023 10:17:46] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:18:05,700 INFO: 127.0.0.1 - - [30/May/2023 10:18:05] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:18:39,693 INFO: 127.0.0.1 - - [30/May/2023 10:18:39] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:18:42,789 INFO: 127.0.0.1 - - [30/May/2023 10:18:42] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:18:49,368 INFO: 127.0.0.1 - - [30/May/2023 10:18:49] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:18:52,704 INFO: 127.0.0.1 - - [30/May/2023 10:18:52] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:02,540 INFO: 127.0.0.1 - - [30/May/2023 10:19:02] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:05,462 INFO: 127.0.0.1 - - [30/May/2023 10:19:05] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:18,715 INFO: 127.0.0.1 - - [30/May/2023 10:19:18] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:33,382 INFO: 127.0.0.1 - - [30/May/2023 10:19:33] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:39,150 INFO: 127.0.0.1 - - [30/May/2023 10:19:39] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:47,118 INFO: 127.0.0.1 - - [30/May/2023 10:19:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:19:57,380 INFO: 127.0.0.1 - - [30/May/2023 10:19:57] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:20:09,541 INFO: 127.0.0.1 - - [30/May/2023 10:20:09] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:20:13,791 INFO: 127.0.0.1 - - [30/May/2023 10:20:13] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:20:25,440 INFO: 127.0.0.1 - - [30/May/2023 10:20:25] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:20:47,044 INFO: 127.0.0.1 - - [30/May/2023 10:20:47] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:00,738 INFO: 127.0.0.1 - - [30/May/2023 10:21:00] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:03,425 INFO: 127.0.0.1 - - [30/May/2023 10:21:03] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:06,795 INFO: 127.0.0.1 - - [30/May/2023 10:21:06] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:17,215 INFO: 127.0.0.1 - - [30/May/2023 10:21:17] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:25,249 INFO: 127.0.0.1 - - [30/May/2023 10:21:25] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:44,288 INFO: 127.0.0.1 - - [30/May/2023 10:21:44] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:21:45,860 INFO: 127.0.0.1 - - [30/May/2023 10:21:45] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:22:07,118 INFO: 127.0.0.1 - - [30/May/2023 10:22:07] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:22:08,822 INFO: 127.0.0.1 - - [30/May/2023 10:22:08] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:22:14,782 INFO: 127.0.0.1 - - [30/May/2023 10:22:14] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:22:19,900 INFO: 127.0.0.1 - - [30/May/2023 10:22:19] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:22:56,762 INFO: 127.0.0.1 - - [30/May/2023 10:22:56] "GET /home HTTP/1.1" 200 -
+2023-05-30 10:27:11,936 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:27:12,310 INFO:  * Restarting with stat
+2023-05-30 10:27:13,760 WARNING:  * Debugger is active!
+2023-05-30 10:27:13,763 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:27:18,779 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:27:18,937 INFO:  * Restarting with stat
+2023-05-30 10:27:20,289 WARNING:  * Debugger is active!
+2023-05-30 10:27:20,293 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:27:32,958 INFO: 127.0.0.1 - - [30/May/2023 10:27:32] "[35m[1mGET /path HTTP/1.1[0m" 500 -
+2023-05-30 10:27:33,000 INFO: 127.0.0.1 - - [30/May/2023 10:27:33] "GET /path?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-05-30 10:27:33,196 INFO: 127.0.0.1 - - [30/May/2023 10:27:33] "GET /path?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-05-30 10:27:33,631 INFO: 127.0.0.1 - - [30/May/2023 10:27:33] "GET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-05-30 10:27:33,894 INFO: 127.0.0.1 - - [30/May/2023 10:27:33] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:27:43,214 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:27:43,407 INFO:  * Restarting with stat
+2023-05-30 10:27:44,638 WARNING:  * Debugger is active!
+2023-05-30 10:27:44,641 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:27:44,824 INFO: 127.0.0.1 - - [30/May/2023 10:27:44] "[35m[1mGET /path HTTP/1.1[0m" 500 -
+2023-05-30 10:27:44,864 INFO: 127.0.0.1 - - [30/May/2023 10:27:44] "[36mGET /path?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-30 10:27:44,866 INFO: 127.0.0.1 - - [30/May/2023 10:27:44] "[36mGET /path?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-30 10:27:45,418 INFO: 127.0.0.1 - - [30/May/2023 10:27:45] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:27:45,666 INFO: 127.0.0.1 - - [30/May/2023 10:27:45] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:28:03,763 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:28:03,932 INFO:  * Restarting with stat
+2023-05-30 10:28:05,150 WARNING:  * Debugger is active!
+2023-05-30 10:28:05,153 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:29:29,251 INFO: 127.0.0.1 - - [30/May/2023 10:29:29] "[35m[1mGET /path HTTP/1.1[0m" 500 -
+2023-05-30 10:29:29,283 INFO: 127.0.0.1 - - [30/May/2023 10:29:29] "[36mGET /path?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-30 10:29:29,506 INFO: 127.0.0.1 - - [30/May/2023 10:29:29] "[36mGET /path?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-30 10:29:29,883 INFO: 127.0.0.1 - - [30/May/2023 10:29:29] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:29:30,148 INFO: 127.0.0.1 - - [30/May/2023 10:29:30] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:29:50,556 INFO: 127.0.0.1 - - [30/May/2023 10:29:50] "GET /path HTTP/1.1" 200 -
+2023-05-30 10:36:39,328 INFO: 127.0.0.1 - - [30/May/2023 10:36:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-30 10:39:24,319 INFO: 127.0.0.1 - - [30/May/2023 10:39:24] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 10:39:24,333 INFO: 127.0.0.1 - - [30/May/2023 10:39:24] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 10:39:40,561 INFO: 127.0.0.1 - - [30/May/2023 10:39:40] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 10:39:40,568 INFO: 127.0.0.1 - - [30/May/2023 10:39:40] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 10:39:51,377 INFO: 127.0.0.1 - - [30/May/2023 10:39:51] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 10:39:51,658 INFO: 127.0.0.1 - - [30/May/2023 10:39:51] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 10:39:51,968 INFO: 127.0.0.1 - - [30/May/2023 10:39:51] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-05-30 10:39:51,975 INFO: 127.0.0.1 - - [30/May/2023 10:39:51] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 10:40:21,555 INFO: 127.0.0.1 - - [30/May/2023 10:40:21] "POST /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 10:40:27,897 INFO: 127.0.0.1 - - [30/May/2023 10:40:27] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 10:40:27,939 INFO: 127.0.0.1 - - [30/May/2023 10:40:27] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 10:52:11,706 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:52:11,875 INFO:  * Restarting with stat
+2023-05-30 10:54:39,722 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 10:54:39,722 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 10:54:39,723 INFO:  * Restarting with stat
+2023-05-30 10:54:41,351 WARNING:  * Debugger is active!
+2023-05-30 10:54:41,356 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:54:47,855 INFO: 127.0.0.1 - - [30/May/2023 10:54:47] "[35m[1mGET /path HTTP/1.1[0m" 500 -
+2023-05-30 10:54:47,886 INFO: 127.0.0.1 - - [30/May/2023 10:54:47] "[36mGET /path?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-05-30 10:54:48,116 INFO: 127.0.0.1 - - [30/May/2023 10:54:48] "[36mGET /path?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-05-30 10:54:48,543 INFO: 127.0.0.1 - - [30/May/2023 10:54:48] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:54:48,798 INFO: 127.0.0.1 - - [30/May/2023 10:54:48] "[36mGET /path?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-05-30 10:55:01,807 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:55:02,019 INFO:  * Restarting with stat
+2023-05-30 10:55:03,283 WARNING:  * Debugger is active!
+2023-05-30 10:55:03,287 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:55:05,907 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:55:06,056 INFO:  * Restarting with stat
+2023-05-30 10:55:07,399 WARNING:  * Debugger is active!
+2023-05-30 10:55:07,403 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:55:09,980 INFO: 127.0.0.1 - - [30/May/2023 10:55:09] "GET /path HTTP/1.1" 200 -
+2023-05-30 10:55:27,627 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:55:27,783 INFO:  * Restarting with stat
+2023-05-30 10:55:29,066 WARNING:  * Debugger is active!
+2023-05-30 10:55:29,070 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:55:29,241 INFO: 127.0.0.1 - - [30/May/2023 10:55:29] "GET /path HTTP/1.1" 200 -
+2023-05-30 10:58:23,820 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 10:58:24,070 INFO:  * Restarting with stat
+2023-05-30 10:58:25,445 WARNING:  * Debugger is active!
+2023-05-30 10:58:25,449 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 10:58:26,703 INFO: 127.0.0.1 - - [30/May/2023 10:58:26] "GET /path HTTP/1.1" 200 -
+2023-05-30 10:59:38,271 INFO: 127.0.0.1 - - [30/May/2023 10:59:38] "GET /path HTTP/1.1" 200 -
+2023-05-30 11:02:29,407 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:02:29,544 INFO:  * Restarting with stat
+2023-05-30 11:02:30,764 WARNING:  * Debugger is active!
+2023-05-30 11:02:30,768 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:02:37,017 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:02:37,269 INFO:  * Restarting with stat
+2023-05-30 11:02:38,585 WARNING:  * Debugger is active!
+2023-05-30 11:02:38,588 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:02:50,392 INFO: 127.0.0.1 - - [30/May/2023 11:02:50] "GET /home HTTP/1.1" 200 -
+2023-05-30 11:03:27,249 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:03:27,394 INFO:  * Restarting with stat
+2023-05-30 11:03:28,592 WARNING:  * Debugger is active!
+2023-05-30 11:03:28,592 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:03:34,790 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:03:34,957 INFO:  * Restarting with stat
+2023-05-30 11:03:36,353 WARNING:  * Debugger is active!
+2023-05-30 11:03:36,356 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:03:37,694 INFO: 127.0.0.1 - - [30/May/2023 11:03:37] "GET /home HTTP/1.1" 200 -
+2023-05-30 11:03:39,991 INFO: 127.0.0.1 - - [30/May/2023 11:03:39] "GET /home HTTP/1.1" 200 -
+2023-05-30 11:03:43,786 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:03:43,914 INFO:  * Restarting with stat
+2023-05-30 11:03:45,073 WARNING:  * Debugger is active!
+2023-05-30 11:03:45,081 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:03:50,042 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:03:50,229 INFO:  * Restarting with stat
+2023-05-30 11:03:51,465 WARNING:  * Debugger is active!
+2023-05-30 11:03:51,468 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:04:14,036 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:04:14,273 INFO:  * Restarting with stat
+2023-05-30 11:04:15,574 WARNING:  * Debugger is active!
+2023-05-30 11:04:15,577 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:04:16,680 INFO: 127.0.0.1 - - [30/May/2023 11:04:16] "GET /home HTTP/1.1" 200 -
+2023-05-30 11:04:19,335 INFO: 127.0.0.1 - - [30/May/2023 11:04:19] "GET /home HTTP/1.1" 200 -
+2023-05-30 11:04:22,968 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:04:23,146 INFO:  * Restarting with stat
+2023-05-30 11:04:24,413 WARNING:  * Debugger is active!
+2023-05-30 11:04:24,418 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:04:25,918 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:04:26,049 INFO:  * Restarting with stat
+2023-05-30 11:04:27,320 WARNING:  * Debugger is active!
+2023-05-30 11:04:27,323 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:04:38,214 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 11:04:38,215 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 11:04:38,216 INFO:  * Restarting with stat
+2023-05-30 11:04:39,355 WARNING:  * Debugger is active!
+2023-05-30 11:04:39,358 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:05:26,471 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 11:05:26,471 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 11:05:26,472 INFO:  * Restarting with stat
+2023-05-30 11:05:27,533 WARNING:  * Debugger is active!
+2023-05-30 11:05:27,536 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:07:04,135 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-30 11:07:04,135 INFO: [33mPress CTRL+C to quit[0m
+2023-05-30 11:07:04,136 INFO:  * Restarting with stat
+2023-05-30 11:07:05,214 WARNING:  * Debugger is active!
+2023-05-30 11:07:05,217 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:09:20,679 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:09:20,828 INFO:  * Restarting with stat
+2023-05-30 11:09:21,942 WARNING:  * Debugger is active!
+2023-05-30 11:09:21,946 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:09:26,894 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-05-30 11:09:27,028 INFO:  * Restarting with stat
+2023-05-30 11:09:28,144 WARNING:  * Debugger is active!
+2023-05-30 11:09:28,148 INFO:  * Debugger PIN: 109-877-722
+2023-05-30 11:10:08,187 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\main.py', reloading
+2023-05-30 11:10:08,337 INFO:  * Restarting with stat
+2023-05-30 13:27:20,429 INFO: 127.0.0.1 - - [30/May/2023 13:27:20] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-05-30 13:27:20,498 INFO: 127.0.0.1 - - [30/May/2023 13:27:20] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-05-30 13:27:21,440 INFO: 127.0.0.1 - - [30/May/2023 13:27:21] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-05-30 13:27:21,447 INFO: 127.0.0.1 - - [30/May/2023 13:27:21] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:27:21,828 INFO: 127.0.0.1 - - [30/May/2023 13:27:21] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-05-30 13:27:22,023 INFO: 127.0.0.1 - - [30/May/2023 13:27:22] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:28:47,114 INFO: 127.0.0.1 - - [30/May/2023 13:28:47] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:29:01,005 INFO: 127.0.0.1 - - [30/May/2023 13:29:01] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:29:11,179 INFO: 127.0.0.1 - - [30/May/2023 13:29:11] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:29:18,176 INFO: 127.0.0.1 - - [30/May/2023 13:29:18] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:29:29,295 INFO: 127.0.0.1 - - [30/May/2023 13:29:29] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:29:51,425 INFO: 127.0.0.1 - - [30/May/2023 13:29:51] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:30:29,489 INFO: 127.0.0.1 - - [30/May/2023 13:30:29] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-05-30 13:30:40,802 INFO: 127.0.0.1 - - [30/May/2023 13:30:40] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-30 13:30:48,374 INFO: 127.0.0.1 - - [30/May/2023 13:30:48] "GET /next_page HTTP/1.1" 200 -
+2023-05-30 13:30:50,408 INFO: 127.0.0.1 - - [30/May/2023 13:30:50] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-05-30 13:30:51,135 INFO: 127.0.0.1 - - [30/May/2023 13:30:51] "GET / HTTP/1.1" 200 -
+2023-05-30 13:48:25,169 INFO: 127.0.0.1 - - [30/May/2023 13:48:25] "POST /next_page HTTP/1.1" 200 -
+2023-05-30 13:50:48,792 INFO: 127.0.0.1 - - [30/May/2023 13:50:48] "GET / HTTP/1.1" 200 -

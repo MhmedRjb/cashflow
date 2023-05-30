@@ -52,6 +52,11 @@ class DataProcessor:
 
     def groupby_agg(self, groupby_col, agg_dict):
         self.data = self.data.groupby(groupby_col).agg(agg_dict).reset_index()
+        
+    #filter row in df if not in another df
+    def filter_row_not_in(self, df1,df2,col1,col2):
+        df1 = df1[~df1[col1].isin(df2[col2])]        
+    
 
 if __name__ == "__main__":
     file_path_goods_transection = r"D:\monymovment\Cashflows\Excel_files\SBJRNLITMRPTTAX.xls"
@@ -59,11 +64,22 @@ if __name__ == "__main__":
     wanted_cols_goods_transection = ['tr_dt', 'TR_NO', 'tr_ds', 'Text103', 'Acc_Nm']
     filter_column = 'tr_ds'
     filter_values = 'بيع|مرتجع'
+    filter_column2 = 'Acc_Nm'
+    filter_vlaues2 = 'الصعيدى|العابد|البدر|خزين|ايتوال|اليسر|ع-لولو|ع-بيم|مكسب|جورميه'
+    from DataBaseConnection import DatabaseExporter as dbcon
+    username = 'root'
+    password = '123qweasdzxcSq'
+    hostname = 'localhost'
+    database = 'easytrick'
+    exporter = dbcon(username, password, hostname, database)
+
 
     processor_goods_transection =DataProcessor(file_path_goods_transection, expected_cols_goods_transection)
     processor_goods_transection.read_data()
     processor_goods_transection.select_columns(wanted_cols_goods_transection)
     processor_goods_transection.filter_row(filter_column, filter_values)
+    processor_goods_transection.filter_row(filter_column2, filter_vlaues2)
+
     processor_goods_transection.rename_columns({ 'Text103': 'Total_invoice'})
     processor_goods_transection.ApplyDICtToCol('tr_ds',{ 'بيع آجل': 'Ba', 'شراء نقدي': 'sn', 'مرتجع آجل': 'MA'})
     processor_goods_transection.format_columns(['TR_NO'], 4)
@@ -72,6 +88,6 @@ if __name__ == "__main__":
     processor_goods_transection.select_columns(wanted_cols_goods_transection)
     processor_goods_transection.groupby_agg(['InvoiceID'],{'Total_invoice':'sum','tr_dt':'first','Acc_Nm':'first'})
 
-    print(processor_goods_transection.data)
+    print(processor_goods_transection.data.head(10))
 
     

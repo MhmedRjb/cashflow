@@ -22,8 +22,8 @@ class DatabaseExporter:
         # remove any duplicate rows from the new data
         data = data[~duplicates]
 
-    # insert the new data into the table
         data.to_sql(table_name, self.engine, if_exists='append', index=False)
+        
     #TODO: add a function to delete ROWS from MYSQL data if  not exist in df 
     def delete_data(self, data, table_name, primary_key, temp_table_name):
         # query the existing data in the table
@@ -84,7 +84,10 @@ class DatabaseExporter:
         else:
             data = pd.read_sql(f'SELECT * FROM (SELECT * FROM {table_name} ORDER BY {order_by} DESC LIMIT {n}) sub ORDER BY {order_by} ASC', self.engine)
         return data
-
+    #show tables with tow condition
+    # def show_tables_by_condition(self, table_name, condition1, condition2):
+    #     data = pd.read_sql(f'SELECT * FROM {table_name} WHERE {condition1} AND {condition2}', self.engine)
+    #     return data
     
     def get_column_data(self, table_name, column_name, condition=None):
     # construct the SELECT statement
@@ -106,7 +109,6 @@ class DatabaseExporter:
     def call_stored_procedure(self, procedure_name):
         conn = self.engine.raw_connection()
         cur = conn.cursor()
-
         # construct the CALL statement
         stmt = f'CALL {procedure_name}()'
         print(stmt)
@@ -114,6 +116,27 @@ class DatabaseExporter:
         cur.execute(stmt)
         conn.commit()
         cur.close()
+
+
+    #show tables with tow conditiond
+    def show_tables_by_condition(self, table_name, condition1, condition2):
+        # construct the SELECT statement
+        stmt = f'SELECT * FROM {table_name} WHERE {condition1} OR {condition2}'
+        # execute the SELECT statement and store the results in a DataFrame
+        data = pd.read_sql_query(stmt, self.engine)
+        return data
+    
+    def readsql(self, sql):
+        data = pd.read_sql_query(sql, self.engine)
+        return data
+        #filter row in df if not in mysql table 
+
+    def filter_row_not_in(self, table_name, col_name):
+        existing_data = pd.read_sql(f'SELECT * FROM {table_name}', self.engine)
+        # identify any duplicate rows based on the primary key column
+        duplicates = data['InvoiceID'].isin(existing_data['InvoiceID'])
+        # remove any duplicate rows from the new data
+        data = data[~duplicates]
 
 
     
@@ -129,4 +152,6 @@ if __name__ == "__main__":
     # print(exporter.cols_names('goodstransectionte'))
     # exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
     #show the last 10 row in table ORDER BY Any col
-    exporter.call_stored_procedure('deleteRemovedRows')
+    # exporter.call_stored_procedure('deleteRemovedRows')
+    #show table where tr_dt> today  OR paid =0
+    print(exporter.readsql('SELECT * FROM goodstransectionte WHERE tr_dt > CURDATE() OR Paid = 0'))

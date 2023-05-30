@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>El fateh Company</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header id="mainHeader">
+    <div class="container">
+        <h1  >El fateh Company</h1>
+        <h5  >Since 1990</h5>
+    </div>
+  </header>
+
+  <nav id="mainNav">
+    <div class="container">
+      <ul>
+        <li class="active" ><a   href="#">التقارير</a></li>
+        <li><a href="#">المخازن</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="submainNav" >
+    <div class="container">
+      <ul>
+        <li><a href="#">التدفقات النقدية</a></li>
+        <li><a href="#">احصائيات العميل</a></li>
+        <li><a href="#">احصائيات الشهر</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+  <footer id="mainFooter">
+    <p>Copyright &copy; 2019 CSS Beginners Website</p>
+  </footer>
+
+  <script>
+    // Drop zone functionality
+    const dropZones = document.querySelectorAll('.drop-zone');
+
+    dropZones.forEach(dropZone => {
+      const input = dropZone.querySelector('.drop-zone__input');
+      const prompt = dropZone.querySelector('.drop-zone__prompt');
+
+      dropZone.addEventListener('click', () => {
+        input.click();
+      });
+
+      input.addEventListener('change', () => {
+        const file = input.files[0];
+        if (file) {
+          prompt.textContent = file.name;
+        }
+      });
+
+      dropZone.addEventListener('dragover', e => {
+        e.preventDefault();
+        dropZone.classList.add('drop-zone--over');
+      });
+
+      ['dragleave', 'dragend'].forEach(type => {
+        dropZone.addEventListener(type, () => {
+          dropZone.classList.remove('drop-zone--over');
+        });
+      });
+
+     dropZone.addEventListener('drop', e => {
+       e.preventDefault();
+
+       if (e.dataTransfer.files.length) {
+         input.files = e.dataTransfer.files;
+         prompt.textContent = e.dataTransfer.files[0].name;
+       }
+
+       dropZone.classList.remove('drop-zone--over');
+     });
+   });
+ </script>
+
+</body>
+</html>

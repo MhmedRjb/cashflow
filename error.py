@@ -1,7 +1,6 @@
 
 import sys
 import logging
-import traceback
 class ErrorHandler:
 
     def __init__(self, log_file='error.log'):
@@ -14,4 +13,5 @@ class ErrorHandler:
             print(f'Error: An error occurred while importing the required libraries')
         logging.error(f'Error: {e} Exception type: {type(e).__name__} Class name: {classname} Function name: {funcname}')
         sys.exit()
+        
         

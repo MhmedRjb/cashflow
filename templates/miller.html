@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Folder Contents</title>
+  </head>
+<style>            table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin:  auto;
+    margin-top: 20px;
+margin-bottom: 80px;
+width: 60%;
+}
+th, td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+  <body>
+    <h1>Folder Contents</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Last Modified</th>
+      </tr>
+      {% for item, mtime in folder_contents %}
+        <tr>
+          <td>{{ item }}</td>
+          <td>{{ mtime }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

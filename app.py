@@ -9,6 +9,8 @@ from werkzeug.utils import secure_filename
 import os
 import pandas as pd
 from flask import jsonify
+from datetime import datetime
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
@@ -44,8 +46,7 @@ class FileHandler :
 
 file_handler = FileHandler(app.config['UPLOAD_FOLDER'], ALLOWED_EXTENSIONS=['.xls', '.xlsx'])
 class UploadForm(FlaskForm):
-    file = FileField('SBJRNLITMRPTTAX.xls', validators=[Optional(), file_handler.is_valid_file])
-    file2 = FileField('file2', validators=[Optional(), file_handler.is_valid_file])
+    file = FileField('file2', validators=[Optional(), file_handler.is_valid_file])
     submit = SubmitField('Upload file')
 
     @app.route('/', methods=['GET', 'POST'])
@@ -56,12 +57,20 @@ class UploadForm(FlaskForm):
             try:
                 if form.file.data:
                     file_handler.save_file(form.file.data)
-                if form.file2.data:
-                    file_handler.save_file(form.file2.data)
+
             except ValidationError as e:
                 flash(str(e), 'error')
 
-        return render_template("home.html", form=form)
+    
+        folder_path = r'D:\monymovment\Cashflows\Excel_files'
+        folder_contents = []
+        for item in os.listdir(folder_path):
+            item_path = os.path.join(folder_path, item)
+            mtime = os.path.getmtime(item_path)
+            mtime_str = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M')
+            folder_contents.append((item, mtime_str))
+        return render_template('home.html', folder_contents=folder_contents,form=form)
+
     @app.route('/next_page', methods=['GET', 'POST'])
     def next_page(message=None):
         return render_template('next_page.html',message=message)
@@ -71,23 +80,23 @@ class button(FlaskForm):
     def export_data():
         processor_goods_transection = process_good_transection()
         exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
-        return redirect(url_for('next_page', message='Data exported successfully!'))
+        return redirect(url_for('home', message='Data exported successfully!'))
 
     @app.route('/delete_data', methods=['POST','GET'])
     def delete_data():
         processor_goods_transection = process_good_transection()
         exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
-        return redirect(url_for('next_page', message='Data deleted successfully!'))
+        return redirect(url_for('home', message='Data deleted successfully!'))
 
     @app.route('/export_data_frist', methods=['POST','GET'])
     def export_data_frist():
         processor_clints_data = processor_Clints()
         exporter.export_data_frist(processor_clints_data.data, 'clints_data')
-        return redirect(url_for('next_page', message='Data exported successfully!'))
+        return redirect(url_for('home', message='Data exported successfully!'))
     @app.route('/delete_data_last', methods=['POST','GET'])
     def delete_data_last():
         exporter.call_stored_procedure('deleteRemovedRows')
-        return redirect(url_for('next_page', message='Data exported successfully!'))
+        return redirect(url_for('home', message='Data exported successfully!'))
 class displaytables():
     @app.route('/display_dataclints_data')
     def display_data():
@@ -98,10 +107,12 @@ class displaytables():
     @app.route('/display_goodstransectionte')
     def display_goodstransectionte():    
         # retrieve the data from the goodstransectionte table
-        data = exporter.get_table_data('goodstransectionte')
-        
+        # data = exporter.get_table_data('goodstransectionte')
+        data = exporter.readsql('SELECT * FROM goodstransectionte WHERE  Paid =0 or Paid IS NULL OR realDate = CURDATE()OR realDate	 = DATE_SUB(CURDATE(), INTERVAL 1 DAY)order by  realDate	 ')
         # pass the data to the template
         return render_template('audra.html', data=data)
+    
+
 
 
 class func ():
@@ -121,4 +132,4 @@ class func ():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
