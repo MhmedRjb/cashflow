@@ -1,5 +1,3 @@
-
-
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont;
   font-size: 16px;
@@ -212,24 +210,27 @@ th {
   background-color: #FF0000; /* red */
 }
 
-tr.yes {
-                background-color: #90EE90; /* light green */
-            }
-            tr.no {
-                background-color: #FFB6C1; /* light red */
-            }
-            tr.maybe {
-                background-color: #FFD700; /* light yellow */
-            }
             tr.unknown {
                 background-color: #ddd; /* light gray */
             }
             tr.unpaid {
                 background-color: #ec1f3e; /* light red */
             }
+
+            tr.maybe {
+                background-color: #FFD700; /* light yellow */
+            }
+
             tr.paid {
                 background-color: #4CAF50; /* light green */
             }
+            tr.yes {
+                background-color: #90EE90; /* light green */
+            }
+            tr.no {
+                background-color: #FFB6C1; /* light red */
+            }
+
 
 table.small{
     width: 80%;
@@ -254,4 +255,3 @@ span.question-mark {
     text-align: center;
     display: inline-block;
 }
-

@@ -154,4 +154,4 @@ if __name__ == "__main__":
     #show the last 10 row in table ORDER BY Any col
     # exporter.call_stored_procedure('deleteRemovedRows')
     #show table where tr_dt> today  OR paid =0
-    print(exporter.readsql('SELECT * FROM goodstransectionte WHERE tr_dt > CURDATE() OR Paid = 0'))
+    print(exporter.readsql('SELECT * FROM display_goodstransectionte_summary'))

@@ -43,7 +43,8 @@
         #mainHeader h1 ,#mainHeader h5{
           margin: 0;
           padding: 0PX;
-          padding-top: 0.3%;}
+          padding-top: 0.3%;
+          padding-bottom :0.3%;}
       
       
         #mainNav,#submainNav {
@@ -215,24 +216,27 @@
         background-color: #FF0000; /* red */
       }
       
-      tr.yes {
-                      background-color: #90EE90; /* light green */
-                  }
-                  tr.no {
-                      background-color: #FFB6C1; /* light red */
-                  }
-                  tr.maybe {
-                      background-color: #FFD700; /* light yellow */
-                  }
                   tr.unknown {
                       background-color: #ddd; /* light gray */
                   }
                   tr.unpaid {
                       background-color: #ec1f3e; /* light red */
                   }
+      
+                  tr.maybe {
+                      background-color: #FFD700; /* light yellow */
+                  }
+      
                   tr.paid {
                       background-color: #4CAF50; /* light green */
                   }
+                  tr.yes {
+                      background-color: #90EE90; /* light green */
+                  }
+                  tr.no {
+                      background-color: #FFB6C1; /* light red */
+                  }
+      
       
       table.small{
           width: 80%;
@@ -256,9 +260,7 @@
           color: white;
           text-align: center;
           display: inline-block;
-      }
-      
-          </style>
+      }          </style>
       
   <body>
     <header id="mainHeader">
@@ -272,7 +274,7 @@
       <div class="container">
         <ul>
           <li class="active" ><a   href="#">التقارير</a></li>
-          <li><a href="#">المخازن</a></li>
+          <li><a href="/invetory">المخازن</a></li>
         </ul>
       </div>
     </nav>
@@ -281,19 +283,18 @@
       <div class="container">
         <ul>
           <li><a href="/display_goodstransectionte">التدفقات النقدية</a></li>
-          <li><a href="#">احصائيات العميل</a></li>
-          <li><a href="#">احصائيات الشهر</a></li>
+          <li><a href="/clinets_statistics">احصائيات العميل</a></li>
+          <li><a href="/genral_statistics">احصائيات الشهر</a></li>
         </ul>
       </div>
     </nav>
-
 
 <form method="post" enctype="multipart/form-data">
   <div class="commentContainer">
   {% if form is defined %}
     {{ form.hidden_tag() }}
         <div class="drop-zone">
-          <div > <span class="drop-zone__prompt">برحاء رفع {{ form.file.label(class="form-control-label") }}</span></div>
+          <div > <span class="drop-zone__prompt">برجاء تحديث الملفات المطلوبة على التوالي </span></div>
           <div> <input type="file" name="{{ form.file.name }}" id="{{ form.file.id }}" class="drop-zone__input"></div>
         </div>
            <div >  {{ form.submit(class="input") }} 
@@ -312,6 +313,12 @@
             </tr>
           {% endfor %}
         </table>
+  </div>
+  <div>
+    <h4 style="text-align: right;">
+      (SBAccMFDtlRpt.xls)وكذالك ملف العملاء في حال تجددة (SBJRNLITMRPTTAX.xls)
+      برجاء رفع الملفات المتوفرة ملف  
+    </h4> 
   </div>
   
   </div>

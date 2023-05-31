@@ -1,357 +1,428 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>File Upload Form</title>
-    <style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont;
-  font-size: 16px;
-    line-height: 1.6em;
-    margin: 0;
-    background-color: #fffef5;
-  }
-  .container ,.commentContainer,.commentContainer2{
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>File Upload Form</title>
+      <style>
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-size: 16px;
+      line-height: 1.6em;
+      margin: 0;
+      background-color: #fffef5;
+    }
+    .container ,.commentContainer,.commentContainer2{
 
-    width: 95%;
-    overflow: hidden;
-    padding-left: 0.5%;
-  }
+      width: 95%;
+      overflow: hidden;
+      padding-left: 0.5%;
+    }
 
-  .commentContainer,.commentContainer2 {
-    display: flex;
-    height: 90%;
-    flex-direction: row ;
-    gap: 15px;
-    align-items: stretch
+    .commentContainer,.commentContainer2 {
+      display: flex;
+      height: 90%;
+      flex-direction: row ;
+      gap: 15px;
+      align-items: stretch
+      
+
+    }
+    .commentContainer2{
+      margin-top: 1%;
+    }
+
+
+    .clearFix {
+      clear: both;
+    }
+    #mainHeader {
+      background: white;
+      color: #02a080;
+      font-weight: bolder;
+      font-style: italic;    
+  }
+    #mainHeader h1 ,#mainHeader h5{
+      margin: 0;
+      padding: 0PX;
+      padding-top: 0.3%;
+      padding-bottom :0.3%;}
+
     
 
-  }
-  .commentContainer2{
-    margin-top: 1%;
-  }
 
+    #mainNav,#submainNav ,  #submainNavcards{
+      background: #02a080;
+      color: #83764F;
+      position: relative;
+      overflow: auto;
+      max-height: 1%;
 
-  .clearFix {
-    clear: both;
-  }
-  #mainHeader {
-    background: white;
-    color: #02a080;
-    font-weight: bolder;
-    font-style: italic;    
-}
-  #mainHeader h1 ,#mainHeader h5{
-    margin: 0;
-    padding: 0PX;
-    padding-top: 0.3%;}
+    }
 
+    #submainNa,  #submainNavcardsv{
+      margin-bottom: 1%;
+    }
 
-  #mainNav,#submainNav {
-    background: #02a080;
-    color: #83764F;
-    position: relative;
-    overflow: auto;
-    max-height: 1%;
+    #mainNav ul,#submainNav ul,  #submainNavcards ul {
+      padding: 0px;
+      margin: 0%;
+      list-style: none;
+    }
+    #mainNav li,#submainNav li  ,#submainNavcards li{
+      text-align: center;
+      padding: 0.1%;
+      font-size: 17px;
+      padding-left: 2%;
+      padding-right: 2%;
+      float: right;
+      border-radius: 5px 5px 0px 0px;
+      
+    }
 
-  }
+    #mainNav a,#submainNav a ,  #submainNavcards a  , #submainNavcards a{
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    #mainNav li:hover,#submainNav li:hover,  #submainNavcards li:hover {
+      background: #1B9C85;
+    }
+    #mainNav li.active {
+      background: #98EECC;
+    }
 
-  #submainNav{
-    margin-bottom: 1%;
-  }
-
-  #mainNav ul,#submainNav ul {
-    padding: 0px;
-    margin: 0%;
-    list-style: none;
-  }
-  #mainNav li,#submainNav li {
-    text-align: center;
-    padding: 0.1%;
-    font-size: 17px;
-    padding-left: 2%;
-    padding-right: 2%;
-    float: right;
-    border-radius: 5px 5px 0px 0px;
-    
+    #submainNav  {
+      background-color: #98EECC;
   }
 
-  #mainNav a,#submainNav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  #mainNav li:hover,#submainNav li:hover {
-    background: #1B9C85;
-  }
-  #mainNav li.active {
-    background: #98EECC;
-  }
-
-  #submainNav  {
-    background-color: #98EECC;
-}
-
-
-
-
-
-
-
-
-.form-control-label {
-  display: block;
-  margin-bottom: .5rem;
-  font-size: x-large;
-  margin-top: 15%;
-  text-align: center;
-}
-.drop-zone {
-  border: 4px dashed #2f353b;
-  border-radius: .25rem;
-  width: 30%;
-  height: 100%;
-  padding: 8%;
-  margin: 0 ;
-  text-align: center;
-  background: color #f5f5f5;
-  transition: background 0.3s ease;
-
-}
-.drop-zone:hover{
-    background-color:#dddbdb
-
-}
-
-
-
-      .drop-zone__prompt {
-        margin: auto;
-        color: #45535f;
-        font-size: xx-large;
-        font-weight: bolder;
-      }
-      .drop-zone__input {
-        margin: auto;
-        display: none;
-      }
-      .drop-zone--over {
-        border-color: #3b4550;
-      }
-  
-  input[type="submit"],a.button{
-    display: inline-block;
-  background-color: #02a080;
-  color: white;
-  cursor: pointer;
-  font-size: xx-large; 
-  font-weight: bolder ;
-  padding: 8px 16px;
-
-  width: 100%;
-  height: 99%;
-  border: none;
-  border-radius: 4px 4px 4px 4px;
-  }
-  a.button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    height: 99%;
-    border: none;
-    cursor: pointer;
-  }
-  
-  a.button:hover {
-    background-color: #3e8e41;
-  }
-
-  input[type="submit"].update-button{
-    display: inline-block;
-  background-color: #02a080;
-  font-size: large; 
-  font-weight: bolder ;
-  padding: 8px 16px;
-  width: 8%;
-  height: 5%;
-  border-radius: 4px 4px 4px 4px;
-  position: fixed;
-    bottom: 60px;
-    margin-left: 0;
-    right: 20px;
-  }
-
-
-
-
-input[type="submit"]:hover,a.button:hover  {
- background-color: #01976a;
-}
-
-    table {
-        border-collapse: collapse;
-        border: 1px solid black;
+  #submainNavcards {
+    padding-top: 0%;
+    background-color:#fffef5;
     width: 100%;
     height: 100%;
-    }
-    th, td {
-        border: 2px solid black;
-        text-align: center;
-        padding: 8px;
-    }
-    tr:nth-child(even) {
-        background-color: #ffffff;
-    }
-    tr:nth-child(odd) {
-        background-color: #dae0df;
-    }
+
+    font-size: medium;
+    float: center;
+    padding: 0;
+  }
+
+  #submainNavcards ul {
+    list-style: none;
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+  }
+
+  #submainNavcards li{
+    text-align: default;
+    font-size: 17px;
+    display: flex;
+    height: 100%;
+    background-color: #90EE90;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    align-items: center;
+  margin-bottom: 1%;  }
 
 
-th {
+
+  .form-control-label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: x-large;
+    margin-top: 15%;
+    text-align: center;
+  }
+  .drop-zone {
+    border: 4px dashed #2f353b;
+    border-radius: .25rem;
+    width: 30%;
+    height: 100%;
+    padding: 8%;
+    margin: 0 ;
+    text-align: center;
+    background: color #f5f5f5;
+    transition: background 0.3s ease;
+
+  }
+  .drop-zone:hover{
+      background-color:#dddbdb
+
+  }
+
+
+
+        .drop-zone__prompt {
+          margin: auto;
+          color: #45535f;
+          font-size: xx-large;
+          font-weight: bolder;
+        }
+        .drop-zone__input {
+          margin: auto;
+          display: none;
+        }
+        .drop-zone--over {
+          border-color: #3b4550;
+        }
+    
+    input[type="submit"],a.button{
+      display: inline-block;
     background-color: #02a080;
     color: white;
-}tr.red {
-  background-color: #FF0000; /* red */
-}
+    cursor: pointer;
+    font-size: xx-large; 
+    font-weight: bolder ;
+    padding: 8px 16px;
 
-tr.yes {
-                background-color: #90EE90; /* light green */
-            }
-            tr.no {
-                background-color: #FFB6C1; /* light red */
-            }
-            tr.maybe {
-                background-color: #FFD700; /* light yellow */
-            }
-            tr.unknown {
-                background-color: #ddd; /* light gray */
-            }
-            tr.unpaid {
-                background-color: #ec1f3e; /* light red */
-            }
-            tr.paid {
-                background-color: #4CAF50; /* light green */
-            }
+    width: 100%;
+    height: 99%;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    }
+    a.button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      height: 99%;
+      border: none;
+      cursor: pointer;
+    }
+    
+    a.button:hover {
+      background-color: #3e8e41;
+    }
 
-table.small{
-    width: 80%;
-  height: 80%;
-  border-collapse: collapse;
-  margin: 10%;
-  margin-top: 5%;
-  overflow-y: scroll;
-  margin-right: 0;
+    input[type="submit"].update-button,a.button{
+      display: inline-block;
+    background-color: #02a080;
+    font-size: large; 
+    font-weight: bolder ;
+    padding: 8px 16px;
+    width: 5%;
+    height: 5%;
+    border-radius: 4px 4px 4px 4px;
+    position: fixed;
+    bottom: 20px;
+      bottom: 60px;
+      margin-left: 6%;
+      right: 6%;
+    }
 
 
-}
-/* add styles for the question mark */
-span.question-mark {
-    font-size: 12px;
-    line-height: 16px;
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    background-color: #ddd;
-    color: white;
-    text-align: center;
-    display: inline-block;
-}
 
-    </style>
-  </head>
-  <body>
-    <header id="mainHeader">
-      <div class="container">
+
+  input[type="submit"]:hover,a.button:hover  {
+  background-color: #01976a;
+  }
+
+      table {
+          border-collapse: collapse;
+          border: 1px solid black;
+      width: 100%;
+      height: 100%;
+      }
+      th, td {
+          border: 2px solid black;
+          text-align: center;
+          padding: 8px;
+      }
+      tr:nth-child(even) {
+          background-color: #ffffff;
+      }
+      tr:nth-child(odd) {
+          background-color: #dae0df;
+      }
+
+
+  th {
+      background-color: #02a080;
+      color: white;
+  }tr.red {
+    background-color: #FF0000; /* red */
+  }
+
+              tr.unknown {
+                  background-color: #ddd; /* light gray */
+              }
+              tr.unpaid {
+                  background-color: #ec1f3e; /* light red */
+              }
+
+              tr.maybe {
+                  background-color: #FFD700; /* light yellow */
+              }
+
+              tr.paid {
+                  background-color: #4CAF50; /* light green */
+              }
+              tr.yes {
+                  background-color: #90EE90; /* light green */
+              }
+              tr.no {
+                  background-color: #FFB6C1; /* light red */
+              }
+
+
+  table.small{
+      width: 80%;
+    height: 80%;
+    border-collapse: collapse;
+    margin: 10%;
+    margin-top: 5%;
+    overflow-y: scroll;
+    margin-right: 0;
+
+
+  }
+  /* add styles for the question mark */
+  span.question-mark {
+      font-size: 12px;
+      line-height: 16px;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background-color: #ddd;
+      color: white;
+      text-align: center;
+      display: inline-block;
+  }
+
+      </style>
+    </head>
+    <body>
+      <header id="mainHeader">
+        <div class="container">
           <h1  >El fateh Company</h1>
           <h5  >Since 1990</h5>
-      </div>
-    </header>
-  
-    <nav id="mainNav">
+        </div>
+      </header>
+    
+      <nav id="mainNav">
+        <div class="container">
+          <ul>
+            <li class="active" ><a   href="#">التقارير</a></li>
+            <li><a href="#">المخازن</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <nav id="submainNav" >
+        <div class="container">
+          <ul>
+            <li><a href="/home">التدفقات النقدية</a></li>
+            <li><a href="/clinets_statistics">احصائيات العميل</a></li>
+            <li><a href="/genral_statistics">احصائيات الشهر</a></li>
+            </ul>
+        </div>
+      </nav>      
+      <nav id="submainNavcards" >
+        <div class="container">
+          <ul>
+            <li><a href="#">المتابعة</a></li>
+            <li><a href="#">المراجعة</a></li>
+            <li><a href="#">التقرير</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="container">
-        <ul>
-          <li class="active" ><a   href="#">التقارير</a></li>
-          <li><a href="#">المخازن</a></li>
-        </ul>
-      </div>
-    </nav>
-  
-    <nav id="submainNav" >
-      <div class="container">
-        <ul>
-          <li><a href="/home">التدفقات النقدية</a></li>
-          <li><a href="#">احصائيات العميل</a></li>
-          <li><a href="#">احصائيات الشهر</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
         <form action="{{ url_for('update_paid') }}" method="post">
-            <div style="height: 80vh; overflow-y: scroll;">
-          <table class="small">
-            <tr>
-              <th>InvoiceID</th>
-              <th>Total_invoice</th>
-              <th>tr_dt</th>
-              <th>Acc_Nm</th>
-              <th>dueDate</th>
-              <th>realDate</th>
-              <th>Paid</th>
-              <th>Update Paid</th>
-            </tr>
-            {% for row in data.itertuples() %}
+          <div style="height: 80vh; overflow-y: scroll;">
+            <table class="small">
               <tr>
-                <td>{{ row.InvoiceID }}</td>
-                <td>{{ row.Total_invoice }}</td>
-                <td>{{ row.tr_dt }}</td>
-                <td>{{ row.Acc_Nm }}</td>
-                <td data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
-                <td data-real-date="{{ row.realDate }}">{{ row.realDate }}</td>
-                <td data-paid="{{ row.Paid }}">{{ row.Paid }}</td>
-                <td>
-                  <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
-                  <select name="paid">
-                    <option value="">مؤقت...</option>
-                    <option value="0">لا</option>
-                    <option value="1">نعم</option>
-                  </select>
-                </td>
+                <th>InvoiceID</th>
+                <th>الاجمالي</th>
+                <th>تاريخ الفاتورة</th>
+                <th>الحساب</th>
+                <th>الإستحقاق</th>
+                <th>التحصيل</th>
+                <th>Paid</th>
+                <th>Update Paid</th>
               </tr>
-            {% endfor %}
-          </table>
-          <input type="submit" value="تحديث" class="update-button">
+              {% for row in data.itertuples() %}
+                {% set row_class = '' %}
+                {% if row.Paid == 1 %}
+                  {% set row_class = 'paid' %}    
+                {% elif row.dueDate == current_date %}
+                  {% set row_class = 'maybe' %}
+                  {% elif row.dueDate < current_date %}
+                  {% set row_class = 'unpaid' %}
+                {% endif %}
+                <tr class="{{ row_class }}" data-days-late="{{ days_late }}">
+                  <td data-InvoiceID="{{ row.InvoiceID }}">{{ row.InvoiceID }}</td>
+                  <td data-Total_invoice="{{ row.Total_invoice }}">{{ row.Total_invoice }}</td>
+                  <td data-tr_dt="{{ row.tr_dt }}">{{ row.tr_dt }}</td>
+                  <td data-Acc_Nm="{{row.Acc_Nm}}">{{row.Acc_Nm}}</td>
+                  <td data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
+                  <td data-real-date="{{ row.realDate }}">{{ row.realDate }}</td>
+                  <td data-paid="{{ row.Paid }}">{{ row.Paid }}</td>
+                  <td>
+                    <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
+                    <select name="paid">
+                      <option value="">مؤقت...</option>
+                      <option value="0">لا</option>
+                      <option value="1">نعم</option>
+                    </select>
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+            <input type="submit" value="تحديث" class="update-button">
+          </div>      <a style= "  position: relative;" href="/display_all_goodstransectionte" class="button">نظرة اخرى</a>
+
+
         </form>
       </div>
-                    <script>
-            // get all the dropdown menus
-            var dropdowns = document.querySelectorAll('select[name="paid"]');
 
-            // add an event listener to each dropdown menu
-            for (var i = 0; i < dropdowns.length; i++) {
-                // store the original value of the dropdown menu
-                dropdowns[i].dataset.originalValue = dropdowns[i].value;
+                          <script>
+              // get all the dropdown menus
+              var dropdowns = document.querySelectorAll('select[name="paid"]');
 
-                dropdowns[i].addEventListener('change', function() {
-                    // get the row element
-                    var row = this.closest('tr');
+              // add an event listener to each dropdown menu
+              for (var i = 0; i < dropdowns.length; i++) {
+                  // store the original value of the dropdown menu
+                  dropdowns[i].dataset.originalValue = dropdowns[i].value;
 
-                    // remove any existing color classes from the row
-                    row.classList.remove('yes', 'no');
+                  dropdowns[i].addEventListener('change', function() {
+                      // get the row element
+                      var row = this.closest('tr');
 
-                    // add the appropriate color class depending on the value of the dropdown menu
-                    if (this.value === '1') {
-                        row.classList.add('yes');
-                    } else if (this.value === '0') {
-                        row.classList.add('no');
-                    }
-                });
-            }
-        </script>
-               <footer>
-                <!-- place your footer content here -->
-                <p>Copyright © 2022 My Website</p>
-              </footer>
-    </body>
+                      // remove any existing color classes from the row
+                      row.classList.remove('yes', 'no');
 
-</html>
+                      // add the appropriate color class depending on the value of the dropdown menu
+                      if (this.value === '1') {
+                          row.classList.add('yes');
+                      } else if (this.value === '0') {
+                          row.classList.add('no');
+                      }
+                  });
+              }
+
+
+    var button = document.querySelector('#toggle-button');
+    var urls = ['/display_goodstransectionte', '/display_all_goodstransectionte', '/display_goodstransectionte_summary'];
+    var currentUrlIndex = 0;
+
+    button.addEventListener('click', function() {
+        // go to the next URL in the array
+        currentUrlIndex = (currentUrlIndex + 1) % urls.length;
+        window.location.href = urls[currentUrlIndex];
+    });
+
+
+;
+
+          </script>
+                <footer>
+                  <!-- place your footer content here -->
+                  <p>Copyright © 2022 My Website</p>
+                </footer>
+      </body>
+
+  </html>

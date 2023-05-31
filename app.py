@@ -9,7 +9,9 @@ from werkzeug.utils import secure_filename
 import os
 import pandas as pd
 from flask import jsonify
-from datetime import datetime
+from datetime import datetime ,timedelta
+from flask_weasyprint import HTML, render_pdf
+from flask import make_response, render_template
 
 
 app = Flask(__name__)
@@ -23,6 +25,8 @@ database = 'easytrick'
 
 exporter = dbcon(username, password, hostname, database)
 
+def get_current_date():
+    return (datetime.now() + timedelta(days=1)).date()
 
 class FileHandler :
 
@@ -97,6 +101,7 @@ class button(FlaskForm):
     def delete_data_last():
         exporter.call_stored_procedure('deleteRemovedRows')
         return redirect(url_for('home', message='Data exported successfully!'))
+    
 class displaytables():
     @app.route('/display_dataclints_data')
     def display_data():
@@ -106,18 +111,49 @@ class displaytables():
 
     @app.route('/display_goodstransectionte')
     def display_goodstransectionte():    
-        # retrieve the data from the goodstransectionte table
-        # data = exporter.get_table_data('goodstransectionte')
         data = exporter.readsql( 'SELECT * FROM goodstransectionte WHERE realDate IS NULL OR realDate > DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) ORDER BY dueDate ASC, Acc_Nm ASC;')
-        # pass the data to the template
-        return render_template('audra.html', data=data)
-    
+        current_date = get_current_date()
 
+        return render_template('audra.html', data=data, current_date=current_date)
+    
+    @app.route('/display_all_goodstransectionte')
+    def display_all_goodstransectionte():
+        data = exporter.readsql( 'SELECT * FROM goodstransectionte  ORDER BY dueDate ASC, Acc_Nm ASC;')
+        current_date = get_current_date()
+
+        return render_template('audra.html', data=data, current_date=current_date)
+    
+    @app.route('/display_goodstransectionte_summary')
+    def display_goodstransectionte_summary():
+        data = exporter.readsql( 'SELECT * FROM goodstransectionte_summary')
+        return render_template('miller.html', data=data)
+
+
+class print():
+    @app.route('/pdf')
+    def print():
+        # Retrieve the data from the goodstransectionte table
+        data = exporter.readsql('SELECT * FROM goodstransectionte_summary')
+
+        # Render the HTML template with the data
+        html = render_template('miller.html', data=data)
+
+        # Generate the PDF
+        pdf = HTML(string=html).write_pdf()
+
+        # Create a response object with the PDF data
+        response = make_response(pdf)
+        response.headers['Content-Type'] = 'application/pdf'
+        response.headers['Content-Disposition'] = 'attachment; filename=goodstransectionte_summary.pdf'
+
+        return response
 
 
 class func ():
     @app.route('/update_paid', methods=['POST'])
     def update_paid():
+        path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+
         # get the InvoiceID and Paid values from the form
         invoice_ids = request.form.getlist('invoice_id')
         paid_values = request.form.getlist('paid')
