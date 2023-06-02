@@ -306,8 +306,8 @@
       <nav id="mainNav">
         <div class="container">
           <ul>
-            <li class="active" ><a   href="#">التقارير</a></li>
-            <li><a href="/home/inventory">المخازن</a></li>
+            <li class="active" ><a   href="/Elfateh/main/reports/cashflow">التقارير</a></li>
+            <li><a href="/Elfateh/main/Inventory">المخازن</a></li>
           </ul>
         </div>
       </nav>
@@ -315,18 +315,18 @@
       <nav id="submainNav" >
         <div class="container">
           <ul>
-            <li><a href="/home/reports">التدفقات النقدية</a></li>
-            <li><a href="/home/reports/clinets_statistics">احصائيات العميل</a></li>
-            <li><a href="/home/reports/genral_statistics">احصائيات الشهر</a></li>
+            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">التدفقات النقدية</a></li>
+            <li><a href="/Elfateh/main/reports/clinets_statistics">احصائيات العميل</a></li>
+            <li><a href="/Elfateh/main/reports/genral_statistics">احصائيات الشهر</a></li>
               </ul>
         </div>
       </nav>      
       <nav id="submainNavcards" >
         <div class="container">
           <ul>
-            <li><a href="/home/reports/display_goodstransectionte">المتابعة</a></li>
-            <li><a href="/home/reports/display_all_goodstransectionte">المراجعة</a></li>
-            <li><a href="/home/reports/display_goodstransectionte_summary">التقرير</a></li>
+            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">المتابعة</a></li>
+            <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">المراجعة</a></li>
+            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
 
           </ul>
         </div>
@@ -407,21 +407,6 @@
               }
 
 
-              var link = document.querySelector('a[href="/display_all_goodstransectionte"]');
-
-// add an event listener to the a element
-link.addEventListener('click', function(event) {
- // check if the current URL is /display_all_goodstransectionte
- if (window.location.pathname === '/display_all_goodstransectionte') {
- // prevent the default behavior of the a element
- event.preventDefault();
-
- // redirect to the /displaygoodstransectionte page
- window.location.href = '/display_goodstransectionte ';
-
- 
- }
-}); 
 
 window.onload = function() {
   var currentUrl = window.location.href;
@@ -431,6 +416,10 @@ window.onload = function() {
   } else {
     li.style.display = "none";
   }
+}
+
+if (window.location.pathname !== '/Elfateh/main/reports/cashflow/display_goodstransectionte_summary') {
+    document.getElementById('print-link').style.display = 'none';
 }
 
           </script>

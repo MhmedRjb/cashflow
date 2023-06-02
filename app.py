@@ -12,18 +12,17 @@ from flask import jsonify
 from datetime import datetime ,timedelta
 from flask_weasyprint import HTML, render_pdf
 from flask import make_response, render_template
+from reportsTables import displaytables_bp
+from databaseIniti import exporter
+
+
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
 app.secret_key = '123456789'
+app.register_blueprint(displaytables_bp)
 app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), r'Excel_files')
-username = 'root'
-password = '123qweasdzxcSq'
-hostname = 'localhost'
-database = 'easytrick'
-
-exporter = dbcon(username, password, hostname, database)
 
 def get_current_date():
     return (datetime.now() + timedelta(days=1)).date()
@@ -54,7 +53,10 @@ class UploadForm(FlaskForm):
     submit = SubmitField('Upload file')
 
     @app.route('/', methods=['GET', 'POST'])
-    @app.route('/home', methods=['GET', 'POST'])
+    @app.route('/Elfateh', methods=['GET', 'POST'])
+    @app.route('/Elfateh/main', methods=['GET', 'POST'])
+
+    @app.route('/Elfateh/main/reports', methods=['GET', 'POST'])
     def home():
         form = UploadForm()
         if request.method == 'POST':
@@ -75,62 +77,33 @@ class UploadForm(FlaskForm):
             folder_contents.append((item, mtime_str))
         return render_template('home.html', folder_contents=folder_contents,form=form)
 
-    @app.route('/next_page', methods=['GET', 'POST'])
-    def next_page(message=None):
-        return render_template('next_page.html',message=message)
     
 class button(FlaskForm):
-    @app.route('/export_data', methods=['POST','GET'])
+    @app.route('/Elfateh/main/reports/cashflow/export_datagood_transection', methods=['POST','GET'])
     def export_data():
         processor_goods_transection = process_good_transection()
         exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
         return redirect(url_for('home', message='Data exported successfully!'))
 
-    @app.route('/delete_data', methods=['POST','GET'])
+    @app.route('/Elfateh/main/reports/cashflow/delete_good_transection', methods=['POST','GET'])
     def delete_data():
         processor_goods_transection = process_good_transection()
         exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
         return redirect(url_for('home', message='Data deleted successfully!'))
 
-    @app.route('/export_data_frist', methods=['POST','GET'])
+    @app.route('/Elfateh/main/reports/cashflow/export_clints_data', methods=['POST','GET'])
     def export_data_frist():
         processor_clints_data = processor_Clints()
         exporter.export_data_frist(processor_clints_data.data, 'clints_data')
         return redirect(url_for('home', message='Data exported successfully!'))
-    @app.route('/delete_data_last', methods=['POST','GET'])
+    @app.route('/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
     def delete_data_last():
         exporter.call_stored_procedure('deleteRemovedRows')
         return redirect(url_for('home', message='Data exported successfully!'))
     
-class displaytables():
-    @app.route('/display_dataclints_data')
-    def display_data():
-        data = exporter.get_table_data('clints_data')
-        return render_template('audra.html', data=data)
-
-
-    @app.route('/display_goodstransectionte')
-    def display_goodstransectionte():    
-        data = exporter.readsql( 'SELECT * FROM recent_goodstransectionte;')
-        current_date = get_current_date()
-        return render_template('audra.html', data=data, current_date=current_date)
-    
-    @app.route('/display_all_goodstransectionte')
-    def display_all_goodstransectionte():
-        data = exporter.readsql( 'SELECT * FROM goodstransectionte  ORDER BY dueDate ASC, Acc_Nm ASC;')
-        current_date = get_current_date()
-
-        return render_template('audra.html', data=data, current_date=current_date)
-    
-    @app.route('/display_goodstransectionte_summary')
-    def display_goodstransectionte_summary():
-        data = exporter.readsql("SELECT * FROM goodstransectionte_summary ")
-        current_date = get_current_date()
-        return render_template('miller.html', data=data, current_date=current_date)
-
 
 class hello():
-    @app.route('/pdf')
+    @app.route('/Elfateh/main/print/cashflow')
     def hello():
         # Retrieve the data from the goodstransectionte table
         data = exporter.readsql('SELECT company_name , dueDate , total_invoice from goodstransectionte_summary')
@@ -168,18 +141,18 @@ class func ():
                 exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
 
         # redirect back to the display_goodstransectionte route
-        return redirect(url_for('display_goodstransectionte'))
+        return redirect(url_for('displaytables.Elfateh/reports/display_goodstransectionte'))
 
 class in_way():
-    @app.route('/inventory')
+    @app.route('/Elfateh/main/Inventory/')
     def inventory():
-        return render_template('commingsoon.html')
+        return render_template('commingsoonreports.html')
     
-    @app.route('/clinets_statistics')
+    @app.route('/Elfateh/main/reports/clinets_statistics')
     def clinets_statistics():
         return render_template('commingsoonreports.html')
     
-    @app.route('/genral_statistics')
+    @app.route('/Elfateh/main/reports/genral_statistics')
     def genral_statistics():
         return render_template('commingsoonreports.html')
     

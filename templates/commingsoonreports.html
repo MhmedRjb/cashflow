@@ -289,8 +289,8 @@ span.question-mark {
     <nav id="mainNav">  
       <div class="container">
         <ul>
-          <li class="active" ><a  href="/home/reports">التقارير</a></li>
-          <li ><a href="  /home/inventory">المخازن</a></li>
+          <li class="active" ><a  href="/Elfateh/main/reports">التقارير</a></li>
+          <li ><a href="/Elfateh/main/Inventory">المخازن</a></li>
         </ul>
       </div>
     </nav>
@@ -298,10 +298,10 @@ span.question-mark {
     <nav id="submainNav" >
       <div class="container">
         <ul>
-          <li><a href="/home/reports/display_goodstransectionte">التدفقات النقدية</a></li>
-          <li><a href="/home/reports/clinets_statistics">احصائيات العميل</a></li>
-          <li><a href="/home/reports/genral_statistics">احصائيات الشهر</a></li>
-        </ul>
+          <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">التدفقات النقدية</a></li>
+          <li><a href="/Elfateh/main/reports/clinets_statistics">احصائيات العميل</a></li>
+          <li><a href="/Elfateh/main/reports/genral_statistics">احصائيات الشهر</a></li>
+          </ul>
       </div>
     </nav>
      <head>
@@ -317,13 +317,13 @@ const mainNav = document.querySelector('#mainNav');
 const submainNav = document.querySelector('#submainNav');
 
 // Check if the current URL includes '/home/reports'
-if (currentURL.includes('/home/reports')) {
+if (currentURL.includes('/Elfateh/main/reports')) {
   // Change the content of the mainNav element
   mainNav.innerHTML = `
     <div class="container">
       <ul>
-        <li class="active"><a href="/home/reports">التقارير</a></li>
-        <li><a href="/inventory">المخازن</a></li>
+        <li class="active" ><a  href="/Elfateh/main/reports">التقارير</a></li>
+          <li ><a href="/Elfateh/main/Inventory">المخازن</a></li>
       </ul>
     </div>
   `;
@@ -332,19 +332,19 @@ if (currentURL.includes('/home/reports')) {
   submainNav.innerHTML = `
     <div class="container">
       <ul>
-        <li><a href="/home/reports/display_goodstransectionte">التدفقات النقدية</a></li>
-        <li><a href="/home/reports/clinets_statistics">احصائيات العميل</a></li>
-        <li><a href="/home/reports/genral_statistics">احصائيات الشهر</a></li>
+        <li><a href="/Elfateh/main/reports/cashflow">التدفقات النقدية</a></li>
+          <li><a href="/Elfateh/main/reports/clinets_statistics">احصائيات العميل</a></li>
+          <li><a href="/Elfateh/main/reports/genral_statistics">احصائيات الشهر</a></li>
       </ul>
     </div>
   `;
-} else if (currentURL.includes('/home/inventory')) {
+} else if (currentURL.includes('/Elfateh/main/Inventory')) {
   // Change the content of the mainNav element
   mainNav.innerHTML = `
     <div class="container">
       <ul>
-        <li><a href="/home/reports">التقارير</a></li>
-        <li class="active"><a href="/inventory">المخازن</a></li>
+        <li ><a  href="/Elfateh/main/reports">التقارير</a></li>
+          <li ><a href="/Elfateh/main/Inventory">المخازن</a></li>
       </ul>
     </div>
   `;

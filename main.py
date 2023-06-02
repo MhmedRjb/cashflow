@@ -1,8 +1,7 @@
 from Dataprocessor import DataProcessor as dprs
 from DataBaseConnection import DatabaseExporter as dbcon
+from databaseIniti import exporter
 
-
-exporter = dbcon('root', '123qweasdzxcSq', 'localhost', 'easytrick')
 
 def process_good_transection():
     file_path_goods_transection = r"D:\monymovment\Cashflows\Excel_files\SBJRNLITMRPTTAX.xls"
@@ -11,7 +10,7 @@ def process_good_transection():
     filter_column_goods_tran = 'tr_ds'
     filter_values = 'بيع|مرتجع'
     filter_column2 = 'Acc_Nm'
-    filter_vlaues2 = 'الصعيدى|العابد|البدر|خزين|ايتوال|اليسر|ع-لولو|ع-بيم|مكسب|جورميه'
+    filter_vlaues2 = 'الصعيدى|العابد|البدر|خزين|ايتوال|اليسر|ع-لولو|ع-بيم|مكسب|جورميه|ميزه -دسوق'
 
     processor_goods_transection =dprs(file_path_goods_transection, expected_cols_goods_transection)
     processor_goods_transection.read_data()
