@@ -111,9 +111,8 @@ class displaytables():
 
     @app.route('/display_goodstransectionte')
     def display_goodstransectionte():    
-        data = exporter.readsql( 'SELECT * FROM goodstransectionte WHERE realDate IS NULL OR realDate > DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) ORDER BY dueDate ASC, Acc_Nm ASC;')
+        data = exporter.readsql( 'SELECT * FROM recent_goodstransectionte;')
         current_date = get_current_date()
-
         return render_template('audra.html', data=data, current_date=current_date)
     
     @app.route('/display_all_goodstransectionte')
@@ -125,18 +124,25 @@ class displaytables():
     
     @app.route('/display_goodstransectionte_summary')
     def display_goodstransectionte_summary():
-        data = exporter.readsql( 'SELECT * FROM goodstransectionte_summary')
-        return render_template('miller.html', data=data)
+        data = exporter.readsql("SELECT * FROM goodstransectionte_summary ")
+        current_date = get_current_date()
+        return render_template('miller.html', data=data, current_date=current_date)
 
 
-class print():
+class hello():
     @app.route('/pdf')
-    def print():
+    def hello():
         # Retrieve the data from the goodstransectionte table
-        data = exporter.readsql('SELECT * FROM goodstransectionte_summary')
+        data = exporter.readsql('SELECT company_name , dueDate , total_invoice from goodstransectionte_summary')
+        column_names = ['اسم الشركة ', 'معاد الأستحقاق ', 'الإجمالي']
+        reprot_type='تقرير داخلي'
+        report_number='1'
+        report_author='محمد عبدالله'
+        report_date=get_current_date()
 
         # Render the HTML template with the data
-        html = render_template('miller.html', data=data)
+        html = render_template('pdf.html', data=data, column_names=column_names,reprot_type=reprot_type,report_number=report_number,report_author=
+                               report_author,report_date=report_date)
 
         # Generate the PDF
         pdf = HTML(string=html).write_pdf()
@@ -152,8 +158,6 @@ class print():
 class func ():
     @app.route('/update_paid', methods=['POST'])
     def update_paid():
-        path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
-
         # get the InvoiceID and Paid values from the form
         invoice_ids = request.form.getlist('invoice_id')
         paid_values = request.form.getlist('paid')
@@ -166,6 +170,19 @@ class func ():
         # redirect back to the display_goodstransectionte route
         return redirect(url_for('display_goodstransectionte'))
 
+class in_way():
+    @app.route('/inventory')
+    def inventory():
+        return render_template('commingsoon.html')
+    
+    @app.route('/clinets_statistics')
+    def clinets_statistics():
+        return render_template('commingsoonreports.html')
+    
+    @app.route('/genral_statistics')
+    def genral_statistics():
+        return render_template('commingsoonreports.html')
+    
 
 if __name__ == '__main__':
     app.run(debug=True)

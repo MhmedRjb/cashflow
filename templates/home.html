@@ -20,9 +20,9 @@
         .commentContainer,.commentContainer2 {
           display: flex;
           height: 90%;
-          flex-direction: row ;
-          gap: 15px;
-          align-items: stretch
+          flex-direction: ROW ;
+          gap: 7px;
+          flex-wrap: wrap;
           
       
         }
@@ -274,7 +274,7 @@
       <div class="container">
         <ul>
           <li class="active" ><a   href="#">التقارير</a></li>
-          <li><a href="/invetory">المخازن</a></li>
+          <li><a href="/inventory">المخازن</a></li>
         </ul>
       </div>
     </nav>
@@ -299,9 +299,8 @@
         </div>
            <div >  {{ form.submit(class="input") }} 
   {% endif %}</div>
-<f/orm>
 <form method="get " enctype="multipart/form-data">
-  <div>      <table>
+  <div style=" height: max-content;"> <table>
           <tr>
             <th>Name</th>
             <th>Last Modified</th>
@@ -315,7 +314,7 @@
         </table>
   </div>
   <div>
-    <h4 style="text-align: right;">
+    <h4 style="text-align: right; ">
       (SBAccMFDtlRpt.xls)وكذالك ملف العملاء في حال تجددة (SBJRNLITMRPTTAX.xls)
       برجاء رفع الملفات المتوفرة ملف  
     </h4> 
@@ -328,13 +327,14 @@
   <div class="commentContainer2" >
 
 <div  ><input type="submit" formaction="/export_data" value="تحديث جدول الحركة"></div>
+
 <div > <input type="submit" formaction="/export_data_frist" value="تحديث جدول العملاء"></div>
 
 <div ><input type="submit" formaction="/delete_data" value=" إسقاط الفواتير المحذوفة "></div>
 
 <div > <input  style="  background-color: #f1290f; " type="submit" formaction="/delete_data_last" value="تأكيد إسقاط الفواتير المحذوفة "> </div>
 
-<div><a href="/display_goodstransectionte" class="button">الصفحة التاليه </a></div>
+<div> <a href="/display_goodstransectionte" class="button">الصفحة التاليه </a></div>
 
 
 </form>
@@ -448,7 +448,7 @@ document.body.appendChild(tooltip);
 // add a mouseover event listener to the question mark
 questionMark.addEventListener('mouseover', function(event) {
     // update the text of the tooltip
-    tooltip.innerHTML = '<ul><li><span style="color: green; font-weight: bold;">Green:</span> The item is SBAccMFDtlRpt.xls or SBJRNLITMRPTTAX.xls and the mtime is within the last 15 minutes.</li><li><span style="color: yellow; font-weight: bold;">Yellow:</span> The item is SBAccMFDtlRpt.xls or SBJRNLITMRPTTAX.xls but the mtime is not within the last 15 minutes.</li><li><span style="color: red; font-weight: bold;">Red:</span> The item is not SBAccMFDtlRpt.xls or SBJRNLITMRPTTAX.xls.</li></ul>';
+    tooltip.innerHTML = '<ul style="direction: rtl;"><li   ><span style="color: green; font-weight: bold;">الأخضر:</span> الملف المطلوب وتم رفعه في  اخر ربع ساعة.</li><li><span style="color: #FFD700; font-weight: bold;">الأصفر:</span>الملفات صحيحة لكن لم تحدث </li><li><span style="color: red; font-weight: bold;">الأحمر:</span> ليس الملف المطلوب</li></ul>';
 
     // position and show the tooltip
     tooltip.style.left = event.pageX + 'px';

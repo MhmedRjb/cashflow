@@ -307,7 +307,7 @@
         <div class="container">
           <ul>
             <li class="active" ><a   href="#">التقارير</a></li>
-            <li><a href="#">المخازن</a></li>
+            <li><a href="/inventory">المخازن</a></li>
           </ul>
         </div>
       </nav>
@@ -324,15 +324,18 @@
       <nav id="submainNavcards" >
         <div class="container">
           <ul>
-            <li><a href="#">المتابعة</a></li>
-            <li><a href="#">المراجعة</a></li>
-            <li><a href="#">التقرير</a></li>
+            <li><a href="display_goodstransectionte">المتابعة</a></li>
+            <li><a href="display_all_goodstransectionte">المراجعة</a></li>
+            <li><a href="display_goodstransectionte_summary">التقرير</a></li>
+
           </ul>
         </div>
       </nav>
+
+      
       <div class="container">
         <form action="{{ url_for('update_paid') }}" method="post">
-          <div style="height: 80vh; overflow-y: scroll;">
+          <div style="height: 70vh; overflow-y: auto;">
             <table class="small">
               <tr>
                 <th>InvoiceID</th>
@@ -373,7 +376,6 @@
               {% endfor %}
             </table>
             <input type="submit" value="تحديث" class="update-button">
-          </div>      <a style= "  position: relative;" href="/display_all_goodstransectionte" class="button">نظرة اخرى</a>
 
 
         </form>
@@ -405,18 +407,31 @@
               }
 
 
-    var button = document.querySelector('#toggle-button');
-    var urls = ['/display_goodstransectionte', '/display_all_goodstransectionte', '/display_goodstransectionte_summary'];
-    var currentUrlIndex = 0;
+              var link = document.querySelector('a[href="/display_all_goodstransectionte"]');
 
-    button.addEventListener('click', function() {
-        // go to the next URL in the array
-        currentUrlIndex = (currentUrlIndex + 1) % urls.length;
-        window.location.href = urls[currentUrlIndex];
-    });
+// add an event listener to the a element
+link.addEventListener('click', function(event) {
+ // check if the current URL is /display_all_goodstransectionte
+ if (window.location.pathname === '/display_all_goodstransectionte') {
+ // prevent the default behavior of the a element
+ event.preventDefault();
 
+ // redirect to the /displaygoodstransectionte page
+ window.location.href = '/display_goodstransectionte ';
 
-;
+ 
+ }
+}); 
+
+window.onload = function() {
+  var currentUrl = window.location.href;
+  var li = document.getElementById("hiddenLi");
+  if (currentUrl.includes("/display_goodstransectionte_summary")) {
+    li.style.display = "list-item";
+  } else {
+    li.style.display = "none";
+  }
+}
 
           </script>
                 <footer>
