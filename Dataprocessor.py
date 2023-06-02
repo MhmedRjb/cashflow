@@ -66,7 +66,7 @@ if __name__ == "__main__":
     filter_column = 'tr_ds'
     filter_values = 'بيع|مرتجع'
     filter_column2 = 'Acc_Nm'
-    filter_vlaues2 = 'الصعيدى|العابد|البدر|خزين|ايتوال|اليسر|ع-لولو|ع-بيم|مكسب|جورميه'
+    filter_vlaues2 = 'الصعيدى|العابد|البدر|خزين|ايتوال|اليسر|ع-لولو|ع-بيم|مكسب|جورميه|ميزه'
     from DataBaseConnection import DatabaseExporter as dbcon
     username = 'root'
     password = '123qweasdzxcSq'

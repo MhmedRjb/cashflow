@@ -2011,3 +2011,62 @@ xlrd.biffh.XLRDError: Can't find workbook in OLE2 compound document
 2023-05-31 16:23:33,487 INFO: 127.0.0.1 - - [31/May/2023 16:23:33] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
 2023-05-31 16:23:52,354 INFO: 127.0.0.1 - - [31/May/2023 16:23:52] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
 2023-05-31 16:23:57,153 INFO: 127.0.0.1 - - [31/May/2023 16:23:57] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-02 17:12:15,838 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:18,307 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:19,190 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:20,159 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:35,377 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-02 17:12:37,110 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:42,039 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:12:43,355 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:13:02,594 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:02] "GET / HTTP/1.1" 200 -
+2023-06-02 17:13:03,909 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:03] "GET /home/reports/display_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:13:04,316 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:04] "GET /home/reports HTTP/1.1" 200 -
+2023-06-02 17:13:05,140 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:13:07,561 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:13:17,669 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:17] "GET /home/reports/display_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:13:18,282 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:18] "GET /home/reports HTTP/1.1" 200 -
+2023-06-02 17:13:45,295 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-02 17:13:48,080 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:13:56,888 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-02 17:13:58,684 INFO: 127.0.0.1 - - [02/Jun/2023 17:13:58] "GET /home/reports HTTP/1.1" 200 -
+2023-06-02 17:13:58,692 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:13:59,472 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:14:22,836 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-02 17:15:59,919 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:12,201 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:12] "GET / HTTP/1.1" 200 -
+2023-06-02 17:16:13,415 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:15,573 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:16,256 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:40,134 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:40] "GET / HTTP/1.1" 200 -
+2023-06-02 17:16:41,823 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:41] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:16:42,281 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:42] "[33mGET /home/reports HTTP/1.1[0m" 404 -
+2023-06-02 17:16:49,414 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:49] "GET /home HTTP/1.1" 200 -
+2023-06-02 17:16:50,922 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBJRNLITMRPTTAX.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:54,188 INFO: 127.0.0.1 - - [02/Jun/2023 17:16:54] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:16:56,150 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:16:56,837 ERROR: Error: [Errno 2] No such file or directory: 'D:\\monymovment\\Cashflows\\Excel_files\\SBAccMFDtlRpt.xls' Exception type: FileNotFoundError Class name: DataProcessor Function name: read_data
+2023-06-02 17:21:29,456 INFO: 127.0.0.1 - - [02/Jun/2023 17:21:29] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-06-02 17:21:29,463 INFO: 127.0.0.1 - - [02/Jun/2023 17:21:29] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-02 17:21:31,642 INFO: 127.0.0.1 - - [02/Jun/2023 17:21:31] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-06-02 17:21:31,649 INFO: 127.0.0.1 - - [02/Jun/2023 17:21:31] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-02 17:23:23,531 INFO: 127.0.0.1 - - [02/Jun/2023 17:23:23] "[33mGET /home/reports/display_all_goodstransectionte HTTP/1.1[0m" 404 -
+2023-06-02 17:23:27,331 INFO: 127.0.0.1 - - [02/Jun/2023 17:23:27] "GET / HTTP/1.1" 200 -
+2023-06-02 17:24:19,955 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:19] "[32mPOST /export_data HTTP/1.1[0m" 302 -
+2023-06-02 17:24:19,962 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:19] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-02 17:24:23,984 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:23] "[32mPOST /export_data_frist HTTP/1.1[0m" 302 -
+2023-06-02 17:24:23,989 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:23] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-02 17:24:29,666 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:29] "GET /display_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:24:43,132 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:43] "[33mGET /home/reports/display_goodstransectionte_summary HTTP/1.1[0m" 404 -
+2023-06-02 17:24:48,023 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:48] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-02 17:24:55,061 INFO: 127.0.0.1 - - [02/Jun/2023 17:24:55] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-02 17:25:05,445 INFO: 127.0.0.1 - - [02/Jun/2023 17:25:05] "GET /display_all_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:25:09,534 INFO: 127.0.0.1 - - [02/Jun/2023 17:25:09] "[33mGET /home/reports/display_goodstransectionte_summary HTTP/1.1[0m" 404 -
+2023-06-02 17:25:17,357 INFO: 127.0.0.1 - - [02/Jun/2023 17:25:17] "GET /display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-02 17:25:20,766 INFO: 127.0.0.1 - - [02/Jun/2023 17:25:20] "GET /display_all_goodstransectionte HTTP/1.1" 200 -
+2023-06-02 17:25:55,441 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-02 17:26:05,303 INFO: 127.0.0.1 - - [02/Jun/2023 17:26:05] "[32mPOST /delete_data HTTP/1.1[0m" 302 -
+2023-06-02 17:26:05,317 INFO: 127.0.0.1 - - [02/Jun/2023 17:26:05] "GET /home?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-06-02 17:26:05,879 INFO: 127.0.0.1 - - [02/Jun/2023 17:26:05] "[32mPOST /delete_data_last HTTP/1.1[0m" 302 -
+2023-06-02 17:26:05,886 INFO: 127.0.0.1 - - [02/Jun/2023 17:26:05] "GET /home?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-02 17:26:10,027 INFO: 127.0.0.1 - - [02/Jun/2023 17:26:10] "GET /display_goodstransectionte HTTP/1.1" 200 -
