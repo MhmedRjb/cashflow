@@ -14,7 +14,22 @@ def display_data():
 @displaytables_bp.route('/Elfateh/main/reports/cashflow')
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_goodstransectionte')
 def display_goodstransectionte():    
-    data = exporter.readsql( 'SELECT * FROM recent_goodstransectionte;')
+    data = exporter.readsql(  """
+SELECT 
+    CONCAT('[', GROUP_CONCAT(DISTINCT CONCAT(InvoiceID)), ']') AS InvoiceID,
+    SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN Total_invoice ELSE -Total_invoice END) AS Total_invoice,
+    tr_dt,
+    Acc_Nm,
+    dueDate,
+    realDate,
+    (CASE WHEN SUM(Paid) = COUNT(*) THEN 1 ELSE NULL END) AS Paid,
+    SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN getpaid ELSE -getpaid END) AS getpaid,
+    SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN total_invoice_aftertax ELSE -total_invoice_aftertax END) AS total_invoice_aftertax,
+    SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN leftUnPaid ELSE -leftUnPaid END) AS leftUnPaid
+FROM goodstransectionte
+GROUP BY Acc_Nm, tr_dt 
+ORDER by     Paid desc ,dueDate 
+""")
     current_date = get_current_date()
     return render_template('audra.html', data=data, current_date=current_date)
 
@@ -26,6 +41,6 @@ def display_all_goodstransectionte():
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_goodstransectionte_summary')
 def display_goodstransectionte_summary():
-    data = exporter.readsql("SELECT * FROM goodstransectionte_summary ")
+    data = exporter.readsql("SELECT * FROM cashflowsummary ")
     current_date = get_current_date()
     return render_template('miller.html', data=data, current_date=current_date)

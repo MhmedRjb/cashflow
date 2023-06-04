@@ -293,6 +293,33 @@
       display: inline-block;
   }
 
+  select {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  appearance: none;
+  border: #ff0505;
+}
+
+select:focus {
+  outline: none;
+
+}
+input[type="number"] {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+
+
       </style>
     </head>
     <body>
@@ -306,7 +333,7 @@
       <nav id="mainNav">
         <div class="container">
           <ul>
-            <li class="active" ><a   href="/Elfateh/main/reports/cashflow">التقارير</a></li>
+            <li class="active" ><a   href="/Elfateh/main">التقارير</a></li>
             <li><a href="/Elfateh/main/Inventory">المخازن</a></li>
           </ul>
         </div>
@@ -344,8 +371,12 @@
                 <th>الحساب</th>
                 <th>الإستحقاق</th>
                 <th>التحصيل</th>
-                <th>Paid</th>
-                <th>Update Paid</th>
+                <th>getPaid</th>
+                <th>leftUnPaid</th>
+                <th>paid</th>
+
+
+                <
               </tr>
               {% for row in data.itertuples() %}
                 {% set row_class = '' %}
@@ -363,20 +394,24 @@
                   <td data-Acc_Nm="{{row.Acc_Nm}}">{{row.Acc_Nm}}</td>
                   <td data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
                   <td data-real-date="{{ row.realDate }}">{{ row.realDate }}</td>
-                  <td data-paid="{{ row.Paid }}">{{ row.Paid }}</td>
-                  <td>
+                  <td onclick="toggleInput(this)">
+                    <span>{{ row.getpaid }}</span>
+                    <input type="number" name="getpaid" value="{{ row.getpaid }}" style="display: none;">
+                  </td>
+                  <td data-leftUnPaid="{{ row.leftUnPaid }}">{{ row.leftUnPaid }}</td>
+                  <td onclick="togglePaid(this)">
+                    <span>{{ row.Paid }}</span>
                     <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
-                    <select name="paid">
+                    <select name="paid" style="display: none;">
                       <option value="">مؤقت...</option>
                       <option value="0">لا</option>
                       <option value="1">نعم</option>
                     </select>
                   </td>
-                </tr>
+                                                    </tr>
               {% endfor %}
             </table>
-            <input type="submit" value="تحديث" class="update-button">
-
+            <input type="submit" value="تحديث" class="update-button">        
 
         </form>
       </div>
@@ -421,6 +456,33 @@ window.onload = function() {
 if (window.location.pathname !== '/Elfateh/main/reports/cashflow/display_goodstransectionte_summary') {
     document.getElementById('print-link').style.display = 'none';
 }
+var clickCount = 0;
+
+function togglePaid(cell) {
+  var span = cell.querySelector("span");
+  var select = cell.querySelector(" select");
+  if (clickCount === 0) {
+    span.style.display = "none";
+    select.style.display = "";
+    clickCount++;
+  } else if (clickCount === 1) {
+    clickCount++;
+  } else {
+    span.style.display = "";
+    select.style.display = "none";
+    clickCount = 0;
+  }
+}
+
+  function toggleInput(cell) {
+    var span = cell.querySelector("span");
+    var input = cell.querySelector("input");
+    span.style.display = "none";
+    input.style.display = "";
+  }
+
+
+
 
           </script>
                 <footer>

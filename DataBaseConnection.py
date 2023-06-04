@@ -1,6 +1,8 @@
 from sqlalchemy import create_engine, inspect,delete,update,Table,MetaData
 import pandas as pd
 import pymysql
+from sqlalchemy import update, text
+
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
         self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
@@ -64,6 +66,14 @@ class DatabaseExporter:
         cur.execute(stmt)
         conn.commit()
         cur.close()
+
+
+    def updatesql(self, table_name, values, whereclause):
+        table = self.metadata.tables[table_name]
+        stmt = update(table).values(values).where(text(whereclause))
+        with self.engine.begin() as conn:
+            conn.execute(stmt)
+
     
     #show the last N row in table ORDER BY col
     def show_rows(self, table_name, n, order_by, first=True):
@@ -130,6 +140,9 @@ class DatabaseExporter:
         data = pd.read_sql_query(sql, self.engine)
         return data
         #filter row in df if not in mysql table 
+    def updatesql(self, sql):
+        with self.engine.begin() as conn:
+            conn.execute(sql)
 
     def filter_row_not_in(self, table_name, col_name):
         existing_data = pd.read_sql(f'SELECT * FROM {table_name}', self.engine)
@@ -154,4 +167,4 @@ if __name__ == "__main__":
     #show the last 10 row in table ORDER BY Any col
     # exporter.call_stored_procedure('deleteRemovedRows')
     #show table where tr_dt> today  OR paid =0
-    print(exporter.readsql('SELECT * FROM display_goodstransectionte_summary'))
+    exporter.update_data('goodstransectionte', {'getpaid': 90}, "InvoiceID = 'Ba0999'")

@@ -102,19 +102,20 @@ class button(FlaskForm):
         return redirect(url_for('home', message='Data exported successfully!'))
     
 
-class hello():
+class extract():
     @app.route('/Elfateh/main/print/cashflow')
-    def hello():
+    def extractPDFofgoodstransectionte_summary():
         # Retrieve the data from the goodstransectionte table
         data = exporter.readsql('SELECT company_name , dueDate , total_invoice from goodstransectionte_summary')
         column_names = ['اسم الشركة ', 'معاد الأستحقاق ', 'الإجمالي']
         reprot_type='تقرير داخلي'
-        report_number='1'
-        report_author='محمد عبدالله'
+        report_number='2'
+        report_author='أحمد الستري'
         report_date=get_current_date()
 
         # Render the HTML template with the data
-        html = render_template('pdf.html', data=data, column_names=column_names,reprot_type=reprot_type,report_number=report_number,report_author=
+        html = render_template('pdf.html', data=data, column_names=column_names,
+                               reprot_type=reprot_type,report_number=report_number,report_author=
                                report_author,report_date=report_date)
 
         # Generate the PDF
@@ -134,14 +135,23 @@ class func ():
         # get the InvoiceID and Paid values from the form
         invoice_ids = request.form.getlist('invoice_id')
         paid_values = request.form.getlist('paid')
-
+        getpaid_values = request.form.getlist('getpaid')
+        real_date_values = exporter.readsql('SELECT realdate from goodstransectionte')
+        real_date_list = real_date_values['realdate'].tolist()
+        invoice_ids = [item.strip('[]') for sublist in invoice_ids for item in sublist.split(',')]
+        
         # update the Paid value for each specified InvoiceID where the value is not empty
-        for invoice_id, paid in zip(invoice_ids, paid_values):
+        for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_list):
             if paid:
+                print(f'invoice_id: {invoice_id}, getpaid: {getpaid}')
                 exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
+            if realDate is  None:     
+                print(f'realDate: {realDate}, paid: {paid}')
+                exporter.update_data('goodstransectionte', {'getpaid': getpaid}, f"InvoiceID = '{invoice_id}'")
 
         # redirect back to the display_goodstransectionte route
-        return redirect(url_for('displaytables.Elfateh/reports/display_goodstransectionte'))
+        return redirect(url_for('displaytables.display_goodstransectionte'))
+    
 
 class in_way():
     @app.route('/Elfateh/main/Inventory/')
