@@ -14,6 +14,7 @@ from flask_weasyprint import HTML, render_pdf
 from flask import make_response, render_template
 from reportsTables import displaytables_bp
 from databaseIniti import exporter
+import ast
 
 
 
@@ -25,7 +26,7 @@ app.register_blueprint(displaytables_bp)
 app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), r'Excel_files')
 
 def get_current_date():
-    return (datetime.now() + timedelta(days=1)).date()
+    return (datetime.now() + timedelta(days=0)).date()
 
 class FileHandler :
 
@@ -138,19 +139,20 @@ class func ():
         getpaid_values = request.form.getlist('getpaid')
         real_date_values = exporter.readsql('SELECT realdate from goodstransectionte')
         real_date_list = real_date_values['realdate'].tolist()
-        invoice_ids = [item.strip('[]') for sublist in invoice_ids for item in sublist.split(',')]
-        
         # update the Paid value for each specified InvoiceID where the value is not empty
         for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_list):
-            if paid:
-                print(f'invoice_id: {invoice_id}, getpaid: {getpaid}')
-                exporter.update_data('goodstransectionte', {'Paid': paid}, f"InvoiceID = '{invoice_id}'")
-            if realDate is  None:     
-                print(f'realDate: {realDate}, paid: {paid}')
-                exporter.update_data('goodstransectionte', {'getpaid': getpaid}, f"InvoiceID = '{invoice_id}'")
+            print("hi")
+            invoice_id_tuple = ast.literal_eval(invoice_id)
+            print(invoice_id_tuple)
+            print(type(invoice_id_tuple))
+            if paid :
+                print('nye')
+                exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
+            if getpaid :     
+               exporter.update_data_in('goodstransectionte', {'getpaid': getpaid},  'InvoiceID', invoice_id_tuple)
 
         # redirect back to the display_goodstransectionte route
-        return redirect(url_for('displaytables.display_goodstransectionte'))
+        return redirect(url_for('displaytables.display_all_goodstransectionte'))
     
 
 class in_way():

@@ -2,6 +2,7 @@ from sqlalchemy import create_engine, inspect,delete,update,Table,MetaData
 import pandas as pd
 import pymysql
 from sqlalchemy import update, text
+import ast
 
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
@@ -66,6 +67,22 @@ class DatabaseExporter:
         cur.execute(stmt)
         conn.commit()
         cur.close()
+
+    #update date using in inted of wherer
+    def update_data_in(self, table_name, set_values, column_name, values):
+        # Create a connection to the database
+        conn = self.engine.raw_connection()
+        cur = conn.cursor()
+
+        # Construct the UPDATE statement
+        set_clause = ', '.join([f"{col} = {val}" for col, val in set_values.items()])
+        values_str = ', '.join([f"'{val}'" for val in values])
+        stmt = f"UPDATE {table_name} SET {set_clause} WHERE {column_name} IN ({values_str})"
+        # Execute the statement
+        cur.execute(stmt)
+        conn.commit()
+        cur.close()
+
 
 
     def updatesql(self, table_name, values, whereclause):
@@ -163,8 +180,11 @@ if __name__ == "__main__":
     database = 'easytrick'
     exporter = DatabaseExporter(username, password, hostname, database)
     # print(exporter.cols_names('goodstransectionte'))
-    # exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
+    exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
     #show the last 10 row in table ORDER BY Any col
     # exporter.call_stored_procedure('deleteRemovedRows')
     #show table where tr_dt> today  OR paid =0
-    exporter.update_data('goodstransectionte', {'getpaid': 90}, "InvoiceID = 'Ba0999'")
+    invoice_ids = "('Ba0002','MA0006')"
+
+    invoice_ids_str = ('Ba0047',)	
+    exporter.update_data_in('goodstransectionte', {'paid': 0}, 'InvoiceID', invoice_ids_str)

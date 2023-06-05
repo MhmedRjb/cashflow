@@ -142,3 +142,11 @@
 2023-06-03 09:04:56,787 INFO: 127.0.0.1 - - [03/Jun/2023 09:04:56] "GET /Elfateh/main/reports/cashflow/display_goodstransectionte HTTP/1.1" 200 -
 2023-06-03 09:04:58,754 INFO: 127.0.0.1 - - [03/Jun/2023 09:04:58] "GET /Elfateh/main/reports/cashflow/display_all_goodstransectionte HTTP/1.1" 200 -
 2023-06-03 09:06:26,042 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\app.py', reloading
+2023-06-05 17:00:38,317 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:38] "[32mPOST /Elfateh/main/reports/cashflow/delete_good_transection HTTP/1.1[0m" 302 -
+2023-06-05 17:00:38,456 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:38] "GET /Elfateh/main/reports?message=Data+deleted+successfully! HTTP/1.1" 200 -
+2023-06-05 17:00:39,723 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:39] "[32mPOST /Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection HTTP/1.1[0m" 302 -
+2023-06-05 17:00:39,728 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:39] "GET /Elfateh/main/reports?message=Data+exported+successfully! HTTP/1.1" 200 -
+2023-06-05 17:00:53,678 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:53] "GET /Elfateh/main/reports/cashflow/display_goodstransectionte HTTP/1.1" 200 -
+2023-06-05 17:00:55,784 INFO: 127.0.0.1 - - [05/Jun/2023 17:00:55] "GET /Elfateh/main/reports/cashflow/display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-05 17:05:46,245 INFO: 127.0.0.1 - - [05/Jun/2023 17:05:46] "GET /Elfateh/main/reports/cashflow/display_goodstransectionte_summary HTTP/1.1" 200 -
+2023-06-05 17:05:51,268 INFO:  * Detected change in 'd:\\monymovment\\Cashflows\\reportsTables.py', reloading
