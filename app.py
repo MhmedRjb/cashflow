@@ -16,6 +16,7 @@ from reportsTables import displaytables_bp
 from databaseIniti import exporter
 import ast
 
+from cashFlowButtons import cashFlowButtons_bp
 
 
 
@@ -23,6 +24,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='123456789'
 app.secret_key = '123456789'
 app.register_blueprint(displaytables_bp)
+app.register_blueprint(cashFlowButtons_bp)
 app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), r'Excel_files')
 
 def get_current_date():
@@ -78,33 +80,9 @@ class UploadForm(FlaskForm):
             folder_contents.append((item, mtime_str))
         return render_template('home.html', folder_contents=folder_contents,form=form)
 
-    
-class button(FlaskForm):
-    @app.route('/Elfateh/main/reports/cashflow/export_datagood_transection', methods=['POST','GET'])
-    def export_data():
-        processor_goods_transection = process_good_transection()
-        exporter.export_data(processor_goods_transection.data, 'goodstransectionte')
-        return redirect(url_for('home', message='Data exported successfully!'))
 
-    @app.route('/Elfateh/main/reports/cashflow/delete_good_transection', methods=['POST','GET'])
-    def delete_data():
-        processor_goods_transection = process_good_transection()
-        exporter.delete_data(processor_goods_transection.data, 'goodstransectionte', 'InvoiceID', 'removed_rows')
-        return redirect(url_for('home', message='Data deleted successfully!'))
 
-    @app.route('/Elfateh/main/reports/cashflow/export_clints_data', methods=['POST','GET'])
-    def export_data_frist():
-        processor_clints_data = processor_Clints()
-        exporter.export_data_frist(processor_clints_data.data, 'clints_data')
-        return redirect(url_for('home', message='Data exported successfully!'))
-        
-    @app.route('/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
-    def delete_data_last():
-        exporter.call_stored_procedure('deleteRemovedRows')
-        return redirect(url_for('home', message='Data exported successfully!'))
-    
-
-class extract():
+class extractFiles():
     @app.route('/Elfateh/main/print/cashflow')
     def extractPDFofgoodstransectionte_summary():
         # Retrieve the data from the goodstransectionte table
@@ -146,9 +124,7 @@ class func ():
             print(realDate)
             if paid :
                 exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
-
             if realDate == "None"   :     
-               print('realDate is None')
                exporter.update_data_in('goodstransectionte', {'getpaid': getpaid},  'InvoiceID', invoice_id_tuple)
 
         # redirect back to the display_goodstransectionte route

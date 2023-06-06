@@ -9,7 +9,7 @@ displaytables_bp = Blueprint('displaytables', __name__)
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_dataclints_data')
 def display_data():
-    data = exporter.get_table_data('clints_data')
+    data = exporter.readsql('select * from clints_data')
     return render_template('audra.html', data=data)
 
 
@@ -22,7 +22,7 @@ def display_goodstransectionte():
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_all_goodstransectionte')
 def display_all_goodstransectionte():
-    data = exporter.readsql(  """ SELECT CONCAT('(', '''', InvoiceID, '''', ',', ')') AS InvoiceID ,  Total_invoice, tr_dt, Acc_Nm, dueDate, realDate, Paid, getpaid,total_invoice_aftertax, leftUnPaid FROM goodstransectionte ORDER by     Paid desc ,dueDate """)
+    data = exporter.readsql(  """ SELECT CONCAT('(', '''', InvoiceID, '''', ',', ')') AS InvoiceID ,  Total_invoice, tr_dt, Acc_Nm, dueDate, realDate, (CASE WHEN Paid is NULL THEN 0 ELSE Paid END)  AS Paid, getpaid,total_invoice_aftertax, leftUnPaid FROM goodstransectionte ORDER by  Paid desc ,dueDate """)
     current_date = get_current_date()
     return render_template('audra.html', data=data, current_date=current_date)
 
