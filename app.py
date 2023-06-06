@@ -97,6 +97,7 @@ class button(FlaskForm):
         processor_clints_data = processor_Clints()
         exporter.export_data_frist(processor_clints_data.data, 'clints_data')
         return redirect(url_for('home', message='Data exported successfully!'))
+        
     @app.route('/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
     def delete_data_last():
         exporter.call_stored_procedure('deleteRemovedRows')
@@ -137,22 +138,21 @@ class func ():
         invoice_ids = request.form.getlist('invoice_id')
         paid_values = request.form.getlist('paid')
         getpaid_values = request.form.getlist('getpaid')
-        real_date_values = exporter.readsql('SELECT realdate from goodstransectionte')
-        real_date_list = real_date_values['realdate'].tolist()
-        # update the Paid value for each specified InvoiceID where the value is not empty
-        for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_list):
-            print("hi")
+        real_date_values=request.form.getlist('real_date')
+        previous_page = request.form['previous_page']
+
+        for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_values):
             invoice_id_tuple = ast.literal_eval(invoice_id)
-            print(invoice_id_tuple)
-            print(type(invoice_id_tuple))
+            print(realDate)
             if paid :
-                print('nye')
                 exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
-            if getpaid :     
+
+            if realDate == "None"   :     
+               print('realDate is None')
                exporter.update_data_in('goodstransectionte', {'getpaid': getpaid},  'InvoiceID', invoice_id_tuple)
 
         # redirect back to the display_goodstransectionte route
-        return redirect(url_for('displaytables.display_all_goodstransectionte'))
+        return redirect(previous_page)
     
 
 class in_way():

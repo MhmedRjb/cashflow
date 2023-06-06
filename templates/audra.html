@@ -393,7 +393,10 @@ input[type="number"]:focus {
                   <td data-tr_dt="{{ row.tr_dt }}">{{ row.tr_dt }}</td>
                   <td data-Acc_Nm="{{row.Acc_Nm}}">{{row.Acc_Nm}}</td>
                   <td data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
-                  <td data-real-date="{{ row.realDate }}">{{ row.realDate }}</td>
+    <td>
+        <input type="hidden" name="real_date" value="{{ row.realDate }}">
+        {{ row.realDate }}
+    </td>
                   <td onclick="toggleInput(this)">
                     <span>{{ row.getpaid }}</span>
                     <input type="number" name="getpaid" value="{{ row.getpaid }}" style="display: none;">
@@ -411,6 +414,8 @@ input[type="number"]:focus {
                                                     </tr>
               {% endfor %}
             </table>
+            <input type="hidden" name="previous_page" value="{{ request.url }}">
+
             <input type="submit" value="تحديث" class="update-button">
 
 

@@ -20,10 +20,8 @@ def display_goodstransectionte():
     current_date = get_current_date()
     return render_template('audra.html', data=data, current_date=current_date)
 
-
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_all_goodstransectionte')
 def display_all_goodstransectionte():
-    data = exporter.readsql( "SELECT * FROM goodstransectionte ORDER BY dueDate ASC ,(CASE WHEN Paid = 'NaN' THEN 0 ELSE Paid END) DESC ;")
     data = exporter.readsql(  """ SELECT CONCAT('(', '''', InvoiceID, '''', ',', ')') AS InvoiceID ,  Total_invoice, tr_dt, Acc_Nm, dueDate, realDate, Paid, getpaid,total_invoice_aftertax, leftUnPaid FROM goodstransectionte ORDER by     Paid desc ,dueDate """)
     current_date = get_current_date()
     return render_template('audra.html', data=data, current_date=current_date)
