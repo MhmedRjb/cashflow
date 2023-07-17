@@ -15,15 +15,14 @@ class DatabaseExporter:
 
     def export_data(self, data, table_name):
 
-        #create the table if not exist
         
         existing_data = pd.read_sql(f'SELECT * FROM {table_name}', self.engine)
 
-        # identify any duplicate rows based on the primary key column
         duplicates = data['InvoiceID'].isin(existing_data['InvoiceID'])
 
-        # remove any duplicate rows from the new data
         data = data[~duplicates]
+
+        data['Acc_Nm'] = data['Acc_Nm'].str.encode('utf8').str.decode('utf8', 'ignore')
 
         data.to_sql(table_name, self.engine, if_exists='append', index=False)
         
@@ -90,14 +89,6 @@ if __name__ == "__main__":
     username = 'root'
     password = '123qweasdzxcSq'
     hostname = 'localhost'
-    database = 'easytrick'
+    database = 'elfateh'
     exporter = DatabaseExporter(username, password, hostname, database)
-    # print(exporter.cols_names('goodstransectionte'))
-    exporter.update_data('goodstransectionte', {'Paid': 1}, "InvoiceID = 'Ba0356'")
-    #show the last 10 row in table ORDER BY Any col
-    # exporter.call_stored_procedure('deleteRemovedRows')
-    #show table where tr_dt> today  OR paid =0
-    invoice_ids = "('Ba0002','MA0006')"
-
-    invoice_ids_str = ('Ba0047',)	
-    exporter.update_data_in('goodstransectionte', {'paid': 0}, 'InvoiceID', invoice_ids_str)
+    data.to_sql(table_name, self.engine, if_exists='replace', index=False)

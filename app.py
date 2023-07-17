@@ -48,7 +48,7 @@ class FileHandler :
             file.save(os.path.join(self.upload_folder, secure_filename(file.filename)))
         else:
             
-            raise ValidationError('Invalid file ssssssssssssstype. Only .xls and .xlsx files are allowed.')
+            raise ValidationError('Invalid file stype. Only .xls and .xlsx files are allowed.')
 
 file_handler = FileHandler(app.config['UPLOAD_FOLDER'], ALLOWED_EXTENSIONS=['.xls', '.xlsx'])
 class UploadForm(FlaskForm):
@@ -100,7 +100,6 @@ class extractFiles():
 
         # Generate the PDF
         pdf = HTML(string=html).write_pdf()
-
         # Create a response object with the PDF data
         response = make_response(pdf)
         response.headers['Content-Type'] = 'application/pdf'
@@ -123,11 +122,10 @@ class func ():
             invoice_id_tuple = ast.literal_eval(invoice_id)
             print(realDate)
             if paid :
+                print(exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple))
                 exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
-            if realDate == "None"   :     
-               exporter.update_data_in('goodstransectionte', {'getpaid': getpaid},  'InvoiceID', invoice_id_tuple)
-
-        # redirect back to the display_goodstransectionte route
+            if realDate == "None" and getpaid  :  
+                exporter.update_data_in('goodstransectionte', {'getpaid': getpaid}, 'InvoiceID', invoice_id_tuple)
         return redirect(previous_page)
     
 
@@ -146,4 +144,4 @@ class in_way():
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0")

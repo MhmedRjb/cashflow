@@ -109,7 +109,7 @@ SELECT
  WHEN acc_nm LIKE '%لولو%' THEN 'لولو'
  WHEN acc_nm LIKE '%خزين%' THEN 'خزين'
  WHEN acc_nm LIKE '%اليسر%' THEN 'اليسر'
- ELSE 'Other'
+ ELSE acc_nm
 
  -- add more conditions here
  END AS acc_nm_group

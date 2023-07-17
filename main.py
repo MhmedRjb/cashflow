@@ -24,8 +24,16 @@ def process_good_transection():
     wanted_cols_goods_transection = ['InvoiceID','tr_dt', 'Acc_Nm','Total_invoice']
     processor_goods_transection.select_columns(wanted_cols_goods_transection)
     processor_goods_transection.groupby_agg(['InvoiceID'],{'Total_invoice':'sum','tr_dt':'first','Acc_Nm':'first'})
+    
     return processor_goods_transection
 
+def i():
+    file_path_goods_transection = r"D:\monymovment\Cashflows\Excel_files\SBJRNLITMRPTTAX.xls"
+    #dont make any process on data
+    expected_cols_goods_transection = ['Acc_Nm' ,'sPrc', 'sQty', 'spkid']
+    i =dprs(file_path_goods_transection, expected_cols_goods_transection)
+    i.read_data()
+    return i
 def processor_Clints():
     file_path_clints_data= r"D:\monymovment\Cashflows\Excel_files\SBAccMFDtlRpt.xls"
     processor_Clints = dprs(file_path_clints_data, ['rec_id', 'acc_cd', 'acc_nm', 'Text85', 'نص93'])

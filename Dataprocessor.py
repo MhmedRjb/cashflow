@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import openpyxl
-from error import ErrorHandler
 
 
 
@@ -10,7 +9,6 @@ class DataProcessor:
     def __init__(self, file_path: str, expected_cols: int) -> None:
         self.file_path = file_path
         self.expected_cols = expected_cols
-        self.error_handler = ErrorHandler()
 
 
     def read_data(self):
@@ -22,8 +20,7 @@ class DataProcessor:
             if not set(self.expected_cols).issubset(self.data.columns):
                 raise ValueError(f'The file does not contain the expected columns: {self.expected_cols}')
         except (FileNotFoundError, ImportError) as e:
-            self.error_handler.handle_error(e, classname, funcname)
-
+            print(f'Error in {classname}.{funcname}: {e}')
 
     def ApplyDICtToCol(self, column:str,replacements:dict)->None:
         data = self.data.copy()
@@ -71,7 +68,7 @@ if __name__ == "__main__":
     username = 'root'
     password = '123qweasdzxcSq'
     hostname = 'localhost'
-    database = 'easytrick'
+    database = 'elfateh'
     exporter = dbcon(username, password, hostname, database)
 
 

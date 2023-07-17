@@ -226,11 +226,14 @@
           border: 1px solid black;
       width: 100%;
       height: 100%;
+
       }
       th, td {
           border: 2px solid black;
           text-align: center;
           padding: 8px;
+          white-space: nowrap;
+          max-width: fit-content;
       }
       tr:nth-child(even) {
           background-color: #ffffff;
@@ -270,13 +273,14 @@
 
 
   table.small{
-      width: 80%;
+      width: 90%;
     height: 80%;
     border-collapse: collapse;
-    margin: 10%;
+    margin: 5%;
     margin-top: 5%;
-    overflow-y: scroll;
-    margin-right: 0;
+    overflow-y: display;
+    font-weight: bolder;
+    font-size: small;
 
 
   }
@@ -363,21 +367,18 @@ input[type="number"]:focus {
       
       <div class="container">
         <form action="{{ url_for('update_paid') }}" method="post">
-          <div style="height: 70vh; overflow-y: auto;">
+          <div style="height: 70vh; overflow-y: auto  ; overflow-x: hidden;">
             <table class="small">
               <tr>
-                <th>InvoiceID</th>
+                <th>كود الفاتورة</th>
                 <th>الاجمالي</th>
                 <th>تاريخ الفاتورة</th>
                 <th>الحساب</th>
                 <th>الإستحقاق</th>
                 <th>التحصيل</th>
-                <th>getPaid</th>
-                <th>leftUnPaid</th>
-                <th>paid</th>
-
-
-                <
+                <th>تم دقع</th>
+                <th>المتبقي</th>
+                <th>تم</th>
               </tr>
               {% for row in data.itertuples() %}
                 {% set row_class = '' %}
@@ -389,11 +390,11 @@ input[type="number"]:focus {
                   {% set row_class = 'unpaid' %}
                 {% endif %}
                 <tr class="{{ row_class }}" data-days-late="{{ days_late }}">
-                  <td data-InvoiceID="{{ row.InvoiceID }}">{{ row.InvoiceID }}</td>
-                  <td data-Total_invoice="{{ row.Total_invoice }}">{{ row.Total_invoice }}</td>
-                  <td data-tr_dt="{{ row.tr_dt }}">{{ row.tr_dt }}</td>
+                  <td style="font-size: small;" data-InvoiceID="{{ row.InvoiceID }}">{{ row.InvoiceID }}</td>
+                  <td   data-Total_invoice="{{ row.Total_invoice }}">{{ row.Total_invoice }}</td>
+                  <td style="white-space: nowrap;" data-tr_dt="{{ row.tr_dt }}">{{ row.tr_dt }}</td>
                   <td data-Acc_Nm="{{row.Acc_Nm}}">{{row.Acc_Nm}}</td>
-                  <td data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
+                  <td  data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
     <td>
         <input type="hidden" name="real_date" value="{{ row.realDate }}">
         {{ row.realDate }}
@@ -501,10 +502,7 @@ function togglePaid(cell) {
 
 
           </script>
-                <footer>
-                  <!-- place your footer content here -->
-                  <p>Copyright © 2022 My Website</p>
-                </footer>
+
       </body>
 
   </html>
