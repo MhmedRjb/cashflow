@@ -122,10 +122,10 @@ class func ():
             invoice_id_tuple = ast.literal_eval(invoice_id)
             print(realDate)
             if paid :
-                print(exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple))
-                exporter.update_data_in('goodstransectionte', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
+                print(exporter.update_data_in('main_sales_entry', {'Paid': paid}, 'InvoiceID', invoice_id_tuple))
+                exporter.update_data_in('main_sales_entry', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
             if realDate == "None" and getpaid  :  
-                exporter.update_data_in('goodstransectionte', {'getpaid': getpaid}, 'InvoiceID', invoice_id_tuple)
+                exporter.update_data_in('main_sales_entry', {'getpaid': getpaid}, 'InvoiceID', invoice_id_tuple)
         return redirect(previous_page)
     
 

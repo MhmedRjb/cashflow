@@ -16,16 +16,18 @@ def display_data():
 @displaytables_bp.route('/Elfateh/main/reports/cashflow')
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_goodstransectionte')
 def display_goodstransectionte():    
-    data = exporter.readsql(  f""" SELECT CONCAT('(', GROUP_CONCAT(DISTINCT CONCAT('''', InvoiceID, '''')), ',', ')') AS InvoiceID ,
- SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN Total_invoice ELSE -Total_invoice END) AS Total_invoice,
-  tr_dt, 
-  Acc_Nm, 
-  MAX(dueDate) as dueDate, 
-  max(realDate) as realDate,
-   (CASE WHEN SUM(Paid) = COUNT(*) THEN 1 ELSE NULL END) AS Paid, 
-   SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN getpaid ELSE -getpaid END) AS getpaid,
-    SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN total_invoice_aftertax ELSE -total_invoice_aftertax END) AS total_invoice_aftertax,
-     SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN leftUnPaid ELSE -leftUnPaid END) AS leftUnPaid FROM goodstransectionte where realDate >'2023-07-07'
+    data = exporter.readsql(  f""" SELECT 
+CONCAT('(', GROUP_CONCAT(DISTINCT CONCAT('''', InvoiceID, '''')), ',', ')') AS InvoiceID ,
+SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN Total_invoice ELSE -Total_invoice END) AS Total_invoice,
+tr_dt, 
+Acc_Nm, 
+MAX(dueDate) as dueDate, 
+max(realDate) as realDate,
+(CASE WHEN SUM(Paid) = COUNT(*) THEN 1 ELSE NULL END) AS Paid, 
+SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN getpaid ELSE -getpaid END) AS getpaid,
+SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN total_invoice_aftertax ELSE -total_invoice_aftertax END) AS total_invoice_aftertax,
+SUM(CASE WHEN InvoiceID LIKE 'Ba%%' THEN leftUnPaid ELSE -leftUnPaid END) AS leftUnPaid 
+FROM mainsales_py where realDate >'2023-07-07'
 OR realDate is NULL 
 GROUP BY Acc_Nm, tr_dt 
 ORDER by Paid desc ,dueDate
@@ -39,7 +41,7 @@ def display_all_goodstransectionte():
     data = exporter.readsql(f"""
         SELECT
             CONCAT('(', '''', InvoiceID, '''', ',', ')') AS InvoiceID
-            , Total_invoice
+            , total_invoice as Total_invoice
             , tr_dt
             , Acc_Nm
             , dueDate
@@ -47,11 +49,10 @@ def display_all_goodstransectionte():
             , (CASE WHEN Paid is NULL THEN 0 ELSE Paid END)  AS Paid
             , getpaid
             , total_invoice_aftertax
-            , leftUnPaid
-        FROM goodstransectionte
+            , leftUnPaid as leftUnPaid
+        FROM mainsales_py
         where realDate = '{get_current_date()}'
         OR realDate is NULL
-
         ORDER by  Paid desc ,dueDate
         """)
     current_date = get_current_date()
