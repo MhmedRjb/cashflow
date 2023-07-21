@@ -1,6 +1,5 @@
 from Dataprocessor import DataProcessor as dprs
 from DataBaseConnection import DatabaseExporter as dbcon
-from main import process_good_transection, processor_Clints
 from flask import Flask, render_template , request ,flash ,session ,redirect ,url_for
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
@@ -58,7 +57,6 @@ class UploadForm(FlaskForm):
     @app.route('/', methods=['GET', 'POST'])
     @app.route('/Elfateh', methods=['GET', 'POST'])
     @app.route('/Elfateh/main', methods=['GET', 'POST'])
-
     @app.route('/Elfateh/main/reports', methods=['GET', 'POST'])
     def home():
         form = UploadForm()
@@ -80,32 +78,6 @@ class UploadForm(FlaskForm):
             folder_contents.append((item, mtime_str))
         return render_template('home.html', folder_contents=folder_contents,form=form)
 
-
-
-class extractFiles():
-    @app.route('/Elfateh/main/print/cashflow')
-    def extractPDFofgoodstransectionte_summary():
-        # Retrieve the data from the goodstransectionte table
-        data = exporter.readsql('SELECT company_name , dueDate , total_invoice from goodstransectionte_summary')
-        column_names = ['اسم الشركة ', 'معاد الأستحقاق ', 'الإجمالي']
-        reprot_type='تقرير داخلي'
-        report_number='2'
-        report_author='أحمد الستري'
-        report_date=get_current_date()
-
-        # Render the HTML template with the data
-        html = render_template('pdf.html', data=data, column_names=column_names,
-                               reprot_type=reprot_type,report_number=report_number,report_author=
-                               report_author,report_date=report_date)
-
-        # Generate the PDF
-        pdf = HTML(string=html).write_pdf()
-        # Create a response object with the PDF data
-        response = make_response(pdf)
-        response.headers['Content-Type'] = 'application/pdf'
-        response.headers['Content-Disposition'] = 'attachment; filename=goodstransectionte_summary.pdf'
-
-        return response
 
 
 class func ():
