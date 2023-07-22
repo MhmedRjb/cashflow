@@ -16,7 +16,7 @@ displaytables_bp = Blueprint('displaytables', __name__)
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_dataclints_data')
 def display_data():
     data = exporter.readsql(sqlcom.export_clints_data)
-    return render_template('audra.html', data=data)
+    return render_template('entrytable.html', data=data)
 
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow')
@@ -25,7 +25,7 @@ def display_goodstransectionte():
     data = exporter.readsql(  sqlcom.export_cashflow_gby_Acc_NmANDtr_dt)
 
     current_date = get_current_date()
-    return render_template('audra.html', data=data, current_date=current_date)
+    return render_template('entrytable.html', data=data, current_date=current_date)
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_all_goodstransectionte')
 def display_all_goodstransectionte():
@@ -34,19 +34,19 @@ def display_all_goodstransectionte():
         sqlcom.export_cashflow_fby_afterTODAY
         )
     current_date = get_current_date()
-    return render_template('audra.html', data=data, current_date=current_date)
+    return render_template('entrytable.html', data=data, current_date=current_date)
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_cashflowgroup__comapnyname')
 def cashflowgroup__comapnyname():
     data = exporter.readsql(sqlcom.export_cashflow_gby_comapnyname)
     current_date = get_current_date()
-    return render_template('audra.html', data=data, current_date=current_date)
+    return render_template('entrytable.html', data=data, current_date=current_date)
 
 @displaytables_bp.route('/Elfateh/main/reports/cashflow/display_goodstransectionte_summary')
 def display_goodstransectionte_summary():
     data = exporter.readsql(sqlcom.export_cashflow_report)
     current_date = get_current_date()
-    return render_template('miller.html', data=data, current_date=current_date)
+    return render_template('summarytable.html', data=data, current_date=current_date)
 
 
 @displaytables_bp.route('/Elfateh/main/print/cashflow')
