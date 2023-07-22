@@ -1,5 +1,6 @@
 from sqlalchemy import create_engine
 import pandas as pd
+import src.data.databaseIniti as dbi
 
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
@@ -32,9 +33,9 @@ class DatabaseExporter:
 
 if __name__ == "__main__":
     # Values with my MySQL connection details
-    username = 'root'
-    password = '123qweasdzxcSq'
-    hostname = 'localhost'
-    database = 'elfateh'
+    username = dbi.username
+    password = dbi.password
+    hostname = dbi.hostname
+    database = dbi.database
 
     exporter = DatabaseExporter(username, password, hostname, database)

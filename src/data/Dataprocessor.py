@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import openpyxl
+import src.data.databaseIniti as dbi
 
 
 
@@ -25,10 +26,10 @@ if __name__ == "__main__":
     file_path_goods_transection = r"D:\monymovment\Cashflows\Excel_files\SBJRNLITMRPTTAX.xls"
     expected_cols_goods_transection = ['Acc_Nm' ,'sPrc', 'sQty', 'spkid']
     from src.data.DataBaseConnection import DatabaseExporter as dbcon
-    username = 'root'
-    password = '123qweasdzxcSq'
-    hostname = 'localhost'
-    database = 'elfateh'
+    username = dbi.username
+    password = dbi.password
+    hostname = dbi.hostname
+    database = dbi.database
     exporter = dbcon(username, password, hostname, database)
 
 

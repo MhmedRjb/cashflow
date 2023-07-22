@@ -69,7 +69,7 @@ def extractPDFofgoodstransectionte_summary():
     # Create a response object with the PDF data
     response = make_response(pdf)
     response.headers['Content-Type'] = 'application/pdf'
-    response.headers['Content-Disposition'] = 'attachment; filename=goodstransectionte_summary.pdf'
+    response.headers['Content-Disposition'] = f'attachment; filename={report_date}_cashflowtreport.pdf'
 
     return response
 
