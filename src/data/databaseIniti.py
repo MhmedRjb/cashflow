@@ -1,5 +1,5 @@
 
-from DataBaseConnection import DatabaseExporter as dbcon
+from src.data.DataBaseConnection import DatabaseExporter as dbcon
 
 username = 'root'
 password = '123qweasdzxcSq'

@@ -1,21 +1,19 @@
-from Dataprocessor import DataProcessor as dprs
-from DataBaseConnection import DatabaseExporter as dbcon
+from src.data.Dataprocessor import DataProcessor as dprs
+from src.data.DataBaseConnection import DatabaseExporter as dbcon
 from flask import Flask, render_template , request ,flash ,session ,redirect ,url_for
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
-from wtforms.validators import input_required ,ValidationError,Optional
+from wtforms.validators import  ValidationError,Optional
 from werkzeug.utils import secure_filename
 import os
-import pandas as pd
-from flask import jsonify
 from datetime import datetime ,timedelta
 from flask_weasyprint import HTML, render_pdf
-from flask import make_response, render_template
-from reportsTables import displaytables_bp
-from databaseIniti import exporter
+from src.blueprint.reportsTables import displaytables_bp
+from src.data.databaseIniti import exporter
 import ast
+from src.components import filepaths as fpth
 
-from cashFlowButtons import cashFlowButtons_bp
+from src.blueprint.cashFlowButtons import cashFlowButtons_bp
 
 
 
@@ -69,7 +67,7 @@ class UploadForm(FlaskForm):
                 flash(str(e), 'error')
 
     
-        folder_path = r'D:\monymovment\Cashflows\Excel_files'
+        folder_path = fpth.main_folder_path
         folder_contents = []
         for item in os.listdir(folder_path):
             item_path = os.path.join(folder_path, item)

@@ -24,7 +24,7 @@ if __name__ == "__main__":
     
     file_path_goods_transection = r"D:\monymovment\Cashflows\Excel_files\SBJRNLITMRPTTAX.xls"
     expected_cols_goods_transection = ['Acc_Nm' ,'sPrc', 'sQty', 'spkid']
-    from DataBaseConnection import DatabaseExporter as dbcon
+    from src.data.DataBaseConnection import DatabaseExporter as dbcon
     username = 'root'
     password = '123qweasdzxcSq'
     hostname = 'localhost'

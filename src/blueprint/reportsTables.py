@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from datetime import datetime ,timedelta
-from databaseIniti import exporter
-import sqlcommonds as sqlcom
+from src.data.databaseIniti import exporter
+from src.components import sqlcommonds as sqlcom
 from flask import Flask, render_template 
 from datetime import datetime ,timedelta
 from flask_weasyprint import HTML

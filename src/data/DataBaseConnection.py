@@ -38,21 +38,3 @@ if __name__ == "__main__":
     database = 'elfateh'
 
     exporter = DatabaseExporter(username, password, hostname, database)
-
-    # Use the exporter instance to call different methods
-    # For example:
-    # data = pd.DataFrame(...)  # Your data here
-    # table_name = 'your_table_name'
-    # exporter.export_data_first(data, table_name)
-
-    # set_values = {'column1': 'new_value'}
-    # column_name = 'id'
-    # values = [1, 2, 3]
-    # exporter.update_data_in('your_table_name', set_values, column_name, values)
-
-    # procedure_name = 'your_procedure_name'
-    # exporter.call_stored_procedure(procedure_name)
-
-    # sql = 'SELECT * FROM your_table_name'
-    # result = exporter.read_sql(sql)
-    # print(result)

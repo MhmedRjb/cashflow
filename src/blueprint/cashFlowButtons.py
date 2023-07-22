@@ -1,9 +1,9 @@
 from flask import Blueprint
-from databaseIniti import exporter
+from src.data.databaseIniti import exporter
 from flask import redirect ,url_for
-from Dataprocessor import DataProcessor as dprs
-import databaseIniti as dbi
-import filepaths as fpth
+from src.data.Dataprocessor import DataProcessor as dprs
+import src.data.databaseIniti as dbi 
+from src.components import filepaths as fpth
 
 cashFlowButtons_bp = Blueprint('cashFlowButtons', __name__)
 
