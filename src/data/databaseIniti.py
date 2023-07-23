@@ -1,9 +1,9 @@
 
 from src.data.DataBaseConnection import DatabaseExporter as dbcon
 
-username =
-password = password
-hostname = hostname
+username = username
+password = 
+hostname = 
 database = database
 
 cashflow_excelINsql='excel_table'
