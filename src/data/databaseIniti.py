@@ -1,7 +1,7 @@
 
 from src.data.DataBaseConnection import DatabaseExporter as dbcon
 
-username =username
+username =
 password = password
 hostname = hostname
 database = database
