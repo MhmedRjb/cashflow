@@ -9,8 +9,6 @@ from src.blueprint.inventorySYS import inventorySYS_bp
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '123456789'
-    
-    # Register Blueprints
     app.register_blueprint(displaytables_bp)
     app.register_blueprint(cashFlowButtons_bp)
     app.register_blueprint(appfunctions_bp)
