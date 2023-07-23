@@ -16,7 +16,7 @@ def export_goodstransectiontedata():
     exporter.export_data_first(processor_goods_transection.data, dbi.cashflow_excelINsql)
 
     
-    return redirect(url_for('home', message='Data exported successfully!'))
+    return redirect(url_for('appfunctions.home', message='Data exported successfully!'))
 @cashFlowButtons_bp.route('/Elfateh/main/reports/cashflow/export_clints_data', methods=['POST','GET'])
 def export_data_clients():
     file_path_goods_transection = fpth.clientsdb_filephath
@@ -25,9 +25,9 @@ def export_data_clients():
     processor_goods_transection.read_data()
     #export the data to sql 
     exporter.export_data_first(processor_goods_transection.data, dbi.clients_excelINsql)
-    return redirect(url_for('home', message='Data exported successfully!'))
+    return redirect(url_for('appfunctions.home', message='Data exported successfully!'))
     
 @cashFlowButtons_bp.route('/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
 def updatethedata():
     exporter.call_stored_procedure(dbi.updateCashflow_excel)
-    return redirect(url_for('home', message='Data updated successfully!'))
+    return redirect(url_for('appfunctions.home', message='Data updated successfully!'))
