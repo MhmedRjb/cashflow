@@ -1,10 +1,10 @@
 
 from src.data.DataBaseConnection import DatabaseExporter as dbcon
 
-username = username
-password = 
-hostname = 
-database = database
+username = 'root'
+password = '123qweasdzxcSq'
+hostname = 'localhost'
+database = 'elfateh'
 
 cashflow_excelINsql='excel_table'
 clients_excelINsql='excel_table_clients'
