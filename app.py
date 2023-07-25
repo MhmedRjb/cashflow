@@ -1,18 +1,22 @@
 from flask import Flask
+from src.blueprint.main.login import login_bp
 
-# Import Blueprints
-from src.blueprint.reportsTables import displaytables_bp
-from src.blueprint.cashFlowButtons import cashFlowButtons_bp
-from src.blueprint.Functions import appfunctions_bp
-from src.blueprint.inventorySYS import inventorySYS_bp
+from src.blueprint.CF.CFactiveTables import CFactiveTables_bp
+from src.blueprint.CF.CFstartButtons import CFstartButtons_bp
+from src.blueprint.CF.CFstartfunctions import CFstartfunctions_bp
+from src.blueprint.CF.CFReportes import CFReportes_bp
+
+from src.blueprint.ParallelSYS import ParallelSYS_bp
 
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '123456789'
-    app.register_blueprint(displaytables_bp)
-    app.register_blueprint(cashFlowButtons_bp)
-    app.register_blueprint(appfunctions_bp)
-    app.register_blueprint(inventorySYS_bp)
+    app.register_blueprint(login_bp)
+    app.register_blueprint(CFactiveTables_bp)
+    app.register_blueprint(CFstartButtons_bp)
+    app.register_blueprint(CFstartfunctions_bp)
+    app.register_blueprint(ParallelSYS_bp)
+    app.register_blueprint(CFReportes_bp)
 
     return app
 

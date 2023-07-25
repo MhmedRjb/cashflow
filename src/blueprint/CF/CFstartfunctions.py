@@ -15,14 +15,14 @@ from src.data.databaseIniti import exporter
 
 
 
-appfunctions_bp=Blueprint('appfunctions',__name__)
+CFstartfunctions_bp=Blueprint('CFstartfunctions',__name__)
 
 def get_current_date():
     return (datetime.now() + timedelta(days=0)).date()
 
 
 class func ():
-    @appfunctions_bp.route('/update_paid', methods=['POST'])
+    @CFstartfunctions_bp.route('/update_paid', methods=['POST'])
     def update_paid():
         # get the InvoiceID and Paid values from the form
         invoice_ids = request.form.getlist('invoice_id')
@@ -71,10 +71,10 @@ class UploadForm(FlaskForm):
     submit = SubmitField('Upload file')
 
 
-@appfunctions_bp.route('/', methods=['GET', 'POST'])
-@appfunctions_bp.route('/Elfateh', methods=['GET', 'POST'])
-@appfunctions_bp.route('/Elfateh/main', methods=['GET', 'POST'])
-@appfunctions_bp.route('/Elfateh/main/reports', methods=['GET', 'POST'])
+@CFstartfunctions_bp.route('/', methods=['GET', 'POST'])
+@CFstartfunctions_bp.route('/Elfateh', methods=['GET', 'POST'])
+@CFstartfunctions_bp.route('/Elfateh/main', methods=['GET', 'POST'])
+@CFstartfunctions_bp.route('/Elfateh/main/reports', methods=['GET', 'POST'])
 def home():
     form = UploadForm()
     if request.method == 'POST':
