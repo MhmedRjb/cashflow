@@ -1,0 +1,196 @@
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-size: 16px;
+    line-height: 1.6em;
+    background-color: #fffef5;
+    min-height: 100vh;
+    color: #02a080;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 120px  1fr 70px ;
+    height: 100vh;
+}
+
+
+
+.main-header
+{
+    display: grid;
+}
+#mainHeader,#mainnav {
+    background: rgb(250, 246, 246);
+    color: #02a080;
+    font-weight: bolder;
+    font-style: italic;
+    height: 100%;
+    padding: 0.5%;
+
+}
+
+#mainnav {
+    background: #02a080;
+    color: #02a080;
+    height: 20PX ;
+}
+.main-header,
+.main-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header h1,
+.main-header h5 {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.main-nav {
+    background: #02a080;
+    color: #02a080;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.authorization-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.authorization-title {
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+.flash-message {
+    background-color: #ffcccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px ;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 100px 1fr ;
+    grid-template-rows: 10px 20px 20px ;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+input[type="submit"] {
+    padding: 8px 8px 8px 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #02a080;
+    text-align: center;
+    width: 100%;
+    font: 1em sans-serif;
+    grid-column: 1/3;
+
+}
+
+footer {
+    height: 100%;
+    color: #000;
+    text-align: center;
+}
+
+
+/* No scrollbars */
+
+</style>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization</title>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="main-header">        
+        
+        <header id="mainHeader">
+        <div class="container">
+            <h1>El Fateh Company</h1>
+            <h5>Since 1990</h5>
+
+        </div>
+    </header>
+
+<div>
+    
+</div>
+    <header id="mainNav">
+        <div class="container">
+
+        </div>
+    </header>
+</div>
+        <div class="authorization-container">
+            <h1 class="authorization-title">Authorization</h1>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="flash-message">
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            <form class="authorization-form" action="{{ url_for('authorization.authorization') }}" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group" >
+                        <input type="submit" value="Authorization">
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2023 El Fateh Company. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+</body>
+</html>

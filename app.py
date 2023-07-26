@@ -1,5 +1,5 @@
 from flask import Flask
-from src.blueprint.main.login import login_bp
+from src.blueprint.main.authorization import authorization_bp
 
 from src.blueprint.CF.CFactiveTables import CFactiveTables_bp
 from src.blueprint.CF.CFstartButtons import CFstartButtons_bp
@@ -11,7 +11,7 @@ from src.blueprint.ParallelSYS import ParallelSYS_bp
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '123456789'
-    app.register_blueprint(login_bp)
+    app.register_blueprint(authorization_bp)
     app.register_blueprint(CFactiveTables_bp)
     app.register_blueprint(CFstartButtons_bp)
     app.register_blueprint(CFstartfunctions_bp)

@@ -26,8 +26,8 @@ class DatabaseExporter:
         sql = f'CALL {procedure_name}()'
         self._execute_sql(sql)
 
-    def readsql(self, sql):
-        data = pd.read_sql_query(sql, self.engine)
+    def readsql(self, sql, params=None):
+        data = pd.read_sql_query(sql, self.engine, params=params)
         return data
 
 

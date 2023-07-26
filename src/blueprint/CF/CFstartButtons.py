@@ -4,12 +4,12 @@ from flask import redirect ,url_for
 from src.data.Dataprocessor import DataProcessor as dprs
 import src.data.databaseIniti as dbi 
 from src.components import filepaths as fpth
-from src.blueprint.main.login import login_required
+from src.blueprint.main.authorizationFunction import authorization_required
 
 CFstartButtons_bp = Blueprint('CFstartButtons', __name__)
 
 @CFstartButtons_bp.route('/Elfateh/main/reports/cashflow/export_datagood_transection', methods=['POST','GET'])
-@login_required
+@authorization_required(allowed_roles=['admin'])  # Specify allowed roles here
 def export_goodstransectiontedata():
     file_path_goods_transection = fpth.goodstransectionte_filepath
     expected_cols_goods_transection = ['Acc_Nm' ,'Itm_cd', 'TR_NO']
@@ -20,6 +20,7 @@ def export_goodstransectiontedata():
     
     return redirect(url_for('CFstartfunctions.home', message='Data exported successfully!'))
 @CFstartButtons_bp.route('/Elfateh/main/reports/cashflow/export_clints_data', methods=['POST','GET'])
+@authorization_required(allowed_roles=['user'])  # Specify allowed roles here
 def export_data_clients():
     file_path_goods_transection = fpth.clientsdb_filephath
     expected_cols_goods_transection = ['acc_nm']
