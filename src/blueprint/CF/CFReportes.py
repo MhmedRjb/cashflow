@@ -3,7 +3,7 @@ from src.data.databaseIniti import exporter
 from src.components import sqlcommonds as sqlcom
 from flask_weasyprint import HTML
 from ..main.authorizationFunction import authorization_required
-from .reportsData import *
+from .reportsDataFUNC import *
 
 
 

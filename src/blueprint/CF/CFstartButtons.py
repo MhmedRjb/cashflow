@@ -6,9 +6,9 @@ import src.data.databaseIniti as dbi
 from src.components import filepaths as fpth
 from src.blueprint.main.authorizationFunction import authorization_required
 
-CFstartButtons_bp = Blueprint('CFstartButtons', __name__)
+CFstartButtons_bp = Blueprint('CFstartButtons', __name__,url_prefix='/Elfateh/main/reports/cashflow')
 
-@CFstartButtons_bp.route('/Elfateh/main/reports/cashflow/export_datagood_transection', methods=['POST','GET'])
+@CFstartButtons_bp.route('/export_datagood_transection', methods=['POST','GET'])
 @authorization_required(allowed_roles=['admin'])  # Specify allowed roles here
 def export_goodstransectiontedata():
     file_path_goods_transection = fpth.goodstransectionte_filepath
@@ -19,7 +19,7 @@ def export_goodstransectiontedata():
 
     
     return redirect(url_for('CFstartfunctions.home', message='Data exported successfully!'))
-@CFstartButtons_bp.route('/Elfateh/main/reports/cashflow/export_clints_data', methods=['POST','GET'])
+@CFstartButtons_bp.route('/export_clints_data', methods=['POST','GET'])
 @authorization_required(allowed_roles=['user'])  # Specify allowed roles here
 def export_data_clients():
     file_path_goods_transection = fpth.clientsdb_filephath
@@ -30,7 +30,7 @@ def export_data_clients():
     exporter.export_data_first(processor_goods_transection.data, dbi.clients_excelINsql)
     return redirect(url_for('CFstartfunctions.home', message='Data exported successfully!'))
     
-@CFstartButtons_bp.route('/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
+@CFstartButtons_bp.route('/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
 def updatethedata():
     exporter.call_stored_procedure(dbi.updateCashflow_excel)
     return redirect(url_for('CFstartfunctions.home', message='Data updated successfully!'))
