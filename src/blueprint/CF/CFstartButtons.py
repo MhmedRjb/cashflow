@@ -32,5 +32,5 @@ def export_data_clients():
     
 @CFstartButtons_bp.route('/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
 def updatethedata():
-    exporter.call_stored_procedure(dbi.updateCashflow_excel)
+    exporter.call_stored_procedure(dbi.updateCashflow_excelPRoducer)
     return redirect(url_for('CFstartfunctions.home', message='Data updated successfully!'))

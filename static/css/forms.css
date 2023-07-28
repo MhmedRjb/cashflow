@@ -1,0 +1,37 @@
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.authorization-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 20px;
+}
+
+.authorization-title {
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+.flash-message {
+    background-color: #ffcccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px ;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 100px 200PX ;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    row-gap: 10px;
+}
+
+
+/* No scrollbars */
+

@@ -1,509 +1,91 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>File Upload Form</title>
-      <style>
-  body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont;
-    font-size: 16px;
-      line-height: 1.6em;
-      margin: 0;
-      background-color: #fffef5;
-    }
-    .container ,.commentContainer,.commentContainer2{
-
-      width: 95%;
-      padding-left: 0.5%;
-    }
-
-    .commentContainer,.commentContainer2 {
-      display: flex;
-      height: 90%;
-      flex-direction: row ;
-      gap: 15px;
-      align-items: stretch
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>File Upload Form</title>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
       
-
-    }
-    .commentContainer2{
-      margin-top: 1%;
-    }
-
-
-    .clearFix {
-      clear: both;
-    }
-    #mainHeader {
-      background: white;
-      color: #02a080;
-      font-weight: bolder;
-      font-style: italic;    
-  }
-    #mainHeader h1 ,#mainHeader h5{
-      margin: 0;
-      padding: 0PX;
-      padding-top: 0.3%;
-      padding-bottom :0.3%;}
-
-    
-
-
-    #mainNav,#submainNav ,  #submainNavcards{
-      background: #02a080;
-      color: #83764F;
-      position: relative;
-      overflow: auto;
-      max-height: 1%;
-
-    }
-
-    #submainNa,  #submainNavcardsv{
-      margin-bottom: 1%;
-    }
-
-    #mainNav ul,#submainNav ul,  #submainNavcards ul {
-      padding: 0px;
-      margin: 0%;
-      list-style: none;
-    }
-    #mainNav li,#submainNav li  ,#submainNavcards li{
-      text-align: center;
-      padding: 0.1%;
-      font-size: 17px;
-      padding-left: 2%;
-      padding-right: 2%;
-      float: right;
-      border-radius: 5px 5px 0px 0px;
-      
-    }
-
-    #mainNav a,#submainNav a ,  #submainNavcards a  , #submainNavcards a{
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bolder;
-    }
-    #mainNav li:hover,#submainNav li:hover,  #submainNavcards li:hover {
-      background: #1B9C85;
-    }
-    #mainNav li.active {
-      background: #98EECC;
-    }
-
-    #submainNav  {
-      background-color: #98EECC;
-  }
-
-  #submainNavcards {
-    padding-top: 0%;
-    background-color:#fffef5;
-    width: 100%;
-    height: 100%;
-
-    font-size: medium;
-    float: center;
-    padding: 0;
-  }
-
-  #submainNavcards ul {
-    list-style: none;
-    height: 3em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-
-  }
-
-  #submainNavcards li{
-    text-align: default;
-    font-size: 17px;
-    display: flex;
-    height: 100%;
-    background-color: #90EE90;
-    border-radius: 0px 0px 15px 15px;
-    display: flex;
-    align-items: center;
-  margin-bottom: 1%;  }
-
-
-
-  .form-control-label {
-    display: block;
-    margin-bottom: .5rem;
-    font-size: x-large;
-    margin-top: 15%;
-    text-align: center;
-  }
-  .drop-zone {
-    border: 4px dashed #2f353b;
-    border-radius: .25rem;
-    width: 30%;
-    height: 100%;
-    padding: 8%;
-    margin: 0 ;
-    text-align: center;
-    background: color #f5f5f5;
-    transition: background 0.3s ease;
-
-  }
-  .drop-zone:hover{
-      background-color:#dddbdb
-
-  }
-
-
-
-        .drop-zone__prompt {
-          margin: auto;
-          color: #45535f;
-          font-size: xx-large;
-          font-weight: bolder;
-        }
-        .drop-zone__input {
-          margin: auto;
-          display: none;
-        }
-        .drop-zone--over {
-          border-color: #3b4550;
-        }
-    
-    input[type="submit"],a.button{
-      display: inline-block;
-    background-color: #02a080;
-    color: white;
-    cursor: pointer;
-    font-size: xx-large; 
-    font-weight: bolder ;
-    padding: 8px 16px;
-
-    width: 100%;
-    height: 99%;
-    border: none;
-    border-radius: 4px 4px 4px 4px;
-    }
-    a.button {
-      padding: 8px 16px;
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      height: 99%;
-      border: none;
-      cursor: pointer;
-    }
-    
-    a.button:hover {
-      background-color: #3e8e41;
-    }
-
-    input[type="submit"].update-button,a.button{
-      display: inline-block;
-    background-color: #02a080;
-    font-size: large; 
-    font-weight: bolder ;
-    padding: 8px 16px;
-    width: 5%;
-    height: 5%;
-    border-radius: 4px 4px 4px 4px;
-    position: fixed;
-    bottom: 20px;
-      bottom: 60px;
-      margin-left: 6%;
-      right: 6%;
-    }
-
-
-
-
-  input[type="submit"]:hover,a.button:hover  {
-  background-color: #01976a;
-  }
-
-      table {
-          border-collapse: collapse;
-          border: 1px solid black;
-      width: 100%;
-      height: 100%;
-
-      }
-      th, td {
-          border: 2px solid black;
-          text-align: center;
-          padding: 8px;
-          white-space: nowrap;
-          max-width: fit-content;
-      }
-      tr:nth-child(even) {
-          background-color: #ffffff;
-      }
-      tr:nth-child(odd) {
-          background-color: #dae0df;
-      }
-
-
-  th {
-      background-color: #02a080;
-      color: white;
-  }tr.red {
-    background-color: #FF0000; /* red */
-  }
-
-              tr.unknown {
-                  background-color: #ddd; /* light gray */
-              }
-              tr.unpaid {
-                  background-color: #ec1f3e; /* light red */
-              }
-
-              tr.maybe {
-                  background-color: #FFD700; /* light yellow */
-              }
-
-              tr.paid {
-                  background-color: #4CAF50; /* light green */
-              }
-              tr.yes {
-                  background-color: #90EE90; /* light green */
-              }
-              tr.no {
-                  background-color: #FFB6C1; /* light red */
-              }
-
-
-  table.small{
-      width: 90%;
-    height: 80%;
-    border-collapse: collapse;
-    margin: 5%;
-    margin-top: 5%;
-    overflow-y: display;
-    overflow-x: display;
-    font-weight: bolder;
-    font-size: small;
-
-
-  }
-  /* add styles for the question mark */
-  span.question-mark {
-      font-size: 12px;
-      line-height: 16px;
-      width: 16px;
-      height: 16px;
-      border-radius: 8px;
-      background-color: #ddd;
-      color: white;
-      text-align: center;
-      display: inline-block;
-  }
-
-  select {
-  font-size: 16px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-  appearance: none;
-  border: #ff0505;
-}
-
-select:focus {
-  outline: none;
-
-}
-input[type="number"] {
-  font-size: 16px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-}
-
-input[type="number"]:focus {
-  outline: none;
-}
-
-
-      </style>
-    </head>
-    <body>
-      <header id="mainHeader">
-        <div class="container">
-          <h1  >El fateh Company</h1>
-          <h5  >Since 1990</h5>
-        </div>
-      </header>
-    
-      <nav id="mainNav">
-        <div class="container">
-          <ul>
-            <li class="active" ><a   href="/Elfateh/main">رفع الملفات </a></li>
-            <li><a href="/Elfateh/main/Inventory">المخازن</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <nav id="submainNav" >
-        <div class="container">
-          <ul>
-            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">التدفقات النقدية</a></li>
-            <li><a href="/Elfateh/main/reports/clinets_statistics">احصائيات العميل</a></li>
-            <li><a href="/Elfateh/main/reports/genral_statistics">احصائيات الشهر</a></li>
-              </ul>
-        </div>
-      </nav>      
-      <nav id="submainNavcards" >
-        <div class="container">
-          <ul>
-            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
-
-            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">المتابعة</a></li>
-            <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">المراجعة</a></li>
-            <li><a href="/Elfateh/main/reports/cashflow/display_cashflowgroup__comapnyname">بأسم الشركة</a></li>
-
-          </ul>
-        </div>
-      </nav>
-
-      
-      <div class="container">
-        <form action="{{ url_for('CFstartfunctions.update_paid') }}" method="post">
-          <div style="height: 70vh; overflow-y: auto  ; overflow-x: hidden;">
-            <table class="small">
-              <tr>
-                <th>كود الفاتورة</th>
-                <th>الاجمالي</th>
-                <th>تاريخ الفاتورة</th>
-                <th>الحساب</th>
-                <th>الإستحقاق</th>
-                <th>التحصيل</th>
-                <th>تم دقع</th>
-                <th>المتبقي</th>
-                <th>تم</th>
-              </tr>
-              {% for row in data.itertuples() %}
-                {% set row_class = '' %}
-                {% if row.Paid == 1 %}
-                  {% set row_class = 'paid' %}    
-                {% elif row.dueDate == current_date %}
-                  {% set row_class = 'maybe' %}
-                  {% elif row.dueDate < current_date %}
-                  {% set row_class = 'unpaid' %}
-                {% endif %}
-                <tr class="{{ row_class }}" data-days-late="{{ days_late }}">
-                  <td style="font-size: small;" data-InvoiceID="{{ row.InvoiceID }}">{{ row.InvoiceID }}</td>
-                  <td   data-Total_invoice="{{ row.Total_invoice }}">{{ row.Total_invoice }}</td>
-                  <td style="white-space: nowrap;" data-tr_dt="{{ row.tr_dt }}">{{ row.tr_dt }}</td>
-                  <td data-Acc_Nm="{{row.Acc_Nm}}">{{row.Acc_Nm}}</td>
-                  <td  data-due-date="{{ row.dueDate }}">{{ row.dueDate }}</td>
-    <td>
-        <input type="hidden" name="real_date" value="{{ row.realDate }}">
-        {{ row.realDate }}
-    </td>
-                  <td onclick="toggleInput(this)">
-                    <span>{{ row.getpaid }}</span>
-                    <input type="number" name="getpaid" value="{{ row.getpaid }}" style="display: none;">
-                  </td>
-                  <td data-leftUnPaid="{{ row.leftUnPaid }}">{{ row.leftUnPaid }}</td>
-                  <td onclick="togglePaid(this)">
-                    <span>{{ row.Paid }}</span>
-                    <input type="hidden" name="invoice_id" value="{{ row.InvoiceID }}">
-                    <select name="paid" style="display: none;">
-                      <option value="">مؤقت...</option>
-                      <option value="0">لا</option>
-                      <option value="1">نعم</option>
-                    </select>
-                  </td>
-                                                    </tr>
-              {% endfor %}
-            </table>
-            <input type="hidden" name="previous_page" value="{{ request.url }}">
-
-            <input type="submit" value="تحديث" class="update-button">
-
-
-        </form>
-      </div>
-
-
-
-
-
-
-
-
-
-
-                          <script>
-              // get all the dropdown menus
-              var dropdowns = document.querySelectorAll('select[name="paid"]');
-
-              // add an event listener to each dropdown menu
-              for (var i = 0; i < dropdowns.length; i++) {
-                  // store the original value of the dropdown menu
-                  dropdowns[i].dataset.originalValue = dropdowns[i].value;
-
-                  dropdowns[i].addEventListener('change', function() {
-                      // get the row element
-                      var row = this.closest('tr');
-
-                      // remove any existing color classes from the row
-                      row.classList.remove('yes', 'no');
-
-                      // add the appropriate color class depending on the value of the dropdown menu
-                      if (this.value === '1') {
-                          row.classList.add('yes');
-                      } else if (this.value === '0') {
-                          row.classList.add('no');
-                      }
-                  });
-              }
-
-
-
-window.onload = function() {
-  var currentUrl = window.location.href;
-  var li = document.getElementById("hiddenLi");
-  if (currentUrl.includes("/display_goodstransectionte_summary")) {
-    li.style.display = "list-item";
-  } else {
-    li.style.display = "none";
-  }
-}
-
-if (window.location.pathname !== '/Elfateh/main/reports/cashflow/display_goodstransectionte_summary') {
-    document.getElementById('print-link').style.display = 'none';
-}
-var clickCount = 0;
-
-function togglePaid(cell) {
-  var span = cell.querySelector("span");
-  var select = cell.querySelector(" select");
-  if (clickCount === 0) {
-    span.style.display = "none";
-    select.style.display = "";
-    clickCount++;
-  } else if (clickCount === 1) {
-    clickCount++;
-  } else {
-    span.style.display = "";
-    select.style.display = "none";
-    clickCount = 0;
-  }
-}
-
-  function toggleInput(cell) {
-    var span = cell.querySelector("span");
-    var input = cell.querySelector("input");
-    span.style.display = "none";
-    input.style.display = "";
-  }
-
-
-
-
-          </script>
-
-      </body>
+          </head>
+          <body>
+
+            <div class="grid-container">
+              {% include 'header.html' %}
+              <div class="listandtable">
+                <nav id="submainNavcards"    style="text-align: center;" >
+                  <ul>
+                    <li style="background-color: #06925a48;" id="print-link"><a href="/Elfateh/main/print/cashflow">طباعة</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">المتابعة</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">المراجعة</a></li>
+                  </ul>
+              </nav>
+              <div class="container">
+                <form action="{{ url_for('CFstartfunctions.update_paid') }}" method="post">
+                    <div style="height: 70vh; overflow-y: auto; overflow-x: hidden;">
+                        <table class="small">
+                            <tr>
+                                <th>كود الفاتورة</th>
+                                <th>الاجمالي</th>
+                                <th>تاريخ الفاتورة</th>
+                                <th>الحساب</th>
+                                <th>الإستحقاق</th>
+                                <th>التحصيل</th>
+                                <th>تم دقع</th>
+                                <th>المتبقي</th>
+                                <th>تم</th>
+                            </tr>
+                            {% for row in data %}
+                            {% set row_class = '' %}
+                            {% if row.Paid == 1 %}
+                                {% set row_class = 'paid' %}
+                            {% elif row.dueDate == current_date %}
+                                {% set row_class = 'maybe' %}
+                            {% elif row.dueDate < current_date %}
+                                {% set row_class = 'unpaid' %}
+                            {% endif %}
+                            <tr class="{{ row_class }}" data-days-late="{{ days_late }}">
+                                <td style="font-size: small;" data-InvoiceID="{{ row['InvoiceID'] }}">{{ row['InvoiceID'] }}</td>
+                                <td data-Total_invoice="{{ row['Total_invoice'] }}">{{ row['Total_invoice'] }}</td>
+                                <td style="white-space: nowrap;" data-tr_dt="{{ row['tr_dt'] }}">{{ row['tr_dt'] }}</td>
+                                <td data-Acc_Nm="{{ row['Acc_Nm'] }}">{{ row['Acc_Nm'] }}</td>
+                                <td data-due-date="{{ row['dueDate'] }}">{{ row['dueDate'] }}</td>
+                                <td>
+                                    <input type="hidden" name="real_date" value="{{ row['realDate'] }}">
+                                    {{ row['realDate'] }}
+                                </td>
+                                <td onclick="toggleInput(this)">
+                                    <span>{{ row['getpaid'] }}</span>
+                                    <input type="number" name="getpaid" value="{{ row['getpaid'] }}" style="display: none;">
+                                </td>
+                                <td data-leftUnPaid="{{ row['leftUnPaid'] }}">{{ row['leftUnPaid'] }}</td>
+                                <td onclick="togglePaid(this)">
+                                    <span>{{ row['Paid'] }}</span>
+                                    <input type="hidden" name="invoice_id" value="{{ row['InvoiceID'] }}">
+                                    <select name="paid" style="display: none;">
+                                        <option value="">مؤقت...</option>
+                                        <option value="0">لا</option>
+                                        <option value="1">نعم</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                        <input type="hidden" name="previous_page" value="{{ request.url }}">
+                        <input type="submit" value="تحديث" class="update-button">
+                    </div>
+                </form>
+            </div>
+  
+
+            </div>
+            {% include 'footeR.html' %}
+
+          </div>
+          
+
+
+
+</body>
 
   </html>
+  <script src="{{ url_for('static', filename='js/ENTRYTABLE.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/checkURLAndDisplayElement.js') }}"></script>
