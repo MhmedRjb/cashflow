@@ -1,17 +1,77 @@
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>File Upload Form</title>
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        </head>
+
+   <body>
+          <div class="grid-container">
+              {% include 'header.html' %}
+  <div class="grid4by4">
+
 <form method="post" enctype="multipart/form-data">
-    {% if form is defined %}
-        {{ form.hidden_tag() }}
-        {% for error in form.file.errors %}
-            <span style="color: red;">{{ error }}</span>
-        {% endfor %}
-        {{ form.file.label }} {{ form.file() }}
-        {% for error in form.file2.errors %}
-            <span style="color: red;">{{ error }}</span>
-        {% endfor %}
-        {{ form.file2.label }} {{ form.file2() }}
-        {{ form.submit() }}
-    {% endif %}
-    <input type="submit" formaction="/export_data" value="export_data Transection Data">
-    <input type="submit" formaction="/delete_data" value="delete_data Transection Data">
-    <input type="submit" formaction="/export_data_frist" value="export_data_frist Clints Data">
+  <div class="dropzonecol">
+  {% if form is defined %}
+    {{ form.hidden_tag() }}
+        <div class="drop-zone">
+          <div > <span class="drop-zone__prompt">برجاء تحديث الملفات المطلوبة على التوالي </span></div>
+          <div> <input type="file" name="{{ form.file.name }}" id="{{ form.file.id }}" class="drop-zone__input"></div>
+        </div>
+           <div >  {{ form.submit(class="input") }} 
+  {% endif %}</div>
+  </div>
 </form>
+<form method="get" enctype="multipart/form-data">
+  <div class="parent-container">
+    <table>
+
+          <tr>
+            <th>Name</th>
+            <th>Last Modified</th>
+          </tr>
+          {% for item, mtime in folder_contents %}
+            <tr>
+              <td>{{ item }}</td>
+              <td>{{ mtime }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+  </div>
+  <div>
+    <h4 style="text-align: right; ">
+      (SBAccMFDtlRpt.xls)وكذالك ملف العملاء في حال تجددة (SBJRNLITMRPTTAX.xls)
+      برجاء رفع الملفات المتوفرة ملف  
+    </h4> 
+  </div>
+</form>
+<div style="grid-column: 1 / 3;"><form method="post" enctype="multipart/form-data">
+  <div class="LineOFbuttons" >
+
+<div><input class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_datagood_transection " value="تحديث جدول الحركة"></div>
+
+<div> <input  class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_clints_data" value="تحديث جدول العملاء"></div>
+
+<div > <input class="big-button"  type="submit" formaction="/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection" value=" إسقاط الفواتير المحذوفة "> </div>
+</div>
+
+
+
+</form>
+  
+
+</div>
+</div>
+
+
+{% include 'footeR.html' %}
+
+</body>
+</html>
+
+    <script src="{{ url_for('static', filename='js/dropzone.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/smallQmarkINheader.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tableCellesColor.js') }}"></script>
+
+  

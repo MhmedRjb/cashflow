@@ -1,0 +1,18 @@
+select {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    appearance: none;
+    border: #ff0505;
+  }
+  
+  select:focus {
+    outline: none;
+  
+  }
+  
+  
+  
+  

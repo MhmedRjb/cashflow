@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffef5;
+    min-height: 100vh;
+    color: #02a080;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-size: 16px;
+      line-height: 1.6em;
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 140px  1fr 70px ;
+    height: 100vh;
+    
+}
+
+
+.grid4by4 {
+    display: grid;
+    grid-template-columns: 1fr 650px; /* Two equal-width columns */
+    grid-template-rows: auto 70px 100px ; /* Three rows for header, table, and buttons */
+    gap: 10px; /* Gap between rows and columns */
+    margin-top: 1%; /* Additional margin for commentContainer2 */
+    margin-right: auto;
+  }
+
+  .LineOFbuttons {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between buttons */
+      grid-column: 1 / span; /* Span across both columns */
+  
+  }
+  
+.listandtable {
+  display: grid;
+  grid-template-rows: 3.6% 1fr  ; /* Three rows for header, table, and buttons */
+}
+
+.container ,.commentContainer,.commentContainer2{
+
+  width: 95%;
+  padding-left: 0.5%;
+}
+
+

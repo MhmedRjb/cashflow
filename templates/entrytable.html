@@ -1,0 +1,91 @@
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>File Upload Form</title>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+      
+          </head>
+          <body>
+
+            <div class="grid-container">
+              {% include 'header.html' %}
+              <div class="listandtable">
+                <nav id="submainNavcards"    style="text-align: center;" >
+                  <ul>
+                    <li style="background-color: #06925a48;" id="print-link"><a href="/Elfateh/main/print/cashflow">طباعة</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">المتابعة</a></li>
+                    <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">المراجعة</a></li>
+                  </ul>
+              </nav>
+              <div class="container">
+                <form action="{{ url_for('CFstartfunctions.update_paid') }}" method="post">
+                    <div style="height: 70vh; overflow-y: auto; overflow-x: hidden;">
+                        <table class="small">
+                            <tr>
+                                <th>كود الفاتورة</th>
+                                <th>الاجمالي</th>
+                                <th>تاريخ الفاتورة</th>
+                                <th>الحساب</th>
+                                <th>الإستحقاق</th>
+                                <th>التحصيل</th>
+                                <th>تم دقع</th>
+                                <th>المتبقي</th>
+                                <th>تم</th>
+                            </tr>
+                            {% for row in data %}
+                            {% set row_class = '' %}
+                            {% if row.Paid == 1 %}
+                                {% set row_class = 'paid' %}
+                            {% elif row.dueDate == current_date %}
+                                {% set row_class = 'maybe' %}
+                            {% elif row.dueDate < current_date %}
+                                {% set row_class = 'unpaid' %}
+                            {% endif %}
+                            <tr class="{{ row_class }}" data-days-late="{{ days_late }}">
+                                <td style="font-size: small;" data-InvoiceID="{{ row['InvoiceID'] }}">{{ row['InvoiceID'] }}</td>
+                                <td data-Total_invoice="{{ row['Total_invoice'] }}">{{ row['Total_invoice'] }}</td>
+                                <td style="white-space: nowrap;" data-tr_dt="{{ row['tr_dt'] }}">{{ row['tr_dt'] }}</td>
+                                <td data-Acc_Nm="{{ row['Acc_Nm'] }}">{{ row['Acc_Nm'] }}</td>
+                                <td data-due-date="{{ row['dueDate'] }}">{{ row['dueDate'] }}</td>
+                                <td>
+                                    <input type="hidden" name="real_date" value="{{ row['realDate'] }}">
+                                    {{ row['realDate'] }}
+                                </td>
+                                <td onclick="toggleInput(this)">
+                                    <span>{{ row['getpaid'] }}</span>
+                                    <input type="number" name="getpaid" value="{{ row['getpaid'] }}" style="display: none;">
+                                </td>
+                                <td data-leftUnPaid="{{ row['leftUnPaid'] }}">{{ row['leftUnPaid'] }}</td>
+                                <td onclick="togglePaid(this)">
+                                    <span>{{ row['Paid'] }}</span>
+                                    <input type="hidden" name="invoice_id" value="{{ row['InvoiceID'] }}">
+                                    <select name="paid" style="display: none;">
+                                        <option value="">مؤقت...</option>
+                                        <option value="0">لا</option>
+                                        <option value="1">نعم</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                        <input type="hidden" name="previous_page" value="{{ request.url }}">
+                        <input type="submit" value="تحديث" class="update-button">
+                    </div>
+                </form>
+            </div>
+  
+
+            </div>
+            {% include 'footeR.html' %}
+
+          </div>
+          
+
+
+
+</body>
+
+  </html>
+  <script src="{{ url_for('static', filename='js/ENTRYTABLE.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/checkURLAndDisplayElement.js') }}"></script>

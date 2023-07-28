@@ -1,2 +1,10 @@
+
 # cashflow
-i will using python (pandas ,seaborn) also MySQL and flask to build app to track cash Flow I will make it Interactive and i will make it on-premises deployment after test it in cloud  
+The project tracks cash flow by manipulating data using Pandas and exporting it to MySQL. Triggers are used and web pages are created using CSS, HTML, JS and Flask to track and display information. The web pages also allow for data entry.
+
+- How to use triggers and build a schema
+- How to use Flask and become knowledgeable about HTML, CSS, and JS for front-end development
+- The importance of dynamic queries
+- Improving your skills in writing clean code Is there anything else you would like to add?
+- The importance of reading documnation 
+

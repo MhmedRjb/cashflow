@@ -1,0 +1,68 @@
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 2px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Table row colors */
+tr:nth-child(even) {
+  background-color: #ffffff; /* White background for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #dae0df; /* Light gray background for odd rows */
+}
+
+/* Table header styles */
+th {
+  background-color: #02a080; /* Dark green background for headers */
+  color: white; /* White text color for headers */
+}
+
+/* Row background colors based on class names */
+tr.red {
+  background-color: #FF0000; /* Red background */
+}
+
+tr.unknown {
+  background-color: #ddd; /* Light gray background */
+}
+
+tr.unpaid {
+  background-color: #ec1f3e; /* Light red background */
+}
+
+tr.maybe {
+  background-color: #FFD700; /* Light yellow background */
+}
+
+tr.paid {
+  background-color: #4CAF50; /* Light green background */
+}
+
+tr.yes {
+  background-color: #90EE90; /* Light green background */
+}
+
+tr.no {
+  background-color: #FFB6C1; /* Light pink background */
+}
+table.small{
+  width: 80%;
+height: 80%;
+border-collapse: collapse;
+margin: 10%;
+margin-top: 5%;
+overflow-y: scroll;
+margin-right: 0;
+color: black;
+font-weight: bold;
+
+
+}

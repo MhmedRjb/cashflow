@@ -1,0 +1,10 @@
+/* styles.css */
+@import url('body.css');
+@import url('headers.css');
+@import url('forms.css');
+@import url('inputs.css');
+@import url('uncommoneffects.css');
+@import url('tables.css');
+@import url('dropzone.css');
+@import url('select.css');
+/* You can add more imports here if you have other CSS files */
