@@ -23,7 +23,7 @@ def authorization():
             session.clear()
             session['user_id'] = user['id']
             session['user_role'] = user['role']
-            return redirect(url_for('CFinsertfunctions.home'))
+            return redirect(url_for('CFinsertfunctions.authorization'))
 
     return render_template('authorization.html')
 
