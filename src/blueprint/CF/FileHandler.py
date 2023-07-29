@@ -5,6 +5,7 @@ from wtforms import FileField, SubmitField
 from wtforms.validators import  ValidationError,Optional
 from werkzeug.utils import secure_filename
 
+
 from datetime import datetime ,timedelta
 import os
 import ast
@@ -15,31 +16,8 @@ from src.data.databaseIniti import exporter
 
 
 
-CFstartfunctions_bp=Blueprint('CFstartfunctions',__name__)
+FileHandler_bp=Blueprint('FileHandler',__name__)
 
-def get_current_date():
-    return (datetime.now() + timedelta(days=0)).date()
-
-
-class func ():
-    @CFstartfunctions_bp.route('/update_paid', methods=['POST'])
-    def update_paid():
-        # get the InvoiceID and Paid values from the form
-        invoice_ids = request.form.getlist('invoice_id')
-        paid_values = request.form.getlist('paid')
-        getpaid_values = request.form.getlist('getpaid')
-        real_date_values=request.form.getlist('real_date')
-        previous_page = request.form['previous_page']
-
-        for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_values):
-            invoice_id_tuple = ast.literal_eval(invoice_id)
-            print(realDate)
-            if paid :
-                print(exporter.update_data_in('main_sales_entry', {'Paid': paid}, 'InvoiceID', invoice_id_tuple))
-                exporter.update_data_in('main_sales_entry', {'Paid': paid}, 'InvoiceID', invoice_id_tuple)
-            if realDate == "None" and getpaid  :  
-                exporter.update_data_in('main_sales_entry', {'getpaid': getpaid}, 'InvoiceID', invoice_id_tuple)
-        return redirect(previous_page)
 
 
 class FileHandler:
@@ -71,10 +49,10 @@ class UploadForm(FlaskForm):
     submit = SubmitField('Upload file')
 
 
-@CFstartfunctions_bp.route('/', methods=['GET', 'POST'])
-@CFstartfunctions_bp.route('/Elfateh', methods=['GET', 'POST'])
-@CFstartfunctions_bp.route('/Elfateh/main', methods=['GET', 'POST'])
-@CFstartfunctions_bp.route('/Elfateh/main/reports', methods=['GET', 'POST'])
+@FileHandler_bp.route('/', methods=['GET', 'POST'])
+@FileHandler_bp.route('/Elfateh', methods=['GET', 'POST'])
+@FileHandler_bp.route('/Elfateh/main', methods=['GET', 'POST'])
+@FileHandler_bp.route('/Elfateh/main/reports', methods=['GET', 'POST'])
 def home():
     form = UploadForm()
     if request.method == 'POST':

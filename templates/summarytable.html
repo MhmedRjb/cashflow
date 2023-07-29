@@ -10,18 +10,11 @@
   <div class="grid-container">
     {% include 'header.html' %}
 
-  
+
 
 
   <div class="listandtable">
-    <nav id="submainNavcards"    style="text-align: center;" >
-      <ul>
-        <li style="background-color: #06925a48;" id="print-link"><a href="/Elfateh/main/print/cashflow">طباعة</a></li>
-        <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
-        <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">المتابعة</a></li>
-        <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">المراجعة</a></li>
-      </ul>
-  </nav>
+    {% include 'subheader.html' %}
   <table class="small">
     <tr>
     {% for col_name in data.columns %}

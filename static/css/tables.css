@@ -4,6 +4,7 @@ table {
   width: 100%;
 }
 
+
 th, td {
   border: 2px solid black;
   text-align: center;
@@ -53,16 +54,42 @@ tr.yes {
 tr.no {
   background-color: #FFB6C1; /* Light pink background */
 }
+
+
 table.small{
   width: 80%;
 height: 80%;
 border-collapse: collapse;
 margin: 10%;
-margin-top: 5%;
 overflow-y: scroll;
 margin-right: 0;
 color: black;
 font-weight: bold;
+margin-bottom: 2%; 
+margin-top: 2%;
 
 
+}
+
+
+.second-table td,.second-table th {
+  background-color: white;
+  border: none;
+}
+
+
+
+          @page {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
+}
+
+@page {
+    @bottom-right {
+        content:counter(page);
+        margin-right: 2%;
+    }
 }

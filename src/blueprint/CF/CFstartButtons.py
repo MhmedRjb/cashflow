@@ -18,7 +18,7 @@ def export_goodstransectiontedata():
     exporter.export_data_first(processor_goods_transection.data, dbi.cashflow_excelINsql)
 
     
-    return redirect(url_for('CFstartfunctions.home', message='Data exported successfully!'))
+    return redirect(url_for('CFinsertfunctions.home', message='Data exported successfully!'))
 @CFstartButtons_bp.route('/export_clints_data', methods=['POST','GET'])
 @authorization_required(allowed_roles=['user'])  # Specify allowed roles here
 def export_data_clients():
@@ -28,9 +28,9 @@ def export_data_clients():
     processor_goods_transection.read_data()
     #export the data to sql 
     exporter.export_data_first(processor_goods_transection.data, dbi.clients_excelINsql)
-    return redirect(url_for('CFstartfunctions.home', message='Data exported successfully!'))
+    return redirect(url_for('CFinsertfunctions.home', message='Data exported successfully!'))
     
 @CFstartButtons_bp.route('/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
 def updatethedata():
     exporter.call_stored_procedure(dbi.updateCashflow_excelPRoducer)
-    return redirect(url_for('CFstartfunctions.home', message='Data updated successfully!'))
+    return redirect(url_for('CFinsertfunctions.home', message='Data updated successfully!'))
