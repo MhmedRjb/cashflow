@@ -1,17 +1,13 @@
-from sqlalchemy import create_engine
-import pandas as pd
-import src.data.databaseIniti as dbi
+import pymysql
 
 class DatabaseExporter:
     def __init__(self, username, password, hostname, database):
-        self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
+        self.conn = pymysql.connect(host=hostname, user=username, password=password, db=database)
 
-    def _execute_sql(self, sql,params=None):
-        conn = self.engine.raw_connection()
-        cur = conn.cursor()
-        cur.execute(sql, params)
-        conn.commit()
-        cur.close()
+    def _execute_sql(self, sql, params=None):
+        with self.conn.cursor() as cur:
+            cur.execute(sql, params)
+            self.conn.commit()
 
     def export_data_first(self, data, table_name):
         data.to_sql(table_name, self.engine, if_exists='replace', index=False)
@@ -22,14 +18,15 @@ class DatabaseExporter:
         sql = f"UPDATE {table_name} SET {set_clause} WHERE {column_name} IN ({values_str})"
         self._execute_sql(sql, (*set_values.values(), *values))
 
-
     def call_stored_procedure(self, procedure_name):
         sql = f'CALL {procedure_name}()'
         self._execute_sql(sql)
 
     def readsql(self, sql, params=None):
-        data = pd.read_sql_query(sql, self.engine, params=params)
-        return data
+        with self.conn.cursor() as cur:
+            cur.execute(sql, params)
+            data = [dict(zip([column[0] for column in cur.description], row)) for row in cur.fetchall()]
+            return data
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 
 from src.data.DataBaseConnection import DatabaseExporter as dbcon
 
+
 username = 'root'
 password = '123qweasdzxcSq'
 hostname = 'localhost'
@@ -18,5 +19,6 @@ REAL_DATE='real_date'
 
 
 exporter = dbcon(username, password, hostname, database)
+
 
 
