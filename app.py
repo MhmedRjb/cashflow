@@ -11,8 +11,7 @@ from src.blueprint.CF.ParallelSYS import ParallelSYS_bp
 from src.blueprint.CF.FileHandler import FileHandler_bp
 
 def create_app():
-    app = Flask(__name__,static_folder='static',template_folder='templates')
-    app.config['SECRET_KEY'] = '123456789'
+    app = Flask(__name__)
     app.register_blueprint(authorization_bp)
     app.register_blueprint(CFactiveTables_bp)
     app.register_blueprint(CFstartButtons_bp)
@@ -23,8 +22,6 @@ def create_app():
 
     return app
 
-def start_server():
-    create_app().run(debug=True, port=8000)
 
 if __name__ == '__main__':
-    start_server()
+    create_app().run(debug=True, port=8000)
