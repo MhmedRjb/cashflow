@@ -1,9 +1,6 @@
-from flask import request ,redirect ,Blueprint , request   ,redirect 
+from flask import request ,redirect ,Blueprint , request   ,redirect ,g
 from datetime import datetime ,timedelta
 import ast
-from src.data.databaseIniti import exporter
-from src.data.databaseIniti import exporter
-import src.data.databaseIniti as dbi
 
 CFinsertfunctions_bp=Blueprint('CFinsertfunctions',__name__)
 
@@ -30,8 +27,7 @@ class func ():
         for invoice_id, paid ,getpaid ,realDate in zip(invoice_ids, paid_values,getpaid_values,real_date_values):
             invoice_id_tuple = ast.literal_eval(invoice_id)
             if is_valid_number(paid) :
-                print(exporter.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.paid: paid}, dbi.INVOICEID, invoice_id_tuple))
-                exporter.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.paid: paid}, dbi.INVOICEID, invoice_id_tuple)
+                g.db_access.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.paid: paid}, dbi.INVOICEID, invoice_id_tuple)
             if realDate == "None" and is_valid_number(getpaid)  :  
-                exporter.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.GETPAID: getpaid}, dbi.INVOICEID, invoice_id_tuple)
+                g.db_access.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.GETPAID: getpaid}, dbi.INVOICEID, invoice_id_tuple)
         return redirect(previous_page)

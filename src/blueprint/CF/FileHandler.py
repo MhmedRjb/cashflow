@@ -10,9 +10,7 @@ from datetime import datetime ,timedelta
 import os
 import ast
 
-from src.data.databaseIniti import exporter
 from src.components import filepaths as fpth
-from src.data.databaseIniti import exporter
 
 
 

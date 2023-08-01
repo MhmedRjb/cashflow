@@ -1,3 +1,6 @@
-goodstransectionte_filepath=r"D:\monymovment\Cashflows\static\files\SBJRNLITMRPTTAX.xls"
-clientsdb_filephath=r"D:\monymovment\Cashflows\static\files\SBAccMFDtlRpt.xls"
-main_folder_path = r'D:\monymovment\Cashflows\static\files'
+#path D:\monymovment\Cashflows\src\components\filepaths.py
+goodstransectionte_filepath="./Uploads/SBJRNLITMRPTTAX.xls"
+clientsdb_filephath="./Uploads/SBAccMFDtlRpt.xls"
+main_folder_path = './Uploads'
+
+

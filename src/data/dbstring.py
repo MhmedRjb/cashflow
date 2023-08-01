@@ -1,12 +1,4 @@
-
-from src.data.databaseAccess import databaseAccess as dbcon
-
-
-username = 'root'
-password = '123qweasdzxcSq'
-hostname = 'localhost'
-database = 'elfateh'
-
+#path d:/cashflows/src/data/dbstring.py
 cashflow_excelINsql='excel_table'
 clients_excelINsql='excel_table_clients'
 updateCashflow_excelPRoducer='update_main_sales_entry'
@@ -18,7 +10,6 @@ INVOICEID='InvoiceID'
 REAL_DATE='real_date'
 
 
-exporter = dbcon(username, password, hostname, database)
 
 
 

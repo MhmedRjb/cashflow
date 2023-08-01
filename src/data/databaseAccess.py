@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine
 import pandas as pd
-import src.data.databaseIniti as dbi
-# import mysql.connector
+
+
 
 class databaseAccess:
-    def __init__(self, username, password, hostname, database):
-        self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
+    def __init__(self, username, password, hostname, database,port=3306):
+        self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}:{port}/{database}')
 
     def _execute_sql(self, sql,params=None):
         conn = self.engine.raw_connection()
@@ -65,47 +65,3 @@ if __name__ == "__main__":
 
     # Call the update_data_in method with the example values
     db_handler.update_data_in(table_name, set_values, column_name, values)
-
-# import mysql.connector
-
-# class databaseAccess:
-#     def __init__(self, username, password, hostname, database):
-#         self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
-#         self.conn = None
-#         self.cursor = None
-
-#     def _connect(self):
-#         if not self.conn or not self.conn.is_connected():
-#             self.conn = mysql.connector.connect(
-#                 user=dbi.username,
-#                 password=   dbi.password,
-#                 host=   dbi.hostname,
-#                 database=   dbi.database
-#             )
-#             self.cursor = self.conn.cursor()
-
-#     def _disconnect(self):
-#         if self.cursor:
-#             self.cursor.close()
-#         if self.conn and self.conn.is_connected():
-#             self.conn.close()
-
-#     def _execute_sql(self, sql, params=None):
-#         self._connect()
-#         try:
-#             self.cursor.execute(sql, params)
-#             self.conn.commit()
-#         finally:
-#             self._disconnect()
-
-#     def readsql(self, sql, params=None):
-#         self._connect()
-#         try:
-#             self.cursor.execute(sql, params)
-#             data = self.cursor.fetchall()  # Fetch all rows from the resultset
-#             return data
-#         finally:
-#             self._disconnect()
-
-
-#     # ...
