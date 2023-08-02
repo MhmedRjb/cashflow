@@ -1,6 +1,7 @@
 from flask import Flask ,g
 from flask_cors import CORS
-from flask_mysqldb import MySQL
+#IMport flask mysql
+from flaskext.mysql import MySQL
 
 from src.blueprint.main.authorization import authorization_bp
 
@@ -10,7 +11,8 @@ from src.blueprint.CF.CFinsertfunctions import CFinsertfunctions_bp
 from src.blueprint.CF.CFReportes import CFReportes_bp
 from src.blueprint.CF.ParallelSYS import ParallelSYS_bp
 from src.blueprint.CF.FileHandler import FileHandler_bp
-from src.data.databaseAccess import databaseAccess as dbcon
+# from src.data.databaseAccess import databaseAccess as dbcon 
+from src.data.databaseAccess import databaseAccess2 as dbcon2
 
 from src.config import DevelopmentConfig,ProductionConfig 
  
@@ -21,11 +23,12 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(DevelopmentConfig)
     CORS(app)
-    app.config['MYSQL_HOST'] = 'localhost'
-    app.config['MYSQL_USER'] = 'root'
-    app.config['MYSQL_PASSWORD'] = '123qweasdzcvSq'
-    app.config['MYSQL_DB'] = 'elfateh'
-    app.config['MYSQL_PORT'] = 3306
+    mysql = MySQL()
+    app.config['MYSQL_DATABASE_USER'] = 'root'
+    app.config['MYSQL_DATABASE_PASSWORD'] = '123qweasdzxcSq'
+    app.config['MYSQL_DATABASE_DB'] = 'elfateh'
+    app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+    mysql.init_app(app)
 
     app.register_blueprint(authorization_bp)
     app.register_blueprint(CFactiveTables_bp)
@@ -35,11 +38,18 @@ def create_app():
     app.register_blueprint(CFReportes_bp)
     app.register_blueprint(FileHandler_bp)
 
-    exporter = dbcon(app.config['DB_USERNAME'], app.config['DB_PASSWORD'], app.config['DB_HOSTNAME'], app.config['DB_DATABASE'])
+
+    # exporter = dbcon(app.config['DB_USERNAME'], app.config['DB_PASSWORD'], app.config['DB_HOSTNAME'], app.config['DB_DATABASE'])
+    exporter2 = dbcon2(mysql)
+   
+   
     @app.before_request
-    def before_request():
-        g.db_access = exporter
+    def before_request2():
+        g.db_access2 = exporter2
+        # g.db_access = exporter
+
     return app
+
 
 
 

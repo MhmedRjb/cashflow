@@ -11,7 +11,8 @@ def export_goodstransectiontedata():
     expected_cols_goods_transection = ['Acc_Nm' ,'Itm_cd', 'TR_NO']
     processor_goods_transection =excel2sql(fpth.goodstransectionte_filepath, expected_cols_goods_transection)
     processor_goods_transection.read_data()
-    g.db_access.export_data_first(processor_goods_transection.data, dbi.cashflow_excelINsql)
+    data = processor_goods_transection.data.fillna(value=0)
+    g.db_access2.export_data_first(data, dbi.cashflow_excelINsql)
     return redirect(url_for('FileHandler.home', message='Data exported successfully!'))
 
 
@@ -20,12 +21,13 @@ def export_data_clients():
     expected_cols_goods_transection = ['acc_nm']
     processor_goods_transection =excel2sql(fpth.clientsdb_filephath, expected_cols_goods_transection)
     processor_goods_transection.read_data()
-    g.db_access.export_data_first(processor_goods_transection.data, dbi.clients_excelINsql)
+    data = processor_goods_transection.data.fillna(value=0)
+    g.db_access2.export_data_first(data, dbi.clients_excelINsql)
     return redirect(url_for('FileHandler.home', message='Data exported successfully!'))
     
 @CFstartButtons_bp.route('/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
 def updatethedata():
-    g.db_access .readsql(callupdateCashflow_excelPRoducer)
+    g.db_access2.readsql(callupdateCashflow_excelPRoducer)
     return redirect(url_for('FileHandler.home', message='Data updated successfully!'))
 
 
