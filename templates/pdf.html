@@ -1,166 +1,57 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>File Upload Form</title>
-    <style>
-      body {
-        font-family: -apple-system, system-ui, BlinkMacSystemFont;
-        font-size: 16px;
-          line-height: 1.6em;
-          margin: 0;
-          background-color: #ffffff;
-        }
-        .container {
+        <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     
-          width: 100%;
-        }
-    
-        #mainHeader {
-          margin-left: 2%;
-          background: white;
-          color: #02a080;
-          font-weight: bolder;
-          font-style: italic;    
-      }
-        #mainHeader h1 ,#mainHeader h5{
-          margin: 0;
-          padding: 0PX;
-          padding-bottom :0.3%;}
-    
-        
-    
-    
-        #mainNav,#submainNav ,  #submainNavcards{
-          background: #02a080;
-          color: #83764F;
-          position: relative;
-          overflow: auto;
-          max-height: 5%;
-    
-        }
-    
-        #submainNa,  #submainNavcardsv{
-          margin-bottom: 1%;
-        }
-    
-        #mainNav ul,#submainNav ul,  #submainNavcards ul {
-          padding: 4px;
-          margin: 0%;
-          list-style: none;
-        }
 
-    
-        #mainNav a,#submainNav a ,  #submainNavcards a  , #submainNavcards a{
-          color: rgb(0, 0, 0);
-          text-decoration: none;
-          font-size: 20px;
-          font-weight: bolder;
-        }
-        #mainNav li:hover,#submainNav li:hover,  #submainNavcards li:hover {
-          background: #1B9C85;
-        }
-    
-        #submainNav  {
-          background-color: #98EECC;
-      }
-    
-      table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: auto;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-}
-
-.second-table td,.second-table th {
-  background-color: white;
-  border: none;
-}
-
-
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-          @page {
-    margin-top: 1%;
-    margin-bottom: 5%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-
-}
-
-@page {
-    @bottom-right {
-        content:counter(page);
-        margin-right: 2%;
-    }
-}
-h1 {      background: white;
-  color: #02a080;
-  font-weight: bolder;
-  font-style: italic;
-
-}
-
-
-
-          </style>
-    
-  </head>
-  <body>
-    <header id="mainHeader">
-      <div class="container">
-        <h1  >El fateh Company</h1>
-        <h5  >Since 1990</h5>
+  </head >
+  <body class="main-header" style="background-color: white;">
+    <header >
+      <div >
+          <h1>El fateh Company</h1>
+          <h5>Since 1990</h5>
+  
       </div>
-    </header>   
+  </header>
+  
 
-
-
-
- <title  >Table Data</title>
- </head>
- <body>
-
-  <table class="second-table" style="margin-bottom: 2%; margin-top: 2%; ">
+  <table class="small" >
     <tr>
     </tr>
     <tr>
       <td >Report Date: {{ report_date }}</td>
       <td> Report Author: {{ report_author }}</td>
-      <td ></td>
     </tr>
     <tr>
       <td>Report Number: {{ report_number }}</td>
       <td>Report Type: {{ report_type }}</td>
-      <td></td>
     </tr>
   </table>
   
   
-  <nav id="mainNav">
-    <div class="container">
-      <ul>
-      </ul>
-    </div>
-  </nav>
+  <nav id="mainnav">
+    <ul>
 
-  <nav id="submainNav" >
-    <div class="container">
-      <ul>
     </ul>
-    </div>
-  </nav>
+</nav>
 
-  <h1 style="  text-align: center;  "
+<nav id="submainNavcards">
+    <ul>
+
+    </ul>
+</nav>
+
+  <h1 style="  text-align: center; margin-top: 10px; margin-bottom: 10px;  "
 >التدفقات النقدية</h1>
   
- <table style="width: 80%;">
+ <table class="small ">
  <tr>
  {% for col_name in column_names %}
  <th>{{ col_name }}</th>

@@ -1,6 +1,8 @@
 Flask
+Flask-Cors
+Flask-MySQLdb
+Flask-SQLAlchemy
 Flask-WTF
-Flask-WeasyPrint
-Werkzeug
-SQLAlchemy
+flask_weasyprint
 pandas
+PyMySQL

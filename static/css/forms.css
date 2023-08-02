@@ -30,7 +30,12 @@
     grid-template-rows: auto auto auto;
     align-items: center;
     row-gap: 10px;
+        justify-items: center; /* Horizontally center the items within the cells */
+    align-items: center; /* Vertically center the items within the cells */
+
 }
+
+
 
 
 /* No scrollbars */
