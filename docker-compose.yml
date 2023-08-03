@@ -1,27 +1,24 @@
-version: '3.9'
-
+version: '3'
 services:
-  flask-app:
-    build: .
+  flask_app:
+    build:
+      context: .
     ports:
       - "5000:5000"
+    depends_on: 
+      - db
+    restart: on-failure  # Add this line
     volumes:
-      - ./Uploads:/app/Uploads
-    depends_on:
-      - mysql
+      - S:\Uploads:/app/Uploads  # Add this line
 
-  mysql:
-    container_name: mysql-db
+
+  db:
+    container_name: mysql
     image: mysql:8.0
-    ports:
-      - "30000:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: 123qweasdzxcSq
+      MYSQL_ROOT_PASSWORD: '123qweasdzxcSq'
+      MYSQL_DATABASE: 'elfateh'
+    ports:
+      - "3307:3306"
     volumes:
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
-    networks:
-      - my_network
-
-networks:
-  my_network:
-    external: true

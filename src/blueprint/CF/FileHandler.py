@@ -5,6 +5,7 @@ from wtforms import FileField, SubmitField
 from wtforms.validators import  ValidationError,Optional
 from werkzeug.utils import secure_filename
 
+from src.components import filepaths as fpth
 
 from datetime import datetime ,timedelta
 import os
@@ -39,7 +40,7 @@ class FileHandler:
             raise ValidationError('Invalid file type. Only .xls and .xlsx files are allowed.')
 
 
-file_handler = FileHandler(r'D:\monymovment\Cashflows\static\files', {'.xls', '.xlsx'})
+file_handler = FileHandler(fpth.main_folder_path, {'.xls', '.xlsx'})
 
 
 class UploadForm(FlaskForm):

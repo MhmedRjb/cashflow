@@ -15,7 +15,7 @@ CFReportes_bp = Blueprint('CFReportes', __name__)
 @authorization_required(allowed_roles=['admin','user'])
 def extractPDFofgoodstransectionte_summary():
     # Retrieve the data from the goodstransectionte table
-    data = g.db_access.readsql(sqlcom.export_cashflow_report)
+    data = g.db_access2.readsql(sqlcom.export_cashflow_report)
     column_names = ['اسم الشركة ', 'معاد الأستحقاق ', 'الإجمالي']
     reprot_type='تقرير داخلي'
     report_date=get_current_date()
