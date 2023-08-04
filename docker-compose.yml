@@ -14,7 +14,7 @@ services:
 
   db:
     container_name: mysql
-    image: mysql:8.0
+    image: mysqlv1:latest
     environment:
       MYSQL_ROOT_PASSWORD: '123qweasdzxcSq'
       MYSQL_DATABASE: 'elfateh'
