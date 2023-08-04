@@ -10,17 +10,17 @@ from src.blueprint.CF import (
 )
 from src.data.databaseAccess import databaseAccess2 as dbcon2
 from src.data.databaseAccess import databaseAccess as dbcon
-from src.config import *
+from src.config import Config ,ProductionConfig,DevelopmentConfig
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(ProductionConfig)
     CORS(app)
     mysql = MySQL()
-    app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = '123qweasdzxcSq'
-    app.config['MYSQL_DATABASE_DB'] = 'elfateh'
-    app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+    app.config['MYSQL_DATABASE_USER'] = Config.MYSQL_DATABASE_USER
+    app.config['MYSQL_DATABASE_PASSWORD'] = Config.MYSQL_DATABASE_PASSWORD
+    app.config['MYSQL_DATABASE_DB'] = Config.MYSQL_DATABASE_DB
+    app.config['MYSQL_DATABASE_HOST'] = Config.MYSQL_DATABASE_HOST
 
     mysql.init_app(app)
 
@@ -31,7 +31,7 @@ def create_app():
     app.register_blueprint(ParallelSYS_bp)
     app.register_blueprint(CFReportes_bp)
     app.register_blueprint(FileHandler_bp)
-    
+
 #sorry i access to the database with tow different ways becuse i feel exhausted and i want to finish this project and
 #i dont have power to check why the databaseAccess2 not working with the update_data_in method so hope u understand me
 #and i will fix it later maybe and i this the only redudant code in this project
