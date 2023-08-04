@@ -31,10 +31,15 @@ class func ():
 
 
             if is_valid_number(paid) :
+<<<<<<< HEAD
 
                 g.db_access2.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.paid: paid}, dbi.INVOICEID, invoice_id_tuple)
 
             if realDate == "None" and is_valid_number(getpaid)  :  
 
+=======
+                g.db_access2.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.paid: paid}, dbi.INVOICEID, invoice_id_tuple)
+            if realDate == "None" and is_valid_number(getpaid)  :  
+>>>>>>> 839bcba8f4eb2a01c7ac88cc17399af8d52de572
                 g.db_access2.update_data_in(dbi.MAIN_SALES_ENTRY, {dbi.GETPAID: getpaid}, dbi.INVOICEID, invoice_id_tuple)
         return redirect(previous_page)
