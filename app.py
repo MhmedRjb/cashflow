@@ -37,7 +37,7 @@ def create_app():
 #and i will fix it later maybe and i this the only redudant code in this project
 
     exporter2 = None
-    exporter =dbcon(app.config['MYSQL_DATABASE_USER'],app.config['MYSQL_DATABASE_PASSWORD'],app.config['MYSQL_DATABASE_HOST'],app.config['MYSQL_DATABASE_DB'])
+    exporter =None
 
     while not exporter2:
         try:

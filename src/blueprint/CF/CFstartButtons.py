@@ -12,7 +12,7 @@ def export_goodstransectiontedata():
     processor_goods_transection =excel2sql(fpth.goodstransectionte_filepath, expected_cols_goods_transection)
     processor_goods_transection.read_data()
     data = processor_goods_transection.data.fillna(value=0)
-    g.db_access2.export_data_first(data, dbi.cashflow_excelINsql)
+    g.db_access.export_data_first(data, dbi.cashflow_excelINsql)
     return redirect(url_for('FileHandler.home', message='Data exported successfully!'))
 
 

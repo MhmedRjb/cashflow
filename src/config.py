@@ -5,7 +5,7 @@ class Config(object):
     MYSQL_DATABASE_USER = 'root'
     MYSQL_DATABASE_PASSWORD = '123qweasdzxcSq'
     MYSQL_DATABASE_DB = 'elfateh'
-    MYSQL_DATABASE_HOST = 'db'
+    MYSQL_DATABASE_HOST = 'localhost'
 
 class DevelopmentConfig(Config):
     DEBUG = True

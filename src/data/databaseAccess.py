@@ -1,5 +1,10 @@
 import pandas as pd
 from sqlalchemy import create_engine
+
+
+
+
+
 class databaseAccess2:
     def __init__(self, mysql):
         self.conn = mysql.connect()
@@ -16,19 +21,8 @@ class databaseAccess2:
         columns = [column[0] for column in self.cursor.description]
         data_df = pd.DataFrame(data, columns=columns)
         return data_df
-
-    def call_sql(self, procedure_name, params=None):
-        # Build the SQL statement to call the stored procedure
-        sql = f"{procedure_name}"
-        self._execute_sql(sql, params)
-
  
-    def update_data_in(self, table_name, set_values, column_name, values):
-        set_clause = ', '.join([f"{col} = %s" for col in set_values.keys()])
-        values_str = ', '.join(['%s' for _ in values])
-        sql = f"UPDATE {table_name} SET {set_clause} WHERE {column_name} IN ({values_str})"
-        self._execute_sql(sql, (*set_values.values(), *values))
-        
+
     
 
     
