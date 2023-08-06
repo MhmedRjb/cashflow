@@ -1,3 +1,6 @@
+from flaskext.mysql import MySQL
+import time
+from src.data.databaseAccess import databaseAccess as dbcon
 class Config(object):
     SECRET_KEY = '123456789'
     DEBUG = True
@@ -13,4 +16,30 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     pass
 
-# ...
+...
+def init_db(app):
+   mysql = MySQL()
+   app.config['MYSQL_DATABASE_USER'] = 'root'
+   app.config['MYSQL_DATABASE_PASSWORD'] = '123qweasdzxcSq'
+   app.config['MYSQL_DATABASE_DB'] = 'elfateh'
+   app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+   mysql.init_app(app)
+
+   return mysql
+
+def exporter_funx( mysql,user,password,host,db):
+    exporter =None
+    while not exporter:
+        try:
+            exporter = dbcon(
+                mysql,
+                user,
+                password,
+                host,
+                db
+                )
+
+        except Exception as e:
+            print(f"Error connecting to MySQL: {e}")
+            time.sleep(2)
+    return exporter

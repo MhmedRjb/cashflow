@@ -6,7 +6,7 @@ from src.components import sqlcommonds as sqlcom
 def read_user_by_username(username):
     # Execute the query to find the user by the provided username
     sql = sqlcom.read_user_by_username
-    data = g.db_access2.readsql(sql, params=(username,))
+    data = g.db_access.readsql(sql, params=(username,))
     
     # If data is not empty, return the first row as a dictionary, otherwise return None
     return data.iloc[0].to_dict() if not data.empty else None
@@ -15,7 +15,7 @@ def read_user_by_username(username):
 def read_user_by_id(user_id):
     # Execute the query to find the user by the provided user ID
     sql = "SELECT * FROM user WHERE id = %s"
-    data = g.db_access2.readsql(sql, params=(user_id,))
+    data = g.db_access.readsql(sql, params=(user_id,))
     
     # If data is not empty, return the first row as a dictionary, otherwise return None
     return data.iloc[0].to_dict() if not data.empty else None

@@ -66,7 +66,8 @@ def home():
     folder_contents = []
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)
-        mtime = os.path.getmtime(item_path)
-        mtime_str = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M')
-        folder_contents.append((item, mtime_str))
+        if item.lower().endswith(('.xls', '.xlsx')):
+            mtime = os.path.getmtime(item_path)
+            mtime_str = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M')
+            folder_contents.append((item, mtime_str))
     return render_template('home.html', folder_contents=folder_contents, form=form)

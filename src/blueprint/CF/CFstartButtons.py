@@ -22,7 +22,6 @@ def export_data_clients():
     processor_goods_transection =excel2sql(fpth.clientsdb_filephath, expected_cols_goods_transection)
     processor_goods_transection.read_data()
     g.db_access.export_data_first(processor_goods_transection.data, dbi.clients_excelINsql)
-    # g.db_access.readsql('CALL update_main_sales_entry()')
     return redirect(url_for('FileHandler.home', message='Data exported successfully!'))
     
 @CFstartButtons_bp.route('/delete_dataFromDataBasegood_transection', methods=['POST','GET'])
