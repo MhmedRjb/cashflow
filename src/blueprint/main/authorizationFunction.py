@@ -33,12 +33,10 @@ def authorization_required(allowed_roles=None):
             user_role = session.get('user_role')
             if allowed_roles and user_role not in allowed_roles:
                 flash('You do not have permission to access this page.')
-                return redirect(url_for('authorization.authorization'))
 
             return f(*args, **kwargs)
 
         return decorated_function
     return decorator
-
 
 

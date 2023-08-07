@@ -1,7 +1,10 @@
 from flask import Blueprint, render_template ,session,make_response,g
 from src.components import sqlcommonds as sqlcom
 from flask_weasyprint import HTML
-from ..main.authorizationFunction import authorization_required
+from ..main.date_check_required import date_check_required
+from datetime import datetime
+
+
 from .reportsDataFUNC import *
 
 
@@ -12,7 +15,7 @@ CFReportes_bp = Blueprint('CFReportes', __name__)
 
 
 @CFReportes_bp.route('/Elfateh/main/print/cashflow')
-@authorization_required(allowed_roles=['admin','user'])
+@date_check_required()
 def extractPDFofgoodstransectionte_summary():
     # Retrieve the data from the goodstransectionte table
     data = g.db_access.readsql(sqlcom.export_cashflow_report)
