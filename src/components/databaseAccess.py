@@ -1,9 +1,11 @@
 import pandas as pd
 from sqlalchemy import create_engine
-class databaseAccess2:
-    def __init__(self, mysql):
+
+class databaseAccess:
+    def __init__(self, mysql=None,username=None, password=None, hostname=None, database=None):
         self.conn = mysql.connect()
         self.cursor = self.conn.cursor()
+        self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
 
 
     def _execute_sql(self, sql, params=None):
@@ -16,46 +18,25 @@ class databaseAccess2:
         columns = [column[0] for column in self.cursor.description]
         data_df = pd.DataFrame(data, columns=columns)
         return data_df
-
+    
     def call_sql(self, procedure_name, params=None):
-        # Build the SQL statement to call the stored procedure
         sql = f"{procedure_name}"
         self._execute_sql(sql, params)
 
- 
+    def export_data_first(self, data, table_name):
+        #this function is used sqlalchemy unlike the other function 
+        data.to_sql(table_name, self.engine, if_exists='replace', index=False)
+
+
     def update_data_in(self, table_name, set_values, column_name, values):
         set_clause = ', '.join([f"{col} = %s" for col in set_values.keys()])
         values_str = ', '.join(['%s' for _ in values])
         sql = f"UPDATE {table_name} SET {set_clause} WHERE {column_name} IN ({values_str})"
         self._execute_sql(sql, (*set_values.values(), *values))
-        
     
 
     
 
-
-class databaseAccess:
-    def __init__(self, username, password, hostname, database):
-        self.engine = create_engine(f'mysql+pymysql://{username}:{password}@{hostname}/{database}')
-
-    def _execute_sql(self, sql,params=None):
-        conn = self.engine.raw_connection()
-        cur = conn.cursor()
-        cur.execute(sql, params)
-        conn.commit()
-        cur.close()
-
-    def export_data_first(self, data, table_name):
-        data.to_sql(table_name, self.engine, if_exists='replace', index=False)
-
-    #call stored procedure in mysql
-    def call_sql(self, procedure_name, params=None):
-        # Build the SQL statement to call the stored procedure
-        sql = f"{procedure_name}"
-        self._execute_sql(sql, params)
-
-
-# Compare this snippet from src\components\sqlcommonds.py:
 
 
     # ...

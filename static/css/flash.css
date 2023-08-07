@@ -1,0 +1,15 @@
+.flash-message {
+    color: rgb(36, 104, 0);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.flash-message.success {
+    background-color: chartreuse;
+
+}
+
+.flash-message.error {
+    background-color: rgb(241, 173, 173);
+
+}
