@@ -33,6 +33,6 @@ webencodings==0.5.1
 Werkzeug==2.3.6
 WTForms==3.0.1
 zopfli==0.2.2
-cryptography==3.4.8  # Add this line for the 'cryptography' package
+cryptography>=41.0.3
 xlrd==2.0.1
 sqlalchemy
