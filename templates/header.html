@@ -1,28 +1,31 @@
-<div class="main-header">         
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<div class="main-header">
     <header id="mainHeader">
-    <div>
-        <h1 >El fateh Company</h1>
-        <h5>Since 1990</h5>
-
-    </div>
-</header>
+        <div>
+            <h1>{{ _('الفاتح') }}</h1>
+            <h5>{{ _('منذ 1990') }}</h5>
+        </div>
+    </header>
 
 <nav id="mainnav">
-        <ul>
-            <li ><a href="/Elfateh/main/Inventory/">المخازن</a></li>
-            <li ><a href="/Elfateh/main">رفع الملفات</a></li>
-            <li ><a href="/authorization">التعريف</a></li>
-
-        </ul>
+    <ul>
+        <li><a href="/Elfateh/main/Inventory/">{{ _('المخازن') }}</a></li>
+        <li><a href="/Elfateh/main">{{ _('رفع الملفات') }}</a></li>
+        <li><a href="/authorization">{{ _('التعريف') }}</a></li>
+    </ul>
 </nav>
 
 <nav id="submainNavcards">
         <ul>
-            <li><a href="/Elfateh/main/reports/clinets_statistics">احصائيات العميل</a></li>
-            <li><a href="/Elfateh/main/reports/genral_statistics">احصائيات الشهر</a></li>
-            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">التدفقات النقدية</a></li>
-
+            <li><a href="/Elfateh/main/reports/clinets_statistics">{{ _('احصائيات العميل') }}</a></li>
+            <li><a href="/Elfateh/main/reports/genral_statistics">{{ _('احصائيات الشهر') }}</a></li>
+            <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">{{ _('التدفقات النقدية') }}</a></li>
         </ul>
 </nav>
 </div>
+</html>
+
 <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+
+

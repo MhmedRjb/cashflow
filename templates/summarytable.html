@@ -1,6 +1,6 @@
  <!DOCTYPE html>
- <html>
-    <head>
+ <html lang="{{ get_locale() }}">
+  <head>
       <title>File Upload Form</title>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
@@ -14,7 +14,7 @@
 
 
   <div class="listandtable">
-    {% include 'subheader.html' %}
+    {% include 'subsubheader.html' %}
   <table class="small">
     <tr>
     {% for col_name in data.columns %}

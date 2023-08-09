@@ -1,9 +1,13 @@
-<nav id="submainNavcards"  style="background-color: rgb(250, 246, 246);" >
-  <ul   style="text-align: center;"    >
-    <li style="background-color: #06925a48;" id="print-link"><a href="/Elfateh/main/print/cashflow">طباعة التقرير</a></li>
-    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte_summary">التقرير</a></li>
-    <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">مجمع بالاستحقاق</a></li>
-    <li><a href="/Elfateh/main/reports/cashflow/display_all_goodstransectionte">فردي</a></li>
-    <li><a href="/Elfateh/main/reports/cashflow/display_cashflowgroup__comapnyname">مجمع ياسم الشركة</a></li>
-  </ul>
-</nav>
+<html lang="{{ get_locale() }}">
+
+<div class="main-header">         
+    <nav id="submainNavcards">
+            <ul>
+                <li><a href="/Elfateh/main/reports/clinets_statistics">{{ _('احصائيات العميل') }}</a></li>
+                <li><a href="/Elfateh/main/reports/genral_statistics">{{ _('احصائيات الشهر') }}</a></li>
+                <li><a href="/Elfateh/main/reports/cashflow/display_goodstransectionte">{{ _('التدفقات النقدية') }}</a></li>
+    
+            </ul>
+    </nav>
+</div>
+</html>

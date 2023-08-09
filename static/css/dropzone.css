@@ -1,5 +1,5 @@
  .drop-zone {
-    border: 4px dashed #2f353b;
+    border: 4px dashed #02a080;
     border-radius: .25rem;
     padding: 8%;
     height: 250px;
@@ -8,6 +8,7 @@
     text-align: center;
     background: color #f5f5f5;
     transition: background 0.3s ease;
+
   
   }
   .drop-zone:hover{
@@ -19,16 +20,17 @@
   
         .drop-zone__prompt {
           margin: auto;
-          color: #45535f;
+          color: #02a080;
           font-size: xx-large;
-          font-weight: bolde  r;
+          font-weight: bolder;
+
         }
         .drop-zone__input {
           margin: auto;
           display: none;
         }
         .drop-zone--over {
-          border-color: #3b4550;
+          border-color: #02a080 ;
         }
     
         .dropzonecol {

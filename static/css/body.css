@@ -13,7 +13,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 140px  1fr 70px ;
+    grid-template-rows: 155px  1fr 70px ;
     height: 100vh;
     
 }
@@ -51,4 +51,13 @@ body {
   background-color: #ffffff; /* Set the background color to white */
   /* Add any other styles specific to elements with the .pdf class */
   
+}
+
+
+body {
+  text-align: left;
+}
+
+html[lang="ar"] body {
+  text-align: right;
 }
