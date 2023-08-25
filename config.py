@@ -28,7 +28,7 @@ def init_db(app):
    app.config['MYSQL_DATABASE_USER'] = 'root'
    app.config['MYSQL_DATABASE_PASSWORD'] = '123qweasdzxcSq'
    app.config['MYSQL_DATABASE_DB'] = 'elfateh'
-   app.config['MYSQL_DATABASE_HOST'] = 'db'
+   app.config['MYSQL_DATABASE_HOST'] = 'localhost'
    mysql.init_app(app)
 
    return mysql

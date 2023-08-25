@@ -1,6 +1,7 @@
 version: '3'
 services:
   flask_app:
+    container_name: cfflask_app
     build:
       context: .
     ports:
@@ -14,7 +15,7 @@ services:
 
   db:
     container_name: mysql
-    image: mysqlv1:latest
+    image: alhamadani/mysqlv1:latest
     environment:
       MYSQL_ROOT_PASSWORD: '123qweasdzxcSq'
       MYSQL_DATABASE: 'elfateh'

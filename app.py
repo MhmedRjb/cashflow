@@ -3,6 +3,7 @@ from flask import Flask, g ,request
 from flask_babel import Babel ,get_locale
 from flask_cors import CORS
 from src.blueprint.main.authorization import authorization_bp
+from waitress import serve
 from src.blueprint.CF import (
     CFactiveTables_bp,
     CFstartButtons_bp,
@@ -48,8 +49,5 @@ def create_app():
     return app
 
 if __name__ == '__main__':
-    from waitress import serve
     app = create_app()
     serve(app, host='0.0.0.0', port=5000)
-    # app = create_app()
-    # create_app().run(host='0.0.0.0', port=5000)
