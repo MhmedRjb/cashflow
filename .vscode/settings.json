@@ -1,6 +1,6 @@
 {
     "editor.mouseWheelZoom": false,
-    "window.zoomLevel": 1.5,
+    "window.zoomLevel": 0,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },

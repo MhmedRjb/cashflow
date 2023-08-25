@@ -1,6 +1,6 @@
 
       <!DOCTYPE html>
-      <html>
+      <html lang="{{ get_locale() }}">
       <head>
           <title>File Upload Form</title>
           <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
@@ -16,7 +16,7 @@
   {% if form is defined %}
     {{ form.hidden_tag() }}
         <div class="drop-zone">
-          <div > <span class="drop-zone__prompt">برجاء تحديث الملفات المطلوبة على التوالي </span></div>
+          <div > <span class="drop-zone__prompt">{{ _('برجاء تحديث الملفات المطلوبة على التوالي') }} </span></div>
           <div> <input type="file" name="{{ form.file.name }}" id="{{ form.file.id }}" class="drop-zone__input"></div>
         </div>
            <div >  {{ form.submit(class="input") }} 
@@ -40,20 +40,22 @@
         </table>
   </div>
   <div>
-    <h4 style="text-align: right; ">
-      (SBAccMFDtlRpt.xls)وكذالك ملف العملاء في حال تجددة (SBJRNLITMRPTTAX.xls)
-      برجاء رفع الملفات المتوفرة ملف  
-    </h4> 
   </div>
 </form>
 <div style="grid-column: 1 / 3;"><form method="post" enctype="multipart/form-data">
   <div class="LineOFbuttons" >
 
-<div><input class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_datagood_transection " value="تحديث جدول الحركة"></div>
+<div>
+    <input class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_datagood_transection" value="{{ _('تحديث جدول الحركة') }}">
+</div>
 
-<div> <input  class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_clints_data" value="تحديث جدول العملاء"></div>
+<div>
+    <input class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/export_clints_data" value="{{ _('تحديث جدول العملاء') }}">
+</div>
 
-<div > <input class="big-button"  type="submit" formaction="/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection" value=" إسقاط الفواتير المحذوفة "> </div>
+<div>
+    <input class="big-button" type="submit" formaction="/Elfateh/main/reports/cashflow/delete_dataFromDataBasegood_transection" value="{{ _('إسقاط الفواتير المحذوفة') }}">
+</div>
 </div>
 
 

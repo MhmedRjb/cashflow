@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="{{ get_locale() }}">
   <head>
     <title>File Upload Form</title>
         <link
@@ -15,8 +15,8 @@
   <body class="main-header" style="background-color: white;">
     <header >
       <div >
-          <h1>El fateh Company</h1>
-          <h5>Since 1990</h5>
+          <h1>{{ _('شركة الفاتح') }}</h1>
+          <h5>{{ _('منذ 1990') }}</h5>
   
       </div>
   </header>
@@ -48,8 +48,7 @@
     </ul>
 </nav>
 
-  <h1 style="  text-align: center; margin-top: 10px; margin-bottom: 10px;  "
->التدفقات النقدية</h1>
+  <h1 style="  text-align: center; margin-top: 10px; margin-bottom: 10px;  " >{{ _('التدفقات النقدية') }}</h1>
   
  <table class="small ">
  <tr>

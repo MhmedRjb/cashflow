@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
 <html>
   <head>
     <title>File Upload Form</title>
@@ -12,7 +12,7 @@
     <div class="grid-container">
       {% include 'header.html' %}
       <div class="listandtable">
-        {% include 'subheader.html' %}
+        {% include 'subsubheader.html' %}
         <div class="container">
           <form
             action="{{ url_for('CFinsertfunctions.update_paid') }}"
@@ -21,16 +21,16 @@
             <div style="height: 70vh; overflow-y: auto; overflow-x: hidden">
               <table class="small">
                 <tr>
-                  <th>كود الفاتورة</th>
-                  <th>الاجمالي</th>
-                  <th>تاريخ الفاتورة</th>
-                  <th>الحساب</th>
-                  <th>الإستحقاق</th>
-                  <th>التحصيل</th>
-                  <th>تم دقع</th>
-                  <th>المتبقي</th>
-                  <th>تم</th>
-                </tr>
+                  <th>{{ _('كود الفاتورة') }}</th>
+                  <th>{{ _('الاجمالي') }}</th>
+                  <th>{{ _('تاريخ الفاتورة') }}</th>
+                  <th>{{ _('الحساب') }}</th>
+                  <th>{{ _('الإستحقاق') }}</th>
+                  <th>{{ _('التحصيل') }}</th>
+                  <th>{{ _('تم دقع') }}</th>
+                  <th>{{ _('المتبقي') }}</th>
+                  <th>{{ _('تم') }}</th>
+                      </tr>
                 {% for row in data %} {% set row_class = '' %} {% if row.Paid ==
                 1 %} {% set row_class = 'paid' %} {% elif row.dueDate ==
                 current_date %} {% set row_class = 'maybe' %} {% elif
@@ -84,10 +84,10 @@
                       value="{{ row['InvoiceID'] }}"
                     />
                     <select name="paid" style="display: none">
-                      <option value="">مؤقت...</option>
-                      <option value="0">لا</option>
-                      <option value="1">نعم</option>
-                    </select>
+                      <option value="">{{ _('مؤقت...') }}</option>
+                      <option value="0">{{ _('لا') }}</option>
+                      <option value="1">{{ _('نعم') }}</option>
+                                      </select>
                   </td>
                 </tr>
                 {% endfor %}
@@ -97,7 +97,7 @@
                 name="previous_page"
                 value="{{ request.url }}"
               />
-              <input type="submit" value="تحديث" class="update-button" />
+              <input type="submit" value="{{ _('تحديث') }}" class="update-button" />
             </div>
           </form>
         </div>
