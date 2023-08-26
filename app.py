@@ -16,7 +16,7 @@ from config import ProductionConfig, DevelopmentConfig ,init_db ,exporter_funx
 def create_app():
     app = Flask(__name__)
     babel = Babel(app)
-    app.config.from_object(ProductionConfig)
+    app.config.from_object(DevelopmentConfig)
     babel.init_app(app, default_locale=app.config['BABEL_DEFAULT_LOCALE'])
     CORS(app)
     mysql = init_db(app)
@@ -49,5 +49,7 @@ def create_app():
     return app
 
 if __name__ == '__main__':
+    # app = create_app()
+    # serve(app, host='0.0.0.0', port=5000)
     app = create_app()
-    serve(app, host='0.0.0.0', port=5000)
+    create_app().run(host='0.0.0.0', port=5000)

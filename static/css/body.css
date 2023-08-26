@@ -21,7 +21,7 @@ body {
 
 .grid4by4 {
     display: grid;
-    grid-template-columns: 1fr 650px; /* Two equal-width columns */
+    grid-template-columns: 500px 1fr; /* Two equal-width columns */
     grid-template-rows: auto 70px 100px ; /* Three rows for header, table, and buttons */
     gap: 10px; /* Gap between rows and columns */
     margin-top: 1%; /* Additional margin for commentContainer2 */
