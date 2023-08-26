@@ -6,7 +6,7 @@ from ..main.date_check_required import date_check_required
 from datetime import datetime
 
 
-CFactiveTables_bp = Blueprint('CFactiveTables', __name__,url_prefix='/Elfateh/main/reports/cashflow')
+CFactiveTables_bp = Blueprint('CFactiveTables', __name__,url_prefix='/comapny_name/main/reports/cashflow')
 
 @CFactiveTables_bp.route('/display_dataclints_data')
 @date_check_required()

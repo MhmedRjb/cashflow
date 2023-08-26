@@ -13,7 +13,7 @@
   
   // Function to hide the print link on a specific URL path
   function hidePrintLinkOnSpecificPath() {
-    if (window.location.pathname !== '/Elfateh/main/reports/cashflow/display_goodstransectionte_summary') {
+    if (window.location.pathname !== '/comapny_name/main/reports/cashflow/display_goodstransectionte_summary') {
       document.getElementById('print-link').style.display = 'none';
     }
   }

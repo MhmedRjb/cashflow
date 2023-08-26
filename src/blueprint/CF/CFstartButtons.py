@@ -7,7 +7,7 @@ from src.components.sqlcommonds import callupdateCashflow_excelPRoducer
 from ..main.date_check_required import date_check_required
 from datetime import datetime
 
-CFstartButtons_bp = Blueprint('CFstartButtons', __name__,url_prefix='/Elfateh/main/reports/cashflow')
+CFstartButtons_bp = Blueprint('CFstartButtons', __name__,url_prefix='/comapny_name/main/reports/cashflow')
 
 @CFstartButtons_bp.route('/export_datagood_transection', methods=['POST','GET'])
 @date_check_required(add_days=15)

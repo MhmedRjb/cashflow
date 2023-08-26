@@ -36,11 +36,11 @@ def logout():
 
 
 
-@authorization_bp.route('/Elfateh/main/error')
+@authorization_bp.route('/comapny_name/main/error')
 def error():
     return render_template('error.html')
 
-@authorization_bp.route('/Elfateh/main/save_code', methods=['POST'])
+@authorization_bp.route('/comapny_name/main/save_code', methods=['POST'])
 def save_code():
     code = request.form['code']
     with open(TXT_FILE_path, 'w') as file:

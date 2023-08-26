@@ -18,7 +18,7 @@ services:
     image: alhamadani/mysqlv1:latest
     environment:
       MYSQL_ROOT_PASSWORD: '123qweasdzxcSq'
-      MYSQL_DATABASE: 'elfateh'
+      MYSQL_DATABASE: 'comapny_name'
     ports:
       - "3307:3306"
     volumes:

@@ -73,8 +73,8 @@ msgid "تحديث"
 msgstr "update"
 
 #: templates/header.html:4
-msgid "الفاتح"
-msgstr "Elfateh Company"
+msgid "اسم الشركة"
+msgstr "comapny name"
 
 #: templates/header.html:5 templates/pdf.html:19
 msgid "منذ 1990"
@@ -125,8 +125,8 @@ msgid "...قريبا"
 msgstr "soon..."
 
 #: templates/pdf.html:18
-msgid "شركة الفاتح"
-msgstr "Elfateh Company"
+msgid "اسم الشركة"
+msgstr "comapny name"
 
 #: templates/subsubheader.html:3
 msgid "طباعة التقرير"

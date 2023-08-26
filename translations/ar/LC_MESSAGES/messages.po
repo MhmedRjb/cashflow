@@ -74,7 +74,7 @@ msgid "تحديث"
 msgstr "تحديث"
 
 #: templates/header.html:4
-msgid "الفاتح"
+msgid "اس"
 msgstr "الفاتح"
 
 #: templates/header.html:5 templates/pdf.html:19
@@ -126,8 +126,8 @@ msgid "...قريبا"
 msgstr "...قريبا"
 
 #: templates/pdf.html:18
-msgid "شركة الفاتح"
-msgstr "شركة الفاتح"
+msgid "اسم الشركة"
+msgstr "اسم الشركة"
 
 #: templates/subsubheader.html:3
 msgid "طباعة التقرير"

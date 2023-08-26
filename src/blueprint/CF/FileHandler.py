@@ -49,9 +49,9 @@ class UploadForm(FlaskForm):
 
 
 @FileHandler_bp.route('/', methods=['GET', 'POST'])
-@FileHandler_bp.route('/Elfateh', methods=['GET', 'POST'])
-@FileHandler_bp.route('/Elfateh/main', methods=['GET', 'POST'])
-@FileHandler_bp.route('/Elfateh/main/reports', methods=['GET', 'POST'])
+@FileHandler_bp.route('/comapny_name', methods=['GET', 'POST'])
+@FileHandler_bp.route('/comapny_name/main', methods=['GET', 'POST'])
+@FileHandler_bp.route('/comapny_name/main/reports', methods=['GET', 'POST'])
 def home():
     form = UploadForm()
     if request.method == 'POST':

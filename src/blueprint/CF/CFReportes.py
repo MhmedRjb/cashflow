@@ -14,7 +14,7 @@ from .reportsDataFUNC import *
 CFReportes_bp = Blueprint('CFReportes', __name__)
 
 
-@CFReportes_bp.route('/Elfateh/main/print/cashflow')
+@CFReportes_bp.route('/comapny_name/main/print/cashflow')
 @date_check_required()
 def extractPDFofgoodstransectionte_summary():
     # Retrieve the data from the goodstransectionte table
