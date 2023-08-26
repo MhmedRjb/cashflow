@@ -1,4 +1,6 @@
  .drop-zone {
+  width: 350px; /* Add this line to set a fixed width */
+
     border: 4px dashed #02a080;
     border-radius: .25rem;
     padding: 8%;
@@ -8,6 +10,9 @@
     text-align: center;
     background: color #f5f5f5;
     transition: background 0.3s ease;
+    white-space: wrap; /* Prevent text from wrapping to the next line */
+
+
 
   
   }
@@ -19,15 +24,26 @@
   
   
         .drop-zone__prompt {
-          margin: auto;
           color: #02a080;
-          font-size: xx-large;
+          font-size: 2em;
           font-weight: bolder;
+          max-width: 200px;
+          white-space: wrap; /* Prevent text from wrapping to the next line */
+          font-size: 1.5em; /* Adjust font size to your preference */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: break-word;
+          word-break: break-word;
+        
+
+                
+          
 
         }
         .drop-zone__input {
           margin: auto;
           display: none;
+
         }
         .drop-zone--over {
           border-color: #02a080 ;
@@ -42,11 +58,16 @@
           
         
         }
-        .dropzonecol .input {
-          margin-top: 10px; /* Adjust the margin as needed */
-        }
+
         
         .clearFix {
           clear: both;
+        }
+        .file-name {
+          max-width: 200px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
         }
         
